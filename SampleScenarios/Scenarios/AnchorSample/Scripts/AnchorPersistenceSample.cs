@@ -27,6 +27,8 @@ namespace Microsoft.MixedReality.OpenXR.Sample
     [RequireComponent(typeof(ARSessionOrigin))]
     public class AnchorPersistenceSample : MonoBehaviour
     {
+        public GameObject leftHand;
+        public GameObject rightHand;
         public bool autoLoad = false;
         private bool[] m_wasTapping = { true, true };
         public bool m_airTapToCreateEnabled = false;
@@ -153,6 +155,8 @@ namespace Microsoft.MixedReality.OpenXR.Sample
 
         private void LateUpdate()
         {
+
+
             // Air taps for anchor creation are handled in LateUpdate() to avoid race conditions with air taps to enable/disable anchor creation.
             for (int i = 0; i < 2; i++)
             {
