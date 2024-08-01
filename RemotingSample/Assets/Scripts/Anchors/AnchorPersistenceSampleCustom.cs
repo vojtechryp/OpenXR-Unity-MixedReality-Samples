@@ -5,6 +5,8 @@ using Microsoft.MixedReality.OpenXR.ARFoundation;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices.WindowsRuntime;
+using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.XR;
 using UnityEngine.XR.ARFoundation;
@@ -24,23 +26,45 @@ namespace Microsoft.MixedReality.OpenXR.Sample
     /// </summary>
     [RequireComponent(typeof(ARAnchorManager))]
     [RequireComponent(typeof(ARSessionOrigin))]
-    public class AnchorPersistenceSample : MonoBehaviour
+    public class AnchorPersistenceSampleCustom : MonoBehaviour
     {
+        public bool autoLoad = false;
         private bool[] m_wasTapping = { true, true };
-        private bool m_airTapToCreateEnabled = true;
+        public bool m_airTapToCreateEnabled = false;
         private bool m_airTapToCreateEnabledChangedThisUpdate = false;
 
-        public void ToggleAirTapToCreateEnabled()
-        {
-            m_airTapToCreateEnabled = !m_airTapToCreateEnabled;
-            m_airTapToCreateEnabledChangedThisUpdate = true;
-        }
-
         private ARSessionOrigin m_arSessionOrigin; // Used for ARSessionOrigin.trackablesParent
-        private ARAnchorManager m_arAnchorManager;
+        protected ARAnchorManager m_arAnchorManager;
         private List<ARAnchor> m_anchors = new List<ARAnchor>();
-        private XRAnchorStore m_anchorStore = null;
+        protected XRAnchorStore m_anchorStore = null;
         private Dictionary<TrackableId, string> m_incomingPersistedAnchors = new Dictionary<TrackableId, string>();
+        //private List<PersistentAnchorData> m_incomingPersistedAnchors = new ();
+        public bool hasValidStore { get => m_anchorStore != null; }
+
+        [System.Serializable]
+        public class PersistentAnchorData
+        {
+            public TrackableId trackableId = TrackableId.invalidId;
+            public string name = "";
+            public ARAnchor anchor = null;
+            public bool isAnchorLoaded { get => anchor != null; }
+            public bool isIdValid {  get => trackableId != TrackableId.invalidId; }
+            public PersistableAnchorVisuals visuals { get => anchor.GetComponent<PersistableAnchorVisuals>(); }
+
+            public static Dictionary<string, PersistentAnchorData> nameToDataDict = new Dictionary<string, PersistentAnchorData>();
+            public static Dictionary<TrackableId, PersistentAnchorData> idToDataDict = new Dictionary<TrackableId, PersistentAnchorData>();
+            
+            public static Dictionary<TrackableId, PersistentAnchorData> incomingPersistentAnchors = new Dictionary<TrackableId, PersistentAnchorData>();
+            public PersistentAnchorData(TrackableId _trackableId, string _name)
+            {
+                trackableId = _trackableId;
+                name = _name;
+            }
+            public PersistentAnchorData(string _name)
+            {
+                name = _name;
+            }
+        }
 
         protected async void OnEnable()
         {
@@ -66,14 +90,40 @@ namespace Microsoft.MixedReality.OpenXR.Sample
             }
 
             // Request all persisted anchors be loaded once the anchor store is loaded.
-            foreach (string name in m_anchorStore.PersistedAnchorNames)
+            if (autoLoad)
             {
-                // When a persisted anchor is requested from the anchor store, LoadAnchor returns the TrackableId which
-                // the anchor will use once it is loaded. To later recognize and recall the names of these anchors after
-                // they have loaded, this dictionary stores the TrackableIds.
-                TrackableId trackableId = m_anchorStore.LoadAnchor(name);
-                m_incomingPersistedAnchors.Add(trackableId, name);
+                foreach (string name in m_anchorStore.PersistedAnchorNames)
+                {
+                    // When a persisted anchor is requested from the anchor store, LoadAnchor returns the TrackableId which
+                    // the anchor will use once it is loaded. To later recognize and recall the names of these anchors after
+                    // they have loaded, this dictionary stores the TrackableIds.
+                    TrackableId trackableId = m_anchorStore.LoadAnchor(name);
+                    PersistentAnchorData.incomingPersistentAnchors.Add(trackableId, new PersistentAnchorData(trackableId, name));
+                }
             }
+        }
+
+        public PersistentAnchorData LoadPersistentAnchorByData(PersistentAnchorData anchorData)
+        {
+            if (PersistentAnchorData.nameToDataDict.TryGetValue(anchorData.name, out anchorData))
+            {
+                Debug.Log($"Found existing anchor named {anchorData.name}");
+                return anchorData;
+            }
+
+            if (hasValidStore)
+            {
+                if (m_anchorStore.PersistedAnchorNames.Contains(anchorData.name))
+                {
+                    anchorData.trackableId = m_anchorStore.LoadAnchor(anchorData.name);
+                    PersistentAnchorData.incomingPersistentAnchors.Add(anchorData.trackableId, anchorData);
+                }
+                else
+                {
+                    Debug.LogWarning($"Persistent anchor named {anchorData.name} not found in store");
+                }
+            }
+            return anchorData;
         }
 
         protected void OnDisable()
@@ -83,6 +133,7 @@ namespace Microsoft.MixedReality.OpenXR.Sample
                 m_arAnchorManager.anchorsChanged -= AnchorsChanged;
                 m_anchorStore = null;
                 m_incomingPersistedAnchors.Clear();
+                PersistentAnchorData.incomingPersistentAnchors.Clear();
             }
         }
 
@@ -109,10 +160,27 @@ namespace Microsoft.MixedReality.OpenXR.Sample
             }
         }
 
-        private void ProcessAddedAnchor(ARAnchor anchor)
+        public virtual void ProcessAddedAnchor(ARAnchor anchor)
         {
             // If this anchor being added was requested from the anchor store, it is recognized here
             if (m_incomingPersistedAnchors.TryGetValue(anchor.trackableId, out string name))
+            {
+                AddPersistantAnchor(anchor, name);
+                m_incomingPersistedAnchors.Remove(anchor.trackableId);
+            }
+
+            if (PersistentAnchorData.incomingPersistentAnchors.TryGetValue(anchor.trackableId, out PersistentAnchorData anchorData))
+            {
+                AddPersistantAnchor(anchor, anchorData.name);
+                anchorData.anchor = anchor;
+
+                PersistentAnchorData.idToDataDict.Add(anchorData.trackableId, anchorData);
+                PersistentAnchorData.nameToDataDict.Add(anchorData.name, anchorData);
+
+                PersistentAnchorData.incomingPersistentAnchors.Remove(anchor.trackableId);
+            }
+
+            void AddPersistantAnchor(ARAnchor anchor, string name)
             {
                 if (anchor.TryGetComponent(out PersistableAnchorVisuals sampleAnchorVisuals))
                 {
@@ -120,7 +188,6 @@ namespace Microsoft.MixedReality.OpenXR.Sample
                     sampleAnchorVisuals.Persisted = true;
                     sampleAnchorVisuals.TrackingState = anchor.trackingState;
                 }
-                m_incomingPersistedAnchors.Remove(anchor.trackableId);
             }
 
             m_anchors.Add(anchor);
@@ -143,6 +210,8 @@ namespace Microsoft.MixedReality.OpenXR.Sample
 
         private void LateUpdate()
         {
+
+
             // Air taps for anchor creation are handled in LateUpdate() to avoid race conditions with air taps to enable/disable anchor creation.
             for (int i = 0; i < 2; i++)
             {
@@ -155,7 +224,6 @@ namespace Microsoft.MixedReality.OpenXR.Sample
                 }
                 m_wasTapping[i] = isTapping;
             }
-
 
             m_airTapToCreateEnabledChangedThisUpdate = false;
         }
@@ -216,6 +284,25 @@ namespace Microsoft.MixedReality.OpenXR.Sample
             }
         }
 
+        public TrackableId AddPersistentAnchor(Pose pose)
+        {
+#pragma warning disable 0618 // warning CS0618: 'ARAnchorManager.AddAnchor(Pose)' is obsolete
+            ARAnchor newAnchor = m_arAnchorManager.AddAnchor(pose);
+#pragma warning restore 0618
+            if (newAnchor != null)
+            {
+                Debug.Log($"Anchor created: {newAnchor.trackableId}");
+                ToggleAnchorPersistence(newAnchor);
+                return newAnchor.trackableId;
+            }
+            else
+            {
+                Debug.Log($"Anchor creation failed");
+                return TrackableId.invalidId;
+            }
+
+        }
+
         public void ToggleAnchorPersistence(ARAnchor anchor)
         {
             if (m_anchorStore == null)
@@ -272,6 +359,11 @@ namespace Microsoft.MixedReality.OpenXR.Sample
             Debug.Log(isPersisted ? $"Anchor {anchor.trackableId} with name {newName} persisted" : $"Anchor {anchor.trackableId} with name {sampleAnchorVisuals.Name} unpersisted");
             sampleAnchorVisuals.Name = newName;
             sampleAnchorVisuals.Persisted = isPersisted;
+        }
+        public void ToggleAirTapToCreateEnabled()
+        {
+            m_airTapToCreateEnabled = !m_airTapToCreateEnabled;
+            m_airTapToCreateEnabledChangedThisUpdate = true;
         }
     }
 }

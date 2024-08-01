@@ -6,7 +6,13 @@ using UnityEngine;
 
 public class TransformCalcTemplate : MonoBehaviour
 {
+    //[InspectorButton("RecalculateArrays", ButtonWidth = 200)]
+    //public bool RecalculateArraysButton;
+    //[InspectorButton("SaveAnchorRefs", ButtonWidth = 200)]
+    //public bool SaveAnchors;
+
     public List<Transform> transforms = new List<Transform>(4);
+
     public Vector3[] vector3s;
     public int numberOfPoints = 0;
     public Vector3[] vector3sBackConvert;
@@ -14,6 +20,12 @@ public class TransformCalcTemplate : MonoBehaviour
     public double[,] pointsAsArray;
 
     private void OnValidate()
+    {
+        UpdateArray();
+    }
+
+    [System.Diagnostics.CodeAnalysis.SuppressMessage("CodeQuality", "IDE0051:Remove unused private members", Justification = "<Pending>")]
+    private void RecalculateArrays()
     {
         UpdateArray();
     }

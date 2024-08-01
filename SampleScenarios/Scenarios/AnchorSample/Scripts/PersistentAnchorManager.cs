@@ -51,8 +51,8 @@ namespace Microsoft.MixedReality.OpenXR.Sample
 
             if (brainAnchor == null)
             {
-                TrackableId newBrainAnchorID = anchorPersistenceSample.AddPersistentAnchor(brainTransform.GetWorldPose());
-                brainAnchor = anchorManager.GetAnchor(newBrainAnchorID);
+                //TrackableId newBrainAnchorID = anchorPersistenceSample.AddPersistentAnchor(brainTransform.GetWorldPose());
+                //brainAnchor = anchorManager.GetAnchor(newBrainAnchorID);
             }
 
             if (brainAnchor != null)

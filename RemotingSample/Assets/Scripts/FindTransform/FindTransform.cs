@@ -6,24 +6,28 @@ using UnityEngine;
 
 public class FindTransform : MonoBehaviour
 {
+    [InspectorButton("CalculateTransform", ButtonWidth = 200)]
     public bool doCalc = true;
-    public TransformCalcTemplate templateSource;
-    public TransformCalcTemplate templateActual;
+    public AnchorBasedTransform templateSource;
+    public AnchorDummyTransform templateActual;
     public TransformCalcTemplate templateToMove;
     public Matrix4x4 transformMatrix4x4;
 
-
     private void OnValidate()
     {
-        if (!templateSource || !templateActual || !templateToMove || !doCalc) return;
+        CalculateTransform();
+    }
 
-        Transform3D t3d = new Transform3D(templateSource.UpdateArray(), templateActual.UpdateArray());
+    private void CalculateTransform()
+    {
+        if (!templateSource || !templateActual || !templateActual.hasValidData || !templateSource.hasValidData) return;
+
+        Transform3D t3d = new Transform3D(templateSource.UpdateArrays(), templateActual.UpdateArrays());
 
         t3d.CalcTransform(t3d.actualsMatrix, t3d.nominalsMatrix);
 
         transformMatrix4x4 = ConvertToMatrix4x4(t3d.TransformMatrix);
         UpdateSlaveTransform();
-        doCalc = false;
     }
 
     private Matrix4x4 ConvertToMatrix4x4(double[,] source)
@@ -41,8 +45,11 @@ public class FindTransform : MonoBehaviour
 
     public void UpdateSlaveTransform()
     {
-        Matrix4x4 newMatrix = transformMatrix4x4.inverse * templateActual.transform.localToWorldMatrix;
-        templateToMove.transform.position = newMatrix.GetPosition(); 
-        templateToMove.transform.rotation = newMatrix.rotation; 
+        if (templateToMove != null)
+        {
+            Matrix4x4 newMatrix = transformMatrix4x4.inverse * templateActual.transform.localToWorldMatrix;
+            templateToMove.transform.position = newMatrix.GetPosition(); 
+            templateToMove.transform.rotation = newMatrix.rotation; 
+        }
     }
 }

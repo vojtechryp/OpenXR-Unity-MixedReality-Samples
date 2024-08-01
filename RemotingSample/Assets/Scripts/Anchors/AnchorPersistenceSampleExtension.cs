@@ -6,8 +6,9 @@ using UnityEngine.XR.ARFoundation;
 
 namespace Microsoft.MixedReality.OpenXR.Sample
 {
-    public class AnchorPersistenceSampleGenia : AnchorPersistenceSample
+    public class AnchorPersistenceSampleExtension : AnchorPersistenceSampleCustom
     {
+        [InspectorButton("CalculateTransform", ButtonWidth = 200)]
         public bool clearMarkers = false;
 
         public bool AddMarkerWithM = true;
@@ -21,12 +22,19 @@ namespace Microsoft.MixedReality.OpenXR.Sample
 
         private void Update()
         {
-            if (clearMarkers)
-            {
-                clearMarkers = false;
-                ClearSceneAnchors();
-                AnchorStoreClear();
-            }
+            //if (clearMarkers)
+            //{
+            //    clearMarkers = false;
+            //    ClearSceneAnchors();
+            //    AnchorStoreClear();
+            //}
+        }
+
+        public void ClearAllMarkersButton()
+        {
+            clearMarkers = false;
+            ClearSceneAnchors();
+            AnchorStoreClear();
         }
 
         [System.Obsolete]
