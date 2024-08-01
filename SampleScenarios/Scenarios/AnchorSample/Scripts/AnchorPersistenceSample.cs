@@ -27,8 +27,6 @@ namespace Microsoft.MixedReality.OpenXR.Sample
     [RequireComponent(typeof(ARSessionOrigin))]
     public class AnchorPersistenceSample : MonoBehaviour
     {
-        public GameObject leftHand;
-        public GameObject rightHand;
         public bool autoLoad = false;
         private bool[] m_wasTapping = { true, true };
         public bool m_airTapToCreateEnabled = false;
@@ -41,7 +39,7 @@ namespace Microsoft.MixedReality.OpenXR.Sample
         }
 
         private ARSessionOrigin m_arSessionOrigin; // Used for ARSessionOrigin.trackablesParent
-        private ARAnchorManager m_arAnchorManager;
+        protected ARAnchorManager m_arAnchorManager;
         private List<ARAnchor> m_anchors = new List<ARAnchor>();
         public XRAnchorStore m_anchorStore = null;
         private Dictionary<TrackableId, string> m_incomingPersistedAnchors = new Dictionary<TrackableId, string>();
@@ -121,7 +119,7 @@ namespace Microsoft.MixedReality.OpenXR.Sample
             }
         }
 
-        private void ProcessAddedAnchor(ARAnchor anchor)
+        public virtual void ProcessAddedAnchor(ARAnchor anchor)
         {
             // If this anchor being added was requested from the anchor store, it is recognized here
             if (m_incomingPersistedAnchors.TryGetValue(anchor.trackableId, out string name))
