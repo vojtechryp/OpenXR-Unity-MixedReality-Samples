@@ -3,13 +3,35 @@ using UnityEngine;
 
 public class CoilTargetPoints : MonoBehaviour
 {
+    public struct PredefinedPointStruct
+    {
+        public Vector3 point;
+        public string tag;
+
+        public PredefinedPointStruct(Vector3 point, string tag)
+        {
+            this.point = point;
+            this.tag = tag;
+        }
+    }
+
+    public Transform BrainTargetTransform;
+
+    public List<PredefinedPointStruct> points;
+
     public Color sphereColor = Color.red;  // Color for the visualization spheres
     public float sphereScale = 0.0015f;  // Scale for the visualization spheres
-    private List<Vector3> predefinedPoints;
-    private List<string> pointTags;
+    
+    public static List<Vector3> predefinedPoints;
+    public static List<string> pointTags;
 
     void Awake()
     {
+        points = new();
+
+        points.Add(new PredefinedPointStruct(new Vector3(-0.0064f, 0.0574f, -0.0423f), "Frontal"));    // Frontal
+
+
         // Define specific points relative to the BrainPosition GameObject
         predefinedPoints = new List<Vector3>
         {
@@ -30,7 +52,7 @@ public class CoilTargetPoints : MonoBehaviour
         };
     }
 
-    public List<Vector3> GetRandomizedPoints()
+    public static List<Vector3> GetRandomizedPoints()
     {
         List<Vector3> randomizedPoints = new List<Vector3>(predefinedPoints);
         for (int i = 0; i < randomizedPoints.Count; i++)
@@ -43,9 +65,10 @@ public class CoilTargetPoints : MonoBehaviour
         return randomizedPoints;
     }
 
+    // TODO Change this to use prefab
     public GameObject CreateVisualizationSphere(Vector3 localPosition)
     {
-        Vector3 worldPosition = transform.TransformPoint(localPosition); // Ensure it is relative to BrainPosition
+        Vector3 worldPosition = BrainTargetTransform.TransformPoint(localPosition); // Ensure it is relative to BrainPosition
         GameObject sphere = GameObject.CreatePrimitive(PrimitiveType.Sphere);
         sphere.transform.position = worldPosition;
         sphere.transform.localScale = new Vector3(sphereScale, sphereScale, sphereScale); // Adjust scale as needed
@@ -59,7 +82,8 @@ public class CoilTargetPoints : MonoBehaviour
         return sphere;
     }
 
-    public string GetBrainPositionTag(Vector3 point)
+    // TODO Change to use struct
+    public static string GetBrainPositionTag(Vector3 point)
     {
         int index = predefinedPoints.IndexOf(point);
         return index >= 0 ? pointTags[index] : "Unknown";

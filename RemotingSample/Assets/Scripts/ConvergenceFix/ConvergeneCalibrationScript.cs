@@ -6,6 +6,7 @@ using UnityEngine;
 public class ConvergeneCalibrationScript : MonoBehaviour
 {
     [Header("Controls")]
+    [InspectorButton("DoCalculation")]
     public bool recalculate = false;
     public bool doCalibration = false;
     public int numberOfRepeats = 4;
@@ -29,11 +30,16 @@ public class ConvergeneCalibrationScript : MonoBehaviour
 
     private void OnValidate()
     {
+        DoCalculation();
+    }
+
+    public void DoCalculation()
+    {
         if (calibrationPoses.Count == fingerTipPoses.Count)
         {
             calibration = new();
 
-            for (int  i = 0; i < calibrationPoses.Count; i++)
+            for (int i = 0; i < calibrationPoses.Count; i++)
             {
                 calibration.Add(new Vector2(calibrationPoses[i].position.z, calibrationPoses[i].position.z - fingerTipPoses[i].position.z));
             }

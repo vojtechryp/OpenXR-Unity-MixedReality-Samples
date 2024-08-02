@@ -4,7 +4,7 @@ using Transform3DBestFit;
 using UnityEngine;
 using UnityEngine.XR.ARFoundation;
 using Microsoft.MixedReality.OpenXR.Sample;
-using AnchorData = Microsoft.MixedReality.OpenXR.Sample.AnchorPersistenceSampleCustom.PersistentAnchorData;
+using AnchorData = Microsoft.MixedReality.OpenXR.Sample.PersistentAnchorData;
 using UnityEngine.XR.OpenXR.Input;
 using Unity.XR.CoreUtils;
 public class AnchorBasedTransform : MonoBehaviour
@@ -34,7 +34,7 @@ public class AnchorBasedTransform : MonoBehaviour
     public AnchorTransformScriptable scriptableData = null;
 
     [Header("Persistent Anchor Manager")]
-    public AnchorPersistenceSampleCustom persistentAnchorManager;
+    public AnchorPersistence persistentAnchorManager;
 
     [Header("Lists")]
     public PersistableAnchorVisuals[] persistableAnchorVisuals;
@@ -44,6 +44,14 @@ public class AnchorBasedTransform : MonoBehaviour
     public Vector3[] vector3sBackConvert;
     public double[,] pointsAsArray;
     public int numberOfPoints { get => anchorNames.Count;}
+
+    private void OnEnable()
+    {
+        if (persistentAnchorManager == null)
+        {
+            persistentAnchorManager = FindObjectOfType<AnchorPersistence>();
+        }
+    }
 
     public void UnpersistAnchors()
     {

@@ -18,7 +18,7 @@ MonoBehaviour:
   speechCommands:
   - localizationKey: 
     keyword: next
-    keyCode: 0
+    keyCode: 257
     action:
       id: 0
       description: None

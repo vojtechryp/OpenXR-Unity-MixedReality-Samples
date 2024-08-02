@@ -31,7 +31,7 @@ public class VoiceCommandManager : MonoBehaviour
             keywordAction.Invoke();
         }
     }
-
+    
     private void NextCommand()
     {
         Debug.Log("Next command recognized");

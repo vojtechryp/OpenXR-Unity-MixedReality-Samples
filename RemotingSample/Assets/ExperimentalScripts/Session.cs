@@ -39,12 +39,12 @@ public class Block
     {
         Trials = new Trial[NumberOfTrialsInBlock];
 
-        List<Vector3> randomizedPoints = targetPoints.GetRandomizedPoints();
+        List<Vector3> randomizedPoints = CoilTargetPoints.GetRandomizedPoints();
 
         for (int i = 0; i < NumberOfTrialsInBlock; i++)
         {
             Vector3 point = randomizedPoints[i];
-            string tag = targetPoints.GetBrainPositionTag(point);
+            string tag = CoilTargetPoints.GetBrainPositionTag(point);
             Trials[i] = new Trial(i + 1, point, tracker, targetPoints, tag);
         }
     }

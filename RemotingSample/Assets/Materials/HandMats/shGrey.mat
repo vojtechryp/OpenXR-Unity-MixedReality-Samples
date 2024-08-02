@@ -133,6 +133,7 @@ Material:
     - _Mode: 0
     - _NearPlaneFade: 0
     - _OcclusionStrength: 1
+    - _OffsetOverride: 0
     - _Parallax: 0.02
     - _Reflections: 0
     - _Refraction: 0

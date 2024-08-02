@@ -39,8 +39,14 @@ public class ExperimentController : MonoBehaviour, IMixedRealitySpeechHandler
         // Register this script to receive input events
         CoreServices.InputSystem?.RegisterHandler<IMixedRealitySpeechHandler>(this);
 
-        coilTargetPoints = FindObjectOfType<CoilTargetPoints>();
-        coilTracker = FindObjectOfType<CoilTracker>();
+        if (coilTargetPoints == null)
+        {
+            Debug.LogError($"COIL TARGET POINTS ARE NULL!!!!!");
+        }
+        if (coilTracker == null)
+        {
+            Debug.LogError($"COIL TRACKER POINTS ARE NULL!!!!!");
+        }
 
         if (blockMessageText == null)
         {
@@ -71,7 +77,7 @@ public class ExperimentController : MonoBehaviour, IMixedRealitySpeechHandler
             for (int trialNumber = 0; trialNumber < thisBlock.NumberOfTrialsInBlock; trialNumber++)
             {
                 Trial thisTrial = thisBlock.Trials[trialNumber];
-                thisTrial.StartTrial();
+                thisTrial.StartTrial(); // Starting trial should be done through BeginTrial event only ...
                 Debug.Log($"Running trial {trialNumber + 1}, in block {blockNumber + 1}");
 
                 waitingForEndOfTrial = true;

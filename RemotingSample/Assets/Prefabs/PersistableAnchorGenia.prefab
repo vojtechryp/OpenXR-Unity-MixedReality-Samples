@@ -202,10 +202,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 858000848500418533}
     m_Modifications:
+    - target: {fileID: 2038006261819934327, guid: ad39e1c21a159da498994425cce2d3e2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 05b7dd093bfe6cd49954fc9dc5fd7e73, type: 2}
     - target: {fileID: 4884658541529960007, guid: ad39e1c21a159da498994425cce2d3e2, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: f0443196a6eeb6948864eed966665573, type: 2}
+      objectReference: {fileID: 2100000, guid: 5aea40536804884409c30dd3370e1b9f, type: 2}
+    - target: {fileID: 5418814877057241329, guid: ad39e1c21a159da498994425cce2d3e2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a9f73799c8ca4b04299cd0fc1a350cfc, type: 2}
     - target: {fileID: 8449468278048138753, guid: ad39e1c21a159da498994425cce2d3e2, type: 3}
       propertyPath: m_Name
       value: AxesCustom
@@ -270,6 +278,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 9077373981831882444, guid: ad39e1c21a159da498994425cce2d3e2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f3adc1b429420ea4dbda23ff81e5a7dc, type: 2}
     m_RemovedComponents:
     - {fileID: 2667678083881674920, guid: ad39e1c21a159da498994425cce2d3e2, type: 3}
     m_RemovedGameObjects: []
