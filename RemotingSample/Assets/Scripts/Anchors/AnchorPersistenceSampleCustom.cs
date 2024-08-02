@@ -160,6 +160,8 @@ namespace Microsoft.MixedReality.OpenXR.Sample
             }
         }
 
+
+
         public virtual void ProcessAddedAnchor(ARAnchor anchor)
         {
             // If this anchor being added was requested from the anchor store, it is recognized here
@@ -284,6 +286,22 @@ namespace Microsoft.MixedReality.OpenXR.Sample
             }
         }
 
+        public ARAnchor AddAnchorReturn(Pose pose)
+        {
+#pragma warning disable 0618 // warning CS0618: 'ARAnchorManager.AddAnchor(Pose)' is obsolete
+            ARAnchor newAnchor = m_arAnchorManager.AddAnchor(pose);
+#pragma warning restore 0618
+            if (newAnchor == null)
+            {
+                Debug.Log($"Anchor creation failed");
+            }
+            else
+            {
+                Debug.Log($"Anchor created: {newAnchor.trackableId}");
+            }
+            return newAnchor;
+        }
+
         public TrackableId AddPersistentAnchor(Pose pose)
         {
 #pragma warning disable 0618 // warning CS0618: 'ARAnchorManager.AddAnchor(Pose)' is obsolete
@@ -315,7 +333,14 @@ namespace Microsoft.MixedReality.OpenXR.Sample
             if (!sampleAnchorVisuals.Persisted)
             {
                 // For the purposes of this sample, randomly generate a name for the saved anchor.
-                string newName = $"anchor/{Guid.NewGuid().ToString().Substring(0, 4)}";
+                string newName = "";
+                if (sampleAnchorVisuals.Name == "")
+                {
+                    newName = $"anchor/{Guid.NewGuid().ToString().Substring(0, 4)}";
+                } else
+                {
+                    newName = sampleAnchorVisuals.Name;
+                }
 
                 bool succeeded = m_anchorStore.TryPersistAnchor(anchor.trackableId, newName);
                 if (!succeeded)
@@ -333,6 +358,70 @@ namespace Microsoft.MixedReality.OpenXR.Sample
             }
         }
 
+        public List<string> UpdatePositionsOfAnchors(List<string> anchorNames, bool newPersist)
+        {
+            PersistentAnchorData foundAnchor = null;
+            List<string> newAnchorNames = new List<string>();
+
+            if (!newPersist)
+            {
+                foreach (string name in anchorNames)
+                {
+                    if (PersistentAnchorData.nameToDataDict.TryGetValue(name, out foundAnchor))
+                    {
+                        ToggleAnchorPersistenceCustom(foundAnchor, false);
+                        newAnchorNames.Add(name);
+                    }
+                }
+            }
+            else
+            {
+                foreach (string name in anchorNames)
+                {
+                    if (PersistentAnchorData.nameToDataDict.TryGetValue(name, out foundAnchor))
+                    {
+                        newAnchorNames.Add(ToggleAnchorPersistenceCustom(foundAnchor, true));
+                        PersistentAnchorData.nameToDataDict.Remove(name);
+                        PersistentAnchorData.nameToDataDict.Add(name, foundAnchor);
+                    }
+                }
+            }
+
+            return newAnchorNames;
+        }
+
+        public string ToggleAnchorPersistenceCustom(PersistentAnchorData anchorData, bool newPersist)
+        {
+            if (m_anchorStore == null)
+            {
+                Debug.Log($"Anchor Store was not available.");
+                return anchorData.visuals.Name;
+            }
+
+            PersistableAnchorVisuals sampleAnchorVisuals = anchorData.visuals;
+            if (newPersist)
+            {
+                // For the purposes of this sample, randomly generate a name for the saved anchor.
+                string newName = $"anchor/{Guid.NewGuid().ToString().Substring(0, 4)}";
+
+                bool succeeded = m_anchorStore.TryPersistAnchor(anchorData.trackableId, newName);
+                if (!succeeded)
+                {
+                    Debug.Log($"Anchor could not be persisted: {anchorData.trackableId}");
+                    return anchorData.visuals.Name;
+                }
+
+                ChangeAnchorVisuals(anchorData.anchor, newName, true);
+                return newName;
+            }
+            else
+            {
+                m_anchorStore.UnpersistAnchor(sampleAnchorVisuals.Name);
+                ChangeAnchorVisuals(anchorData.anchor, sampleAnchorVisuals.Name, false);
+                return anchorData.visuals.Name;
+            }
+        }
+
         public void AnchorStoreClear()
         {
             m_anchorStore.Clear();
@@ -341,6 +430,8 @@ namespace Microsoft.MixedReality.OpenXR.Sample
             {
                 ChangeAnchorVisuals(anchor, "", false);
             }
+            PersistentAnchorData.idToDataDict.Clear();
+            PersistentAnchorData.nameToDataDict.Clear();
         }
 
         public void ClearSceneAnchors()

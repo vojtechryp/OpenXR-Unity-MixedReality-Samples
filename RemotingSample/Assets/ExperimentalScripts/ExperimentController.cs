@@ -1,9 +1,13 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
-using TMPro; // Import TextMeshPro namespace
+using TMPro;
+using Microsoft.MixedReality.Toolkit.Input;
+using Microsoft.MixedReality.Toolkit;
 
-public class ExperimentController : MonoBehaviour
+public class ExperimentController : MonoBehaviour, IMixedRealitySpeechHandler
 {
+    public static ExperimentController Instance;
     public string InputParticipantId;
     public Session session;
     public bool waitingForEndOfTrial;
@@ -11,19 +15,33 @@ public class ExperimentController : MonoBehaviour
     private float trialStartTime;
     public CoilTargetPoints coilTargetPoints;
     public CoilTracker coilTracker;
-    public TextMeshProUGUI blockMessageText;  // Change to TextMeshProUGUI
+    public TextMeshProUGUI blockMessageText;
+    public string displayTypeOrder = "ARFirst";
 
     void Awake()
     {
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else if (Instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
         EventManager.OnEndTrial += EndOfTrial;
     }
 
     void Start()
     {
+        // Register this script to receive input events
+        CoreServices.InputSystem?.RegisterHandler<IMixedRealitySpeechHandler>(this);
+
         coilTargetPoints = FindObjectOfType<CoilTargetPoints>();
         coilTracker = FindObjectOfType<CoilTracker>();
 
-        // Ensure that blockMessageText is assigned
         if (blockMessageText == null)
         {
             Debug.LogError("BlockMessageText is not assigned in the Inspector");
@@ -33,7 +51,7 @@ public class ExperimentController : MonoBehaviour
         session = new Session(InputParticipantId, coilTargetPoints, coilTracker);
         Debug.Log($"New session has been created with Id {session.ParticipantId}");
 
-        blockMessageText.gameObject.SetActive(false);  // Hide the message text initially
+        blockMessageText.gameObject.SetActive(false);
 
         StartCoroutine(ExperimentSequence(session));
     }
@@ -42,21 +60,12 @@ public class ExperimentController : MonoBehaviour
     {
         Debug.Log($"New ExperimentSequence started with Id {session.ParticipantId}");
 
+        ShowMessage($"Welcome, {session.ParticipantId}, to begin trial press the space button on the keyboard or say 'Next' to proceed.");
+        yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.Space));
+        HideMessage();
+
         for (int blockNumber = 0; blockNumber < session.NumberOfBlocksPerSession; blockNumber++)
         {
-            // Display message before starting the block
-            if (blockNumber == 0)
-            {
-                ShowMessage($"Welcome, {session.ParticipantId}, to begin trial press the space button on the keyboard");
-            }
-            else
-            {
-                ShowMessage($"Block {blockNumber} finished. Take a break, and when ready press the space button on the keyboard to start Block {blockNumber + 1}");
-            }
-
-            yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.Space));
-            HideMessage();
-
             Block thisBlock = session.Blocks[blockNumber];
 
             for (int trialNumber = 0; trialNumber < thisBlock.NumberOfTrialsInBlock; trialNumber++)
@@ -65,7 +74,6 @@ public class ExperimentController : MonoBehaviour
                 thisTrial.StartTrial();
                 Debug.Log($"Running trial {trialNumber + 1}, in block {blockNumber + 1}");
 
-                // Start trial
                 waitingForEndOfTrial = true;
                 trialStartTime = Time.time;
                 EventManager.BeginTrial(thisTrial);
@@ -75,18 +83,32 @@ public class ExperimentController : MonoBehaviour
                 thisTrial.TrialResult = resultOfCurrentTrial;
                 thisTrial.FinalDistance = Vector3.Distance(coilTracker.targetPointOnCoil.position, thisTrial.TargetPoint);
                 thisTrial.Duration = Time.time - trialStartTime;
+
+                string currentCondition = displayTypeOrder.Contains("AR") ? "AR" : "PC";
+                session.AddTrialResult(thisTrial, blockNumber + 1, displayTypeOrder, currentCondition);
+
+                thisTrial.EndTrial(); // This will destroy the sphere
+
+                // If more trials are left in the block, wait for "Next" to proceed
+                if (trialNumber < thisBlock.NumberOfTrialsInBlock - 1)
+                {
+                    ShowMessage("Trial complete. Say 'Next' to proceed.");
+                    yield return new WaitUntil(() => !waitingForEndOfTrial);
+                    HideMessage();
+                }
             }
 
-            // Display break message after completing the block
+            // Save results after each block is completed
+            SaveResultsToJson();
+
             if (blockNumber < session.NumberOfBlocksPerSession - 1)
             {
-                ShowMessage($"Block {blockNumber + 1} finished. Take a break, and when ready press the space button on the keyboard to start Block {blockNumber + 2}");
+                ShowMessage($"Block {blockNumber + 1} finished. Take a break, and when ready press the space button on the keyboard or say 'Next' to start Block {blockNumber + 2}");
                 yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.Space));
                 HideMessage();
             }
         }
 
-        // Display final completion message
         ShowMessage("Experiment Completed. Thank you for participating!");
         Debug.Log("Experiment Completed");
         yield return null;
@@ -118,5 +140,28 @@ public class ExperimentController : MonoBehaviour
     void OnDestroy()
     {
         EventManager.OnEndTrial -= EndOfTrial;
+        CoreServices.InputSystem?.UnregisterHandler<IMixedRealitySpeechHandler>(this);
+    }
+
+    private void SaveResultsToJson()
+    {
+        JSONManager.SaveSessionToJson(InputParticipantId, session);
+        Debug.Log("Results saved successfully.");
+    }
+
+    // Implementing the speech handler interface
+    public void OnSpeechKeywordRecognized(SpeechEventData eventData)
+    {
+        if (eventData.Command.Keyword.ToLower() == "next")
+        {
+            EndTrialByVoiceCommand();
+        }
+    }
+
+    public void EndTrialByVoiceCommand()
+    {
+        // Set the result of the current trial to true and end the trial
+        resultOfCurrentTrial = true;
+        waitingForEndOfTrial = false;
     }
 }

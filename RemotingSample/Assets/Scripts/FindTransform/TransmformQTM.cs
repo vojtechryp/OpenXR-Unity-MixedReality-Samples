@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class TransmformQTM : MonoBehaviour
 {
+    public bool useInverse = true;
+
     public Transform qtmTransform;
     public Transform displayTransform;
 
@@ -21,7 +23,15 @@ public class TransmformQTM : MonoBehaviour
     void Update()
     {
         transformMatrix = findTransform.transformMatrix4x4;
-        Matrix4x4 newMatrix = transformMatrix.inverse * qtmTransform.localToWorldMatrix;
+        Matrix4x4 newMatrix = Matrix4x4.zero;
+        if (useInverse)
+        {
+            newMatrix = transformMatrix.inverse * qtmTransform.localToWorldMatrix;
+        }
+        else
+        {
+            newMatrix = transformMatrix * qtmTransform.localToWorldMatrix;
+        }
         displayTransform.localPosition = newMatrix.GetPosition();
         displayTransform.localRotation = newMatrix.rotation;
     }

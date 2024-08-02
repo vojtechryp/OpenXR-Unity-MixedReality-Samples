@@ -1,0 +1,378 @@
+{
+    "ParticipantId": "Tester2SpeechSaving",
+    "NumberOfBlocksPerSession": 4,
+    "Blocks": [
+        {
+            "NumberOfTrialsInBlock": 5,
+            "Trials": [
+                {
+                    "TrialNumber": 1,
+                    "TargetPoint": {
+                        "x": 0.0035000001080334188,
+                        "y": 0.03660000115633011,
+                        "z": -0.20069000124931336
+                    },
+                    "FinalDistance": 0.6983966827392578,
+                    "Duration": 44.87080764770508,
+                    "TrialResult": true,
+                    "BlockNumber": 1,
+                    "DisplayTypeOrder": "AR",
+                    "CurrentCondition": "AR"
+                },
+                {
+                    "TrialNumber": 2,
+                    "TargetPoint": {
+                        "x": -0.006399999838322401,
+                        "y": 0.05739999935030937,
+                        "z": -0.04230000078678131
+                    },
+                    "FinalDistance": 0.8773258924484253,
+                    "Duration": 4.778129577636719,
+                    "TrialResult": true,
+                    "BlockNumber": 1,
+                    "DisplayTypeOrder": "AR",
+                    "CurrentCondition": "AR"
+                },
+                {
+                    "TrialNumber": 3,
+                    "TargetPoint": {
+                        "x": -0.043800000101327899,
+                        "y": 0.05730000138282776,
+                        "z": -0.11550000309944153
+                    },
+                    "FinalDistance": 0.6024664640426636,
+                    "Duration": 1.9006271362304688,
+                    "TrialResult": true,
+                    "BlockNumber": 1,
+                    "DisplayTypeOrder": "AR",
+                    "CurrentCondition": "AR"
+                },
+                {
+                    "TrialNumber": 4,
+                    "TargetPoint": {
+                        "x": 0.05313999950885773,
+                        "y": 0.0757099986076355,
+                        "z": -0.12567999958992005
+                    },
+                    "FinalDistance": 0.7498928904533386,
+                    "Duration": 2.7103424072265627,
+                    "TrialResult": true,
+                    "BlockNumber": 1,
+                    "DisplayTypeOrder": "AR",
+                    "CurrentCondition": "AR"
+                },
+                {
+                    "TrialNumber": 5,
+                    "TargetPoint": {
+                        "x": 0.06784000247716904,
+                        "y": 0.05730000138282776,
+                        "z": -0.11559999734163284
+                    },
+                    "FinalDistance": 1.079701542854309,
+                    "Duration": 4.0628662109375,
+                    "TrialResult": true,
+                    "BlockNumber": 1,
+                    "DisplayTypeOrder": "AR",
+                    "CurrentCondition": "AR"
+                }
+            ]
+        },
+        {
+            "NumberOfTrialsInBlock": 5,
+            "Trials": [
+                {
+                    "TrialNumber": 1,
+                    "TargetPoint": {
+                        "x": 0.0035000001080334188,
+                        "y": 0.03660000115633011,
+                        "z": -0.20069000124931336
+                    },
+                    "FinalDistance": 0.0,
+                    "Duration": 0.0,
+                    "TrialResult": false,
+                    "BlockNumber": 0,
+                    "DisplayTypeOrder": "",
+                    "CurrentCondition": ""
+                },
+                {
+                    "TrialNumber": 2,
+                    "TargetPoint": {
+                        "x": -0.043800000101327899,
+                        "y": 0.05730000138282776,
+                        "z": -0.11550000309944153
+                    },
+                    "FinalDistance": 0.0,
+                    "Duration": 0.0,
+                    "TrialResult": false,
+                    "BlockNumber": 0,
+                    "DisplayTypeOrder": "",
+                    "CurrentCondition": ""
+                },
+                {
+                    "TrialNumber": 3,
+                    "TargetPoint": {
+                        "x": -0.006399999838322401,
+                        "y": 0.05739999935030937,
+                        "z": -0.04230000078678131
+                    },
+                    "FinalDistance": 0.0,
+                    "Duration": 0.0,
+                    "TrialResult": false,
+                    "BlockNumber": 0,
+                    "DisplayTypeOrder": "",
+                    "CurrentCondition": ""
+                },
+                {
+                    "TrialNumber": 4,
+                    "TargetPoint": {
+                        "x": 0.06784000247716904,
+                        "y": 0.05730000138282776,
+                        "z": -0.11559999734163284
+                    },
+                    "FinalDistance": 0.0,
+                    "Duration": 0.0,
+                    "TrialResult": false,
+                    "BlockNumber": 0,
+                    "DisplayTypeOrder": "",
+                    "CurrentCondition": ""
+                },
+                {
+                    "TrialNumber": 5,
+                    "TargetPoint": {
+                        "x": 0.05313999950885773,
+                        "y": 0.0757099986076355,
+                        "z": -0.12567999958992005
+                    },
+                    "FinalDistance": 0.0,
+                    "Duration": 0.0,
+                    "TrialResult": false,
+                    "BlockNumber": 0,
+                    "DisplayTypeOrder": "",
+                    "CurrentCondition": ""
+                }
+            ]
+        },
+        {
+            "NumberOfTrialsInBlock": 5,
+            "Trials": [
+                {
+                    "TrialNumber": 1,
+                    "TargetPoint": {
+                        "x": 0.05313999950885773,
+                        "y": 0.0757099986076355,
+                        "z": -0.12567999958992005
+                    },
+                    "FinalDistance": 0.0,
+                    "Duration": 0.0,
+                    "TrialResult": false,
+                    "BlockNumber": 0,
+                    "DisplayTypeOrder": "",
+                    "CurrentCondition": ""
+                },
+                {
+                    "TrialNumber": 2,
+                    "TargetPoint": {
+                        "x": 0.0035000001080334188,
+                        "y": 0.03660000115633011,
+                        "z": -0.20069000124931336
+                    },
+                    "FinalDistance": 0.0,
+                    "Duration": 0.0,
+                    "TrialResult": false,
+                    "BlockNumber": 0,
+                    "DisplayTypeOrder": "",
+                    "CurrentCondition": ""
+                },
+                {
+                    "TrialNumber": 3,
+                    "TargetPoint": {
+                        "x": -0.043800000101327899,
+                        "y": 0.05730000138282776,
+                        "z": -0.11550000309944153
+                    },
+                    "FinalDistance": 0.0,
+                    "Duration": 0.0,
+                    "TrialResult": false,
+                    "BlockNumber": 0,
+                    "DisplayTypeOrder": "",
+                    "CurrentCondition": ""
+                },
+                {
+                    "TrialNumber": 4,
+                    "TargetPoint": {
+                        "x": -0.006399999838322401,
+                        "y": 0.05739999935030937,
+                        "z": -0.04230000078678131
+                    },
+                    "FinalDistance": 0.0,
+                    "Duration": 0.0,
+                    "TrialResult": false,
+                    "BlockNumber": 0,
+                    "DisplayTypeOrder": "",
+                    "CurrentCondition": ""
+                },
+                {
+                    "TrialNumber": 5,
+                    "TargetPoint": {
+                        "x": 0.06784000247716904,
+                        "y": 0.05730000138282776,
+                        "z": -0.11559999734163284
+                    },
+                    "FinalDistance": 0.0,
+                    "Duration": 0.0,
+                    "TrialResult": false,
+                    "BlockNumber": 0,
+                    "DisplayTypeOrder": "",
+                    "CurrentCondition": ""
+                }
+            ]
+        },
+        {
+            "NumberOfTrialsInBlock": 5,
+            "Trials": [
+                {
+                    "TrialNumber": 1,
+                    "TargetPoint": {
+                        "x": 0.0035000001080334188,
+                        "y": 0.03660000115633011,
+                        "z": -0.20069000124931336
+                    },
+                    "FinalDistance": 0.0,
+                    "Duration": 0.0,
+                    "TrialResult": false,
+                    "BlockNumber": 0,
+                    "DisplayTypeOrder": "",
+                    "CurrentCondition": ""
+                },
+                {
+                    "TrialNumber": 2,
+                    "TargetPoint": {
+                        "x": -0.006399999838322401,
+                        "y": 0.05739999935030937,
+                        "z": -0.04230000078678131
+                    },
+                    "FinalDistance": 0.0,
+                    "Duration": 0.0,
+                    "TrialResult": false,
+                    "BlockNumber": 0,
+                    "DisplayTypeOrder": "",
+                    "CurrentCondition": ""
+                },
+                {
+                    "TrialNumber": 3,
+                    "TargetPoint": {
+                        "x": -0.043800000101327899,
+                        "y": 0.05730000138282776,
+                        "z": -0.11550000309944153
+                    },
+                    "FinalDistance": 0.0,
+                    "Duration": 0.0,
+                    "TrialResult": false,
+                    "BlockNumber": 0,
+                    "DisplayTypeOrder": "",
+                    "CurrentCondition": ""
+                },
+                {
+                    "TrialNumber": 4,
+                    "TargetPoint": {
+                        "x": 0.06784000247716904,
+                        "y": 0.05730000138282776,
+                        "z": -0.11559999734163284
+                    },
+                    "FinalDistance": 0.0,
+                    "Duration": 0.0,
+                    "TrialResult": false,
+                    "BlockNumber": 0,
+                    "DisplayTypeOrder": "",
+                    "CurrentCondition": ""
+                },
+                {
+                    "TrialNumber": 5,
+                    "TargetPoint": {
+                        "x": 0.05313999950885773,
+                        "y": 0.0757099986076355,
+                        "z": -0.12567999958992005
+                    },
+                    "FinalDistance": 0.0,
+                    "Duration": 0.0,
+                    "TrialResult": false,
+                    "BlockNumber": 0,
+                    "DisplayTypeOrder": "",
+                    "CurrentCondition": ""
+                }
+            ]
+        }
+    ],
+    "TrialResults": [
+        {
+            "TrialNumber": 1,
+            "TargetPoint": {
+                "x": 0.0035000001080334188,
+                "y": 0.03660000115633011,
+                "z": -0.20069000124931336
+            },
+            "FinalDistance": 0.6983966827392578,
+            "Duration": 44.87080764770508,
+            "TrialResult": true,
+            "BlockNumber": 1,
+            "DisplayTypeOrder": "AR",
+            "CurrentCondition": "AR"
+        },
+        {
+            "TrialNumber": 2,
+            "TargetPoint": {
+                "x": -0.006399999838322401,
+                "y": 0.05739999935030937,
+                "z": -0.04230000078678131
+            },
+            "FinalDistance": 0.8773258924484253,
+            "Duration": 4.778129577636719,
+            "TrialResult": true,
+            "BlockNumber": 1,
+            "DisplayTypeOrder": "AR",
+            "CurrentCondition": "AR"
+        },
+        {
+            "TrialNumber": 3,
+            "TargetPoint": {
+                "x": -0.043800000101327899,
+                "y": 0.05730000138282776,
+                "z": -0.11550000309944153
+            },
+            "FinalDistance": 0.6024664640426636,
+            "Duration": 1.9006271362304688,
+            "TrialResult": true,
+            "BlockNumber": 1,
+            "DisplayTypeOrder": "AR",
+            "CurrentCondition": "AR"
+        },
+        {
+            "TrialNumber": 4,
+            "TargetPoint": {
+                "x": 0.05313999950885773,
+                "y": 0.0757099986076355,
+                "z": -0.12567999958992005
+            },
+            "FinalDistance": 0.7498928904533386,
+            "Duration": 2.7103424072265627,
+            "TrialResult": true,
+            "BlockNumber": 1,
+            "DisplayTypeOrder": "AR",
+            "CurrentCondition": "AR"
+        },
+        {
+            "TrialNumber": 5,
+            "TargetPoint": {
+                "x": 0.06784000247716904,
+                "y": 0.05730000138282776,
+                "z": -0.11559999734163284
+            },
+            "FinalDistance": 1.079701542854309,
+            "Duration": 4.0628662109375,
+            "TrialResult": true,
+            "BlockNumber": 1,
+            "DisplayTypeOrder": "AR",
+            "CurrentCondition": "AR"
+        }
+    ]
+}

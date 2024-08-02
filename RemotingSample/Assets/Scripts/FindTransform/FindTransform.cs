@@ -8,9 +8,9 @@ public class FindTransform : MonoBehaviour
 {
     [InspectorButton("CalculateTransform", ButtonWidth = 200)]
     public bool doCalc = true;
-    public AnchorBasedTransform templateSource;
-    public AnchorDummyTransform templateActual;
-    public TransformCalcTemplate templateToMove;
+    public AnchorBasedTransform anchorTransform;
+    public AnchorQTMTransform qtmTransform;
+    public AnchorDummyTransform dummyTransform;
     public Matrix4x4 transformMatrix4x4;
 
     private void OnValidate()
@@ -20,9 +20,9 @@ public class FindTransform : MonoBehaviour
 
     private void CalculateTransform()
     {
-        if (!templateSource || !templateActual || !templateActual.hasValidData || !templateSource.hasValidData) return;
+        if (!qtmTransform.hasValidData || !dummyTransform.hasValidData || !anchorTransform.hasValidData) return;
 
-        Transform3D t3d = new Transform3D(templateSource.UpdateArrays(), templateActual.UpdateArrays());
+        Transform3D t3d = new Transform3D(anchorTransform.UpdateArrays(), qtmTransform.UpdateArrays());
 
         t3d.CalcTransform(t3d.actualsMatrix, t3d.nominalsMatrix);
 
@@ -45,11 +45,11 @@ public class FindTransform : MonoBehaviour
 
     public void UpdateSlaveTransform()
     {
-        if (templateToMove != null)
+        if (dummyTransform != null)
         {
-            Matrix4x4 newMatrix = transformMatrix4x4.inverse * templateActual.transform.localToWorldMatrix;
-            templateToMove.transform.position = newMatrix.GetPosition(); 
-            templateToMove.transform.rotation = newMatrix.rotation; 
+            Matrix4x4 newMatrix = transformMatrix4x4.inverse * qtmTransform.transform.localToWorldMatrix;
+            dummyTransform.transform.position = newMatrix.GetPosition();
+            dummyTransform.transform.rotation = newMatrix.rotation; 
         }
     }
 }

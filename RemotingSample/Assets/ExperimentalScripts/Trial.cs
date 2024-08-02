@@ -9,11 +9,15 @@ public class Trial : IEquatable<Trial>
     public float FinalDistance;
     public float Duration;
     public bool TrialResult;
+    public int BlockNumber;
+    public string DisplayTypeOrder;
+    public string CurrentCondition;
     private CoilTracker coilTracker;
     private CoilTargetPoints coilTargetPoints;
     private GameObject visualizationSphere;
+    private string brainPositionTag;
 
-    public Trial(int trialNumber, Vector3 targetPoint, CoilTracker tracker, CoilTargetPoints targetPoints)
+    public Trial(int trialNumber, Vector3 targetPoint, CoilTracker tracker, CoilTargetPoints targetPoints, string brainPositionTag)
     {
         TrialNumber = trialNumber;
         TargetPoint = targetPoint;
@@ -22,30 +26,21 @@ public class Trial : IEquatable<Trial>
         FinalDistance = 0f;
         Duration = 0f;
         TrialResult = false;
+        this.brainPositionTag = brainPositionTag;
     }
 
     public void StartTrial()
     {
-        // Create visualization sphere when the trial starts
         visualizationSphere = coilTargetPoints.CreateVisualizationSphere(TargetPoint);
-
-        // Set the target point on the BrainPosition GameObject
-        coilTracker.SetTargetPoint(visualizationSphere.transform.position); // Use the world position of the visualization sphere
-        coilTracker.OnTargetReached += EndTrial;
+        coilTracker.SetTargetPoint(visualizationSphere.transform.position);
     }
 
     public void EndTrial()
     {
-        // Calculate the final distance
         FinalDistance = Vector3.Distance(coilTracker.targetPointOnCoil.position, visualizationSphere.transform.position);
         Duration = Time.time - coilTracker.TrackingStartTime;
         TrialResult = true;
-        coilTracker.OnTargetReached -= EndTrial;
-
-        // Notify the experiment controller that the trial has ended
         EventManager.EndTrial(TrialResult);
-
-        // Destroy the visualization sphere after the trial ends
         GameObject.Destroy(visualizationSphere);
     }
 

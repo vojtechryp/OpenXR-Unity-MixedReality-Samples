@@ -5,17 +5,24 @@ using UnityEngine;
 using UnityEngine.XR.ARFoundation;
 using Microsoft.MixedReality.OpenXR.Sample;
 using AnchorData = Microsoft.MixedReality.OpenXR.Sample.AnchorPersistenceSampleCustom.PersistentAnchorData;
+using UnityEngine.XR.OpenXR.Input;
+using Unity.XR.CoreUtils;
 public class AnchorBasedTransform : MonoBehaviour
 {
     [Header("Controls")]
-    [InspectorButton("SaveAnchorNames", ButtonWidth = 200)]
-    public bool saveAnchorNamesToScriptable = false;
-    [InspectorButton("CreateDummyPrefab", ButtonWidth = 200)]
-    public bool createDummyPrefab = false;
-    [InspectorButton("CreateQTMPrefab", ButtonWidth = 200)]
-    public bool createQTMPrefab = false;
+    //[InspectorButton("SaveAnchorNames", ButtonWidth = 200)]
+    //public bool saveAnchorNamesToScriptable = false;
     [InspectorButton("LoadFromNames", ButtonWidth = 200)]
     public bool loadFromNamesButton = false;
+    [InspectorButton("CreateQTMPrefab", ButtonWidth = 200)]
+    public bool createQTMPrefab = false;
+    [InspectorButton("CreateDummyPrefab", ButtonWidth = 200)]
+    public bool createDummyPrefab = false;
+    //[InspectorButton("UpdateAnchorPositions", ButtonWidth = 200)]
+    //public bool updateAnchorPositions = false;
+    //[InspectorButton("UnpersistAnchors", ButtonWidth = 200)]
+    //public bool unpersistAnchors = false;
+
     public bool hasValidData = false;
     public bool hasValidDummyData = false;
 
@@ -38,6 +45,26 @@ public class AnchorBasedTransform : MonoBehaviour
     public double[,] pointsAsArray;
     public int numberOfPoints { get => anchorNames.Count;}
 
+    public void UnpersistAnchors()
+    {
+        anchorNames = persistentAnchorManager.UpdatePositionsOfAnchors(anchorNames, true);
+    }
+
+    public void UpdateAnchorPositions()
+    {
+        persistentAnchorManager.AnchorStoreClear();
+        persistentAnchorManager.ClearSceneAnchors();
+
+        for (int i = 0; i < anchorDataList.Length; i++)
+        {
+            AnchorData anchorData = anchorDataList[i];
+            anchorData.anchor = persistentAnchorManager.AddAnchorReturn(dummyObject.prefabTransforms[i].GetWorldPose());
+            persistentAnchorManager.ToggleAnchorPersistence(anchorData.anchor);
+            persistableAnchorVisuals[i] = anchorData.visuals;
+            anchorNames[i] = anchorData.visuals.Name;
+        }
+    }
+
     // Start is called before the first frame update
     void LoadFromNames()
     {
@@ -55,7 +82,7 @@ public class AnchorBasedTransform : MonoBehaviour
     }
     public void LoadFromScriptable()
     {
-        if (scriptableData == null)
+        if (scriptableData != null)
         {
             anchorNames = scriptableData.anchorNames;
             hasValidData = UpdateFromAnchorNames();

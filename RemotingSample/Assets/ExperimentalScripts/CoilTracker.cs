@@ -7,11 +7,17 @@ public class CoilTracker : MonoBehaviour
     private Vector3 targetPoint;
     public float TrackingStartTime;
     public event Action OnTargetReached;
+    private float distanceThreshold; // Removed public access, will be set through a method
 
     public void SetTargetPoint(Vector3 point)
     {
         targetPoint = point;
         TrackingStartTime = Time.time;
+    }
+
+    public void SetDistanceThreshold(float threshold)
+    {
+        distanceThreshold = threshold;
     }
 
     void Update()
@@ -21,7 +27,7 @@ public class CoilTracker : MonoBehaviour
             // Calculate the distance from the target point on the coil to the target point in the scene
             float distance = Vector3.Distance(targetPointOnCoil.position, targetPoint);
             Debug.Log($"Distance to target: {distance}");
-            if (distance <= 0.1f) // Assuming 100mm = 0.1 units in Unity
+            if (distance <= distanceThreshold) // Use the adjustable threshold
             {
                 OnTargetReached?.Invoke();
             }

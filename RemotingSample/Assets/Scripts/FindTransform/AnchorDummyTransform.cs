@@ -13,11 +13,13 @@ public class AnchorDummyTransform : MonoBehaviour
 
     [Header("Prefabs")]
     public GameObject AnchorPrefab;
+    public AnchorQTMTransform qtmTransform;
 
     [Header("Data")]
     public AnchorTransformScriptable scriptableData = null;
 
     [Header("Lists")]
+    public Transform[] prefabTransforms;
     public Vector3[] vectorOfAnchorPositions;
     public Vector3[] vector3sBackConvert;
     public double[,] pointsAsArray;
@@ -26,7 +28,11 @@ public class AnchorDummyTransform : MonoBehaviour
     {
         hasValidData = false;
 
-        vectorOfAnchorPositions = scriptableData.vectorOfAnchorPositions;
+        qtmTransform.UpdateArrays();
+
+        vectorOfAnchorPositions = new Vector3[qtmTransform.anchorQTMTransforms.Count];
+        vector3sBackConvert = new Vector3[qtmTransform.anchorQTMTransforms.Count];
+        prefabTransforms = new Transform[qtmTransform.anchorQTMTransforms.Count];
 
         foreach (Transform child in gameObject.transform)
         {
@@ -36,14 +42,19 @@ public class AnchorDummyTransform : MonoBehaviour
         if (shouldSpawnPrefabs)
         {
             int i = 0;
-            foreach (var anchorPosition in vectorOfAnchorPositions)
+            foreach (var qtmTransform in qtmTransform.anchorQTMTransforms)
             {
-                GameObject newObject = Instantiate(AnchorPrefab, anchorPosition, Quaternion.identity);
+                GameObject newObject = Instantiate(AnchorPrefab, qtmTransform.position, Quaternion.identity);
                 newObject.name = $"Dummy Marker: {scriptableData.anchorNames[i]} - {scriptableData.anchorQTMNames[i]}";
                 newObject.transform.parent = gameObject.transform;
+                vectorOfAnchorPositions[i] = qtmTransform.position;
+                prefabTransforms[i] = gameObject.transform;
+
+                i++;
             }
         }
 
+        UpdateArrays();
         hasValidData = true;
         return hasValidData;
     }

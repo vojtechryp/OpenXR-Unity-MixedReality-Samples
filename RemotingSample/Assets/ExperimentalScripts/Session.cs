@@ -1,11 +1,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
 public class Session
 {
     public string ParticipantId;
     public int NumberOfBlocksPerSession = 4;
     public Block[] Blocks;
+    public List<Trial> TrialResults = new List<Trial>();
 
     public Session(string inputParticipantId, CoilTargetPoints targetPoints, CoilTracker tracker)
     {
@@ -17,8 +19,17 @@ public class Session
             Blocks[i] = new Block(targetPoints, tracker);
         }
     }
+
+    public void AddTrialResult(Trial trial, int blockNumber, string displayTypeOrder, string currentCondition)
+    {
+        trial.BlockNumber = blockNumber;
+        trial.DisplayTypeOrder = displayTypeOrder;
+        trial.CurrentCondition = currentCondition;
+        TrialResults.Add(trial);
+    }
 }
 
+[System.Serializable]
 public class Block
 {
     public int NumberOfTrialsInBlock = 5;
@@ -28,12 +39,13 @@ public class Block
     {
         Trials = new Trial[NumberOfTrialsInBlock];
 
-        // Get a new set of randomized points for each block
         List<Vector3> randomizedPoints = targetPoints.GetRandomizedPoints();
 
         for (int i = 0; i < NumberOfTrialsInBlock; i++)
         {
-            Trials[i] = new Trial(i + 1, randomizedPoints[i], tracker, targetPoints);
+            Vector3 point = randomizedPoints[i];
+            string tag = targetPoints.GetBrainPositionTag(point);
+            Trials[i] = new Trial(i + 1, point, tracker, targetPoints, tag);
         }
     }
 }
