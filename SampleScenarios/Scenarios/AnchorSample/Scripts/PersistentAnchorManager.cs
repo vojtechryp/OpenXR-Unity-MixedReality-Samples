@@ -1,10 +1,6 @@
-using System.Collections;
 using System.Collections.Generic;
-using Unity.XR.CoreUtils;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.XR.ARFoundation;
-using UnityEngine.XR.ARSubsystems;
 
 namespace Microsoft.MixedReality.OpenXR.Sample
 {
@@ -97,7 +93,7 @@ namespace Microsoft.MixedReality.OpenXR.Sample
             //}
         }
 
-        public async void LoadAnchors()
+        public void LoadAnchors()
         {
             anchorScriptable.overwriteFromJson(anchorJson);
             if (anchorScriptable.brainTrackableNameString != null)

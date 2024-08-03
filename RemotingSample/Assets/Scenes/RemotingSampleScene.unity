@@ -38,7 +38,6 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -149,13 +148,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 11698343}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 457933962}
-  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!135 &11698345
 SphereCollider:
@@ -244,7 +243,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &55241986
 Transform:
   m_ObjectHideFlags: 0
@@ -252,6 +251,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 55241985}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -265,7 +265,6 @@ Transform:
   - {fileID: 1869952280}
   - {fileID: 681126836}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &55241987
 MonoBehaviour:
@@ -311,13 +310,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 85832990}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 457933962}
-  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!135 &85832992
 SphereCollider:
@@ -414,13 +413,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 109269417}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1006405116}
-  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &109269419
 MonoBehaviour:
@@ -483,6 +482,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 173602584}
+  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -490,7 +490,6 @@ Transform:
   m_Children:
   - {fileID: 1695171942}
   m_Father: {fileID: 55241986}
-  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &223974226
 GameObject:
@@ -531,13 +530,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 223974226}
+  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &276072599
 PrefabInstance:
@@ -742,6 +741,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 340318747}
+  serializedVersion: 2
   m_LocalRotation: {x: 0.06975647, y: 0, z: 0, w: 0.9975641}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -749,7 +749,6 @@ Transform:
   m_Children:
   - {fileID: 1120728424}
   m_Father: {fileID: 1520206467}
-  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &340318749
 MonoBehaviour:
@@ -830,6 +829,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 457933961}
+  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -840,7 +840,6 @@ Transform:
   - {fileID: 11698344}
   - {fileID: 85832991}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &616807870
 GameObject:
@@ -865,6 +864,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 616807870}
+  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -872,7 +872,6 @@ Transform:
   m_Children:
   - {fileID: 1515742980}
   m_Father: {fileID: 55241986}
-  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &668056769
 GameObject:
@@ -972,13 +971,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 668056769}
+  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &681126835
 GameObject:
@@ -1003,13 +1002,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 681126835}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 55241986}
-  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &705507993
 GameObject:
@@ -1097,13 +1096,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705507993}
+  serializedVersion: 2
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &839292160
 GameObject:
@@ -1129,13 +1128,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 839292160}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1158897728}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &839292162
 MonoBehaviour:
@@ -1179,6 +1178,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 910331417}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -1186,7 +1186,6 @@ Transform:
   m_Children:
   - {fileID: 1902785394}
   m_Father: {fileID: 457933962}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &917781651
 GameObject:
@@ -1212,13 +1211,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 917781651}
+  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1006405116}
-  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &917781653
 MonoBehaviour:
@@ -1329,6 +1328,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1006405114}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -1338,7 +1338,6 @@ Transform:
   - {fileID: 109269418}
   - {fileID: 917781652}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1032814185
 PrefabInstance:
@@ -1445,7 +1444,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1370371172}
-  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -1518,7 +1516,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1872093947}
-  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1807,6 +1804,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1158897726}
+  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -1815,7 +1813,6 @@ Transform:
   - {fileID: 1520206467}
   - {fileID: 839292161}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1158897729
 MonoBehaviour:
@@ -1912,6 +1909,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1175431103}
+  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -1919,7 +1917,6 @@ Transform:
   m_Children:
   - {fileID: 954265249}
   m_Father: {fileID: 2112497211}
-  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1175431105
 MonoBehaviour:
@@ -1963,6 +1960,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1206738929}
+  - component: {fileID: 1206738930}
   m_Layer: 0
   m_Name: '[ANCHORS]'
   m_TagString: Untagged
@@ -1977,15 +1975,34 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1206738928}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0.92387956, z: 0, w: -0.3826834}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1580510036}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1206738930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1206738928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d07c5b68c1cfe64ca63f5d2bb80d2c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Distance: 0
+  m_FrameSpace: 0
+  m_AnchorPositionOverride: {fileID: 0}
+  m_AnchorPositionOffset: {x: 0, y: 0, z: 0}
+  m_Yaw: -135.00002
+  m_Pitch: 0
+  m_Roll: 0
 --- !u!1 &1243428892
 GameObject:
   m_ObjectHideFlags: 0
@@ -2011,13 +2028,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1243428892}
+  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1006405116}
-  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1243428894
 MonoBehaviour:
@@ -2101,6 +2118,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1245477958}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -2108,7 +2126,6 @@ Transform:
   m_Children:
   - {fileID: 1587505291}
   m_Father: {fileID: 457933962}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1274868476
 GameObject:
@@ -2134,13 +2151,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1274868476}
+  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.57804775, y: 0.30061388, z: 2.3961148}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1274868478
 MonoBehaviour:
@@ -2180,6 +2197,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1295046375}
+  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -2187,7 +2205,6 @@ Transform:
   m_Children:
   - {fileID: 2057732938}
   m_Father: {fileID: 55241986}
-  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1367916270
 GameObject:
@@ -2215,13 +2232,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1367916270}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: -0.16186216, w: 0.98681337}
   m_LocalPosition: {x: -0.0438, y: 0.0735, z: -0.1257}
   m_LocalScale: {x: 0.01, y: 0.0001, z: 0.010000001}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 333705020}
-  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -18.63}
 --- !u!135 &1367916272
 SphereCollider:
@@ -2328,7 +2345,6 @@ RectTransform:
   m_Children:
   - {fileID: 1040115101}
   m_Father: {fileID: 1681037189}
-  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2422,6 +2438,5181 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!1 &1401008095
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1401008097}
+  - component: {fileID: 1401008096}
+  m_Layer: 0
+  m_Name: PackageEmbedder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1401008096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1401008095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64613cfd4a145c1409f9a7d3b005afba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  getPackageNames: 0
+  embedRequest:
+    m_ErrorFetched: 0
+    m_Error:
+      m_ErrorCode: 0
+      m_Message: 
+    m_Status: 4
+    m_Id: 0
+    m_ResultFetched: 0
+    m_Result:
+      m_PackageId: 
+      m_IsDirectDependency: 0
+      m_ProjectDependenciesEntry: 
+      m_Version: 
+      m_Source: 0
+      m_ResolvedPath: 
+      m_AssetPath: 
+      m_Name: 
+      m_DisplayName: 
+      m_Category: 
+      m_Type: 
+      m_Description: 
+      m_Status: 0
+      m_Errors: []
+      m_Versions:
+        m_All: []
+        m_Compatible: []
+        m_Recommended: 
+        m_Deprecated: []
+      m_Dependencies: []
+      m_ResolvedDependencies: []
+      m_Keywords: []
+      m_Author:
+        m_Name: 
+        m_Email: 
+        m_Url: 
+      m_Registry:
+        m_Id: 
+        m_Name: 
+        m_Url: 
+        m_Scopes: []
+        m_IsDefault: 0
+        m_Capabilities: 0
+        m_ConfigSource: 0
+      m_HideInEditor: 0
+      m_Entitlements:
+        m_IsAllowed: 0
+        m_LicensingModel: 0
+        m_Status: 0
+      m_DatePublishedTicks: 0
+      m_Git:
+        m_Hash: 
+        m_Revision: 
+      m_IsAssetStorePackage: 0
+      m_DocumentationUrl: 
+      m_ChangelogUrl: 
+      m_LicensesUrl: 
+      m_HasRepository: 0
+      m_Repository:
+        m_Type: 
+        m_Url: 
+        m_Revision: 
+        m_Path: 
+      m_UnityLifecycle:
+        m_Version: 
+        m_NextVersion: 
+        m_RecommendedVersion: 
+        m_IsDeprecated: 0
+        m_DeprecationMessage: 
+      m_UpmReserved: 
+      m_Signature:
+        m_Status: 0
+        m_Reason: 
+      m_IsDeprecated: 0
+      m_DeprecationMessage: 
+      m_AssetStore:
+        m_ProductId: 
+  packageNames:
+  - Mixed Reality OpenXR Plugin
+  - Mixed Reality OpenXR Sample Shared
+  - Mixed Reality Toolkit Foundation
+  - Mixed Reality Toolkit Standard Assets
+  - MRTK Graphics Tools
+  - AI Navigation
+  - Version Control
+  - Visual Studio Editor
+  - Visual Studio Code Editor
+  - Shader Graph
+  - Test Framework
+  - TextMeshPro
+  - Timeline
+  - Unity UI
+  - Visual Scripting
+  - AR Foundation
+  - OpenXR Plugin
+  - AI
+  - Android JNI
+  - Animation
+  - Asset Bundle
+  - Audio
+  - Cloth
+  - Director
+  - Image Conversion
+  - IMGUI
+  - JSONSerialize
+  - Particle System
+  - Physics
+  - Physics 2D
+  - Screen Capture
+  - Terrain
+  - Terrain Physics
+  - Tilemap
+  - UI
+  - UIElements
+  - Umbra
+  - Unity Analytics
+  - Unity Web Request
+  - Unity Web Request Asset Bundle
+  - Unity Web Request Audio
+  - Unity Web Request Texture
+  - Unity Web Request WWW
+  - Vehicles
+  - Video
+  - VR
+  - Wind
+  - XR
+  packageNamesEmbeded:
+  - Mixed Reality OpenXR Plugin
+  - OpenXR Plugin
+  packageNamesBuiltin:
+  - Shader Graph
+  - Unity UI
+  - AI
+  - Android JNI
+  - Animation
+  - Asset Bundle
+  - Audio
+  - Cloth
+  - Director
+  - Image Conversion
+  - IMGUI
+  - JSONSerialize
+  - Particle System
+  - Physics
+  - Physics 2D
+  - Screen Capture
+  - Terrain
+  - Terrain Physics
+  - Tilemap
+  - UI
+  - UIElements
+  - Umbra
+  - Unity Analytics
+  - Unity Web Request
+  - Unity Web Request Asset Bundle
+  - Unity Web Request Audio
+  - Unity Web Request Texture
+  - Unity Web Request WWW
+  - Vehicles
+  - Video
+  - VR
+  - Wind
+  - XR
+  LRequest:
+    m_ErrorFetched: 0
+    m_Error:
+      m_ErrorCode: 0
+      m_Message: 
+    m_Status: 2
+    m_Id: 155
+    m_ResultFetched: 1
+    m_Result:
+      m_PackageList:
+      - m_PackageId: com.microsoft.mixedreality.openxr@file:C:\Users\genia\Work\OpenXR-Unity-MixedReality-Samples\RemotingSample\Packages\com.microsoft.mixedreality.openxr
+        m_IsDirectDependency: 1
+        m_ProjectDependenciesEntry: 1.10.1
+        m_Version: 1.10.1
+        m_Source: 3
+        m_ResolvedPath: C:\Users\genia\Work\OpenXR-Unity-MixedReality-Samples\RemotingSample\Packages\com.microsoft.mixedreality.openxr
+        m_AssetPath: Packages/com.microsoft.mixedreality.openxr
+        m_Name: com.microsoft.mixedreality.openxr
+        m_DisplayName: Mixed Reality OpenXR Plugin
+        m_Category: 
+        m_Type: 
+        m_Description: Extension to Unity OpenXR Plugin to support a suite of features
+          for HoloLens 2 and Windows Mixed Reality headsets.
+        m_Status: 0
+        m_Errors: []
+        m_Versions:
+          m_All:
+          - 0.1.0
+          - 0.1.1
+          - 0.1.2
+          - 0.1.3
+          - 0.1.4
+          - 0.1.5
+          - 0.2.0
+          - 0.9.0-preview.1
+          - 0.9.0
+          - 0.9.1
+          - 0.9.2
+          - 0.9.3-preview.1
+          - 0.9.3
+          - 0.9.4
+          - 0.9.5
+          - 1.0.0-preview.1
+          - 1.0.0-preview.2
+          - 1.0.0
+          - 1.0.1
+          - 1.0.2
+          - 1.0.3
+          - 1.1.0
+          - 1.1.1
+          - 1.1.2
+          - 1.2.0
+          - 1.2.1
+          - 1.3.0
+          - 1.3.1
+          - 1.4.0
+          - 1.4.1
+          - 1.4.2
+          - 1.4.3
+          - 1.4.4
+          - 1.5.0
+          - 1.5.1
+          - 1.6.0
+          - 1.7.0
+          - 1.7.2
+          - 1.8.0
+          - 1.8.1
+          - 1.9.0
+          - 1.10.0
+          - 1.10.1
+          m_Compatible:
+          - 0.1.0
+          - 0.1.1
+          - 0.1.2
+          - 0.1.3
+          - 0.1.4
+          - 0.1.5
+          - 0.2.0
+          - 0.9.0-preview.1
+          - 0.9.0
+          - 0.9.1
+          - 0.9.2
+          - 0.9.3-preview.1
+          - 0.9.3
+          - 0.9.4
+          - 0.9.5
+          - 1.0.0-preview.1
+          - 1.0.0-preview.2
+          - 1.0.0
+          - 1.0.1
+          - 1.0.2
+          - 1.0.3
+          - 1.1.0
+          - 1.1.1
+          - 1.1.2
+          - 1.2.0
+          - 1.2.1
+          - 1.3.0
+          - 1.3.1
+          - 1.4.0
+          - 1.4.1
+          - 1.4.2
+          - 1.4.3
+          - 1.4.4
+          - 1.5.0
+          - 1.5.1
+          - 1.6.0
+          - 1.7.0
+          - 1.7.2
+          - 1.8.0
+          - 1.8.1
+          - 1.9.0
+          - 1.10.0
+          - 1.10.1
+          m_Recommended: 
+          m_Deprecated: []
+        m_Dependencies:
+        - m_Name: com.unity.xr.arfoundation
+          m_Version: 4.1.7
+        - m_Name: com.unity.xr.management
+          m_Version: 4.2.0
+        - m_Name: com.unity.xr.openxr
+          m_Version: 1.7.0
+        - m_Name: com.unity.xr.core-utils
+          m_Version: 2.1.0
+        m_ResolvedDependencies:
+        - m_Name: com.unity.xr.arfoundation
+          m_Version: 5.1.5
+        - m_Name: com.unity.editorcoroutines
+          m_Version: 1.0.0
+        - m_Name: com.unity.inputsystem
+          m_Version: 1.7.0
+        - m_Name: com.unity.modules.uielements
+          m_Version: 1.0.0
+        - m_Name: com.unity.modules.ui
+          m_Version: 1.0.0
+        - m_Name: com.unity.modules.imgui
+          m_Version: 1.0.0
+        - m_Name: com.unity.modules.jsonserialize
+          m_Version: 1.0.0
+        - m_Name: com.unity.xr.core-utils
+          m_Version: 2.3.0
+        - m_Name: com.unity.modules.xr
+          m_Version: 1.0.0
+        - m_Name: com.unity.modules.physics
+          m_Version: 1.0.0
+        - m_Name: com.unity.modules.subsystems
+          m_Version: 1.0.0
+        - m_Name: com.unity.xr.management
+          m_Version: 4.4.0
+        - m_Name: com.unity.modules.vr
+          m_Version: 1.0.0
+        - m_Name: com.unity.xr.legacyinputhelpers
+          m_Version: 2.1.10
+        - m_Name: com.unity.ugui
+          m_Version: 1.0.0
+        - m_Name: com.unity.mathematics
+          m_Version: 1.2.6
+        - m_Name: com.unity.modules.particlesystem
+          m_Version: 1.0.0
+        - m_Name: com.unity.modules.unityanalytics
+          m_Version: 1.0.0
+        - m_Name: com.unity.modules.unitywebrequest
+          m_Version: 1.0.0
+        - m_Name: com.unity.xr.openxr
+          m_Version: 1.11.0
+        m_Keywords:
+        - microsoft
+        - mixed
+        - reality
+        - openxr
+        - hololens
+        - xreditorsubsystem
+        m_Author:
+          m_Name: Microsoft
+          m_Email: 
+          m_Url: 
+        m_Registry:
+          m_Id: scoped:project:MR-Unity-Packages
+          m_Name: MR-Unity-Packages
+          m_Url: https://pkgs.dev.azure.com/aipmr/MixedReality-Unity-Packages/_packaging/Unity-packages/npm/registry
+          m_Scopes:
+          - com.microsoft.mrtk
+          - com.microsoft.mixedreality
+          - com.microsoft.windows.mixedreality
+          - com.microsoft.spatialaudio
+          m_IsDefault: 0
+          m_Capabilities: 0
+          m_ConfigSource: 4
+        m_HideInEditor: 1
+        m_Entitlements:
+          m_IsAllowed: 1
+          m_LicensingModel: 0
+          m_Status: 3
+        m_DatePublishedTicks: 0
+        m_Git:
+          m_Hash: 
+          m_Revision: 
+        m_IsAssetStorePackage: 0
+        m_DocumentationUrl: https://aka.ms/openxr-unity-api-reference
+        m_ChangelogUrl: https://aka.ms/openxr-unity-release-notes
+        m_LicensesUrl: 
+        m_HasRepository: 0
+        m_Repository:
+          m_Type: 
+          m_Url: 
+          m_Revision: 
+          m_Path: 
+        m_UnityLifecycle:
+          m_Version: 
+          m_NextVersion: 
+          m_RecommendedVersion: 
+          m_IsDeprecated: 0
+          m_DeprecationMessage: 
+        m_UpmReserved: 
+        m_Signature:
+          m_Status: 0
+          m_Reason: 
+        m_IsDeprecated: 0
+        m_DeprecationMessage: 
+        m_AssetStore:
+          m_ProductId: 
+      - m_PackageId: com.microsoft.mixedreality.openxr.sampleshared@file:C:\Users\genia\Work\OpenXR-Unity-MixedReality-Samples\SampleShared
+        m_IsDirectDependency: 1
+        m_ProjectDependenciesEntry: file:../../SampleShared
+        m_Version: 0.0.6
+        m_Source: 4
+        m_ResolvedPath: C:\Users\genia\Work\OpenXR-Unity-MixedReality-Samples\SampleShared
+        m_AssetPath: Packages/com.microsoft.mixedreality.openxr.sampleshared
+        m_Name: com.microsoft.mixedreality.openxr.sampleshared
+        m_DisplayName: Mixed Reality OpenXR Sample Shared
+        m_Category: 
+        m_Type: 
+        m_Description: Shared assets and utilities for Mixed Reality OpenXR samples.
+        m_Status: 0
+        m_Errors: []
+        m_Versions:
+          m_All: []
+          m_Compatible: []
+          m_Recommended: 
+          m_Deprecated: []
+        m_Dependencies:
+        - m_Name: com.microsoft.mixedreality.openxr
+          m_Version: 1.7.0
+        - m_Name: com.microsoft.mrtk.graphicstools.unity
+          m_Version: 0.5.0
+        m_ResolvedDependencies:
+        - m_Name: com.microsoft.mixedreality.openxr
+          m_Version: 1.10.1
+        - m_Name: com.unity.xr.arfoundation
+          m_Version: 5.1.5
+        - m_Name: com.unity.editorcoroutines
+          m_Version: 1.0.0
+        - m_Name: com.unity.inputsystem
+          m_Version: 1.7.0
+        - m_Name: com.unity.modules.uielements
+          m_Version: 1.0.0
+        - m_Name: com.unity.modules.ui
+          m_Version: 1.0.0
+        - m_Name: com.unity.modules.imgui
+          m_Version: 1.0.0
+        - m_Name: com.unity.modules.jsonserialize
+          m_Version: 1.0.0
+        - m_Name: com.unity.xr.core-utils
+          m_Version: 2.3.0
+        - m_Name: com.unity.modules.xr
+          m_Version: 1.0.0
+        - m_Name: com.unity.modules.physics
+          m_Version: 1.0.0
+        - m_Name: com.unity.modules.subsystems
+          m_Version: 1.0.0
+        - m_Name: com.unity.xr.management
+          m_Version: 4.4.0
+        - m_Name: com.unity.modules.vr
+          m_Version: 1.0.0
+        - m_Name: com.unity.xr.legacyinputhelpers
+          m_Version: 2.1.10
+        - m_Name: com.unity.ugui
+          m_Version: 1.0.0
+        - m_Name: com.unity.mathematics
+          m_Version: 1.2.6
+        - m_Name: com.unity.modules.particlesystem
+          m_Version: 1.0.0
+        - m_Name: com.unity.modules.unityanalytics
+          m_Version: 1.0.0
+        - m_Name: com.unity.modules.unitywebrequest
+          m_Version: 1.0.0
+        - m_Name: com.unity.xr.openxr
+          m_Version: 1.11.0
+        - m_Name: com.microsoft.mrtk.graphicstools.unity
+          m_Version: 0.5.0
+        m_Keywords:
+        - microsoft
+        - mixed
+        - reality
+        - openxr
+        - hololens
+        - sample
+        m_Author:
+          m_Name: Microsoft
+          m_Email: 
+          m_Url: 
+        m_Registry:
+          m_Id: scoped:project:MR-Unity-Packages
+          m_Name: MR-Unity-Packages
+          m_Url: https://pkgs.dev.azure.com/aipmr/MixedReality-Unity-Packages/_packaging/Unity-packages/npm/registry
+          m_Scopes:
+          - com.microsoft.mrtk
+          - com.microsoft.mixedreality
+          - com.microsoft.windows.mixedreality
+          - com.microsoft.spatialaudio
+          m_IsDefault: 0
+          m_Capabilities: 0
+          m_ConfigSource: 4
+        m_HideInEditor: 1
+        m_Entitlements:
+          m_IsAllowed: 1
+          m_LicensingModel: 0
+          m_Status: 3
+        m_DatePublishedTicks: 0
+        m_Git:
+          m_Hash: 
+          m_Revision: 
+        m_IsAssetStorePackage: 0
+        m_DocumentationUrl: 
+        m_ChangelogUrl: 
+        m_LicensesUrl: 
+        m_HasRepository: 0
+        m_Repository:
+          m_Type: 
+          m_Url: 
+          m_Revision: 
+          m_Path: 
+        m_UnityLifecycle:
+          m_Version: 
+          m_NextVersion: 
+          m_RecommendedVersion: 
+          m_IsDeprecated: 0
+          m_DeprecationMessage: 
+        m_UpmReserved: 
+        m_Signature:
+          m_Status: 0
+          m_Reason: 
+        m_IsDeprecated: 0
+        m_DeprecationMessage: 
+        m_AssetStore:
+          m_ProductId: 
+      - m_PackageId: com.microsoft.mixedreality.toolkit.foundation@2.8.3
+        m_IsDirectDependency: 1
+        m_ProjectDependenciesEntry: 2.8.3
+        m_Version: 2.8.3
+        m_Source: 1
+        m_ResolvedPath: C:\Users\genia\Work\OpenXR-Unity-MixedReality-Samples\RemotingSample\Library\PackageCache\com.microsoft.mixedreality.toolkit.foundation@2.8.3
+        m_AssetPath: Packages/com.microsoft.mixedreality.toolkit.foundation
+        m_Name: com.microsoft.mixedreality.toolkit.foundation
+        m_DisplayName: Mixed Reality Toolkit Foundation
+        m_Category: 
+        m_Type: 
+        m_Description: The Mixed Reality Toolkit a set of foundational components
+          and features to accelerate mixed reality app development in Unity.
+        m_Status: 0
+        m_Errors: []
+        m_Versions:
+          m_All:
+          - 2.5.0
+          - 2.5.1
+          - 2.5.2
+          - 2.5.3
+          - 2.5.4
+          - 2.6.0
+          - 2.6.1
+          - 2.6.2
+          - 2.7.0-preview.2
+          - 2.7.0-preview.3
+          - 2.7.0-preview.4
+          - 2.7.0-preview.5
+          - 2.7.0
+          - 2.7.2
+          - 2.7.3
+          - 2.8.0
+          - 2.8.1
+          - 2.8.2
+          - 2.8.3
+          m_Compatible:
+          - 2.5.0
+          - 2.5.1
+          - 2.5.2
+          - 2.5.3
+          - 2.5.4
+          - 2.6.0
+          - 2.6.1
+          - 2.6.2
+          - 2.7.0-preview.2
+          - 2.7.0-preview.3
+          - 2.7.0-preview.4
+          - 2.7.0-preview.5
+          - 2.7.0
+          - 2.7.2
+          - 2.7.3
+          - 2.8.0
+          - 2.8.1
+          - 2.8.2
+          - 2.8.3
+          m_Recommended: 
+          m_Deprecated:
+          - 2.5.2
+          - 2.8.1
+        m_Dependencies:
+        - m_Name: com.microsoft.mixedreality.toolkit.standardassets
+          m_Version: 2.8.3
+        m_ResolvedDependencies:
+        - m_Name: com.microsoft.mixedreality.toolkit.standardassets
+          m_Version: 2.8.3
+        - m_Name: com.unity.textmeshpro
+          m_Version: 3.0.6
+        - m_Name: com.unity.ugui
+          m_Version: 1.0.0
+        - m_Name: com.unity.modules.ui
+          m_Version: 1.0.0
+        - m_Name: com.unity.modules.imgui
+          m_Version: 1.0.0
+        m_Keywords:
+        - mrtk
+        - microsoft
+        - mixed
+        - reality
+        - augmented
+        - virtual
+        - xr
+        - hololens
+        m_Author:
+          m_Name: Microsoft
+          m_Email: 
+          m_Url: 
+        m_Registry:
+          m_Id: scoped:project:MR-Unity-Packages
+          m_Name: MR-Unity-Packages
+          m_Url: https://pkgs.dev.azure.com/aipmr/MixedReality-Unity-Packages/_packaging/Unity-packages/npm/registry
+          m_Scopes:
+          - com.microsoft.mrtk
+          - com.microsoft.mixedreality
+          - com.microsoft.windows.mixedreality
+          - com.microsoft.spatialaudio
+          m_IsDefault: 0
+          m_Capabilities: 0
+          m_ConfigSource: 4
+        m_HideInEditor: 1
+        m_Entitlements:
+          m_IsAllowed: 1
+          m_LicensingModel: 0
+          m_Status: 3
+        m_DatePublishedTicks: 638060495140000000
+        m_Git:
+          m_Hash: 
+          m_Revision: 
+        m_IsAssetStorePackage: 0
+        m_DocumentationUrl: 
+        m_ChangelogUrl: 
+        m_LicensesUrl: 
+        m_HasRepository: 1
+        m_Repository:
+          m_Type: git
+          m_Url: https://github.com/microsoft/MixedRealityToolkit-Unity.git
+          m_Revision: 
+          m_Path: 
+        m_UnityLifecycle:
+          m_Version: 
+          m_NextVersion: 
+          m_RecommendedVersion: 
+          m_IsDeprecated: 0
+          m_DeprecationMessage: 
+        m_UpmReserved: 
+        m_Signature:
+          m_Status: 3
+          m_Reason: .signature file could not be located in the package path
+        m_IsDeprecated: 0
+        m_DeprecationMessage: 
+        m_AssetStore:
+          m_ProductId: 
+      - m_PackageId: com.microsoft.mixedreality.toolkit.standardassets@2.8.3
+        m_IsDirectDependency: 1
+        m_ProjectDependenciesEntry: 2.8.3
+        m_Version: 2.8.3
+        m_Source: 1
+        m_ResolvedPath: C:\Users\genia\Work\OpenXR-Unity-MixedReality-Samples\RemotingSample\Library\PackageCache\com.microsoft.mixedreality.toolkit.standardassets@2.8.3
+        m_AssetPath: Packages/com.microsoft.mixedreality.toolkit.standardassets
+        m_Name: com.microsoft.mixedreality.toolkit.standardassets
+        m_DisplayName: Mixed Reality Toolkit Standard Assets
+        m_Category: 
+        m_Type: 
+        m_Description: Mixed Reality Toolkit standard assets, including; shaders,
+          common materials and fonts.
+        m_Status: 0
+        m_Errors: []
+        m_Versions:
+          m_All:
+          - 2.5.0
+          - 2.5.1
+          - 2.5.2
+          - 2.5.3
+          - 2.5.4
+          - 2.6.0
+          - 2.6.1
+          - 2.6.2
+          - 2.7.0-preview.2
+          - 2.7.0-preview.3
+          - 2.7.0-preview.4
+          - 2.7.0-preview.5
+          - 2.7.0
+          - 2.7.2
+          - 2.7.3
+          - 2.8.0
+          - 2.8.1
+          - 2.8.2
+          - 2.8.3
+          m_Compatible:
+          - 2.5.0
+          - 2.5.1
+          - 2.5.2
+          - 2.5.3
+          - 2.5.4
+          - 2.6.0
+          - 2.6.1
+          - 2.6.2
+          - 2.7.0-preview.2
+          - 2.7.0-preview.3
+          - 2.7.0-preview.4
+          - 2.7.0-preview.5
+          - 2.7.0
+          - 2.7.2
+          - 2.7.3
+          - 2.8.0
+          - 2.8.1
+          - 2.8.2
+          - 2.8.3
+          m_Recommended: 
+          m_Deprecated:
+          - 2.5.2
+          - 2.8.1
+        m_Dependencies:
+        - m_Name: com.unity.textmeshpro
+          m_Version: 2.1.4
+        m_ResolvedDependencies:
+        - m_Name: com.unity.textmeshpro
+          m_Version: 3.0.6
+        - m_Name: com.unity.ugui
+          m_Version: 1.0.0
+        - m_Name: com.unity.modules.ui
+          m_Version: 1.0.0
+        - m_Name: com.unity.modules.imgui
+          m_Version: 1.0.0
+        m_Keywords:
+        - mrtk
+        - microsoft
+        - mixed
+        - reality
+        - augmented
+        - virtual
+        - xr
+        - hololens
+        - assets
+        - standardassets
+        - coreassets
+        m_Author:
+          m_Name: Microsoft
+          m_Email: 
+          m_Url: 
+        m_Registry:
+          m_Id: scoped:project:MR-Unity-Packages
+          m_Name: MR-Unity-Packages
+          m_Url: https://pkgs.dev.azure.com/aipmr/MixedReality-Unity-Packages/_packaging/Unity-packages/npm/registry
+          m_Scopes:
+          - com.microsoft.mrtk
+          - com.microsoft.mixedreality
+          - com.microsoft.windows.mixedreality
+          - com.microsoft.spatialaudio
+          m_IsDefault: 0
+          m_Capabilities: 0
+          m_ConfigSource: 4
+        m_HideInEditor: 1
+        m_Entitlements:
+          m_IsAllowed: 1
+          m_LicensingModel: 0
+          m_Status: 3
+        m_DatePublishedTicks: 638060495180000000
+        m_Git:
+          m_Hash: 
+          m_Revision: 
+        m_IsAssetStorePackage: 0
+        m_DocumentationUrl: 
+        m_ChangelogUrl: 
+        m_LicensesUrl: 
+        m_HasRepository: 1
+        m_Repository:
+          m_Type: git
+          m_Url: https://github.com/microsoft/MixedRealityToolkit-Unity.git
+          m_Revision: 
+          m_Path: 
+        m_UnityLifecycle:
+          m_Version: 
+          m_NextVersion: 
+          m_RecommendedVersion: 
+          m_IsDeprecated: 0
+          m_DeprecationMessage: 
+        m_UpmReserved: 
+        m_Signature:
+          m_Status: 3
+          m_Reason: .signature file could not be located in the package path
+        m_IsDeprecated: 0
+        m_DeprecationMessage: 
+        m_AssetStore:
+          m_ProductId: 
+      - m_PackageId: com.microsoft.mrtk.graphicstools.unity@https://github.com/microsoft/MixedReality-GraphicsTools-Unity.git?path=/com.microsoft.mrtk.graphicstools.unity#v0.5.0
+        m_IsDirectDependency: 1
+        m_ProjectDependenciesEntry: https://github.com/microsoft/MixedReality-GraphicsTools-Unity.git?path=/com.microsoft.mrtk.graphicstools.unity#v0.5.0
+        m_Version: 0.5.0
+        m_Source: 5
+        m_ResolvedPath: C:\Users\genia\Work\OpenXR-Unity-MixedReality-Samples\RemotingSample\Library\PackageCache\com.microsoft.mrtk.graphicstools.unity@9f4e35db81
+        m_AssetPath: Packages/com.microsoft.mrtk.graphicstools.unity
+        m_Name: com.microsoft.mrtk.graphicstools.unity
+        m_DisplayName: MRTK Graphics Tools
+        m_Category: 
+        m_Type: 
+        m_Description: Graphics tools and components for developing Mixed Reality
+          applications in Unity.
+        m_Status: 0
+        m_Errors: []
+        m_Versions:
+          m_All:
+          - 0.3.15
+          - 0.4.0
+          - 0.5.10
+          - 0.5.12
+          - 0.6.2
+          - 0.6.5
+          - 0.6.7
+          - 0.7.0
+          - 0.7.1
+          m_Compatible:
+          - 0.3.15
+          - 0.4.0
+          - 0.5.10
+          - 0.5.12
+          - 0.6.2
+          - 0.6.5
+          - 0.6.7
+          - 0.7.0
+          - 0.7.1
+          m_Recommended: 
+          m_Deprecated: []
+        m_Dependencies: []
+        m_ResolvedDependencies: []
+        m_Keywords:
+        - microsoft
+        - mixed
+        - reality
+        - hololens
+        - ar
+        - vr
+        - xr
+        - graphics
+        - shaders
+        m_Author:
+          m_Name: Microsoft
+          m_Email: 
+          m_Url: 
+        m_Registry:
+          m_Id: scoped:project:MR-Unity-Packages
+          m_Name: MR-Unity-Packages
+          m_Url: https://pkgs.dev.azure.com/aipmr/MixedReality-Unity-Packages/_packaging/Unity-packages/npm/registry
+          m_Scopes:
+          - com.microsoft.mrtk
+          - com.microsoft.mixedreality
+          - com.microsoft.windows.mixedreality
+          - com.microsoft.spatialaudio
+          m_IsDefault: 0
+          m_Capabilities: 0
+          m_ConfigSource: 4
+        m_HideInEditor: 1
+        m_Entitlements:
+          m_IsAllowed: 1
+          m_LicensingModel: 0
+          m_Status: 3
+        m_DatePublishedTicks: 0
+        m_Git:
+          m_Hash: 9f4e35db81b680060d70609e61a47e0efddba1de
+          m_Revision: v0.5.0
+        m_IsAssetStorePackage: 0
+        m_DocumentationUrl: 
+        m_ChangelogUrl: 
+        m_LicensesUrl: 
+        m_HasRepository: 1
+        m_Repository:
+          m_Type: git
+          m_Url: https://github.com/microsoft/MixedReality-GraphicsTools-Unity
+          m_Revision: 
+          m_Path: 
+        m_UnityLifecycle:
+          m_Version: 
+          m_NextVersion: 
+          m_RecommendedVersion: 
+          m_IsDeprecated: 0
+          m_DeprecationMessage: 
+        m_UpmReserved: 
+        m_Signature:
+          m_Status: 0
+          m_Reason: 
+        m_IsDeprecated: 0
+        m_DeprecationMessage: 
+        m_AssetStore:
+          m_ProductId: 
+      - m_PackageId: com.unity.ai.navigation@1.1.5
+        m_IsDirectDependency: 1
+        m_ProjectDependenciesEntry: 1.1.5
+        m_Version: 1.1.5
+        m_Source: 1
+        m_ResolvedPath: C:\Users\genia\Work\OpenXR-Unity-MixedReality-Samples\RemotingSample\Library\PackageCache\com.unity.ai.navigation@1.1.5
+        m_AssetPath: Packages/com.unity.ai.navigation
+        m_Name: com.unity.ai.navigation
+        m_DisplayName: AI Navigation
+        m_Category: 
+        m_Type: assets
+        m_Description: High-level NavMesh components for building and using NavMeshes
+          at runtime and at edit time.
+        m_Status: 0
+        m_Errors: []
+        m_Versions:
+          m_All:
+          - 1.0.0-exp.1
+          - 1.0.0-exp.2
+          - 1.0.0-exp.3
+          - 1.0.0-exp.4
+          - 1.1.0-pre.1
+          - 1.1.0-pre.2
+          - 1.1.1
+          - 1.1.3
+          - 1.1.4
+          - 1.1.5
+          - 2.0.0-pre.3
+          - 2.0.0-pre.4
+          - 2.0.0
+          - 2.0.3
+          m_Compatible:
+          - 1.1.5
+          m_Recommended: 1.1.5
+          m_Deprecated: []
+        m_Dependencies:
+        - m_Name: com.unity.modules.ai
+          m_Version: 1.0.0
+        m_ResolvedDependencies:
+        - m_Name: com.unity.modules.ai
+          m_Version: 1.0.0
+        m_Keywords: []
+        m_Author:
+          m_Name: 
+          m_Email: 
+          m_Url: 
+        m_Registry:
+          m_Id: main
+          m_Name: 
+          m_Url: https://packages.unity.com
+          m_Scopes: []
+          m_IsDefault: 1
+          m_Capabilities: 7
+          m_ConfigSource: 0
+        m_HideInEditor: 1
+        m_Entitlements:
+          m_IsAllowed: 1
+          m_LicensingModel: 1
+          m_Status: 3
+        m_DatePublishedTicks: 638319373850000000
+        m_Git:
+          m_Hash: 
+          m_Revision: 
+        m_IsAssetStorePackage: 0
+        m_DocumentationUrl: https://docs.unity3d.com/Packages/com.unity.ai.navigation@1.1/manual/index.html
+        m_ChangelogUrl: 
+        m_LicensesUrl: 
+        m_HasRepository: 1
+        m_Repository:
+          m_Type: git
+          m_Url: https://github.cds.internal.unity3d.com/unity/com.unity.ai.navigation.git
+          m_Revision: a905e1ab41c8afae1a75688ceb3b4dfa1686ea75
+          m_Path: 
+        m_UnityLifecycle:
+          m_Version: 1.1.5
+          m_NextVersion: 
+          m_RecommendedVersion: 
+          m_IsDeprecated: 0
+          m_DeprecationMessage: 
+        m_UpmReserved: '{"changelog":"### Fixed\n* Long warning popping up when user
+          starts playmode while editing a prefab that contains NavMesh components
+          ([NAVB-47](https://issuetracker.unity3d.com/product/unity/issues/guid/NAVB-47))"}'
+        m_Signature:
+          m_Status: 4
+          m_Reason: 'Cannot verify package signature. There was an error: [Error:
+            Command failed: "C:/Program Files/Unity/Hub/Editor/2022.3.11f1/Editor/Data/NetCoreRuntime/dotnet"
+            --fx-version 5.0.17 "C:\Program Files\Unity\Hub\Editor\2022.3.11f1\Editor\Data\Resources\PackageManager\Server\bin\upmhash.dll"
+            "C:\Users\genia\AppData\Local\Unity\cache\packages\packages.unity.com\.tmp-19752-6eG7kaww7xVx\extract"
+            1695909931
+
+            Unhandled exception. System.IO.FileLoadException:
+            Could not load file or assembly ''System.Runtime, Version=6.0.0.0, Culture=neutral,
+            PublicKeyToken=b03f5f7f11d50a3a''. The located assembly''s manifest definition
+            does not match the assembly reference. (0x80131040)
+
+            File
+            name: ''System.Runtime, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a''
+
+            ]'
+        m_IsDeprecated: 0
+        m_DeprecationMessage: 
+        m_AssetStore:
+          m_ProductId: 
+      - m_PackageId: com.unity.collab-proxy@2.4.3
+        m_IsDirectDependency: 1
+        m_ProjectDependenciesEntry: 2.4.3
+        m_Version: 2.4.3
+        m_Source: 1
+        m_ResolvedPath: C:\Users\genia\Work\OpenXR-Unity-MixedReality-Samples\RemotingSample\Library\PackageCache\com.unity.collab-proxy@2.4.3
+        m_AssetPath: Packages/com.unity.collab-proxy
+        m_Name: com.unity.collab-proxy
+        m_DisplayName: Version Control
+        m_Category: Editor
+        m_Type: assets
+        m_Description: The package gives you the ability to use Unity Version Control
+          in the Unity editor. To use Unity Version Control, a subscription is required.
+          Learn more about how you can get started for free by visiting https://unity.com/solutions/version-control
+        m_Status: 0
+        m_Errors: []
+        m_Versions:
+          m_All:
+          - 1.2.3-preview
+          - 1.2.4-preview
+          - 1.2.6
+          - 1.2.7
+          - 1.2.9
+          - 1.2.11
+          - 1.2.15
+          - 1.2.16
+          - 1.2.17-preview.3
+          - 1.3.2
+          - 1.3.3
+          - 1.3.4
+          - 1.3.5
+          - 1.3.6
+          - 1.3.7
+          - 1.3.8
+          - 1.3.9
+          - 1.4.9
+          - 1.5.7
+          - 1.6.0
+          - 1.7.1
+          - 1.8.0
+          - 1.9.0
+          - 1.10.2
+          - 1.11.2
+          - 1.12.5
+          - 1.13.5
+          - 1.14.1
+          - 1.14.4
+          - 1.14.7
+          - 1.14.9
+          - 1.14.12
+          - 1.14.13
+          - 1.14.15
+          - 1.14.16
+          - 1.14.17
+          - 1.14.18
+          - 1.15.1
+          - 1.15.4
+          - 1.15.7
+          - 1.15.9
+          - 1.15.12
+          - 1.15.13
+          - 1.15.15
+          - 1.15.16
+          - 1.15.17
+          - 1.15.18
+          - 1.17.0
+          - 1.17.1
+          - 1.17.2
+          - 1.17.6
+          - 1.17.7
+          - 2.0.0-preview.6
+          - 2.0.0-preview.8
+          - 2.0.0-preview.15
+          - 2.0.0-preview.17
+          - 2.0.0-preview.20
+          - 2.0.0-preview.21
+          - 2.0.0-preview.22
+          - 2.0.0
+          - 2.0.1
+          - 2.0.3
+          - 2.0.4
+          - 2.0.5
+          - 2.0.7
+          - 2.1.0-preview.3
+          - 2.1.0-preview.5
+          - 2.1.0-preview.6
+          - 2.1.0
+          - 2.2.0
+          - 2.3.1
+          - 2.4.3
+          - 2.4.4
+          m_Compatible:
+          - 2.4.3
+          - 2.4.4
+          m_Recommended: 2.4.4
+          m_Deprecated: []
+        m_Dependencies: []
+        m_ResolvedDependencies: []
+        m_Keywords:
+        - backup
+        - cloud
+        - collab
+        - collaborate
+        - collaboration
+        - control
+        - devops
+        - plastic
+        - plasticscm
+        - source
+        - team
+        - teams
+        - version
+        - vcs
+        m_Author:
+          m_Name: 
+          m_Email: 
+          m_Url: 
+        m_Registry:
+          m_Id: main
+          m_Name: 
+          m_Url: https://packages.unity.com
+          m_Scopes: []
+          m_IsDefault: 1
+          m_Capabilities: 7
+          m_ConfigSource: 0
+        m_HideInEditor: 1
+        m_Entitlements:
+          m_IsAllowed: 1
+          m_LicensingModel: 1
+          m_Status: 3
+        m_DatePublishedTicks: 638549067850000000
+        m_Git:
+          m_Hash: 
+          m_Revision: 
+        m_IsAssetStorePackage: 0
+        m_DocumentationUrl: https://docs.unity3d.com/Packages/com.unity.collab-proxy@2.4/manual/index.html
+        m_ChangelogUrl: 
+        m_LicensesUrl: 
+        m_HasRepository: 1
+        m_Repository:
+          m_Type: git
+          m_Url: https://github.cds.internal.unity3d.com/unity/com.unity.cloud.collaborate.git
+          m_Revision: d4c8fa70dd9679b33019945dc0a483c8c7e8038f
+          m_Path: 
+        m_UnityLifecycle:
+          m_Version: 2.4.3
+          m_NextVersion: 
+          m_RecommendedVersion: 
+          m_IsDeprecated: 0
+          m_DeprecationMessage: 
+        m_UpmReserved: '{"changelog":"### Added\n\n- Changed the default ignore.conf
+          to not ignore itself\n- Added \"Undo unchanged\" and \"Undo checkouts keeping
+          changes\" options to pending changes view\n- Removed focus redirection
+          after Check-in\n\n### Fixed\n\n- Moving folders in the Editor now correctly
+          use the UVCS \"Move\" operation\n- Fixed hang on domain reload \n- Fixed
+          \"item with the same key has already been added\" error\n- Fixed failure
+          to delete a .meta file when deleting a private folder from the pending
+          changes\n- Supported workspace name with non-latin characters in Pending
+          Changes\n- Fixed text cut-off in filter rules dialog\n- Fixed unexpected
+          error while switching between branches\n- Fixed error after renaming a
+          parent branch of the working branch\n- Fixed variables''s value becoming
+          clear after resolving conflict in inspector\n- Removed misleading indication
+          about shelves\n- Fixed column sorting in pending changes view\n- Fixed
+          missing incoming changes after removing a branch\n- Fixed \"Collection
+          was modified\" error when doing multiple renames in a row\n- Fixed undo
+          & check-in operations not working when the current scene was never saved\n-
+          Fixed check in error if nothing is selected in the pending changes tree"}'
+        m_Signature:
+          m_Status: 1
+          m_Reason: 
+        m_IsDeprecated: 0
+        m_DeprecationMessage: 
+        m_AssetStore:
+          m_ProductId: 
+      - m_PackageId: com.unity.ide.visualstudio@2.0.22
+        m_IsDirectDependency: 1
+        m_ProjectDependenciesEntry: 2.0.22
+        m_Version: 2.0.22
+        m_Source: 1
+        m_ResolvedPath: C:\Users\genia\Work\OpenXR-Unity-MixedReality-Samples\RemotingSample\Library\PackageCache\com.unity.ide.visualstudio@2.0.22
+        m_AssetPath: Packages/com.unity.ide.visualstudio
+        m_Name: com.unity.ide.visualstudio
+        m_DisplayName: Visual Studio Editor
+        m_Category: 
+        m_Type: assets
+        m_Description: Code editor integration for supporting Visual Studio as code
+          editor for unity. Adds support for generating csproj files for intellisense
+          purposes, auto discovery of installations, etc.
+        m_Status: 0
+        m_Errors: []
+        m_Versions:
+          m_All:
+          - 1.0.2
+          - 1.0.3
+          - 1.0.4
+          - 1.0.9
+          - 1.0.10
+          - 1.0.11
+          - 2.0.0
+          - 2.0.1
+          - 2.0.2
+          - 2.0.3
+          - 2.0.5
+          - 2.0.7
+          - 2.0.8
+          - 2.0.9
+          - 2.0.11
+          - 2.0.12
+          - 2.0.14
+          - 2.0.15
+          - 2.0.16
+          - 2.0.17
+          - 2.0.18
+          - 2.0.20
+          - 2.0.21
+          - 2.0.22
+          m_Compatible:
+          - 2.0.22
+          m_Recommended: 2.0.22
+          m_Deprecated: []
+        m_Dependencies:
+        - m_Name: com.unity.test-framework
+          m_Version: 1.1.9
+        m_ResolvedDependencies:
+        - m_Name: com.unity.test-framework
+          m_Version: 1.1.33
+        - m_Name: com.unity.ext.nunit
+          m_Version: 1.0.6
+        - m_Name: com.unity.modules.imgui
+          m_Version: 1.0.0
+        - m_Name: com.unity.modules.jsonserialize
+          m_Version: 1.0.0
+        m_Keywords: []
+        m_Author:
+          m_Name: 
+          m_Email: 
+          m_Url: 
+        m_Registry:
+          m_Id: main
+          m_Name: 
+          m_Url: https://packages.unity.com
+          m_Scopes: []
+          m_IsDefault: 1
+          m_Capabilities: 7
+          m_ConfigSource: 0
+        m_HideInEditor: 1
+        m_Entitlements:
+          m_IsAllowed: 1
+          m_LicensingModel: 1
+          m_Status: 3
+        m_DatePublishedTicks: 638326061910000000
+        m_Git:
+          m_Hash: 
+          m_Revision: 
+        m_IsAssetStorePackage: 0
+        m_DocumentationUrl: https://docs.unity3d.com/Packages/com.unity.ide.visualstudio@2.0/manual/index.html
+        m_ChangelogUrl: 
+        m_LicensesUrl: 
+        m_HasRepository: 1
+        m_Repository:
+          m_Type: git
+          m_Url: https://github.cds.internal.unity3d.com/unity/com.unity.ide.visualstudio.git
+          m_Revision: 700b44077345e97d37d464ff25507638983aed64
+          m_Path: 
+        m_UnityLifecycle:
+          m_Version: 2.0.22
+          m_NextVersion: 
+          m_RecommendedVersion: 
+          m_IsDeprecated: 0
+          m_DeprecationMessage: 
+        m_UpmReserved: '{"changelog":"Integration:\n\n- Add support for `XDG_DATA_DIRS`
+          and `.desktop` files on Linux for `VS Code` discovery.\n- Use compile-time
+          platform-specifics instead of using runtime conditions.\n\nProject generation:\n\n-
+          Suppress `USG0001` warnings.\n- Mark referenced assemblies as private (to
+          not copy extra files to output directory when building).\n- Add Unity capability
+          to SDK-Style projects.\n- Prevent circular dependency errors with SDK-Style
+          projects."}'
+        m_Signature:
+          m_Status: 4
+          m_Reason: 'Cannot verify package signature. There was an error: [Error:
+            Command failed: "C:/Program Files/Unity/Hub/Editor/2022.3.13f1/Editor/Data/NetCoreRuntime/dotnet"
+            --fx-version 5.0.17 "C:\Program Files\Unity\Hub\Editor\2022.3.13f1\Editor\Data\Resources\PackageManager\Server\bin\upmhash.dll"
+            "C:\Users\genia\AppData\Local\Unity\cache\packages\packages.unity.com\.tmp-17656-Qck7M3Mn9Dxg\extract"
+            1696348045
+
+            Unhandled exception. System.IO.FileLoadException:
+            Could not load file or assembly ''System.Runtime, Version=6.0.0.0, Culture=neutral,
+            PublicKeyToken=b03f5f7f11d50a3a''. The located assembly''s manifest definition
+            does not match the assembly reference. (0x80131040)
+
+            File
+            name: ''System.Runtime, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a''
+
+            ]'
+        m_IsDeprecated: 0
+        m_DeprecationMessage: 
+        m_AssetStore:
+          m_ProductId: 
+      - m_PackageId: com.unity.ide.vscode@1.2.5
+        m_IsDirectDependency: 1
+        m_ProjectDependenciesEntry: 1.2.5
+        m_Version: 1.2.5
+        m_Source: 1
+        m_ResolvedPath: C:\Users\genia\Work\OpenXR-Unity-MixedReality-Samples\RemotingSample\Library\PackageCache\com.unity.ide.vscode@1.2.5
+        m_AssetPath: Packages/com.unity.ide.vscode
+        m_Name: com.unity.ide.vscode
+        m_DisplayName: Visual Studio Code Editor
+        m_Category: 
+        m_Type: asset
+        m_Description: Code editor integration for supporting Visual Studio Code
+          as code editor for unity. Adds support for generating csproj files for
+          intellisense purposes, auto discovery of installations, etc.
+        m_Status: 0
+        m_Errors: []
+        m_Versions:
+          m_All:
+          - 1.0.2
+          - 1.0.3
+          - 1.0.7
+          - 1.1.0
+          - 1.1.2
+          - 1.1.3
+          - 1.1.4
+          - 1.2.0
+          - 1.2.1
+          - 1.2.2
+          - 1.2.3
+          - 1.2.4
+          - 1.2.5
+          m_Compatible:
+          - 1.2.5
+          m_Recommended: 1.2.5
+          m_Deprecated: []
+        m_Dependencies: []
+        m_ResolvedDependencies: []
+        m_Keywords: []
+        m_Author:
+          m_Name: 
+          m_Email: 
+          m_Url: 
+        m_Registry:
+          m_Id: main
+          m_Name: 
+          m_Url: https://packages.unity.com
+          m_Scopes: []
+          m_IsDefault: 1
+          m_Capabilities: 7
+          m_ConfigSource: 0
+        m_HideInEditor: 1
+        m_Entitlements:
+          m_IsAllowed: 1
+          m_LicensingModel: 1
+          m_Status: 3
+        m_DatePublishedTicks: 637800255360000000
+        m_Git:
+          m_Hash: 
+          m_Revision: 
+        m_IsAssetStorePackage: 0
+        m_DocumentationUrl: 
+        m_ChangelogUrl: 
+        m_LicensesUrl: 
+        m_HasRepository: 1
+        m_Repository:
+          m_Type: git
+          m_Url: https://github.com/Unity-Technologies/com.unity.ide.vscode.git
+          m_Revision: b0740c80bfc2440527c317109f7c3d9100132722
+          m_Path: 
+        m_UnityLifecycle:
+          m_Version: 1.2.5
+          m_NextVersion: 
+          m_RecommendedVersion: 
+          m_IsDeprecated: 0
+          m_DeprecationMessage: 
+        m_UpmReserved: 
+        m_Signature:
+          m_Status: 0
+          m_Reason: 
+        m_IsDeprecated: 0
+        m_DeprecationMessage: 
+        m_AssetStore:
+          m_ProductId: 
+      - m_PackageId: com.unity.shadergraph@14.0.11
+        m_IsDirectDependency: 1
+        m_ProjectDependenciesEntry: 14.0.11
+        m_Version: 14.0.11
+        m_Source: 2
+        m_ResolvedPath: C:\Users\genia\Work\OpenXR-Unity-MixedReality-Samples\RemotingSample\Library\PackageCache\com.unity.shadergraph@14.0.11
+        m_AssetPath: Packages/com.unity.shadergraph
+        m_Name: com.unity.shadergraph
+        m_DisplayName: Shader Graph
+        m_Category: 
+        m_Type: 
+        m_Description: The Shader Graph package adds a visual Shader editing tool
+          to Unity. You can use this tool to create Shaders in a visual way instead
+          of writing code. Specific render pipelines can implement specific graph
+          features. Currently, both the High Definition Rendering Pipeline and the
+          Universal Rendering Pipeline support Shader Graph.
+        m_Status: 0
+        m_Errors: []
+        m_Versions:
+          m_All:
+          - 0.1.8
+          - 0.1.9
+          - 0.1.17
+          - 1.0.0-beta
+          - 1.1.1-preview
+          - 1.1.2-preview
+          - 1.1.3-preview
+          - 1.1.4-preview
+          - 1.1.5-preview
+          - 1.1.6-preview
+          - 1.1.8-preview
+          - 1.1.9-preview
+          - 2.0.1-preview
+          - 2.0.3-preview
+          - 2.0.4-preview
+          - 2.0.4-preview.1
+          - 2.0.5-preview
+          - 2.0.6-preview
+          - 2.0.7-preview
+          - 2.0.8-preview
+          - 3.0.0-preview
+          - 3.1.0-preview
+          - 3.3.0-preview
+          - 4.0.0-preview
+          - 4.0.1-preview
+          - 4.1.0-preview
+          - 4.2.0-preview
+          - 4.3.0-preview
+          - 4.6.0-preview
+          - 4.8.0-preview
+          - 4.9.0-preview
+          - 4.10.0-preview
+          - 5.0.0-preview
+          - 5.1.0
+          - 5.2.0
+          - 5.2.1
+          - 5.2.2
+          - 5.2.3
+          - 5.3.1
+          - 5.6.1
+          - 5.7.2
+          - 5.8.2
+          - 5.9.0
+          - 5.10.0
+          - 5.13.0
+          - 5.16.1
+          - 6.5.2
+          - 6.5.3
+          - 6.7.1
+          - 6.9.0
+          - 6.9.1
+          - 6.9.2
+          - 7.0.0
+          - 7.0.1
+          - 7.1.1
+          - 7.1.2
+          - 7.1.5
+          - 7.1.6
+          - 7.1.7
+          - 7.1.8
+          - 7.2.0
+          - 7.2.1
+          - 7.3.1
+          - 7.4.1
+          - 7.4.2
+          - 7.4.3
+          - 7.5.1
+          - 7.5.2
+          - 7.5.3
+          - 7.6.0
+          - 7.7.0
+          - 7.7.1
+          - 8.0.1
+          - 8.1.0
+          - 8.2.0
+          - 8.3.1
+          - 9.0.0-preview.14
+          - 9.0.0-preview.34
+          - 9.0.0-preview.55
+          - 9.0.0-preview.72
+          - 10.0.0-preview.27
+          - 10.1.0
+          - 10.2.0
+          - 10.2.1
+          - 10.2.2
+          - 10.3.1
+          - 10.3.2
+          - 10.4.0
+          - 10.5.0
+          - 10.5.1
+          - 10.6.0
+          - 10.7.0
+          - 10.8.0
+          - 10.8.1
+          - 10.9.0
+          - 10.10.0
+          - 10.10.1
+          - 14.0.11
+          m_Compatible:
+          - 14.0.11
+          m_Recommended: 14.0.11
+          m_Deprecated: []
+        m_Dependencies:
+        - m_Name: com.unity.render-pipelines.core
+          m_Version: 14.0.11
+        - m_Name: com.unity.searcher
+          m_Version: 4.9.2
+        m_ResolvedDependencies:
+        - m_Name: com.unity.render-pipelines.core
+          m_Version: 14.0.11
+        - m_Name: com.unity.ugui
+          m_Version: 1.0.0
+        - m_Name: com.unity.modules.ui
+          m_Version: 1.0.0
+        - m_Name: com.unity.modules.imgui
+          m_Version: 1.0.0
+        - m_Name: com.unity.modules.physics
+          m_Version: 1.0.0
+        - m_Name: com.unity.modules.terrain
+          m_Version: 1.0.0
+        - m_Name: com.unity.modules.jsonserialize
+          m_Version: 1.0.0
+        - m_Name: com.unity.searcher
+          m_Version: 4.9.2
+        m_Keywords: []
+        m_Author:
+          m_Name: 
+          m_Email: 
+          m_Url: 
+        m_Registry:
+          m_Id: main
+          m_Name: 
+          m_Url: https://packages.unity.com
+          m_Scopes: []
+          m_IsDefault: 1
+          m_Capabilities: 7
+          m_ConfigSource: 0
+        m_HideInEditor: 1
+        m_Entitlements:
+          m_IsAllowed: 1
+          m_LicensingModel: 0
+          m_Status: 3
+        m_DatePublishedTicks: 0
+        m_Git:
+          m_Hash: 
+          m_Revision: 
+        m_IsAssetStorePackage: 0
+        m_DocumentationUrl: 
+        m_ChangelogUrl: 
+        m_LicensesUrl: 
+        m_HasRepository: 0
+        m_Repository:
+          m_Type: 
+          m_Url: 
+          m_Revision: 
+          m_Path: 
+        m_UnityLifecycle:
+          m_Version: 14.0.11
+          m_NextVersion: 
+          m_RecommendedVersion: 
+          m_IsDeprecated: 0
+          m_DeprecationMessage: 
+        m_UpmReserved: 
+        m_Signature:
+          m_Status: 0
+          m_Reason: 
+        m_IsDeprecated: 0
+        m_DeprecationMessage: 
+        m_AssetStore:
+          m_ProductId: 
+      - m_PackageId: com.unity.test-framework@1.1.33
+        m_IsDirectDependency: 1
+        m_ProjectDependenciesEntry: 1.1.33
+        m_Version: 1.1.33
+        m_Source: 1
+        m_ResolvedPath: C:\Users\genia\Work\OpenXR-Unity-MixedReality-Samples\RemotingSample\Library\PackageCache\com.unity.test-framework@1.1.33
+        m_AssetPath: Packages/com.unity.test-framework
+        m_Name: com.unity.test-framework
+        m_DisplayName: Test Framework
+        m_Category: Unity Test Framework
+        m_Type: asset
+        m_Description: Test framework for running Edit mode and Play mode tests in
+          Unity.
+        m_Status: 0
+        m_Errors: []
+        m_Versions:
+          m_All:
+          - 0.0.4-preview
+          - 0.0.29-preview
+          - 1.0.0
+          - 1.0.7
+          - 1.0.9
+          - 1.0.11
+          - 1.0.12
+          - 1.0.13
+          - 1.0.14
+          - 1.0.16
+          - 1.0.17
+          - 1.0.18
+          - 1.1.0
+          - 1.1.1
+          - 1.1.2
+          - 1.1.3
+          - 1.1.5
+          - 1.1.8
+          - 1.1.9
+          - 1.1.11
+          - 1.1.13
+          - 1.1.14
+          - 1.1.16
+          - 1.1.18
+          - 1.1.19
+          - 1.1.20
+          - 1.1.22
+          - 1.1.24
+          - 1.1.26
+          - 1.1.27
+          - 1.1.29
+          - 1.1.30
+          - 1.1.31
+          - 1.1.33
+          - 1.3.0
+          - 1.3.1
+          - 1.3.2
+          - 1.3.3
+          - 1.3.4
+          - 1.3.5
+          - 1.3.7
+          - 1.3.8
+          - 1.3.9
+          - 1.4.0
+          - 1.4.1
+          - 1.4.2
+          - 1.4.3
+          - 1.4.4
+          - 1.4.5
+          - 2.0.1-exp.1
+          - 2.0.1-exp.2
+          - 2.0.1-pre.12
+          - 2.0.1-pre.18
+          m_Compatible:
+          - 1.1.33
+          - 1.3.0
+          - 1.3.1
+          - 1.3.2
+          - 1.3.3
+          - 1.3.4
+          - 1.3.5
+          - 1.3.7
+          - 1.3.8
+          - 1.3.9
+          - 1.4.0
+          - 1.4.1
+          - 1.4.2
+          - 1.4.3
+          - 1.4.4
+          - 1.4.5
+          - 2.0.1-exp.1
+          - 2.0.1-exp.2
+          - 2.0.1-pre.12
+          - 2.0.1-pre.18
+          m_Recommended: 1.1.33
+          m_Deprecated: []
+        m_Dependencies:
+        - m_Name: com.unity.ext.nunit
+          m_Version: 1.0.6
+        - m_Name: com.unity.modules.imgui
+          m_Version: 1.0.0
+        - m_Name: com.unity.modules.jsonserialize
+          m_Version: 1.0.0
+        m_ResolvedDependencies:
+        - m_Name: com.unity.ext.nunit
+          m_Version: 1.0.6
+        - m_Name: com.unity.modules.imgui
+          m_Version: 1.0.0
+        - m_Name: com.unity.modules.jsonserialize
+          m_Version: 1.0.0
+        m_Keywords:
+        - Test
+        - TestFramework
+        m_Author:
+          m_Name: 
+          m_Email: 
+          m_Url: 
+        m_Registry:
+          m_Id: main
+          m_Name: 
+          m_Url: https://packages.unity.com
+          m_Scopes: []
+          m_IsDefault: 1
+          m_Capabilities: 7
+          m_ConfigSource: 0
+        m_HideInEditor: 1
+        m_Entitlements:
+          m_IsAllowed: 1
+          m_LicensingModel: 1
+          m_Status: 3
+        m_DatePublishedTicks: 637938212700000000
+        m_Git:
+          m_Hash: 
+          m_Revision: 
+        m_IsAssetStorePackage: 0
+        m_DocumentationUrl: 
+        m_ChangelogUrl: 
+        m_LicensesUrl: 
+        m_HasRepository: 1
+        m_Repository:
+          m_Type: git
+          m_Url: https://github.com/Unity-Technologies/com.unity.test-framework.git
+          m_Revision: 34a4d423d64926635eb36d3bb86276179cc186e1
+          m_Path: 
+        m_UnityLifecycle:
+          m_Version: 1.1.33
+          m_NextVersion: 
+          m_RecommendedVersion: 
+          m_IsDeprecated: 0
+          m_DeprecationMessage: 
+        m_UpmReserved: '{"changelog":"- Fixed an issue where using Assert.Expect
+          with the same string multiple times can lead to incorrect errors in some
+          cases (DSTR-442).\r\n- Improved the logging when using multiple Assert.Expect
+          that the logs appear in another order than expected (DSTR-442).\r\n- Moved
+          the targetPlatform specified when running tests in the TestRunnerApi from
+          the Filter to the ExecutionSettings (DSTR-186).\r\n- Fixed an issue where
+          an inheritance of UnityPlatformAttribute which was not working (ESTT-70).\r\n-
+          Fixed the log of excluded platforms which was not displaying the right
+          information.\r\n- Added filename and linenumber to test finished message
+          (DSTR-505).\r\n- Add the possibility of running tests in a specified order
+          from a test list (DSTR-494)."}'
+        m_Signature:
+          m_Status: 0
+          m_Reason: 
+        m_IsDeprecated: 0
+        m_DeprecationMessage: 
+        m_AssetStore:
+          m_ProductId: 
+      - m_PackageId: com.unity.textmeshpro@3.0.6
+        m_IsDirectDependency: 1
+        m_ProjectDependenciesEntry: 3.0.6
+        m_Version: 3.0.6
+        m_Source: 1
+        m_ResolvedPath: C:\Users\genia\Work\OpenXR-Unity-MixedReality-Samples\RemotingSample\Library\PackageCache\com.unity.textmeshpro@3.0.6
+        m_AssetPath: Packages/com.unity.textmeshpro
+        m_Name: com.unity.textmeshpro
+        m_DisplayName: TextMeshPro
+        m_Category: Text Rendering
+        m_Type: asset
+        m_Description: 'TextMeshPro is the ultimate text solution for Unity. It''s
+          the perfect replacement for Unity''s UI Text and the legacy Text Mesh.
+
+
+          Powerful
+          and easy to use, TextMeshPro (also known as TMP) uses Advanced Text Rendering
+          techniques along with a set of custom shaders; delivering substantial visual
+          quality improvements while giving users incredible flexibility when it
+          comes to text styling and texturing.
+
+
+          TextMeshPro provides Improved
+          Control over text formatting and layout with features like character, word,
+          line and paragraph spacing, kerning, justified text, Links, over 30 Rich
+          Text Tags available, support for Multi Font & Sprites, Custom Styles and
+          more.
+
+
+          Great performance. Since the geometry created by TextMeshPro
+          uses two triangles per character just like Unity''s text components, this
+          improved visual quality and flexibility comes at no additional performance
+          cost.'
+        m_Status: 0
+        m_Errors: []
+        m_Versions:
+          m_All:
+          - 0.1.2
+          - 1.0.21
+          - 1.0.23
+          - 1.0.25
+          - 1.0.26
+          - 1.1.0
+          - 1.2.0
+          - 1.2.1
+          - 1.2.2
+          - 1.2.3
+          - 1.2.4
+          - 1.3.0-preview
+          - 1.3.0
+          - 1.4.0-preview.1b
+          - 1.4.0-preview.2a
+          - 1.4.0-preview.3a
+          - 1.4.0
+          - 1.4.1-preview.1
+          - 1.4.1
+          - 1.5.0-preview.1
+          - 1.5.0-preview.2
+          - 1.5.0-preview.3
+          - 1.5.0-preview.4
+          - 1.5.0-preview.5
+          - 1.5.0-preview.6
+          - 1.5.0-preview.7
+          - 1.5.0-preview.8
+          - 1.5.0-preview.10
+          - 1.5.0-preview.11
+          - 1.5.0-preview.12
+          - 1.5.0-preview.13
+          - 1.5.0-preview.14
+          - 1.5.0
+          - 1.5.1
+          - 1.5.3
+          - 1.5.4
+          - 1.5.5
+          - 1.5.6
+          - 1.6.0-preview.1
+          - 2.0.0
+          - 2.0.1-preview.1
+          - 2.0.1
+          - 2.1.0-preview.1
+          - 2.1.0-preview.2
+          - 2.1.0-preview.3
+          - 2.1.0-preview.4
+          - 2.1.0-preview.5
+          - 2.1.0-preview.7
+          - 2.1.0-preview.8
+          - 2.1.0-preview.10
+          - 2.1.0-preview.11
+          - 2.1.0-preview.12
+          - 2.1.0-preview.13
+          - 2.1.0-preview.14
+          - 2.1.0
+          - 2.1.1
+          - 2.1.3
+          - 2.1.4
+          - 2.1.5
+          - 2.1.6
+          - 2.2.0-preview.1
+          - 2.2.0-preview.2
+          - 2.2.0-preview.3
+          - 3.0.0-preview.1
+          - 3.0.0-preview.3
+          - 3.0.0-preview.4
+          - 3.0.0-preview.5
+          - 3.0.0-preview.7
+          - 3.0.0-preview.8
+          - 3.0.0-preview.10
+          - 3.0.0-preview.11
+          - 3.0.0-preview.12
+          - 3.0.0-preview.13
+          - 3.0.0-preview.14
+          - 3.0.0
+          - 3.0.1
+          - 3.0.3
+          - 3.0.4
+          - 3.0.5
+          - 3.0.6
+          - 3.0.7
+          - 3.0.8
+          - 3.0.9
+          - 3.2.0-pre.1
+          - 3.2.0-pre.2
+          - 3.2.0-pre.3
+          - 3.2.0-pre.4
+          - 3.2.0-pre.5
+          - 3.2.0-pre.6
+          - 3.2.0-pre.7
+          - 3.2.0-pre.8
+          - 3.2.0-pre.9
+          - 3.2.0-pre.10
+          - 4.0.0-pre.1
+          - 4.0.0-pre.2
+          m_Compatible:
+          - 3.0.6
+          - 3.0.7
+          - 3.0.8
+          - 3.0.9
+          - 3.2.0-pre.1
+          - 3.2.0-pre.2
+          - 3.2.0-pre.3
+          - 3.2.0-pre.4
+          - 3.2.0-pre.5
+          - 3.2.0-pre.6
+          - 3.2.0-pre.7
+          - 3.2.0-pre.8
+          - 3.2.0-pre.9
+          - 3.2.0-pre.10
+          - 4.0.0-pre.1
+          - 4.0.0-pre.2
+          m_Recommended: 3.0.9
+          m_Deprecated: []
+        m_Dependencies:
+        - m_Name: com.unity.ugui
+          m_Version: 1.0.0
+        m_ResolvedDependencies:
+        - m_Name: com.unity.ugui
+          m_Version: 1.0.0
+        - m_Name: com.unity.modules.ui
+          m_Version: 1.0.0
+        - m_Name: com.unity.modules.imgui
+          m_Version: 1.0.0
+        m_Keywords:
+        - TextMeshPro
+        - TextMesh Pro
+        - TMP
+        - Text
+        - SDF
+        m_Author:
+          m_Name: 
+          m_Email: 
+          m_Url: 
+        m_Registry:
+          m_Id: main
+          m_Name: 
+          m_Url: https://packages.unity.com
+          m_Scopes: []
+          m_IsDefault: 1
+          m_Capabilities: 7
+          m_ConfigSource: 0
+        m_HideInEditor: 1
+        m_Entitlements:
+          m_IsAllowed: 1
+          m_LicensingModel: 1
+          m_Status: 3
+        m_DatePublishedTicks: 637547111200000000
+        m_Git:
+          m_Hash: 
+          m_Revision: 
+        m_IsAssetStorePackage: 0
+        m_DocumentationUrl: 
+        m_ChangelogUrl: 
+        m_LicensesUrl: 
+        m_HasRepository: 1
+        m_Repository:
+          m_Type: git
+          m_Url: https://github.cds.internal.unity3d.com/unity/com.unity.textmeshpro.git
+          m_Revision: 01e57e3b7de18af9dfe9baaa0a0ff5cc4765c899
+          m_Path: 
+        m_UnityLifecycle:
+          m_Version: 3.0.6
+          m_NextVersion: 
+          m_RecommendedVersion: 
+          m_IsDeprecated: 0
+          m_DeprecationMessage: 
+        m_UpmReserved: 
+        m_Signature:
+          m_Status: 0
+          m_Reason: 
+        m_IsDeprecated: 0
+        m_DeprecationMessage: 
+        m_AssetStore:
+          m_ProductId: 
+      - m_PackageId: com.unity.timeline@1.7.6
+        m_IsDirectDependency: 1
+        m_ProjectDependenciesEntry: 1.7.6
+        m_Version: 1.7.6
+        m_Source: 1
+        m_ResolvedPath: C:\Users\genia\Work\OpenXR-Unity-MixedReality-Samples\RemotingSample\Library\PackageCache\com.unity.timeline@1.7.6
+        m_AssetPath: Packages/com.unity.timeline
+        m_Name: com.unity.timeline
+        m_DisplayName: Timeline
+        m_Category: 
+        m_Type: assets
+        m_Description: Use Unity Timeline to create cinematic content, game-play
+          sequences, audio sequences, and complex particle effects.
+        m_Status: 0
+        m_Errors: []
+        m_Versions:
+          m_All:
+          - 1.2.0
+          - 1.2.1
+          - 1.2.2
+          - 1.2.3
+          - 1.2.4
+          - 1.2.5
+          - 1.2.6
+          - 1.2.7
+          - 1.2.9
+          - 1.2.10
+          - 1.2.11
+          - 1.2.12
+          - 1.2.13
+          - 1.2.14
+          - 1.2.15
+          - 1.2.16
+          - 1.2.17
+          - 1.2.18
+          - 1.3.0-preview.2
+          - 1.3.0-preview.3
+          - 1.3.0-preview.5
+          - 1.3.0-preview.6
+          - 1.3.0-preview.7
+          - 1.3.0
+          - 1.3.1
+          - 1.3.2
+          - 1.3.3
+          - 1.3.4
+          - 1.3.5
+          - 1.3.6
+          - 1.3.7
+          - 1.4.0-preview.1
+          - 1.4.0-preview.2
+          - 1.4.0-preview.3
+          - 1.4.0-preview.5
+          - 1.4.0-preview.6
+          - 1.4.0-preview.7
+          - 1.4.0
+          - 1.4.1
+          - 1.4.2
+          - 1.4.3
+          - 1.4.4
+          - 1.4.5
+          - 1.4.6
+          - 1.4.7
+          - 1.4.8
+          - 1.5.0-pre.2
+          - 1.5.0-preview.1
+          - 1.5.0-preview.2
+          - 1.5.0-preview.3
+          - 1.5.0-preview.4
+          - 1.5.0-preview.5
+          - 1.5.1-pre.1
+          - 1.5.1-pre.2
+          - 1.5.1-pre.3
+          - 1.5.2
+          - 1.5.4
+          - 1.5.5
+          - 1.5.6
+          - 1.5.7
+          - 1.6.0-pre.1
+          - 1.6.0-pre.3
+          - 1.6.0-pre.4
+          - 1.6.0-pre.5
+          - 1.6.1
+          - 1.6.2
+          - 1.6.3
+          - 1.6.4
+          - 1.6.5
+          - 1.7.0-pre.1
+          - 1.7.0-pre.2
+          - 1.7.0
+          - 1.7.1
+          - 1.7.2
+          - 1.7.3
+          - 1.7.4
+          - 1.7.5
+          - 1.7.6
+          - 1.8.0
+          - 1.8.1
+          - 1.8.2
+          - 1.8.3
+          - 1.8.4
+          - 1.8.5
+          - 1.8.6
+          - 1.8.7
+          m_Compatible:
+          - 1.7.6
+          - 1.8.0
+          - 1.8.1
+          - 1.8.2
+          - 1.8.3
+          - 1.8.4
+          - 1.8.5
+          - 1.8.6
+          - 1.8.7
+          m_Recommended: 1.7.6
+          m_Deprecated: []
+        m_Dependencies:
+        - m_Name: com.unity.modules.director
+          m_Version: 1.0.0
+        - m_Name: com.unity.modules.animation
+          m_Version: 1.0.0
+        - m_Name: com.unity.modules.audio
+          m_Version: 1.0.0
+        - m_Name: com.unity.modules.particlesystem
+          m_Version: 1.0.0
+        m_ResolvedDependencies:
+        - m_Name: com.unity.modules.director
+          m_Version: 1.0.0
+        - m_Name: com.unity.modules.audio
+          m_Version: 1.0.0
+        - m_Name: com.unity.modules.animation
+          m_Version: 1.0.0
+        - m_Name: com.unity.modules.particlesystem
+          m_Version: 1.0.0
+        m_Keywords:
+        - unity
+        - animation
+        - editor
+        - timeline
+        - tools
+        m_Author:
+          m_Name: 
+          m_Email: 
+          m_Url: 
+        m_Registry:
+          m_Id: main
+          m_Name: 
+          m_Url: https://packages.unity.com
+          m_Scopes: []
+          m_IsDefault: 1
+          m_Capabilities: 7
+          m_ConfigSource: 0
+        m_HideInEditor: 1
+        m_Entitlements:
+          m_IsAllowed: 1
+          m_LicensingModel: 1
+          m_Status: 3
+        m_DatePublishedTicks: 638326112840000000
+        m_Git:
+          m_Hash: 
+          m_Revision: 
+        m_IsAssetStorePackage: 0
+        m_DocumentationUrl: https://docs.unity3d.com/Packages/com.unity.timeline@1.7/manual/index.html
+        m_ChangelogUrl: 
+        m_LicensesUrl: 
+        m_HasRepository: 1
+        m_Repository:
+          m_Type: git
+          m_Url: https://github.cds.internal.unity3d.com/unity/com.unity.timeline.git
+          m_Revision: 02f49ada64a9f88044207cf42ba407dc634ef8e6
+          m_Path: 
+        m_UnityLifecycle:
+          m_Version: 1.7.6
+          m_NextVersion: 
+          m_RecommendedVersion: 
+          m_IsDeprecated: 0
+          m_DeprecationMessage: 
+        m_UpmReserved: '{"changelog":"### Fixed\n\n- Fixed issue where a warning
+          would be logged in the console for `TrackAsset` ([TB-229](https://issuetracker.unity3d.com/product/unity/issues/guid/TB-229)).\n-
+          Fixed issue where changing the name of a group track was not undoable ([TB-218](https://issuetracker.unity3d.com/issues/timeline-track-group-renaming-doesnt-go-into-the-undo-history)).\n-
+          Fixed performance regression when rebuilding the playable graph."}'
+        m_Signature:
+          m_Status: 4
+          m_Reason: 'Cannot verify package signature. There was an error: [Error:
+            Command failed: "C:/Program Files/Unity/Hub/Editor/2022.3.13f1/Editor/Data/NetCoreRuntime/dotnet"
+            --fx-version 5.0.17 "C:\Program Files\Unity\Hub\Editor\2022.3.13f1\Editor\Data\Resources\PackageManager\Server\bin\upmhash.dll"
+            "C:\Users\genia\AppData\Local\Unity\cache\packages\packages.unity.com\.tmp-17656-VQBDbVeBUln5\extract"
+            1696537286
+
+            Unhandled exception. System.IO.FileLoadException:
+            Could not load file or assembly ''System.Runtime, Version=6.0.0.0, Culture=neutral,
+            PublicKeyToken=b03f5f7f11d50a3a''. The located assembly''s manifest definition
+            does not match the assembly reference. (0x80131040)
+
+            File
+            name: ''System.Runtime, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a''
+
+            ]'
+        m_IsDeprecated: 0
+        m_DeprecationMessage: 
+        m_AssetStore:
+          m_ProductId: 
+      - m_PackageId: com.unity.ugui@1.0.0
+        m_IsDirectDependency: 1
+        m_ProjectDependenciesEntry: 1.0.0
+        m_Version: 1.0.0
+        m_Source: 2
+        m_ResolvedPath: C:\Users\genia\Work\OpenXR-Unity-MixedReality-Samples\RemotingSample\Library\PackageCache\com.unity.ugui@1.0.0
+        m_AssetPath: Packages/com.unity.ugui
+        m_Name: com.unity.ugui
+        m_DisplayName: Unity UI
+        m_Category: 
+        m_Type: 
+        m_Description: "Unity UI is a set of tools for developing user interfaces
+          for games and applications. It is a GameObject-based UI system that uses
+          Components and the Game View to arrange, position, and style user interfaces.
+          \u200B You cannot use Unity UI to create or change user interfaces in the
+          Unity Editor."
+        m_Status: 0
+        m_Errors: []
+        m_Versions:
+          m_All:
+          - 1.0.0
+          - 3.0.0-exp.1
+          - 3.0.0-exp.3
+          - 3.0.0-exp.4
+          m_Compatible:
+          - 1.0.0
+          m_Recommended: 1.0.0
+          m_Deprecated: []
+        m_Dependencies:
+        - m_Name: com.unity.modules.ui
+          m_Version: 1.0.0
+        - m_Name: com.unity.modules.imgui
+          m_Version: 1.0.0
+        m_ResolvedDependencies:
+        - m_Name: com.unity.modules.ui
+          m_Version: 1.0.0
+        - m_Name: com.unity.modules.imgui
+          m_Version: 1.0.0
+        m_Keywords:
+        - UI
+        - ugui
+        - Unity UI
+        - Canvas
+        m_Author:
+          m_Name: 
+          m_Email: 
+          m_Url: 
+        m_Registry:
+          m_Id: main
+          m_Name: 
+          m_Url: https://packages.unity.com
+          m_Scopes: []
+          m_IsDefault: 1
+          m_Capabilities: 7
+          m_ConfigSource: 0
+        m_HideInEditor: 1
+        m_Entitlements:
+          m_IsAllowed: 1
+          m_LicensingModel: 0
+          m_Status: 3
+        m_DatePublishedTicks: 0
+        m_Git:
+          m_Hash: 
+          m_Revision: 
+        m_IsAssetStorePackage: 0
+        m_DocumentationUrl: 
+        m_ChangelogUrl: 
+        m_LicensesUrl: 
+        m_HasRepository: 0
+        m_Repository:
+          m_Type: 
+          m_Url: 
+          m_Revision: 
+          m_Path: 
+        m_UnityLifecycle:
+          m_Version: 1.0.0
+          m_NextVersion: 
+          m_RecommendedVersion: 
+          m_IsDeprecated: 0
+          m_DeprecationMessage: 
+        m_UpmReserved: 
+        m_Signature:
+          m_Status: 0
+          m_Reason: 
+        m_IsDeprecated: 0
+        m_DeprecationMessage: 
+        m_AssetStore:
+          m_ProductId: 
+      - m_PackageId: com.unity.visualscripting@1.9.4
+        m_IsDirectDependency: 1
+        m_ProjectDependenciesEntry: 1.9.4
+        m_Version: 1.9.4
+        m_Source: 1
+        m_ResolvedPath: C:\Users\genia\Work\OpenXR-Unity-MixedReality-Samples\RemotingSample\Library\PackageCache\com.unity.visualscripting@1.9.4
+        m_AssetPath: Packages/com.unity.visualscripting
+        m_Name: com.unity.visualscripting
+        m_DisplayName: Visual Scripting
+        m_Category: 
+        m_Type: tool
+        m_Description: 'Visual scripting is a workflow that uses visual, node-based
+          graphs to design behaviors rather than write lines of C# script.
+
+
+          Enabling
+          artists, designers and programmers alike, visual scripting can be used
+          to design final logic, quickly create prototypes, iterate on gameplay and
+          create custom nodes to help streamline collaboration.
+
+
+          Visual
+          scripting is compatible with third-party APIs, including most packages,
+          assets and custom libraries.'
+        m_Status: 0
+        m_Errors: []
+        m_Versions:
+          m_All:
+          - 1.5.0
+          - 1.5.1-pre.3
+          - 1.5.1-pre.5
+          - 1.5.1
+          - 1.5.2
+          - 1.6.0-pre.3
+          - 1.6.0
+          - 1.6.1
+          - 1.7.1
+          - 1.7.2
+          - 1.7.3
+          - 1.7.5
+          - 1.7.6
+          - 1.7.7
+          - 1.7.8
+          - 1.8.0-pre.1
+          - 1.8.0
+          - 1.9.0
+          - 1.9.1
+          - 1.9.2
+          - 1.9.4
+          m_Compatible:
+          - 1.9.4
+          m_Recommended: 1.9.4
+          m_Deprecated:
+          - 1.8.0-pre.1
+        m_Dependencies:
+        - m_Name: com.unity.ugui
+          m_Version: 1.0.0
+        - m_Name: com.unity.modules.jsonserialize
+          m_Version: 1.0.0
+        m_ResolvedDependencies:
+        - m_Name: com.unity.ugui
+          m_Version: 1.0.0
+        - m_Name: com.unity.modules.ui
+          m_Version: 1.0.0
+        - m_Name: com.unity.modules.imgui
+          m_Version: 1.0.0
+        - m_Name: com.unity.modules.jsonserialize
+          m_Version: 1.0.0
+        m_Keywords: []
+        m_Author:
+          m_Name: 
+          m_Email: 
+          m_Url: 
+        m_Registry:
+          m_Id: main
+          m_Name: 
+          m_Url: https://packages.unity.com
+          m_Scopes: []
+          m_IsDefault: 1
+          m_Capabilities: 7
+          m_ConfigSource: 0
+        m_HideInEditor: 1
+        m_Entitlements:
+          m_IsAllowed: 1
+          m_LicensingModel: 1
+          m_Status: 3
+        m_DatePublishedTicks: 638488567680000000
+        m_Git:
+          m_Hash: 
+          m_Revision: 
+        m_IsAssetStorePackage: 0
+        m_DocumentationUrl: 
+        m_ChangelogUrl: 
+        m_LicensesUrl: 
+        m_HasRepository: 1
+        m_Repository:
+          m_Type: git
+          m_Url: https://github.cds.internal.unity3d.com/unity/com.unity.visualscripting.git
+          m_Revision: 41aac2b7038c2b1259c546329890d3736ce2394e
+          m_Path: 
+        m_UnityLifecycle:
+          m_Version: 1.9.4
+          m_NextVersion: 
+          m_RecommendedVersion: 
+          m_IsDeprecated: 0
+          m_DeprecationMessage: 
+        m_UpmReserved: '{"changelog":"### Fixed\n- Fixed sqlite dll changes not being
+          recognized correctly by the 2022.3 Unity Editor"}'
+        m_Signature:
+          m_Status: 4
+          m_Reason: 'Cannot verify package signature. There was an error: [Error:
+            Command failed: "C:/Program Files/Unity/Hub/Editor/2022.3.27f1/Editor/Data/NetCoreRuntime/dotnet"
+            --fx-version 5.0.17 "C:\Program Files\Unity\Hub\Editor\2022.3.27f1\Editor\Data\Resources\PackageManager\Server\bin\upmhash.dll"
+            "C:\Users\genia\AppData\Local\Unity\cache\packages\packages.unity.com\.tmp-12176-F4crKHwIxnB6\extract"
+            1712771293
+
+            Unhandled exception. System.IO.FileLoadException:
+            Could not load file or assembly ''System.Runtime, Version=6.0.0.0, Culture=neutral,
+            PublicKeyToken=b03f5f7f11d50a3a''. The located assembly''s manifest definition
+            does not match the assembly reference. (0x80131040)
+
+            File
+            name: ''System.Runtime, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a''
+
+            ]'
+        m_IsDeprecated: 0
+        m_DeprecationMessage: 
+        m_AssetStore:
+          m_ProductId: 
+      - m_PackageId: com.unity.xr.arfoundation@5.1.5
+        m_IsDirectDependency: 1
+        m_ProjectDependenciesEntry: 5.1.5
+        m_Version: 5.1.5
+        m_Source: 1
+        m_ResolvedPath: C:\Users\genia\Work\OpenXR-Unity-MixedReality-Samples\RemotingSample\Library\PackageCache\com.unity.xr.arfoundation@5.1.5
+        m_AssetPath: Packages/com.unity.xr.arfoundation
+        m_Name: com.unity.xr.arfoundation
+        m_DisplayName: AR Foundation
+        m_Category: 
+        m_Type: assets
+        m_Description: "A collection of Subsystems as well as MonoBehaviours and
+          C# utilities for working with the Subsystems. \n\nIncludes: \n\u25AA Definitions
+          of Subsystems \n\u25AA GameObject menu items for creating an AR setup \n\u25AA
+          MonoBehaviours that control AR session lifecycle and create GameObjects
+          from detected, real-world trackable features \n\u25AA Scale handling \n\u25AA
+          Face tracking\n\nSamples available at https://github.com/Unity-Technologies/arfoundation-samples"
+        m_Status: 0
+        m_Errors: []
+        m_Versions:
+          m_All:
+          - 1.0.0-preview.12
+          - 1.0.0-preview.13
+          - 1.0.0-preview.14
+          - 1.0.0-preview.17
+          - 1.0.0-preview.18
+          - 1.0.0-preview.19
+          - 1.0.0-preview.20
+          - 1.0.0-preview.22
+          - 1.1.0-preview.6
+          - 1.5.0-preview.2
+          - 1.5.0-preview.5
+          - 1.5.0-preview.6
+          - 1.5.0-preview.7
+          - 2.0.2
+          - 2.1.0-preview.2
+          - 2.1.0-preview.3
+          - 2.1.1
+          - 2.1.3
+          - 2.1.4
+          - 2.1.8
+          - 2.1.10
+          - 2.1.14
+          - 2.1.16
+          - 2.1.18
+          - 2.1.19
+          - 2.2.0-preview.2
+          - 2.2.0-preview.3
+          - 2.2.0-preview.6
+          - 3.0.0-preview.1
+          - 3.0.0-preview.2
+          - 3.0.0-preview.3
+          - 3.0.0-preview.4
+          - 3.0.0-preview.6
+          - 3.0.1
+          - 3.1.0-preview.1
+          - 3.1.0-preview.3
+          - 3.1.0-preview.4
+          - 3.1.0-preview.6
+          - 3.1.0-preview.7
+          - 3.1.0-preview.8
+          - 3.1.3
+          - 3.1.5
+          - 3.1.6
+          - 3.1.10
+          - 4.0.0-preview.1
+          - 4.0.0-preview.3
+          - 4.0.2
+          - 4.0.8
+          - 4.0.9
+          - 4.0.10
+          - 4.0.12
+          - 4.1.0-preview.1
+          - 4.1.0-preview.2
+          - 4.1.0-preview.3
+          - 4.1.0-preview.5
+          - 4.1.0-preview.6
+          - 4.1.0-preview.7
+          - 4.1.0-preview.9
+          - 4.1.0-preview.10
+          - 4.1.0-preview.11
+          - 4.1.0-preview.12
+          - 4.1.0-preview.13
+          - 4.1.1
+          - 4.1.3
+          - 4.1.5
+          - 4.1.7
+          - 4.1.9
+          - 4.1.10
+          - 4.1.12
+          - 4.1.13
+          - 4.2.0-pre.2
+          - 4.2.0-pre.3
+          - 4.2.0-pre.4
+          - 4.2.0-pre.5
+          - 4.2.0-pre.7
+          - 4.2.0-pre.8
+          - 4.2.0-pre.9
+          - 4.2.0-pre.10
+          - 4.2.0-pre.12
+          - 4.2.0
+          - 4.2.1
+          - 4.2.2
+          - 4.2.3
+          - 4.2.6
+          - 4.2.7
+          - 4.2.8
+          - 4.2.9
+          - 4.2.10
+          - 5.0.0-pre.5
+          - 5.0.0-pre.6
+          - 5.0.0-pre.7
+          - 5.0.0-pre.8
+          - 5.0.0-pre.9
+          - 5.0.0-pre.12
+          - 5.0.0-pre.13
+          - 5.0.2
+          - 5.0.3
+          - 5.0.4
+          - 5.0.5
+          - 5.0.6
+          - 5.0.7
+          - 5.1.0-pre.1
+          - 5.1.0-pre.2
+          - 5.1.0-pre.3
+          - 5.1.0-pre.4
+          - 5.1.0-pre.6
+          - 5.1.0-pre.8
+          - 5.1.0-pre.9
+          - 5.1.0-pre.10
+          - 5.1.0
+          - 5.1.1
+          - 5.1.2
+          - 5.1.3
+          - 5.1.4
+          - 5.1.5
+          - 6.0.0-pre.3
+          - 6.0.0-pre.4
+          - 6.0.0-pre.5
+          - 6.0.0-pre.6
+          - 6.0.0-pre.7
+          - 6.0.0-pre.8
+          - 6.0.1
+          - 6.0.2
+          m_Compatible:
+          - 5.1.5
+          m_Recommended: 5.1.5
+          m_Deprecated: []
+        m_Dependencies:
+        - m_Name: com.unity.editorcoroutines
+          m_Version: 1.0.0
+        - m_Name: com.unity.inputsystem
+          m_Version: 1.3.0
+        - m_Name: com.unity.xr.core-utils
+          m_Version: 2.2.1
+        - m_Name: com.unity.xr.management
+          m_Version: 4.0.1
+        - m_Name: com.unity.ugui
+          m_Version: 1.0.0
+        - m_Name: com.unity.mathematics
+          m_Version: 1.2.5
+        - m_Name: com.unity.modules.particlesystem
+          m_Version: 1.0.0
+        - m_Name: com.unity.modules.ui
+          m_Version: 1.0.0
+        - m_Name: com.unity.modules.unityanalytics
+          m_Version: 1.0.0
+        - m_Name: com.unity.modules.unitywebrequest
+          m_Version: 1.0.0
+        m_ResolvedDependencies:
+        - m_Name: com.unity.editorcoroutines
+          m_Version: 1.0.0
+        - m_Name: com.unity.inputsystem
+          m_Version: 1.7.0
+        - m_Name: com.unity.modules.uielements
+          m_Version: 1.0.0
+        - m_Name: com.unity.modules.ui
+          m_Version: 1.0.0
+        - m_Name: com.unity.modules.imgui
+          m_Version: 1.0.0
+        - m_Name: com.unity.modules.jsonserialize
+          m_Version: 1.0.0
+        - m_Name: com.unity.xr.core-utils
+          m_Version: 2.3.0
+        - m_Name: com.unity.modules.xr
+          m_Version: 1.0.0
+        - m_Name: com.unity.modules.physics
+          m_Version: 1.0.0
+        - m_Name: com.unity.modules.subsystems
+          m_Version: 1.0.0
+        - m_Name: com.unity.xr.management
+          m_Version: 4.4.0
+        - m_Name: com.unity.modules.vr
+          m_Version: 1.0.0
+        - m_Name: com.unity.xr.legacyinputhelpers
+          m_Version: 2.1.10
+        - m_Name: com.unity.ugui
+          m_Version: 1.0.0
+        - m_Name: com.unity.mathematics
+          m_Version: 1.2.6
+        - m_Name: com.unity.modules.particlesystem
+          m_Version: 1.0.0
+        - m_Name: com.unity.modules.unityanalytics
+          m_Version: 1.0.0
+        - m_Name: com.unity.modules.unitywebrequest
+          m_Version: 1.0.0
+        m_Keywords:
+        - xr
+        - ar
+        - augmented
+        - reality
+        - utility
+        - utilities
+        - foundation
+        - core
+        - subsystem
+        - xreditorsubsystem
+        - arsimulation
+        m_Author:
+          m_Name: 
+          m_Email: 
+          m_Url: 
+        m_Registry:
+          m_Id: main
+          m_Name: 
+          m_Url: https://packages.unity.com
+          m_Scopes: []
+          m_IsDefault: 1
+          m_Capabilities: 7
+          m_ConfigSource: 0
+        m_HideInEditor: 1
+        m_Entitlements:
+          m_IsAllowed: 1
+          m_LicensingModel: 1
+          m_Status: 3
+        m_DatePublishedTicks: 638549067320000000
+        m_Git:
+          m_Hash: 
+          m_Revision: 
+        m_IsAssetStorePackage: 0
+        m_DocumentationUrl: https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@5.1/manual/index.html
+        m_ChangelogUrl: 
+        m_LicensesUrl: 
+        m_HasRepository: 1
+        m_Repository:
+          m_Type: git
+          m_Url: https://github.cds.internal.unity3d.com/unity/arfoundation.git
+          m_Revision: 52ff43b68913047c2a4e0ddb5111a68a428287c0
+          m_Path: 
+        m_UnityLifecycle:
+          m_Version: 5.1.5
+          m_NextVersion: 
+          m_RecommendedVersion: 
+          m_IsDeprecated: 0
+          m_DeprecationMessage: 
+        m_UpmReserved: '{"changelog":"No changes"}'
+        m_Signature:
+          m_Status: 1
+          m_Reason: 
+        m_IsDeprecated: 0
+        m_DeprecationMessage: 
+        m_AssetStore:
+          m_ProductId: 
+      - m_PackageId: com.unity.xr.openxr@file:C:\Users\genia\Work\OpenXR-Unity-MixedReality-Samples\RemotingSample\Packages\com.unity.xr.openxr
+        m_IsDirectDependency: 1
+        m_ProjectDependenciesEntry: 1.11.0
+        m_Version: 1.11.0
+        m_Source: 3
+        m_ResolvedPath: C:\Users\genia\Work\OpenXR-Unity-MixedReality-Samples\RemotingSample\Packages\com.unity.xr.openxr
+        m_AssetPath: Packages/com.unity.xr.openxr
+        m_Name: com.unity.xr.openxr
+        m_DisplayName: OpenXR Plugin
+        m_Category: 
+        m_Type: 
+        m_Description: OpenXR is an open, royalty-free standard developed by Khronos
+          that aims to simplify AR/VR development by allowing developers to target
+          a wide range of AR/VR devices. Use this plug-in to enable OpenXR in XR
+          Plug-in Management.
+        m_Status: 0
+        m_Errors: []
+        m_Versions:
+          m_All:
+          - 0.1.1-preview.1
+          - 0.1.2-preview.2
+          - 1.0.0-pre.1
+          - 1.0.2
+          - 1.0.3
+          - 1.1.1
+          - 1.2.0
+          - 1.2.2
+          - 1.2.3
+          - 1.2.8
+          - 1.3.0
+          - 1.3.1
+          - 1.4.0
+          - 1.4.1
+          - 1.4.2
+          - 1.5.0-exp.1
+          - 1.5.0
+          - 1.5.1
+          - 1.5.3
+          - 1.6.0
+          - 1.7.0
+          - 1.8.0
+          - 1.8.1
+          - 1.8.2
+          - 1.9.1
+          - 1.10.0
+          - 1.11.0-exp.1
+          - 1.11.0
+          - 1.11.1-exp.1
+          - 1.12.0-exp.1
+          m_Compatible:
+          - 1.11.0
+          - 1.11.1-exp.1
+          - 1.12.0-exp.1
+          m_Recommended: 1.11.0
+          m_Deprecated: []
+        m_Dependencies:
+        - m_Name: com.unity.xr.management
+          m_Version: 4.4.0
+        - m_Name: com.unity.xr.legacyinputhelpers
+          m_Version: 2.1.2
+        - m_Name: com.unity.inputsystem
+          m_Version: 1.6.3
+        - m_Name: com.unity.xr.core-utils
+          m_Version: 2.1.1
+        m_ResolvedDependencies:
+        - m_Name: com.unity.xr.management
+          m_Version: 4.4.0
+        - m_Name: com.unity.modules.subsystems
+          m_Version: 1.0.0
+        - m_Name: com.unity.modules.jsonserialize
+          m_Version: 1.0.0
+        - m_Name: com.unity.modules.vr
+          m_Version: 1.0.0
+        - m_Name: com.unity.modules.physics
+          m_Version: 1.0.0
+        - m_Name: com.unity.modules.xr
+          m_Version: 1.0.0
+        - m_Name: com.unity.xr.legacyinputhelpers
+          m_Version: 2.1.10
+        - m_Name: com.unity.inputsystem
+          m_Version: 1.7.0
+        - m_Name: com.unity.modules.uielements
+          m_Version: 1.0.0
+        - m_Name: com.unity.modules.ui
+          m_Version: 1.0.0
+        - m_Name: com.unity.modules.imgui
+          m_Version: 1.0.0
+        - m_Name: com.unity.xr.core-utils
+          m_Version: 2.3.0
+        m_Keywords:
+        - openxr
+        - xr
+        - reality
+        - xreditorsubsystem
+        m_Author:
+          m_Name: 
+          m_Email: 
+          m_Url: 
+        m_Registry:
+          m_Id: main
+          m_Name: 
+          m_Url: https://packages.unity.com
+          m_Scopes: []
+          m_IsDefault: 1
+          m_Capabilities: 7
+          m_ConfigSource: 0
+        m_HideInEditor: 1
+        m_Entitlements:
+          m_IsAllowed: 1
+          m_LicensingModel: 0
+          m_Status: 3
+        m_DatePublishedTicks: 0
+        m_Git:
+          m_Hash: 
+          m_Revision: 
+        m_IsAssetStorePackage: 0
+        m_DocumentationUrl: https://docs.unity3d.com/Packages/com.unity.xr.openxr@1.11/manual/index.html
+        m_ChangelogUrl: 
+        m_LicensesUrl: 
+        m_HasRepository: 1
+        m_Repository:
+          m_Type: git
+          m_Url: https://github.cds.internal.unity3d.com/unity/xr.sdk.openxr.git
+          m_Revision: e70a67560a5a88cc6b92e0ef7923c57ba38755a7
+          m_Path: 
+        m_UnityLifecycle:
+          m_Version: 1.11.0
+          m_NextVersion: 
+          m_RecommendedVersion: 
+          m_IsDeprecated: 0
+          m_DeprecationMessage: 
+        m_UpmReserved: '{"changelog":"### Added\n* Added the `XrPerformanceSettings.SetPerformanceLevelHint`
+          static method, which lets you send performance level suggestions to the
+          runtime. These hints help an OpenXR runtime to optimize the use of hardware
+          resources according to the application needs. Refer to [XR performance
+          settings](xref:openxr-performance-settings#performance-settings-level-hints)
+          for more information. This requires the [XR_EXT_performance_settings](https://registry.khronos.org/OpenXR/specs/1.0/html/xrspec.html#XR_EXT_performance_settings)
+          extension is enabled in the OpenXR runtime.\n* Added the `XrPerformanceSettings.OnXrPerformanceChangeNotification`
+          event, which provides notifications from the OpenXR runtime when a device''s
+          thermal, rendering, or compositor performance state changes. The performance
+          states include: `Normal`, `Warning`, and `Impaired`. Refer to [XR performance
+          settings](xref:openxr-performance-settings#performance-settings-notifications)
+          for more information. This requires the [XR_EXT_performance_settings](https://registry.khronos.org/OpenXR/specs/1.0/html/xrspec.html#XR_EXT_performance_settings)
+          extension is enabled in the OpenXR runtime.\n* Added a`Quest 3` option
+          to the `Target Devices` set in the Meta Quest Support settings. This specifies
+          the application''s support for Quest 3 devices within the Android manifest.\n*
+          Added missing ButtonControl actions `pinch_ext`, `aim_activate_ext` and
+          `grasp_ext` for Hand Interaction Profile.\n* Added API `OpenXRUtility.ComputePoseToWorldSpace`
+          to recalculate object position and rotation from tracking-space to world-space.
+          Applicable for use cases such as teleporting.\n* Added support for using
+          Local Floor Reference Space in the OpenXR runtime. Useful in applications
+          that require the user to be seated or in a standing fixed position.\n*
+          Added PreInit flags to allow users to disable the main frame buffer and
+          use offscreen swapchain when using Vulkan on Android in the OpenXR settings.\n*
+          Added functional DX12 mock runtime support to the OpenXR package.\n* Added
+          `RegisterStatsDescriptor` method to the `OpenXRFeature` abstract class,
+          which lets your OpenXR feature to register a new statistic that can be
+          feed into and queried at runtime. This method is not thread safe. \n* Added
+          `SetStatAsFloat` method to the `OpenXRFeature` abstract class, which lets
+          your OpenXR feature to feed a float value into a specific statistic that
+          was previously registered using the `RegisterStatsDescriptor`. This method
+          is thread safe. \n* Added `SetStatAsUInt` method to the `OpenXRFeature`
+          abstract class, which lets your OpenXR feature to feed an unsigned integer
+          value into a specific statistic that was previously registered using the
+          `RegisterStatsDescriptor`. This method is thread safe.\n* Added the `OpenXRSettings.RefreshRecenterSpace`
+          static method, which lets you regenerate the internal XR space used for
+          recentering, without the need to wait until a recenter event is received
+          by the OpenXR SDK. Note that this method does not perform a recenter event
+          in any way, as this can only be done by the device runtime.\n* Added Pre-pass
+          Foveated Rendering for both d3d12 and Vulkan. This feature utilizes Fragment
+          Density Mapping on Quest Devices and Fragment Shading Rate on PC to optimize
+          rendering performance. Refer to [Foveated Rendering](xref:openxr-foveated-rendering)
+          for more information.\n* Added `OpenXRUtility.IsSessionFocused` to return
+          if the current session is in the focused state.\n* Added `OpenXRUtility.IsUserPresent`
+          to return the change of user presence, such as when the user has taken
+          off or put on an XR headset. If the system does not support user presence
+          sensing, runtime assumes that the user is always present and IsUserPresent
+          always returns True. If the system supports the sensing of user presence,
+          returns true when detected the presence of a user and returns false when
+          detected the absence of a user.\n\n### Changed\n* Changed tracking origin
+          to use Local Floor in place of Floor by default.\n* Changed delta time
+          calculation to utilize OpenXR for frame estimation. Previously internal
+          Unity mechanisms were used. This feature is currently disabled but will
+          be available in the future.\n* When retrieving input feature from [CommonUsages.userPresence](https://docs.unity3d.com/ScriptReference/XR.CommonUsages-userPresence.html),
+          if XR_EXT_user_presence is supported by the current system, retrieved value
+          will be the same as `OpenXRUtility.IsUserPresent`. If `XR_EXT_user_presence`
+          is not supported, retrieved value will be based on `OpenXRUtility.IsSessionFocused`,
+          which is the default return value before 1.11.0.\n\n### Fixed\n* Fixed
+          Marshal to correctly read the number of bytes for booleans in C++.\n* Fixed
+          crash that occurs while cleaning up destroyed swapchains in OpenXR.\n*
+          Fixed Depth Texture flag disparity between the OpenXR and Oculus providers.\n\n###
+          Added\n* Added `OpenXRUtility.IsSessionFocused` to return if the current
+          session is in the focused state.\n* Added `OpenXRUtility.IsUserPresent`
+          to return the change of user presence, such as when the user has taken
+          off or put on an XR headset. If the system does not support user presence
+          sensing, runtime assumes that the user is always present and IsUserPresent
+          always returns True. If the system supports the sensing of user presence,
+          returns true when detected the presence of a user and returns false when
+          detected the absence of a user.\n\n### Changed\n* When retrieving input
+          feature from [CommonUsages.userPresence](https://docs.unity3d.com/ScriptReference/XR.CommonUsages-userPresence.html),
+          if XR_EXT_user_presence is supported by the current system, retrieved value
+          will be the same as `OpenXRUtility.IsUserPresent`. If `XR_EXT_user_presence`
+          is not supported, retrieved value will be based on `OpenXRUtility.IsSessionFocused`,
+          which is the default return value before 1.11.0."}'
+        m_Signature:
+          m_Status: 0
+          m_Reason: 
+        m_IsDeprecated: 0
+        m_DeprecationMessage: 
+        m_AssetStore:
+          m_ProductId: 
+      - m_PackageId: com.unity.modules.ai@1.0.0
+        m_IsDirectDependency: 1
+        m_ProjectDependenciesEntry: 1.0.0
+        m_Version: 1.0.0
+        m_Source: 2
+        m_ResolvedPath: C:\Users\genia\Work\OpenXR-Unity-MixedReality-Samples\RemotingSample\Library\PackageCache\com.unity.modules.ai@1.0.0
+        m_AssetPath: Packages/com.unity.modules.ai
+        m_Name: com.unity.modules.ai
+        m_DisplayName: AI
+        m_Category: 
+        m_Type: module
+        m_Description: 'The AI module implements the path finding features in Unity.
+          Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.AIModule.html'
+        m_Status: 0
+        m_Errors: []
+        m_Versions:
+          m_All:
+          - 1.0.0
+          m_Compatible:
+          - 1.0.0
+          m_Recommended: 1.0.0
+          m_Deprecated: []
+        m_Dependencies: []
+        m_ResolvedDependencies: []
+        m_Keywords: []
+        m_Author:
+          m_Name: 
+          m_Email: 
+          m_Url: 
+        m_Registry:
+          m_Id: main
+          m_Name: 
+          m_Url: https://packages.unity.com
+          m_Scopes: []
+          m_IsDefault: 1
+          m_Capabilities: 7
+          m_ConfigSource: 0
+        m_HideInEditor: 1
+        m_Entitlements:
+          m_IsAllowed: 1
+          m_LicensingModel: 0
+          m_Status: 3
+        m_DatePublishedTicks: 0
+        m_Git:
+          m_Hash: 
+          m_Revision: 
+        m_IsAssetStorePackage: 0
+        m_DocumentationUrl: 
+        m_ChangelogUrl: 
+        m_LicensesUrl: 
+        m_HasRepository: 0
+        m_Repository:
+          m_Type: 
+          m_Url: 
+          m_Revision: 
+          m_Path: 
+        m_UnityLifecycle:
+          m_Version: 1.0.0
+          m_NextVersion: 
+          m_RecommendedVersion: 
+          m_IsDeprecated: 0
+          m_DeprecationMessage: 
+        m_UpmReserved: 
+        m_Signature:
+          m_Status: 0
+          m_Reason: 
+        m_IsDeprecated: 0
+        m_DeprecationMessage: 
+        m_AssetStore:
+          m_ProductId: 
+      - m_PackageId: com.unity.modules.androidjni@1.0.0
+        m_IsDirectDependency: 1
+        m_ProjectDependenciesEntry: 1.0.0
+        m_Version: 1.0.0
+        m_Source: 2
+        m_ResolvedPath: C:\Users\genia\Work\OpenXR-Unity-MixedReality-Samples\RemotingSample\Library\PackageCache\com.unity.modules.androidjni@1.0.0
+        m_AssetPath: Packages/com.unity.modules.androidjni
+        m_Name: com.unity.modules.androidjni
+        m_DisplayName: Android JNI
+        m_Category: 
+        m_Type: module
+        m_Description: 'AndroidJNI module allows you to call Java code. Scripting
+          API: https://docs.unity3d.com/ScriptReference/UnityEngine.AndroidJNIModule.html'
+        m_Status: 0
+        m_Errors: []
+        m_Versions:
+          m_All:
+          - 1.0.0
+          m_Compatible:
+          - 1.0.0
+          m_Recommended: 1.0.0
+          m_Deprecated: []
+        m_Dependencies: []
+        m_ResolvedDependencies: []
+        m_Keywords: []
+        m_Author:
+          m_Name: 
+          m_Email: 
+          m_Url: 
+        m_Registry:
+          m_Id: main
+          m_Name: 
+          m_Url: https://packages.unity.com
+          m_Scopes: []
+          m_IsDefault: 1
+          m_Capabilities: 7
+          m_ConfigSource: 0
+        m_HideInEditor: 1
+        m_Entitlements:
+          m_IsAllowed: 1
+          m_LicensingModel: 0
+          m_Status: 3
+        m_DatePublishedTicks: 0
+        m_Git:
+          m_Hash: 
+          m_Revision: 
+        m_IsAssetStorePackage: 0
+        m_DocumentationUrl: 
+        m_ChangelogUrl: 
+        m_LicensesUrl: 
+        m_HasRepository: 0
+        m_Repository:
+          m_Type: 
+          m_Url: 
+          m_Revision: 
+          m_Path: 
+        m_UnityLifecycle:
+          m_Version: 1.0.0
+          m_NextVersion: 
+          m_RecommendedVersion: 
+          m_IsDeprecated: 0
+          m_DeprecationMessage: 
+        m_UpmReserved: 
+        m_Signature:
+          m_Status: 0
+          m_Reason: 
+        m_IsDeprecated: 0
+        m_DeprecationMessage: 
+        m_AssetStore:
+          m_ProductId: 
+      - m_PackageId: com.unity.modules.animation@1.0.0
+        m_IsDirectDependency: 1
+        m_ProjectDependenciesEntry: 1.0.0
+        m_Version: 1.0.0
+        m_Source: 2
+        m_ResolvedPath: C:\Users\genia\Work\OpenXR-Unity-MixedReality-Samples\RemotingSample\Library\PackageCache\com.unity.modules.animation@1.0.0
+        m_AssetPath: Packages/com.unity.modules.animation
+        m_Name: com.unity.modules.animation
+        m_DisplayName: Animation
+        m_Category: 
+        m_Type: module
+        m_Description: 'The Animation module implements Unity''s animation system.
+          Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.AnimationModule.html'
+        m_Status: 0
+        m_Errors: []
+        m_Versions:
+          m_All:
+          - 1.0.0
+          m_Compatible:
+          - 1.0.0
+          m_Recommended: 1.0.0
+          m_Deprecated: []
+        m_Dependencies: []
+        m_ResolvedDependencies: []
+        m_Keywords: []
+        m_Author:
+          m_Name: 
+          m_Email: 
+          m_Url: 
+        m_Registry:
+          m_Id: main
+          m_Name: 
+          m_Url: https://packages.unity.com
+          m_Scopes: []
+          m_IsDefault: 1
+          m_Capabilities: 7
+          m_ConfigSource: 0
+        m_HideInEditor: 1
+        m_Entitlements:
+          m_IsAllowed: 1
+          m_LicensingModel: 0
+          m_Status: 3
+        m_DatePublishedTicks: 0
+        m_Git:
+          m_Hash: 
+          m_Revision: 
+        m_IsAssetStorePackage: 0
+        m_DocumentationUrl: 
+        m_ChangelogUrl: 
+        m_LicensesUrl: 
+        m_HasRepository: 0
+        m_Repository:
+          m_Type: 
+          m_Url: 
+          m_Revision: 
+          m_Path: 
+        m_UnityLifecycle:
+          m_Version: 1.0.0
+          m_NextVersion: 
+          m_RecommendedVersion: 
+          m_IsDeprecated: 0
+          m_DeprecationMessage: 
+        m_UpmReserved: 
+        m_Signature:
+          m_Status: 0
+          m_Reason: 
+        m_IsDeprecated: 0
+        m_DeprecationMessage: 
+        m_AssetStore:
+          m_ProductId: 
+      - m_PackageId: com.unity.modules.assetbundle@1.0.0
+        m_IsDirectDependency: 1
+        m_ProjectDependenciesEntry: 1.0.0
+        m_Version: 1.0.0
+        m_Source: 2
+        m_ResolvedPath: C:\Users\genia\Work\OpenXR-Unity-MixedReality-Samples\RemotingSample\Library\PackageCache\com.unity.modules.assetbundle@1.0.0
+        m_AssetPath: Packages/com.unity.modules.assetbundle
+        m_Name: com.unity.modules.assetbundle
+        m_DisplayName: Asset Bundle
+        m_Category: 
+        m_Type: module
+        m_Description: 'The AssetBundle module implements the AssetBundle class and
+          related APIs to load data from AssetBundles. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.AssetBundleModule.html'
+        m_Status: 0
+        m_Errors: []
+        m_Versions:
+          m_All:
+          - 1.0.0
+          m_Compatible:
+          - 1.0.0
+          m_Recommended: 1.0.0
+          m_Deprecated: []
+        m_Dependencies: []
+        m_ResolvedDependencies: []
+        m_Keywords: []
+        m_Author:
+          m_Name: 
+          m_Email: 
+          m_Url: 
+        m_Registry:
+          m_Id: main
+          m_Name: 
+          m_Url: https://packages.unity.com
+          m_Scopes: []
+          m_IsDefault: 1
+          m_Capabilities: 7
+          m_ConfigSource: 0
+        m_HideInEditor: 1
+        m_Entitlements:
+          m_IsAllowed: 1
+          m_LicensingModel: 0
+          m_Status: 3
+        m_DatePublishedTicks: 0
+        m_Git:
+          m_Hash: 
+          m_Revision: 
+        m_IsAssetStorePackage: 0
+        m_DocumentationUrl: 
+        m_ChangelogUrl: 
+        m_LicensesUrl: 
+        m_HasRepository: 0
+        m_Repository:
+          m_Type: 
+          m_Url: 
+          m_Revision: 
+          m_Path: 
+        m_UnityLifecycle:
+          m_Version: 1.0.0
+          m_NextVersion: 
+          m_RecommendedVersion: 
+          m_IsDeprecated: 0
+          m_DeprecationMessage: 
+        m_UpmReserved: 
+        m_Signature:
+          m_Status: 0
+          m_Reason: 
+        m_IsDeprecated: 0
+        m_DeprecationMessage: 
+        m_AssetStore:
+          m_ProductId: 
+      - m_PackageId: com.unity.modules.audio@1.0.0
+        m_IsDirectDependency: 1
+        m_ProjectDependenciesEntry: 1.0.0
+        m_Version: 1.0.0
+        m_Source: 2
+        m_ResolvedPath: C:\Users\genia\Work\OpenXR-Unity-MixedReality-Samples\RemotingSample\Library\PackageCache\com.unity.modules.audio@1.0.0
+        m_AssetPath: Packages/com.unity.modules.audio
+        m_Name: com.unity.modules.audio
+        m_DisplayName: Audio
+        m_Category: 
+        m_Type: module
+        m_Description: 'The Audio module implements Unity''s audio system. Scripting
+          API: https://docs.unity3d.com/ScriptReference/UnityEngine.AudioModule.html'
+        m_Status: 0
+        m_Errors: []
+        m_Versions:
+          m_All:
+          - 1.0.0
+          m_Compatible:
+          - 1.0.0
+          m_Recommended: 1.0.0
+          m_Deprecated: []
+        m_Dependencies: []
+        m_ResolvedDependencies: []
+        m_Keywords: []
+        m_Author:
+          m_Name: 
+          m_Email: 
+          m_Url: 
+        m_Registry:
+          m_Id: main
+          m_Name: 
+          m_Url: https://packages.unity.com
+          m_Scopes: []
+          m_IsDefault: 1
+          m_Capabilities: 7
+          m_ConfigSource: 0
+        m_HideInEditor: 1
+        m_Entitlements:
+          m_IsAllowed: 1
+          m_LicensingModel: 0
+          m_Status: 3
+        m_DatePublishedTicks: 0
+        m_Git:
+          m_Hash: 
+          m_Revision: 
+        m_IsAssetStorePackage: 0
+        m_DocumentationUrl: 
+        m_ChangelogUrl: 
+        m_LicensesUrl: 
+        m_HasRepository: 0
+        m_Repository:
+          m_Type: 
+          m_Url: 
+          m_Revision: 
+          m_Path: 
+        m_UnityLifecycle:
+          m_Version: 1.0.0
+          m_NextVersion: 
+          m_RecommendedVersion: 
+          m_IsDeprecated: 0
+          m_DeprecationMessage: 
+        m_UpmReserved: 
+        m_Signature:
+          m_Status: 0
+          m_Reason: 
+        m_IsDeprecated: 0
+        m_DeprecationMessage: 
+        m_AssetStore:
+          m_ProductId: 
+      - m_PackageId: com.unity.modules.cloth@1.0.0
+        m_IsDirectDependency: 1
+        m_ProjectDependenciesEntry: 1.0.0
+        m_Version: 1.0.0
+        m_Source: 2
+        m_ResolvedPath: C:\Users\genia\Work\OpenXR-Unity-MixedReality-Samples\RemotingSample\Library\PackageCache\com.unity.modules.cloth@1.0.0
+        m_AssetPath: Packages/com.unity.modules.cloth
+        m_Name: com.unity.modules.cloth
+        m_DisplayName: Cloth
+        m_Category: 
+        m_Type: module
+        m_Description: 'The Cloth module implements cloth physics simulation through
+          the Cloth component. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.ClothModule.html'
+        m_Status: 0
+        m_Errors: []
+        m_Versions:
+          m_All:
+          - 1.0.0
+          m_Compatible:
+          - 1.0.0
+          m_Recommended: 1.0.0
+          m_Deprecated: []
+        m_Dependencies:
+        - m_Name: com.unity.modules.physics
+          m_Version: 1.0.0
+        m_ResolvedDependencies:
+        - m_Name: com.unity.modules.physics
+          m_Version: 1.0.0
+        m_Keywords: []
+        m_Author:
+          m_Name: 
+          m_Email: 
+          m_Url: 
+        m_Registry:
+          m_Id: main
+          m_Name: 
+          m_Url: https://packages.unity.com
+          m_Scopes: []
+          m_IsDefault: 1
+          m_Capabilities: 7
+          m_ConfigSource: 0
+        m_HideInEditor: 1
+        m_Entitlements:
+          m_IsAllowed: 1
+          m_LicensingModel: 0
+          m_Status: 3
+        m_DatePublishedTicks: 0
+        m_Git:
+          m_Hash: 
+          m_Revision: 
+        m_IsAssetStorePackage: 0
+        m_DocumentationUrl: 
+        m_ChangelogUrl: 
+        m_LicensesUrl: 
+        m_HasRepository: 0
+        m_Repository:
+          m_Type: 
+          m_Url: 
+          m_Revision: 
+          m_Path: 
+        m_UnityLifecycle:
+          m_Version: 1.0.0
+          m_NextVersion: 
+          m_RecommendedVersion: 
+          m_IsDeprecated: 0
+          m_DeprecationMessage: 
+        m_UpmReserved: 
+        m_Signature:
+          m_Status: 0
+          m_Reason: 
+        m_IsDeprecated: 0
+        m_DeprecationMessage: 
+        m_AssetStore:
+          m_ProductId: 
+      - m_PackageId: com.unity.modules.director@1.0.0
+        m_IsDirectDependency: 1
+        m_ProjectDependenciesEntry: 1.0.0
+        m_Version: 1.0.0
+        m_Source: 2
+        m_ResolvedPath: C:\Users\genia\Work\OpenXR-Unity-MixedReality-Samples\RemotingSample\Library\PackageCache\com.unity.modules.director@1.0.0
+        m_AssetPath: Packages/com.unity.modules.director
+        m_Name: com.unity.modules.director
+        m_DisplayName: Director
+        m_Category: 
+        m_Type: module
+        m_Description: 'The Director module implements the PlayableDirector class.
+          Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.DirectorModule.html'
+        m_Status: 0
+        m_Errors: []
+        m_Versions:
+          m_All:
+          - 1.0.0
+          m_Compatible:
+          - 1.0.0
+          m_Recommended: 1.0.0
+          m_Deprecated: []
+        m_Dependencies:
+        - m_Name: com.unity.modules.audio
+          m_Version: 1.0.0
+        - m_Name: com.unity.modules.animation
+          m_Version: 1.0.0
+        m_ResolvedDependencies:
+        - m_Name: com.unity.modules.audio
+          m_Version: 1.0.0
+        - m_Name: com.unity.modules.animation
+          m_Version: 1.0.0
+        m_Keywords: []
+        m_Author:
+          m_Name: 
+          m_Email: 
+          m_Url: 
+        m_Registry:
+          m_Id: main
+          m_Name: 
+          m_Url: https://packages.unity.com
+          m_Scopes: []
+          m_IsDefault: 1
+          m_Capabilities: 7
+          m_ConfigSource: 0
+        m_HideInEditor: 1
+        m_Entitlements:
+          m_IsAllowed: 1
+          m_LicensingModel: 0
+          m_Status: 3
+        m_DatePublishedTicks: 0
+        m_Git:
+          m_Hash: 
+          m_Revision: 
+        m_IsAssetStorePackage: 0
+        m_DocumentationUrl: 
+        m_ChangelogUrl: 
+        m_LicensesUrl: 
+        m_HasRepository: 0
+        m_Repository:
+          m_Type: 
+          m_Url: 
+          m_Revision: 
+          m_Path: 
+        m_UnityLifecycle:
+          m_Version: 1.0.0
+          m_NextVersion: 
+          m_RecommendedVersion: 
+          m_IsDeprecated: 0
+          m_DeprecationMessage: 
+        m_UpmReserved: 
+        m_Signature:
+          m_Status: 0
+          m_Reason: 
+        m_IsDeprecated: 0
+        m_DeprecationMessage: 
+        m_AssetStore:
+          m_ProductId: 
+      - m_PackageId: com.unity.modules.imageconversion@1.0.0
+        m_IsDirectDependency: 1
+        m_ProjectDependenciesEntry: 1.0.0
+        m_Version: 1.0.0
+        m_Source: 2
+        m_ResolvedPath: C:\Users\genia\Work\OpenXR-Unity-MixedReality-Samples\RemotingSample\Library\PackageCache\com.unity.modules.imageconversion@1.0.0
+        m_AssetPath: Packages/com.unity.modules.imageconversion
+        m_Name: com.unity.modules.imageconversion
+        m_DisplayName: Image Conversion
+        m_Category: 
+        m_Type: module
+        m_Description: 'The ImageConversion module implements the ImageConversion
+          class which provides helper methods to convert images from and to PNG,
+          JPEG or EXR formats. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.ImageConversionModule.html'
+        m_Status: 0
+        m_Errors: []
+        m_Versions:
+          m_All:
+          - 1.0.0
+          m_Compatible:
+          - 1.0.0
+          m_Recommended: 1.0.0
+          m_Deprecated: []
+        m_Dependencies: []
+        m_ResolvedDependencies: []
+        m_Keywords: []
+        m_Author:
+          m_Name: 
+          m_Email: 
+          m_Url: 
+        m_Registry:
+          m_Id: main
+          m_Name: 
+          m_Url: https://packages.unity.com
+          m_Scopes: []
+          m_IsDefault: 1
+          m_Capabilities: 7
+          m_ConfigSource: 0
+        m_HideInEditor: 1
+        m_Entitlements:
+          m_IsAllowed: 1
+          m_LicensingModel: 0
+          m_Status: 3
+        m_DatePublishedTicks: 0
+        m_Git:
+          m_Hash: 
+          m_Revision: 
+        m_IsAssetStorePackage: 0
+        m_DocumentationUrl: 
+        m_ChangelogUrl: 
+        m_LicensesUrl: 
+        m_HasRepository: 0
+        m_Repository:
+          m_Type: 
+          m_Url: 
+          m_Revision: 
+          m_Path: 
+        m_UnityLifecycle:
+          m_Version: 1.0.0
+          m_NextVersion: 
+          m_RecommendedVersion: 
+          m_IsDeprecated: 0
+          m_DeprecationMessage: 
+        m_UpmReserved: 
+        m_Signature:
+          m_Status: 0
+          m_Reason: 
+        m_IsDeprecated: 0
+        m_DeprecationMessage: 
+        m_AssetStore:
+          m_ProductId: 
+      - m_PackageId: com.unity.modules.imgui@1.0.0
+        m_IsDirectDependency: 1
+        m_ProjectDependenciesEntry: 1.0.0
+        m_Version: 1.0.0
+        m_Source: 2
+        m_ResolvedPath: C:\Users\genia\Work\OpenXR-Unity-MixedReality-Samples\RemotingSample\Library\PackageCache\com.unity.modules.imgui@1.0.0
+        m_AssetPath: Packages/com.unity.modules.imgui
+        m_Name: com.unity.modules.imgui
+        m_DisplayName: IMGUI
+        m_Category: 
+        m_Type: module
+        m_Description: 'The IMGUI module provides Unity''s immediate mode GUI solution
+          for creating in-game and editor user interfaces. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.IMGUIModule.html'
+        m_Status: 0
+        m_Errors: []
+        m_Versions:
+          m_All:
+          - 1.0.0
+          m_Compatible:
+          - 1.0.0
+          m_Recommended: 1.0.0
+          m_Deprecated: []
+        m_Dependencies: []
+        m_ResolvedDependencies: []
+        m_Keywords: []
+        m_Author:
+          m_Name: 
+          m_Email: 
+          m_Url: 
+        m_Registry:
+          m_Id: main
+          m_Name: 
+          m_Url: https://packages.unity.com
+          m_Scopes: []
+          m_IsDefault: 1
+          m_Capabilities: 7
+          m_ConfigSource: 0
+        m_HideInEditor: 1
+        m_Entitlements:
+          m_IsAllowed: 1
+          m_LicensingModel: 0
+          m_Status: 3
+        m_DatePublishedTicks: 0
+        m_Git:
+          m_Hash: 
+          m_Revision: 
+        m_IsAssetStorePackage: 0
+        m_DocumentationUrl: 
+        m_ChangelogUrl: 
+        m_LicensesUrl: 
+        m_HasRepository: 0
+        m_Repository:
+          m_Type: 
+          m_Url: 
+          m_Revision: 
+          m_Path: 
+        m_UnityLifecycle:
+          m_Version: 1.0.0
+          m_NextVersion: 
+          m_RecommendedVersion: 
+          m_IsDeprecated: 0
+          m_DeprecationMessage: 
+        m_UpmReserved: 
+        m_Signature:
+          m_Status: 0
+          m_Reason: 
+        m_IsDeprecated: 0
+        m_DeprecationMessage: 
+        m_AssetStore:
+          m_ProductId: 
+      - m_PackageId: com.unity.modules.jsonserialize@1.0.0
+        m_IsDirectDependency: 1
+        m_ProjectDependenciesEntry: 1.0.0
+        m_Version: 1.0.0
+        m_Source: 2
+        m_ResolvedPath: C:\Users\genia\Work\OpenXR-Unity-MixedReality-Samples\RemotingSample\Library\PackageCache\com.unity.modules.jsonserialize@1.0.0
+        m_AssetPath: Packages/com.unity.modules.jsonserialize
+        m_Name: com.unity.modules.jsonserialize
+        m_DisplayName: JSONSerialize
+        m_Category: 
+        m_Type: module
+        m_Description: 'The JSONSerialize module provides the JsonUtility class which
+          lets you serialize Unity Objects to JSON format. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.JSONSerializeModule.html'
+        m_Status: 0
+        m_Errors: []
+        m_Versions:
+          m_All:
+          - 1.0.0
+          m_Compatible:
+          - 1.0.0
+          m_Recommended: 1.0.0
+          m_Deprecated: []
+        m_Dependencies: []
+        m_ResolvedDependencies: []
+        m_Keywords: []
+        m_Author:
+          m_Name: 
+          m_Email: 
+          m_Url: 
+        m_Registry:
+          m_Id: main
+          m_Name: 
+          m_Url: https://packages.unity.com
+          m_Scopes: []
+          m_IsDefault: 1
+          m_Capabilities: 7
+          m_ConfigSource: 0
+        m_HideInEditor: 1
+        m_Entitlements:
+          m_IsAllowed: 1
+          m_LicensingModel: 0
+          m_Status: 3
+        m_DatePublishedTicks: 0
+        m_Git:
+          m_Hash: 
+          m_Revision: 
+        m_IsAssetStorePackage: 0
+        m_DocumentationUrl: 
+        m_ChangelogUrl: 
+        m_LicensesUrl: 
+        m_HasRepository: 0
+        m_Repository:
+          m_Type: 
+          m_Url: 
+          m_Revision: 
+          m_Path: 
+        m_UnityLifecycle:
+          m_Version: 1.0.0
+          m_NextVersion: 
+          m_RecommendedVersion: 
+          m_IsDeprecated: 0
+          m_DeprecationMessage: 
+        m_UpmReserved: 
+        m_Signature:
+          m_Status: 0
+          m_Reason: 
+        m_IsDeprecated: 0
+        m_DeprecationMessage: 
+        m_AssetStore:
+          m_ProductId: 
+      - m_PackageId: com.unity.modules.particlesystem@1.0.0
+        m_IsDirectDependency: 1
+        m_ProjectDependenciesEntry: 1.0.0
+        m_Version: 1.0.0
+        m_Source: 2
+        m_ResolvedPath: C:\Users\genia\Work\OpenXR-Unity-MixedReality-Samples\RemotingSample\Library\PackageCache\com.unity.modules.particlesystem@1.0.0
+        m_AssetPath: Packages/com.unity.modules.particlesystem
+        m_Name: com.unity.modules.particlesystem
+        m_DisplayName: Particle System
+        m_Category: 
+        m_Type: module
+        m_Description: 'The ParticleSystem module implements Unity''s Particle System.
+          Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.ParticleSystemModule.html'
+        m_Status: 0
+        m_Errors: []
+        m_Versions:
+          m_All:
+          - 1.0.0
+          m_Compatible:
+          - 1.0.0
+          m_Recommended: 1.0.0
+          m_Deprecated: []
+        m_Dependencies: []
+        m_ResolvedDependencies: []
+        m_Keywords: []
+        m_Author:
+          m_Name: 
+          m_Email: 
+          m_Url: 
+        m_Registry:
+          m_Id: main
+          m_Name: 
+          m_Url: https://packages.unity.com
+          m_Scopes: []
+          m_IsDefault: 1
+          m_Capabilities: 7
+          m_ConfigSource: 0
+        m_HideInEditor: 1
+        m_Entitlements:
+          m_IsAllowed: 1
+          m_LicensingModel: 0
+          m_Status: 3
+        m_DatePublishedTicks: 0
+        m_Git:
+          m_Hash: 
+          m_Revision: 
+        m_IsAssetStorePackage: 0
+        m_DocumentationUrl: 
+        m_ChangelogUrl: 
+        m_LicensesUrl: 
+        m_HasRepository: 0
+        m_Repository:
+          m_Type: 
+          m_Url: 
+          m_Revision: 
+          m_Path: 
+        m_UnityLifecycle:
+          m_Version: 1.0.0
+          m_NextVersion: 
+          m_RecommendedVersion: 
+          m_IsDeprecated: 0
+          m_DeprecationMessage: 
+        m_UpmReserved: 
+        m_Signature:
+          m_Status: 0
+          m_Reason: 
+        m_IsDeprecated: 0
+        m_DeprecationMessage: 
+        m_AssetStore:
+          m_ProductId: 
+      - m_PackageId: com.unity.modules.physics@1.0.0
+        m_IsDirectDependency: 1
+        m_ProjectDependenciesEntry: 1.0.0
+        m_Version: 1.0.0
+        m_Source: 2
+        m_ResolvedPath: C:\Users\genia\Work\OpenXR-Unity-MixedReality-Samples\RemotingSample\Library\PackageCache\com.unity.modules.physics@1.0.0
+        m_AssetPath: Packages/com.unity.modules.physics
+        m_Name: com.unity.modules.physics
+        m_DisplayName: Physics
+        m_Category: 
+        m_Type: module
+        m_Description: 'The Physics module implements 3D physics in Unity. Scripting
+          API: https://docs.unity3d.com/ScriptReference/UnityEngine.PhysicsModule.html'
+        m_Status: 0
+        m_Errors: []
+        m_Versions:
+          m_All:
+          - 1.0.0
+          m_Compatible:
+          - 1.0.0
+          m_Recommended: 1.0.0
+          m_Deprecated: []
+        m_Dependencies: []
+        m_ResolvedDependencies: []
+        m_Keywords: []
+        m_Author:
+          m_Name: 
+          m_Email: 
+          m_Url: 
+        m_Registry:
+          m_Id: main
+          m_Name: 
+          m_Url: https://packages.unity.com
+          m_Scopes: []
+          m_IsDefault: 1
+          m_Capabilities: 7
+          m_ConfigSource: 0
+        m_HideInEditor: 1
+        m_Entitlements:
+          m_IsAllowed: 1
+          m_LicensingModel: 0
+          m_Status: 3
+        m_DatePublishedTicks: 0
+        m_Git:
+          m_Hash: 
+          m_Revision: 
+        m_IsAssetStorePackage: 0
+        m_DocumentationUrl: 
+        m_ChangelogUrl: 
+        m_LicensesUrl: 
+        m_HasRepository: 0
+        m_Repository:
+          m_Type: 
+          m_Url: 
+          m_Revision: 
+          m_Path: 
+        m_UnityLifecycle:
+          m_Version: 1.0.0
+          m_NextVersion: 
+          m_RecommendedVersion: 
+          m_IsDeprecated: 0
+          m_DeprecationMessage: 
+        m_UpmReserved: 
+        m_Signature:
+          m_Status: 0
+          m_Reason: 
+        m_IsDeprecated: 0
+        m_DeprecationMessage: 
+        m_AssetStore:
+          m_ProductId: 
+      - m_PackageId: com.unity.modules.physics2d@1.0.0
+        m_IsDirectDependency: 1
+        m_ProjectDependenciesEntry: 1.0.0
+        m_Version: 1.0.0
+        m_Source: 2
+        m_ResolvedPath: C:\Users\genia\Work\OpenXR-Unity-MixedReality-Samples\RemotingSample\Library\PackageCache\com.unity.modules.physics2d@1.0.0
+        m_AssetPath: Packages/com.unity.modules.physics2d
+        m_Name: com.unity.modules.physics2d
+        m_DisplayName: Physics 2D
+        m_Category: 
+        m_Type: module
+        m_Description: 'The Physics2d module implements 2D physics in Unity. Scripting
+          API: https://docs.unity3d.com/ScriptReference/UnityEngine.Physics2DModule.html'
+        m_Status: 0
+        m_Errors: []
+        m_Versions:
+          m_All:
+          - 1.0.0
+          m_Compatible:
+          - 1.0.0
+          m_Recommended: 1.0.0
+          m_Deprecated: []
+        m_Dependencies: []
+        m_ResolvedDependencies: []
+        m_Keywords: []
+        m_Author:
+          m_Name: 
+          m_Email: 
+          m_Url: 
+        m_Registry:
+          m_Id: main
+          m_Name: 
+          m_Url: https://packages.unity.com
+          m_Scopes: []
+          m_IsDefault: 1
+          m_Capabilities: 7
+          m_ConfigSource: 0
+        m_HideInEditor: 1
+        m_Entitlements:
+          m_IsAllowed: 1
+          m_LicensingModel: 0
+          m_Status: 3
+        m_DatePublishedTicks: 0
+        m_Git:
+          m_Hash: 
+          m_Revision: 
+        m_IsAssetStorePackage: 0
+        m_DocumentationUrl: 
+        m_ChangelogUrl: 
+        m_LicensesUrl: 
+        m_HasRepository: 0
+        m_Repository:
+          m_Type: 
+          m_Url: 
+          m_Revision: 
+          m_Path: 
+        m_UnityLifecycle:
+          m_Version: 1.0.0
+          m_NextVersion: 
+          m_RecommendedVersion: 
+          m_IsDeprecated: 0
+          m_DeprecationMessage: 
+        m_UpmReserved: 
+        m_Signature:
+          m_Status: 0
+          m_Reason: 
+        m_IsDeprecated: 0
+        m_DeprecationMessage: 
+        m_AssetStore:
+          m_ProductId: 
+      - m_PackageId: com.unity.modules.screencapture@1.0.0
+        m_IsDirectDependency: 1
+        m_ProjectDependenciesEntry: 1.0.0
+        m_Version: 1.0.0
+        m_Source: 2
+        m_ResolvedPath: C:\Users\genia\Work\OpenXR-Unity-MixedReality-Samples\RemotingSample\Library\PackageCache\com.unity.modules.screencapture@1.0.0
+        m_AssetPath: Packages/com.unity.modules.screencapture
+        m_Name: com.unity.modules.screencapture
+        m_DisplayName: Screen Capture
+        m_Category: 
+        m_Type: module
+        m_Description: 'The ScreenCapture module provides functionality to take screen
+          shots using the ScreenCapture class. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.ScreenCaptureModule.html'
+        m_Status: 0
+        m_Errors: []
+        m_Versions:
+          m_All:
+          - 1.0.0
+          m_Compatible:
+          - 1.0.0
+          m_Recommended: 1.0.0
+          m_Deprecated: []
+        m_Dependencies:
+        - m_Name: com.unity.modules.imageconversion
+          m_Version: 1.0.0
+        m_ResolvedDependencies:
+        - m_Name: com.unity.modules.imageconversion
+          m_Version: 1.0.0
+        m_Keywords: []
+        m_Author:
+          m_Name: 
+          m_Email: 
+          m_Url: 
+        m_Registry:
+          m_Id: main
+          m_Name: 
+          m_Url: https://packages.unity.com
+          m_Scopes: []
+          m_IsDefault: 1
+          m_Capabilities: 7
+          m_ConfigSource: 0
+        m_HideInEditor: 1
+        m_Entitlements:
+          m_IsAllowed: 1
+          m_LicensingModel: 0
+          m_Status: 3
+        m_DatePublishedTicks: 0
+        m_Git:
+          m_Hash: 
+          m_Revision: 
+        m_IsAssetStorePackage: 0
+        m_DocumentationUrl: 
+        m_ChangelogUrl: 
+        m_LicensesUrl: 
+        m_HasRepository: 0
+        m_Repository:
+          m_Type: 
+          m_Url: 
+          m_Revision: 
+          m_Path: 
+        m_UnityLifecycle:
+          m_Version: 1.0.0
+          m_NextVersion: 
+          m_RecommendedVersion: 
+          m_IsDeprecated: 0
+          m_DeprecationMessage: 
+        m_UpmReserved: 
+        m_Signature:
+          m_Status: 0
+          m_Reason: 
+        m_IsDeprecated: 0
+        m_DeprecationMessage: 
+        m_AssetStore:
+          m_ProductId: 
+      - m_PackageId: com.unity.modules.terrain@1.0.0
+        m_IsDirectDependency: 1
+        m_ProjectDependenciesEntry: 1.0.0
+        m_Version: 1.0.0
+        m_Source: 2
+        m_ResolvedPath: C:\Users\genia\Work\OpenXR-Unity-MixedReality-Samples\RemotingSample\Library\PackageCache\com.unity.modules.terrain@1.0.0
+        m_AssetPath: Packages/com.unity.modules.terrain
+        m_Name: com.unity.modules.terrain
+        m_DisplayName: Terrain
+        m_Category: 
+        m_Type: module
+        m_Description: 'The Terrain module implements Unity''s Terrain rendering
+          engine available through the Terrain component. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.TerrainModule.html'
+        m_Status: 0
+        m_Errors: []
+        m_Versions:
+          m_All:
+          - 1.0.0
+          m_Compatible:
+          - 1.0.0
+          m_Recommended: 1.0.0
+          m_Deprecated: []
+        m_Dependencies: []
+        m_ResolvedDependencies: []
+        m_Keywords: []
+        m_Author:
+          m_Name: 
+          m_Email: 
+          m_Url: 
+        m_Registry:
+          m_Id: main
+          m_Name: 
+          m_Url: https://packages.unity.com
+          m_Scopes: []
+          m_IsDefault: 1
+          m_Capabilities: 7
+          m_ConfigSource: 0
+        m_HideInEditor: 1
+        m_Entitlements:
+          m_IsAllowed: 1
+          m_LicensingModel: 0
+          m_Status: 3
+        m_DatePublishedTicks: 0
+        m_Git:
+          m_Hash: 
+          m_Revision: 
+        m_IsAssetStorePackage: 0
+        m_DocumentationUrl: 
+        m_ChangelogUrl: 
+        m_LicensesUrl: 
+        m_HasRepository: 0
+        m_Repository:
+          m_Type: 
+          m_Url: 
+          m_Revision: 
+          m_Path: 
+        m_UnityLifecycle:
+          m_Version: 1.0.0
+          m_NextVersion: 
+          m_RecommendedVersion: 
+          m_IsDeprecated: 0
+          m_DeprecationMessage: 
+        m_UpmReserved: 
+        m_Signature:
+          m_Status: 0
+          m_Reason: 
+        m_IsDeprecated: 0
+        m_DeprecationMessage: 
+        m_AssetStore:
+          m_ProductId: 
+      - m_PackageId: com.unity.modules.terrainphysics@1.0.0
+        m_IsDirectDependency: 1
+        m_ProjectDependenciesEntry: 1.0.0
+        m_Version: 1.0.0
+        m_Source: 2
+        m_ResolvedPath: C:\Users\genia\Work\OpenXR-Unity-MixedReality-Samples\RemotingSample\Library\PackageCache\com.unity.modules.terrainphysics@1.0.0
+        m_AssetPath: Packages/com.unity.modules.terrainphysics
+        m_Name: com.unity.modules.terrainphysics
+        m_DisplayName: Terrain Physics
+        m_Category: 
+        m_Type: module
+        m_Description: 'The TerrainPhysics module connects the Terrain and Physics
+          modules by implementing the TerrainCollider component. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.TerrainPhysicsModule.html'
+        m_Status: 0
+        m_Errors: []
+        m_Versions:
+          m_All:
+          - 1.0.0
+          m_Compatible:
+          - 1.0.0
+          m_Recommended: 1.0.0
+          m_Deprecated: []
+        m_Dependencies:
+        - m_Name: com.unity.modules.physics
+          m_Version: 1.0.0
+        - m_Name: com.unity.modules.terrain
+          m_Version: 1.0.0
+        m_ResolvedDependencies:
+        - m_Name: com.unity.modules.physics
+          m_Version: 1.0.0
+        - m_Name: com.unity.modules.terrain
+          m_Version: 1.0.0
+        m_Keywords: []
+        m_Author:
+          m_Name: 
+          m_Email: 
+          m_Url: 
+        m_Registry:
+          m_Id: main
+          m_Name: 
+          m_Url: https://packages.unity.com
+          m_Scopes: []
+          m_IsDefault: 1
+          m_Capabilities: 7
+          m_ConfigSource: 0
+        m_HideInEditor: 1
+        m_Entitlements:
+          m_IsAllowed: 1
+          m_LicensingModel: 0
+          m_Status: 3
+        m_DatePublishedTicks: 0
+        m_Git:
+          m_Hash: 
+          m_Revision: 
+        m_IsAssetStorePackage: 0
+        m_DocumentationUrl: 
+        m_ChangelogUrl: 
+        m_LicensesUrl: 
+        m_HasRepository: 0
+        m_Repository:
+          m_Type: 
+          m_Url: 
+          m_Revision: 
+          m_Path: 
+        m_UnityLifecycle:
+          m_Version: 1.0.0
+          m_NextVersion: 
+          m_RecommendedVersion: 
+          m_IsDeprecated: 0
+          m_DeprecationMessage: 
+        m_UpmReserved: 
+        m_Signature:
+          m_Status: 0
+          m_Reason: 
+        m_IsDeprecated: 0
+        m_DeprecationMessage: 
+        m_AssetStore:
+          m_ProductId: 
+      - m_PackageId: com.unity.modules.tilemap@1.0.0
+        m_IsDirectDependency: 1
+        m_ProjectDependenciesEntry: 1.0.0
+        m_Version: 1.0.0
+        m_Source: 2
+        m_ResolvedPath: C:\Users\genia\Work\OpenXR-Unity-MixedReality-Samples\RemotingSample\Library\PackageCache\com.unity.modules.tilemap@1.0.0
+        m_AssetPath: Packages/com.unity.modules.tilemap
+        m_Name: com.unity.modules.tilemap
+        m_DisplayName: Tilemap
+        m_Category: 
+        m_Type: module
+        m_Description: 'The Tilemap module implements the Tilemap class. Scripting
+          API: https://docs.unity3d.com/ScriptReference/UnityEngine.TilemapModule.html'
+        m_Status: 0
+        m_Errors: []
+        m_Versions:
+          m_All:
+          - 1.0.0
+          m_Compatible:
+          - 1.0.0
+          m_Recommended: 1.0.0
+          m_Deprecated: []
+        m_Dependencies:
+        - m_Name: com.unity.modules.physics2d
+          m_Version: 1.0.0
+        m_ResolvedDependencies:
+        - m_Name: com.unity.modules.physics2d
+          m_Version: 1.0.0
+        m_Keywords: []
+        m_Author:
+          m_Name: 
+          m_Email: 
+          m_Url: 
+        m_Registry:
+          m_Id: main
+          m_Name: 
+          m_Url: https://packages.unity.com
+          m_Scopes: []
+          m_IsDefault: 1
+          m_Capabilities: 7
+          m_ConfigSource: 0
+        m_HideInEditor: 1
+        m_Entitlements:
+          m_IsAllowed: 1
+          m_LicensingModel: 0
+          m_Status: 3
+        m_DatePublishedTicks: 0
+        m_Git:
+          m_Hash: 
+          m_Revision: 
+        m_IsAssetStorePackage: 0
+        m_DocumentationUrl: 
+        m_ChangelogUrl: 
+        m_LicensesUrl: 
+        m_HasRepository: 0
+        m_Repository:
+          m_Type: 
+          m_Url: 
+          m_Revision: 
+          m_Path: 
+        m_UnityLifecycle:
+          m_Version: 1.0.0
+          m_NextVersion: 
+          m_RecommendedVersion: 
+          m_IsDeprecated: 0
+          m_DeprecationMessage: 
+        m_UpmReserved: 
+        m_Signature:
+          m_Status: 0
+          m_Reason: 
+        m_IsDeprecated: 0
+        m_DeprecationMessage: 
+        m_AssetStore:
+          m_ProductId: 
+      - m_PackageId: com.unity.modules.ui@1.0.0
+        m_IsDirectDependency: 1
+        m_ProjectDependenciesEntry: 1.0.0
+        m_Version: 1.0.0
+        m_Source: 2
+        m_ResolvedPath: C:\Users\genia\Work\OpenXR-Unity-MixedReality-Samples\RemotingSample\Library\PackageCache\com.unity.modules.ui@1.0.0
+        m_AssetPath: Packages/com.unity.modules.ui
+        m_Name: com.unity.modules.ui
+        m_DisplayName: UI
+        m_Category: 
+        m_Type: module
+        m_Description: 'The UI module implements basic components required for Unity''s
+          UI system Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.UIModule.html'
+        m_Status: 0
+        m_Errors: []
+        m_Versions:
+          m_All:
+          - 1.0.0
+          m_Compatible:
+          - 1.0.0
+          m_Recommended: 1.0.0
+          m_Deprecated: []
+        m_Dependencies: []
+        m_ResolvedDependencies: []
+        m_Keywords: []
+        m_Author:
+          m_Name: 
+          m_Email: 
+          m_Url: 
+        m_Registry:
+          m_Id: main
+          m_Name: 
+          m_Url: https://packages.unity.com
+          m_Scopes: []
+          m_IsDefault: 1
+          m_Capabilities: 7
+          m_ConfigSource: 0
+        m_HideInEditor: 1
+        m_Entitlements:
+          m_IsAllowed: 1
+          m_LicensingModel: 0
+          m_Status: 3
+        m_DatePublishedTicks: 0
+        m_Git:
+          m_Hash: 
+          m_Revision: 
+        m_IsAssetStorePackage: 0
+        m_DocumentationUrl: 
+        m_ChangelogUrl: 
+        m_LicensesUrl: 
+        m_HasRepository: 0
+        m_Repository:
+          m_Type: 
+          m_Url: 
+          m_Revision: 
+          m_Path: 
+        m_UnityLifecycle:
+          m_Version: 1.0.0
+          m_NextVersion: 
+          m_RecommendedVersion: 
+          m_IsDeprecated: 0
+          m_DeprecationMessage: 
+        m_UpmReserved: 
+        m_Signature:
+          m_Status: 0
+          m_Reason: 
+        m_IsDeprecated: 0
+        m_DeprecationMessage: 
+        m_AssetStore:
+          m_ProductId: 
+      - m_PackageId: com.unity.modules.uielements@1.0.0
+        m_IsDirectDependency: 1
+        m_ProjectDependenciesEntry: 1.0.0
+        m_Version: 1.0.0
+        m_Source: 2
+        m_ResolvedPath: C:\Users\genia\Work\OpenXR-Unity-MixedReality-Samples\RemotingSample\Library\PackageCache\com.unity.modules.uielements@1.0.0
+        m_AssetPath: Packages/com.unity.modules.uielements
+        m_Name: com.unity.modules.uielements
+        m_DisplayName: UIElements
+        m_Category: 
+        m_Type: module
+        m_Description: 'The UIElements module implements the UIElements retained
+          mode UI framework. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.UIElementsModule.html'
+        m_Status: 0
+        m_Errors: []
+        m_Versions:
+          m_All:
+          - 1.0.0
+          m_Compatible:
+          - 1.0.0
+          m_Recommended: 1.0.0
+          m_Deprecated: []
+        m_Dependencies:
+        - m_Name: com.unity.modules.ui
+          m_Version: 1.0.0
+        - m_Name: com.unity.modules.imgui
+          m_Version: 1.0.0
+        - m_Name: com.unity.modules.jsonserialize
+          m_Version: 1.0.0
+        m_ResolvedDependencies:
+        - m_Name: com.unity.modules.ui
+          m_Version: 1.0.0
+        - m_Name: com.unity.modules.imgui
+          m_Version: 1.0.0
+        - m_Name: com.unity.modules.jsonserialize
+          m_Version: 1.0.0
+        m_Keywords: []
+        m_Author:
+          m_Name: 
+          m_Email: 
+          m_Url: 
+        m_Registry:
+          m_Id: main
+          m_Name: 
+          m_Url: https://packages.unity.com
+          m_Scopes: []
+          m_IsDefault: 1
+          m_Capabilities: 7
+          m_ConfigSource: 0
+        m_HideInEditor: 1
+        m_Entitlements:
+          m_IsAllowed: 1
+          m_LicensingModel: 0
+          m_Status: 3
+        m_DatePublishedTicks: 0
+        m_Git:
+          m_Hash: 
+          m_Revision: 
+        m_IsAssetStorePackage: 0
+        m_DocumentationUrl: 
+        m_ChangelogUrl: 
+        m_LicensesUrl: 
+        m_HasRepository: 0
+        m_Repository:
+          m_Type: 
+          m_Url: 
+          m_Revision: 
+          m_Path: 
+        m_UnityLifecycle:
+          m_Version: 1.0.0
+          m_NextVersion: 
+          m_RecommendedVersion: 
+          m_IsDeprecated: 0
+          m_DeprecationMessage: 
+        m_UpmReserved: 
+        m_Signature:
+          m_Status: 0
+          m_Reason: 
+        m_IsDeprecated: 0
+        m_DeprecationMessage: 
+        m_AssetStore:
+          m_ProductId: 
+      - m_PackageId: com.unity.modules.umbra@1.0.0
+        m_IsDirectDependency: 1
+        m_ProjectDependenciesEntry: 1.0.0
+        m_Version: 1.0.0
+        m_Source: 2
+        m_ResolvedPath: C:\Users\genia\Work\OpenXR-Unity-MixedReality-Samples\RemotingSample\Library\PackageCache\com.unity.modules.umbra@1.0.0
+        m_AssetPath: Packages/com.unity.modules.umbra
+        m_Name: com.unity.modules.umbra
+        m_DisplayName: Umbra
+        m_Category: 
+        m_Type: module
+        m_Description: 'The Umbra module implements Unity''s occlusion culling system.
+          Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.UmbraModule.html'
+        m_Status: 0
+        m_Errors: []
+        m_Versions:
+          m_All:
+          - 1.0.0
+          m_Compatible:
+          - 1.0.0
+          m_Recommended: 1.0.0
+          m_Deprecated: []
+        m_Dependencies: []
+        m_ResolvedDependencies: []
+        m_Keywords: []
+        m_Author:
+          m_Name: 
+          m_Email: 
+          m_Url: 
+        m_Registry:
+          m_Id: main
+          m_Name: 
+          m_Url: https://packages.unity.com
+          m_Scopes: []
+          m_IsDefault: 1
+          m_Capabilities: 7
+          m_ConfigSource: 0
+        m_HideInEditor: 1
+        m_Entitlements:
+          m_IsAllowed: 1
+          m_LicensingModel: 0
+          m_Status: 3
+        m_DatePublishedTicks: 0
+        m_Git:
+          m_Hash: 
+          m_Revision: 
+        m_IsAssetStorePackage: 0
+        m_DocumentationUrl: 
+        m_ChangelogUrl: 
+        m_LicensesUrl: 
+        m_HasRepository: 0
+        m_Repository:
+          m_Type: 
+          m_Url: 
+          m_Revision: 
+          m_Path: 
+        m_UnityLifecycle:
+          m_Version: 1.0.0
+          m_NextVersion: 
+          m_RecommendedVersion: 
+          m_IsDeprecated: 0
+          m_DeprecationMessage: 
+        m_UpmReserved: 
+        m_Signature:
+          m_Status: 0
+          m_Reason: 
+        m_IsDeprecated: 0
+        m_DeprecationMessage: 
+        m_AssetStore:
+          m_ProductId: 
+      - m_PackageId: com.unity.modules.unityanalytics@1.0.0
+        m_IsDirectDependency: 1
+        m_ProjectDependenciesEntry: 1.0.0
+        m_Version: 1.0.0
+        m_Source: 2
+        m_ResolvedPath: C:\Users\genia\Work\OpenXR-Unity-MixedReality-Samples\RemotingSample\Library\PackageCache\com.unity.modules.unityanalytics@1.0.0
+        m_AssetPath: Packages/com.unity.modules.unityanalytics
+        m_Name: com.unity.modules.unityanalytics
+        m_DisplayName: Unity Analytics
+        m_Category: 
+        m_Type: module
+        m_Description: 'The UnityAnalytics module implements APIs required to use
+          Unity Analytics. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.UnityAnalyticsModule.html'
+        m_Status: 0
+        m_Errors: []
+        m_Versions:
+          m_All:
+          - 1.0.0
+          m_Compatible:
+          - 1.0.0
+          m_Recommended: 1.0.0
+          m_Deprecated: []
+        m_Dependencies:
+        - m_Name: com.unity.modules.unitywebrequest
+          m_Version: 1.0.0
+        - m_Name: com.unity.modules.jsonserialize
+          m_Version: 1.0.0
+        m_ResolvedDependencies:
+        - m_Name: com.unity.modules.unitywebrequest
+          m_Version: 1.0.0
+        - m_Name: com.unity.modules.jsonserialize
+          m_Version: 1.0.0
+        m_Keywords: []
+        m_Author:
+          m_Name: 
+          m_Email: 
+          m_Url: 
+        m_Registry:
+          m_Id: main
+          m_Name: 
+          m_Url: https://packages.unity.com
+          m_Scopes: []
+          m_IsDefault: 1
+          m_Capabilities: 7
+          m_ConfigSource: 0
+        m_HideInEditor: 1
+        m_Entitlements:
+          m_IsAllowed: 1
+          m_LicensingModel: 0
+          m_Status: 3
+        m_DatePublishedTicks: 0
+        m_Git:
+          m_Hash: 
+          m_Revision: 
+        m_IsAssetStorePackage: 0
+        m_DocumentationUrl: 
+        m_ChangelogUrl: 
+        m_LicensesUrl: 
+        m_HasRepository: 0
+        m_Repository:
+          m_Type: 
+          m_Url: 
+          m_Revision: 
+          m_Path: 
+        m_UnityLifecycle:
+          m_Version: 1.0.0
+          m_NextVersion: 
+          m_RecommendedVersion: 
+          m_IsDeprecated: 0
+          m_DeprecationMessage: 
+        m_UpmReserved: 
+        m_Signature:
+          m_Status: 0
+          m_Reason: 
+        m_IsDeprecated: 0
+        m_DeprecationMessage: 
+        m_AssetStore:
+          m_ProductId: 
+      - m_PackageId: com.unity.modules.unitywebrequest@1.0.0
+        m_IsDirectDependency: 1
+        m_ProjectDependenciesEntry: 1.0.0
+        m_Version: 1.0.0
+        m_Source: 2
+        m_ResolvedPath: C:\Users\genia\Work\OpenXR-Unity-MixedReality-Samples\RemotingSample\Library\PackageCache\com.unity.modules.unitywebrequest@1.0.0
+        m_AssetPath: Packages/com.unity.modules.unitywebrequest
+        m_Name: com.unity.modules.unitywebrequest
+        m_DisplayName: Unity Web Request
+        m_Category: 
+        m_Type: module
+        m_Description: 'The UnityWebRequest module lets you communicate with http
+          services. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.UnityWebRequestModule.html'
+        m_Status: 0
+        m_Errors: []
+        m_Versions:
+          m_All:
+          - 1.0.0
+          m_Compatible:
+          - 1.0.0
+          m_Recommended: 1.0.0
+          m_Deprecated: []
+        m_Dependencies: []
+        m_ResolvedDependencies: []
+        m_Keywords: []
+        m_Author:
+          m_Name: 
+          m_Email: 
+          m_Url: 
+        m_Registry:
+          m_Id: main
+          m_Name: 
+          m_Url: https://packages.unity.com
+          m_Scopes: []
+          m_IsDefault: 1
+          m_Capabilities: 7
+          m_ConfigSource: 0
+        m_HideInEditor: 1
+        m_Entitlements:
+          m_IsAllowed: 1
+          m_LicensingModel: 0
+          m_Status: 3
+        m_DatePublishedTicks: 0
+        m_Git:
+          m_Hash: 
+          m_Revision: 
+        m_IsAssetStorePackage: 0
+        m_DocumentationUrl: 
+        m_ChangelogUrl: 
+        m_LicensesUrl: 
+        m_HasRepository: 0
+        m_Repository:
+          m_Type: 
+          m_Url: 
+          m_Revision: 
+          m_Path: 
+        m_UnityLifecycle:
+          m_Version: 1.0.0
+          m_NextVersion: 
+          m_RecommendedVersion: 
+          m_IsDeprecated: 0
+          m_DeprecationMessage: 
+        m_UpmReserved: 
+        m_Signature:
+          m_Status: 0
+          m_Reason: 
+        m_IsDeprecated: 0
+        m_DeprecationMessage: 
+        m_AssetStore:
+          m_ProductId: 
+      - m_PackageId: com.unity.modules.unitywebrequestassetbundle@1.0.0
+        m_IsDirectDependency: 1
+        m_ProjectDependenciesEntry: 1.0.0
+        m_Version: 1.0.0
+        m_Source: 2
+        m_ResolvedPath: C:\Users\genia\Work\OpenXR-Unity-MixedReality-Samples\RemotingSample\Library\PackageCache\com.unity.modules.unitywebrequestassetbundle@1.0.0
+        m_AssetPath: Packages/com.unity.modules.unitywebrequestassetbundle
+        m_Name: com.unity.modules.unitywebrequestassetbundle
+        m_DisplayName: Unity Web Request Asset Bundle
+        m_Category: 
+        m_Type: module
+        m_Description: 'The UnityWebRequestAssetBundle module provides the DownloadHandlerAssetBundle
+          class to use UnityWebRequest to download Asset Bundles. Scripting API:
+          https://docs.unity3d.com/ScriptReference/UnityEngine.UnityWebRequestAssetBundleModule.html'
+        m_Status: 0
+        m_Errors: []
+        m_Versions:
+          m_All:
+          - 1.0.0
+          m_Compatible:
+          - 1.0.0
+          m_Recommended: 1.0.0
+          m_Deprecated: []
+        m_Dependencies:
+        - m_Name: com.unity.modules.assetbundle
+          m_Version: 1.0.0
+        - m_Name: com.unity.modules.unitywebrequest
+          m_Version: 1.0.0
+        m_ResolvedDependencies:
+        - m_Name: com.unity.modules.assetbundle
+          m_Version: 1.0.0
+        - m_Name: com.unity.modules.unitywebrequest
+          m_Version: 1.0.0
+        m_Keywords: []
+        m_Author:
+          m_Name: 
+          m_Email: 
+          m_Url: 
+        m_Registry:
+          m_Id: main
+          m_Name: 
+          m_Url: https://packages.unity.com
+          m_Scopes: []
+          m_IsDefault: 1
+          m_Capabilities: 7
+          m_ConfigSource: 0
+        m_HideInEditor: 1
+        m_Entitlements:
+          m_IsAllowed: 1
+          m_LicensingModel: 0
+          m_Status: 3
+        m_DatePublishedTicks: 0
+        m_Git:
+          m_Hash: 
+          m_Revision: 
+        m_IsAssetStorePackage: 0
+        m_DocumentationUrl: 
+        m_ChangelogUrl: 
+        m_LicensesUrl: 
+        m_HasRepository: 0
+        m_Repository:
+          m_Type: 
+          m_Url: 
+          m_Revision: 
+          m_Path: 
+        m_UnityLifecycle:
+          m_Version: 1.0.0
+          m_NextVersion: 
+          m_RecommendedVersion: 
+          m_IsDeprecated: 0
+          m_DeprecationMessage: 
+        m_UpmReserved: 
+        m_Signature:
+          m_Status: 0
+          m_Reason: 
+        m_IsDeprecated: 0
+        m_DeprecationMessage: 
+        m_AssetStore:
+          m_ProductId: 
+      - m_PackageId: com.unity.modules.unitywebrequestaudio@1.0.0
+        m_IsDirectDependency: 1
+        m_ProjectDependenciesEntry: 1.0.0
+        m_Version: 1.0.0
+        m_Source: 2
+        m_ResolvedPath: C:\Users\genia\Work\OpenXR-Unity-MixedReality-Samples\RemotingSample\Library\PackageCache\com.unity.modules.unitywebrequestaudio@1.0.0
+        m_AssetPath: Packages/com.unity.modules.unitywebrequestaudio
+        m_Name: com.unity.modules.unitywebrequestaudio
+        m_DisplayName: Unity Web Request Audio
+        m_Category: 
+        m_Type: module
+        m_Description: 'The UnityWebRequestAudio module provides the DownloadHandlerAudioClip
+          class to use UnityWebRequest to download AudioClips. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.UnityWebRequestAudioModule.html'
+        m_Status: 0
+        m_Errors: []
+        m_Versions:
+          m_All:
+          - 1.0.0
+          m_Compatible:
+          - 1.0.0
+          m_Recommended: 1.0.0
+          m_Deprecated: []
+        m_Dependencies:
+        - m_Name: com.unity.modules.unitywebrequest
+          m_Version: 1.0.0
+        - m_Name: com.unity.modules.audio
+          m_Version: 1.0.0
+        m_ResolvedDependencies:
+        - m_Name: com.unity.modules.unitywebrequest
+          m_Version: 1.0.0
+        - m_Name: com.unity.modules.audio
+          m_Version: 1.0.0
+        m_Keywords: []
+        m_Author:
+          m_Name: 
+          m_Email: 
+          m_Url: 
+        m_Registry:
+          m_Id: main
+          m_Name: 
+          m_Url: https://packages.unity.com
+          m_Scopes: []
+          m_IsDefault: 1
+          m_Capabilities: 7
+          m_ConfigSource: 0
+        m_HideInEditor: 1
+        m_Entitlements:
+          m_IsAllowed: 1
+          m_LicensingModel: 0
+          m_Status: 3
+        m_DatePublishedTicks: 0
+        m_Git:
+          m_Hash: 
+          m_Revision: 
+        m_IsAssetStorePackage: 0
+        m_DocumentationUrl: 
+        m_ChangelogUrl: 
+        m_LicensesUrl: 
+        m_HasRepository: 0
+        m_Repository:
+          m_Type: 
+          m_Url: 
+          m_Revision: 
+          m_Path: 
+        m_UnityLifecycle:
+          m_Version: 1.0.0
+          m_NextVersion: 
+          m_RecommendedVersion: 
+          m_IsDeprecated: 0
+          m_DeprecationMessage: 
+        m_UpmReserved: 
+        m_Signature:
+          m_Status: 0
+          m_Reason: 
+        m_IsDeprecated: 0
+        m_DeprecationMessage: 
+        m_AssetStore:
+          m_ProductId: 
+      - m_PackageId: com.unity.modules.unitywebrequesttexture@1.0.0
+        m_IsDirectDependency: 1
+        m_ProjectDependenciesEntry: 1.0.0
+        m_Version: 1.0.0
+        m_Source: 2
+        m_ResolvedPath: C:\Users\genia\Work\OpenXR-Unity-MixedReality-Samples\RemotingSample\Library\PackageCache\com.unity.modules.unitywebrequesttexture@1.0.0
+        m_AssetPath: Packages/com.unity.modules.unitywebrequesttexture
+        m_Name: com.unity.modules.unitywebrequesttexture
+        m_DisplayName: Unity Web Request Texture
+        m_Category: 
+        m_Type: module
+        m_Description: 'The UnityWebRequestTexture module provides the DownloadHandlerTexture
+          class to use UnityWebRequest to download Textures. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.UnityWebRequestTextureModule.html'
+        m_Status: 0
+        m_Errors: []
+        m_Versions:
+          m_All:
+          - 1.0.0
+          m_Compatible:
+          - 1.0.0
+          m_Recommended: 1.0.0
+          m_Deprecated: []
+        m_Dependencies:
+        - m_Name: com.unity.modules.unitywebrequest
+          m_Version: 1.0.0
+        - m_Name: com.unity.modules.imageconversion
+          m_Version: 1.0.0
+        m_ResolvedDependencies:
+        - m_Name: com.unity.modules.unitywebrequest
+          m_Version: 1.0.0
+        - m_Name: com.unity.modules.imageconversion
+          m_Version: 1.0.0
+        m_Keywords: []
+        m_Author:
+          m_Name: 
+          m_Email: 
+          m_Url: 
+        m_Registry:
+          m_Id: main
+          m_Name: 
+          m_Url: https://packages.unity.com
+          m_Scopes: []
+          m_IsDefault: 1
+          m_Capabilities: 7
+          m_ConfigSource: 0
+        m_HideInEditor: 1
+        m_Entitlements:
+          m_IsAllowed: 1
+          m_LicensingModel: 0
+          m_Status: 3
+        m_DatePublishedTicks: 0
+        m_Git:
+          m_Hash: 
+          m_Revision: 
+        m_IsAssetStorePackage: 0
+        m_DocumentationUrl: 
+        m_ChangelogUrl: 
+        m_LicensesUrl: 
+        m_HasRepository: 0
+        m_Repository:
+          m_Type: 
+          m_Url: 
+          m_Revision: 
+          m_Path: 
+        m_UnityLifecycle:
+          m_Version: 1.0.0
+          m_NextVersion: 
+          m_RecommendedVersion: 
+          m_IsDeprecated: 0
+          m_DeprecationMessage: 
+        m_UpmReserved: 
+        m_Signature:
+          m_Status: 0
+          m_Reason: 
+        m_IsDeprecated: 0
+        m_DeprecationMessage: 
+        m_AssetStore:
+          m_ProductId: 
+      - m_PackageId: com.unity.modules.unitywebrequestwww@1.0.0
+        m_IsDirectDependency: 1
+        m_ProjectDependenciesEntry: 1.0.0
+        m_Version: 1.0.0
+        m_Source: 2
+        m_ResolvedPath: C:\Users\genia\Work\OpenXR-Unity-MixedReality-Samples\RemotingSample\Library\PackageCache\com.unity.modules.unitywebrequestwww@1.0.0
+        m_AssetPath: Packages/com.unity.modules.unitywebrequestwww
+        m_Name: com.unity.modules.unitywebrequestwww
+        m_DisplayName: Unity Web Request WWW
+        m_Category: 
+        m_Type: module
+        m_Description: 'The UnityWebRequestWWW module implements the legacy WWW lets
+          you communicate with http services. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.UnityWebRequestWWWModule.html'
+        m_Status: 0
+        m_Errors: []
+        m_Versions:
+          m_All:
+          - 1.0.0
+          m_Compatible:
+          - 1.0.0
+          m_Recommended: 1.0.0
+          m_Deprecated: []
+        m_Dependencies:
+        - m_Name: com.unity.modules.unitywebrequest
+          m_Version: 1.0.0
+        - m_Name: com.unity.modules.unitywebrequestassetbundle
+          m_Version: 1.0.0
+        - m_Name: com.unity.modules.unitywebrequestaudio
+          m_Version: 1.0.0
+        - m_Name: com.unity.modules.audio
+          m_Version: 1.0.0
+        - m_Name: com.unity.modules.assetbundle
+          m_Version: 1.0.0
+        - m_Name: com.unity.modules.imageconversion
+          m_Version: 1.0.0
+        m_ResolvedDependencies:
+        - m_Name: com.unity.modules.unitywebrequest
+          m_Version: 1.0.0
+        - m_Name: com.unity.modules.unitywebrequestassetbundle
+          m_Version: 1.0.0
+        - m_Name: com.unity.modules.assetbundle
+          m_Version: 1.0.0
+        - m_Name: com.unity.modules.unitywebrequestaudio
+          m_Version: 1.0.0
+        - m_Name: com.unity.modules.audio
+          m_Version: 1.0.0
+        - m_Name: com.unity.modules.imageconversion
+          m_Version: 1.0.0
+        m_Keywords: []
+        m_Author:
+          m_Name: 
+          m_Email: 
+          m_Url: 
+        m_Registry:
+          m_Id: main
+          m_Name: 
+          m_Url: https://packages.unity.com
+          m_Scopes: []
+          m_IsDefault: 1
+          m_Capabilities: 7
+          m_ConfigSource: 0
+        m_HideInEditor: 1
+        m_Entitlements:
+          m_IsAllowed: 1
+          m_LicensingModel: 0
+          m_Status: 3
+        m_DatePublishedTicks: 0
+        m_Git:
+          m_Hash: 
+          m_Revision: 
+        m_IsAssetStorePackage: 0
+        m_DocumentationUrl: 
+        m_ChangelogUrl: 
+        m_LicensesUrl: 
+        m_HasRepository: 0
+        m_Repository:
+          m_Type: 
+          m_Url: 
+          m_Revision: 
+          m_Path: 
+        m_UnityLifecycle:
+          m_Version: 1.0.0
+          m_NextVersion: 
+          m_RecommendedVersion: 
+          m_IsDeprecated: 0
+          m_DeprecationMessage: 
+        m_UpmReserved: 
+        m_Signature:
+          m_Status: 0
+          m_Reason: 
+        m_IsDeprecated: 0
+        m_DeprecationMessage: 
+        m_AssetStore:
+          m_ProductId: 
+      - m_PackageId: com.unity.modules.vehicles@1.0.0
+        m_IsDirectDependency: 1
+        m_ProjectDependenciesEntry: 1.0.0
+        m_Version: 1.0.0
+        m_Source: 2
+        m_ResolvedPath: C:\Users\genia\Work\OpenXR-Unity-MixedReality-Samples\RemotingSample\Library\PackageCache\com.unity.modules.vehicles@1.0.0
+        m_AssetPath: Packages/com.unity.modules.vehicles
+        m_Name: com.unity.modules.vehicles
+        m_DisplayName: Vehicles
+        m_Category: 
+        m_Type: module
+        m_Description: 'The Vehicles module implements vehicle physics simulation
+          through the WheelCollider component. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.VehiclesModule.html'
+        m_Status: 0
+        m_Errors: []
+        m_Versions:
+          m_All:
+          - 1.0.0
+          m_Compatible:
+          - 1.0.0
+          m_Recommended: 1.0.0
+          m_Deprecated: []
+        m_Dependencies:
+        - m_Name: com.unity.modules.physics
+          m_Version: 1.0.0
+        m_ResolvedDependencies:
+        - m_Name: com.unity.modules.physics
+          m_Version: 1.0.0
+        m_Keywords: []
+        m_Author:
+          m_Name: 
+          m_Email: 
+          m_Url: 
+        m_Registry:
+          m_Id: main
+          m_Name: 
+          m_Url: https://packages.unity.com
+          m_Scopes: []
+          m_IsDefault: 1
+          m_Capabilities: 7
+          m_ConfigSource: 0
+        m_HideInEditor: 1
+        m_Entitlements:
+          m_IsAllowed: 1
+          m_LicensingModel: 0
+          m_Status: 3
+        m_DatePublishedTicks: 0
+        m_Git:
+          m_Hash: 
+          m_Revision: 
+        m_IsAssetStorePackage: 0
+        m_DocumentationUrl: 
+        m_ChangelogUrl: 
+        m_LicensesUrl: 
+        m_HasRepository: 0
+        m_Repository:
+          m_Type: 
+          m_Url: 
+          m_Revision: 
+          m_Path: 
+        m_UnityLifecycle:
+          m_Version: 1.0.0
+          m_NextVersion: 
+          m_RecommendedVersion: 
+          m_IsDeprecated: 0
+          m_DeprecationMessage: 
+        m_UpmReserved: 
+        m_Signature:
+          m_Status: 0
+          m_Reason: 
+        m_IsDeprecated: 0
+        m_DeprecationMessage: 
+        m_AssetStore:
+          m_ProductId: 
+      - m_PackageId: com.unity.modules.video@1.0.0
+        m_IsDirectDependency: 1
+        m_ProjectDependenciesEntry: 1.0.0
+        m_Version: 1.0.0
+        m_Source: 2
+        m_ResolvedPath: C:\Users\genia\Work\OpenXR-Unity-MixedReality-Samples\RemotingSample\Library\PackageCache\com.unity.modules.video@1.0.0
+        m_AssetPath: Packages/com.unity.modules.video
+        m_Name: com.unity.modules.video
+        m_DisplayName: Video
+        m_Category: 
+        m_Type: module
+        m_Description: 'The Video module lets you play back video files in your content.
+          Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.VideoModule.html'
+        m_Status: 0
+        m_Errors: []
+        m_Versions:
+          m_All:
+          - 1.0.0
+          m_Compatible:
+          - 1.0.0
+          m_Recommended: 1.0.0
+          m_Deprecated: []
+        m_Dependencies:
+        - m_Name: com.unity.modules.audio
+          m_Version: 1.0.0
+        - m_Name: com.unity.modules.ui
+          m_Version: 1.0.0
+        - m_Name: com.unity.modules.unitywebrequest
+          m_Version: 1.0.0
+        m_ResolvedDependencies:
+        - m_Name: com.unity.modules.audio
+          m_Version: 1.0.0
+        - m_Name: com.unity.modules.ui
+          m_Version: 1.0.0
+        - m_Name: com.unity.modules.unitywebrequest
+          m_Version: 1.0.0
+        m_Keywords: []
+        m_Author:
+          m_Name: 
+          m_Email: 
+          m_Url: 
+        m_Registry:
+          m_Id: main
+          m_Name: 
+          m_Url: https://packages.unity.com
+          m_Scopes: []
+          m_IsDefault: 1
+          m_Capabilities: 7
+          m_ConfigSource: 0
+        m_HideInEditor: 1
+        m_Entitlements:
+          m_IsAllowed: 1
+          m_LicensingModel: 0
+          m_Status: 3
+        m_DatePublishedTicks: 0
+        m_Git:
+          m_Hash: 
+          m_Revision: 
+        m_IsAssetStorePackage: 0
+        m_DocumentationUrl: 
+        m_ChangelogUrl: 
+        m_LicensesUrl: 
+        m_HasRepository: 0
+        m_Repository:
+          m_Type: 
+          m_Url: 
+          m_Revision: 
+          m_Path: 
+        m_UnityLifecycle:
+          m_Version: 1.0.0
+          m_NextVersion: 
+          m_RecommendedVersion: 
+          m_IsDeprecated: 0
+          m_DeprecationMessage: 
+        m_UpmReserved: 
+        m_Signature:
+          m_Status: 0
+          m_Reason: 
+        m_IsDeprecated: 0
+        m_DeprecationMessage: 
+        m_AssetStore:
+          m_ProductId: 
+      - m_PackageId: com.unity.modules.vr@1.0.0
+        m_IsDirectDependency: 1
+        m_ProjectDependenciesEntry: 1.0.0
+        m_Version: 1.0.0
+        m_Source: 2
+        m_ResolvedPath: C:\Users\genia\Work\OpenXR-Unity-MixedReality-Samples\RemotingSample\Library\PackageCache\com.unity.modules.vr@1.0.0
+        m_AssetPath: Packages/com.unity.modules.vr
+        m_Name: com.unity.modules.vr
+        m_DisplayName: VR
+        m_Category: 
+        m_Type: module
+        m_Description: 'The VR module implements support for virtual reality devices
+          in Unity. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.VRModule.html'
+        m_Status: 0
+        m_Errors: []
+        m_Versions:
+          m_All:
+          - 1.0.0
+          m_Compatible:
+          - 1.0.0
+          m_Recommended: 1.0.0
+          m_Deprecated: []
+        m_Dependencies:
+        - m_Name: com.unity.modules.jsonserialize
+          m_Version: 1.0.0
+        - m_Name: com.unity.modules.physics
+          m_Version: 1.0.0
+        - m_Name: com.unity.modules.xr
+          m_Version: 1.0.0
+        m_ResolvedDependencies:
+        - m_Name: com.unity.modules.jsonserialize
+          m_Version: 1.0.0
+        - m_Name: com.unity.modules.physics
+          m_Version: 1.0.0
+        - m_Name: com.unity.modules.xr
+          m_Version: 1.0.0
+        - m_Name: com.unity.modules.subsystems
+          m_Version: 1.0.0
+        m_Keywords: []
+        m_Author:
+          m_Name: 
+          m_Email: 
+          m_Url: 
+        m_Registry:
+          m_Id: main
+          m_Name: 
+          m_Url: https://packages.unity.com
+          m_Scopes: []
+          m_IsDefault: 1
+          m_Capabilities: 7
+          m_ConfigSource: 0
+        m_HideInEditor: 1
+        m_Entitlements:
+          m_IsAllowed: 1
+          m_LicensingModel: 0
+          m_Status: 3
+        m_DatePublishedTicks: 0
+        m_Git:
+          m_Hash: 
+          m_Revision: 
+        m_IsAssetStorePackage: 0
+        m_DocumentationUrl: 
+        m_ChangelogUrl: 
+        m_LicensesUrl: 
+        m_HasRepository: 0
+        m_Repository:
+          m_Type: 
+          m_Url: 
+          m_Revision: 
+          m_Path: 
+        m_UnityLifecycle:
+          m_Version: 1.0.0
+          m_NextVersion: 
+          m_RecommendedVersion: 
+          m_IsDeprecated: 0
+          m_DeprecationMessage: 
+        m_UpmReserved: 
+        m_Signature:
+          m_Status: 0
+          m_Reason: 
+        m_IsDeprecated: 0
+        m_DeprecationMessage: 
+        m_AssetStore:
+          m_ProductId: 
+      - m_PackageId: com.unity.modules.wind@1.0.0
+        m_IsDirectDependency: 1
+        m_ProjectDependenciesEntry: 1.0.0
+        m_Version: 1.0.0
+        m_Source: 2
+        m_ResolvedPath: C:\Users\genia\Work\OpenXR-Unity-MixedReality-Samples\RemotingSample\Library\PackageCache\com.unity.modules.wind@1.0.0
+        m_AssetPath: Packages/com.unity.modules.wind
+        m_Name: com.unity.modules.wind
+        m_DisplayName: Wind
+        m_Category: 
+        m_Type: module
+        m_Description: 'The Wind module implements the WindZone component which can
+          affect terrain rendering and particle simulations. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.WindModule.html'
+        m_Status: 0
+        m_Errors: []
+        m_Versions:
+          m_All:
+          - 1.0.0
+          m_Compatible:
+          - 1.0.0
+          m_Recommended: 1.0.0
+          m_Deprecated: []
+        m_Dependencies: []
+        m_ResolvedDependencies: []
+        m_Keywords: []
+        m_Author:
+          m_Name: 
+          m_Email: 
+          m_Url: 
+        m_Registry:
+          m_Id: main
+          m_Name: 
+          m_Url: https://packages.unity.com
+          m_Scopes: []
+          m_IsDefault: 1
+          m_Capabilities: 7
+          m_ConfigSource: 0
+        m_HideInEditor: 1
+        m_Entitlements:
+          m_IsAllowed: 1
+          m_LicensingModel: 0
+          m_Status: 3
+        m_DatePublishedTicks: 0
+        m_Git:
+          m_Hash: 
+          m_Revision: 
+        m_IsAssetStorePackage: 0
+        m_DocumentationUrl: 
+        m_ChangelogUrl: 
+        m_LicensesUrl: 
+        m_HasRepository: 0
+        m_Repository:
+          m_Type: 
+          m_Url: 
+          m_Revision: 
+          m_Path: 
+        m_UnityLifecycle:
+          m_Version: 1.0.0
+          m_NextVersion: 
+          m_RecommendedVersion: 
+          m_IsDeprecated: 0
+          m_DeprecationMessage: 
+        m_UpmReserved: 
+        m_Signature:
+          m_Status: 0
+          m_Reason: 
+        m_IsDeprecated: 0
+        m_DeprecationMessage: 
+        m_AssetStore:
+          m_ProductId: 
+      - m_PackageId: com.unity.modules.xr@1.0.0
+        m_IsDirectDependency: 1
+        m_ProjectDependenciesEntry: 1.0.0
+        m_Version: 1.0.0
+        m_Source: 2
+        m_ResolvedPath: C:\Users\genia\Work\OpenXR-Unity-MixedReality-Samples\RemotingSample\Library\PackageCache\com.unity.modules.xr@1.0.0
+        m_AssetPath: Packages/com.unity.modules.xr
+        m_Name: com.unity.modules.xr
+        m_DisplayName: XR
+        m_Category: 
+        m_Type: module
+        m_Description: 'The XR module contains the VR and AR related platform support
+          functionality. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.XRModule.html'
+        m_Status: 0
+        m_Errors: []
+        m_Versions:
+          m_All:
+          - 1.0.0
+          m_Compatible:
+          - 1.0.0
+          m_Recommended: 1.0.0
+          m_Deprecated: []
+        m_Dependencies:
+        - m_Name: com.unity.modules.physics
+          m_Version: 1.0.0
+        - m_Name: com.unity.modules.jsonserialize
+          m_Version: 1.0.0
+        - m_Name: com.unity.modules.subsystems
+          m_Version: 1.0.0
+        m_ResolvedDependencies:
+        - m_Name: com.unity.modules.physics
+          m_Version: 1.0.0
+        - m_Name: com.unity.modules.jsonserialize
+          m_Version: 1.0.0
+        - m_Name: com.unity.modules.subsystems
+          m_Version: 1.0.0
+        m_Keywords: []
+        m_Author:
+          m_Name: 
+          m_Email: 
+          m_Url: 
+        m_Registry:
+          m_Id: main
+          m_Name: 
+          m_Url: https://packages.unity.com
+          m_Scopes: []
+          m_IsDefault: 1
+          m_Capabilities: 7
+          m_ConfigSource: 0
+        m_HideInEditor: 1
+        m_Entitlements:
+          m_IsAllowed: 1
+          m_LicensingModel: 0
+          m_Status: 3
+        m_DatePublishedTicks: 0
+        m_Git:
+          m_Hash: 
+          m_Revision: 
+        m_IsAssetStorePackage: 0
+        m_DocumentationUrl: 
+        m_ChangelogUrl: 
+        m_LicensesUrl: 
+        m_HasRepository: 0
+        m_Repository:
+          m_Type: 
+          m_Url: 
+          m_Revision: 
+          m_Path: 
+        m_UnityLifecycle:
+          m_Version: 1.0.0
+          m_NextVersion: 
+          m_RecommendedVersion: 
+          m_IsDeprecated: 0
+          m_DeprecationMessage: 
+        m_UpmReserved: 
+        m_Signature:
+          m_Status: 0
+          m_Reason: 
+        m_IsDeprecated: 0
+        m_DeprecationMessage: 
+        m_AssetStore:
+          m_ProductId: 
+      m_Error:
+        m_ErrorCode: 0
+        m_Message: 
+      m_HasError: 0
+--- !u!4 &1401008097
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1401008095}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1442826734
 GameObject:
   m_ObjectHideFlags: 0
@@ -2446,6 +7637,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1442826734}
+  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -2453,7 +7645,6 @@ Transform:
   m_Children:
   - {fileID: 1598908046}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1442826736
 MonoBehaviour:
@@ -2508,6 +7699,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1448001734}
+  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -2517,7 +7709,6 @@ Transform:
   - {fileID: 333705020}
   - {fileID: 9131334835817449835}
   m_Father: {fileID: 55241986}
-  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1515742979
 GameObject:
@@ -2543,6 +7734,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1515742979}
+  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -2551,7 +7743,6 @@ Transform:
   - {fileID: 276072600}
   - {fileID: 1760458881}
   m_Father: {fileID: 616807871}
-  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1515742981
 MonoBehaviour:
@@ -2713,6 +7904,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1520206462}
+  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -2721,7 +7913,6 @@ Transform:
   - {fileID: 340318748}
   - {fileID: 2058581689}
   m_Father: {fileID: 1158897728}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1520206469
 MonoBehaviour:
@@ -2834,13 +8025,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1580510035}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1206738929}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1580510037
 MonoBehaviour:
@@ -2894,7 +8085,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1580510035}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 635febed4ea97c447a367ed2416c5621, type: 3}
   m_Name: 
@@ -2927,13 +8118,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1587505290}
+  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 2.5}
   m_LocalScale: {x: 0.01, y: 0.01, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1245477959}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1587505292
 BoxCollider:
@@ -3029,6 +8220,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1598908045}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0.02}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -3036,7 +8228,6 @@ Transform:
   m_Children:
   - {fileID: 1906584531}
   m_Father: {fileID: 1442826735}
-  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1681037188
 GameObject:
@@ -3061,6 +8252,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1681037188}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -3068,7 +8260,6 @@ Transform:
   m_Children:
   - {fileID: 1370371172}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1695171941
 PrefabInstance:
@@ -3243,13 +8434,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1811113535}
+  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.57804775, y: 0.30061388, z: 2.3961148}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1869952279
 GameObject:
@@ -3275,6 +8466,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1869952279}
+  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -3282,7 +8474,6 @@ Transform:
   m_Children:
   - {fileID: 1745983116355389862}
   m_Father: {fileID: 55241986}
-  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1869952281
 MonoBehaviour:
@@ -3396,7 +8587,6 @@ RectTransform:
   m_Children:
   - {fileID: 1084081333}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -3421,7 +8611,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1887678410
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3453,13 +8643,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1887678409}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.05005732, y: 0.021993458, z: -0.17915247}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1887678412
 MonoBehaviour:
@@ -3516,13 +8706,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1902785393}
+  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 2.5}
   m_LocalScale: {x: 0.01, y: 0.01, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 910331418}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1902785395
 BoxCollider:
@@ -3703,13 +8893,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2033566730}
+  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2057732937
 GameObject:
@@ -3735,6 +8925,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2057732937}
+  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -3742,7 +8933,6 @@ Transform:
   m_Children:
   - {fileID: 1137158802}
   m_Father: {fileID: 1295046376}
-  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2057732939
 MonoBehaviour:
@@ -3803,13 +8993,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2058581688}
+  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0.475}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1520206467}
-  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!135 &2058581690
 SphereCollider:
@@ -3905,6 +9095,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2112497210}
+  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -3912,7 +9103,6 @@ Transform:
   m_Children:
   - {fileID: 1175431104}
   m_Father: {fileID: 55241986}
-  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1745983116355389862 stripped
 Transform:
@@ -4075,3 +9265,23 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6652873095233091635, guid: a22d837fa24310945b701d9919e30bed, type: 3}
   m_PrefabInstance: {fileID: 9131334835817449834}
   m_PrefabAsset: {fileID: 0}
+--- !u!1660057539 &9223372036854775807
+SceneRoots:
+  m_ObjectHideFlags: 0
+  m_Roots:
+  - {fileID: 1811113537}
+  - {fileID: 2033566732}
+  - {fileID: 1158897728}
+  - {fileID: 223974228}
+  - {fileID: 1274868477}
+  - {fileID: 668056773}
+  - {fileID: 457933962}
+  - {fileID: 705507995}
+  - {fileID: 1206738929}
+  - {fileID: 55241986}
+  - {fileID: 1442826735}
+  - {fileID: 1006405116}
+  - {fileID: 1887678411}
+  - {fileID: 1872093947}
+  - {fileID: 1681037189}
+  - {fileID: 1401008097}
