@@ -12,36 +12,17 @@ public class Trial : IEquatable<Trial>
     public int BlockNumber;
     public string DisplayTypeOrder;
     public string CurrentCondition;
-    private CoilTracker coilTracker;
-    private CoilTargetPoints coilTargetPoints;
-    private GameObject visualizationSphere;
+    public float TrackingStartTime;
     private string brainPositionTag;
 
-    public Trial(int trialNumber, Vector3 targetPoint, CoilTracker tracker, CoilTargetPoints targetPoints, string brainPositionTag)
+    public Trial(int trialNumber, Vector3 targetPoint, string brainPositionTag)
     {
         TrialNumber = trialNumber;
         TargetPoint = targetPoint;
-        coilTracker = tracker;
-        coilTargetPoints = targetPoints;
         FinalDistance = 0f;
         Duration = 0f;
         TrialResult = false;
         this.brainPositionTag = brainPositionTag;
-    }
-
-    public void StartTrial()
-    {
-        visualizationSphere = coilTargetPoints.CreateVisualizationSphere(TargetPoint);
-        coilTracker.SetTargetPoint(visualizationSphere.transform.position);
-    }
-
-    public void EndTrial()
-    {
-        FinalDistance = Vector3.Distance(coilTracker.targetPointOnCoil.position, visualizationSphere.transform.position);
-        Duration = Time.time - coilTracker.TrackingStartTime;
-        TrialResult = true;
-        EventManager.EndTrial(TrialResult);
-        GameObject.Destroy(visualizationSphere);
     }
 
     public bool Equals(Trial otherTrial)

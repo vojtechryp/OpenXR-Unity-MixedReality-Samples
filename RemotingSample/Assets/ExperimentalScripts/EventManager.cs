@@ -3,16 +3,16 @@ using UnityEngine;
 
 public static class EventManager
 {
-    public static event Action<bool> OnEndTrial;
     public static event Action<Trial> OnBeginTrial;
-
-    public static void EndTrial(bool trialResult)
-    {
-        OnEndTrial?.Invoke(trialResult);
-    }
+    public static event Action<Trial> OnEndTrial;
 
     public static void BeginTrial(Trial trial)
     {
         OnBeginTrial?.Invoke(trial);
+    }
+
+    public static void EndTrial(Trial trial)
+    {
+        OnEndTrial?.Invoke(trial);
     }
 }

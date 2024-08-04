@@ -16,48 +16,34 @@ public class CoilTargetPoints : MonoBehaviour
     }
 
     public Transform BrainTargetTransform;
-
-    public List<PredefinedPointStruct> points;
-
     public Color sphereColor = Color.red;  // Color for the visualization spheres
     public float sphereScale = 0.0015f;  // Scale for the visualization spheres
-    
-    public static List<Vector3> predefinedPoints;
-    public static List<string> pointTags;
+
+    public static List<PredefinedPointStruct> predefinedPoints;
 
     void Awake()
     {
-        points = new();
-
-        points.Add(new PredefinedPointStruct(new Vector3(-0.0064f, 0.0574f, -0.0423f), "Frontal"));    // Frontal
-
-
-        // Define specific points relative to the BrainPosition GameObject
-        predefinedPoints = new List<Vector3>
+        predefinedPoints = new List<PredefinedPointStruct>
         {
-            new Vector3(-0.0064f, 0.0574f, -0.0423f),    // Frontal
-            new Vector3(0.0035f, 0.0366f, -0.20069f),    // Occipital
-            new Vector3(0.05314f, 0.07571f, -0.12568f),  // Parietal
-            new Vector3(0.06784f, 0.0573f, -0.1156f),    // Left Temporal
-            new Vector3(-0.0438f, 0.0573f, -0.1155f),    // Right Temporal
-        };
-
-        pointTags = new List<string>
-        {
-            "Frontal",
-            "Occipital",
-            "Parietal",
-            "Left Temporal",
-            "Right Temporal"
+            new PredefinedPointStruct(new Vector3(-0.0064f, 0.0574f, -0.0423f), "Frontal"),
+            new PredefinedPointStruct(new Vector3(0.0035f, 0.0366f, -0.20069f), "Occipital"),
+            new PredefinedPointStruct(new Vector3(0.05314f, 0.07571f, -0.12568f), "Parietal"),
+            new PredefinedPointStruct(new Vector3(0.06784f, 0.0573f, -0.1156f), "Left Temporal"),
+            new PredefinedPointStruct(new Vector3(-0.0438f, 0.0573f, -0.1155f), "Right Temporal"),
+            new PredefinedPointStruct(new Vector3(0.0300f, 0.0650f, -0.1500f), "Additional 1"),
+            new PredefinedPointStruct(new Vector3(-0.0300f, 0.0650f, -0.1500f), "Additional 2"),
+            new PredefinedPointStruct(new Vector3(0.0500f, 0.0700f, -0.1200f), "Additional 3"),
+            new PredefinedPointStruct(new Vector3(-0.0500f, 0.0700f, -0.1200f), "Additional 4"),
+            new PredefinedPointStruct(new Vector3(0.0000f, 0.0600f, -0.1800f), "Additional 5")
         };
     }
 
-    public static List<Vector3> GetRandomizedPoints()
+    public static List<PredefinedPointStruct> GetRandomizedPoints()
     {
-        List<Vector3> randomizedPoints = new List<Vector3>(predefinedPoints);
+        List<PredefinedPointStruct> randomizedPoints = new List<PredefinedPointStruct>(predefinedPoints);
         for (int i = 0; i < randomizedPoints.Count; i++)
         {
-            Vector3 temp = randomizedPoints[i];
+            PredefinedPointStruct temp = randomizedPoints[i];
             int randomIndex = Random.Range(i, randomizedPoints.Count);
             randomizedPoints[i] = randomizedPoints[randomIndex];
             randomizedPoints[randomIndex] = temp;
@@ -65,7 +51,6 @@ public class CoilTargetPoints : MonoBehaviour
         return randomizedPoints;
     }
 
-    // TODO Change this to use prefab
     public GameObject CreateVisualizationSphere(Vector3 localPosition)
     {
         Vector3 worldPosition = BrainTargetTransform.TransformPoint(localPosition); // Ensure it is relative to BrainPosition
@@ -82,10 +67,15 @@ public class CoilTargetPoints : MonoBehaviour
         return sphere;
     }
 
-    // TODO Change to use struct
     public static string GetBrainPositionTag(Vector3 point)
     {
-        int index = predefinedPoints.IndexOf(point);
-        return index >= 0 ? pointTags[index] : "Unknown";
+        foreach (var predefinedPoint in predefinedPoints)
+        {
+            if (predefinedPoint.point == point)
+            {
+                return predefinedPoint.tag;
+            }
+        }
+        return "Unknown";
     }
 }

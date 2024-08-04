@@ -5,18 +5,18 @@ using TMPro;
 using Microsoft.MixedReality.Toolkit.Input;
 using Microsoft.MixedReality.Toolkit;
 
-public class ExperimentController : MonoBehaviour, IMixedRealitySpeechHandler
+public class ExperimentManager : MonoBehaviour, IMixedRealitySpeechHandler
 {
-    public static ExperimentController Instance;
+    public static ExperimentManager Instance;
     public string InputParticipantId;
     public Session session;
-    public bool waitingForEndOfTrial;
-    public bool resultOfCurrentTrial;
-    private float trialStartTime;
-    public CoilTargetPoints coilTargetPoints;
-    public CoilTracker coilTracker;
     public TextMeshProUGUI blockMessageText;
     public string displayTypeOrder = "ARFirst";
+    private CameraSetup cameraSetup;
+    private bool isARCondition;
+    private bool waitingForEndOfTrial;
+    public GameObject trialObjectPrefab; // Reference to the prefab
+    public Transform brainTargetTransform; // Reference to the BrainTarget object
 
     void Awake()
     {
@@ -31,7 +31,7 @@ public class ExperimentController : MonoBehaviour, IMixedRealitySpeechHandler
             return;
         }
 
-        EventManager.OnEndTrial += EndOfTrial;
+        EventManager.OnEndTrial += OnEndTrial;
     }
 
     void Start()
@@ -39,14 +39,7 @@ public class ExperimentController : MonoBehaviour, IMixedRealitySpeechHandler
         // Register this script to receive input events
         CoreServices.InputSystem?.RegisterHandler<IMixedRealitySpeechHandler>(this);
 
-        if (coilTargetPoints == null)
-        {
-            Debug.LogError($"COIL TARGET POINTS ARE NULL!!!!!");
-        }
-        if (coilTracker == null)
-        {
-            Debug.LogError($"COIL TRACKER POINTS ARE NULL!!!!!");
-        }
+        cameraSetup = FindObjectOfType<CameraSetup>();
 
         if (blockMessageText == null)
         {
@@ -54,11 +47,24 @@ public class ExperimentController : MonoBehaviour, IMixedRealitySpeechHandler
             return;
         }
 
-        session = new Session(InputParticipantId, coilTargetPoints, coilTracker);
+        if (trialObjectPrefab == null)
+        {
+            Debug.LogError("TrialObjectPrefab is not assigned in the Inspector");
+            return;
+        }
+
+        if (brainTargetTransform == null)
+        {
+            Debug.LogError("BrainTargetTransform is not assigned in the Inspector");
+            return;
+        }
+
+        session = new Session(InputParticipantId);
         Debug.Log($"New session has been created with Id {session.ParticipantId}");
 
         blockMessageText.gameObject.SetActive(false);
 
+        isARCondition = displayTypeOrder == "ARFirst";
         StartCoroutine(ExperimentSequence(session));
     }
 
@@ -72,34 +78,30 @@ public class ExperimentController : MonoBehaviour, IMixedRealitySpeechHandler
 
         for (int blockNumber = 0; blockNumber < session.NumberOfBlocksPerSession; blockNumber++)
         {
+            SetCondition(isARCondition);
+
             Block thisBlock = session.Blocks[blockNumber];
 
             for (int trialNumber = 0; trialNumber < thisBlock.NumberOfTrialsInBlock; trialNumber++)
             {
                 Trial thisTrial = thisBlock.Trials[trialNumber];
-                thisTrial.StartTrial(); // Starting trial should be done through BeginTrial event only ...
-                Debug.Log($"Running trial {trialNumber + 1}, in block {blockNumber + 1}");
+                thisTrial.BlockNumber = blockNumber + 1;
 
-                waitingForEndOfTrial = true;
-                trialStartTime = Time.time;
                 EventManager.BeginTrial(thisTrial);
+                waitingForEndOfTrial = true;
 
-                yield return new WaitWhile(() => waitingForEndOfTrial);
+                ShowMessage("Trial started. Say 'Next' to end the trial.");
+                yield return new WaitUntil(() => !waitingForEndOfTrial);
+                HideMessage();
 
-                thisTrial.TrialResult = resultOfCurrentTrial;
-                thisTrial.FinalDistance = Vector3.Distance(coilTracker.targetPointOnCoil.position, thisTrial.TargetPoint);
-                thisTrial.Duration = Time.time - trialStartTime;
-
-                string currentCondition = displayTypeOrder.Contains("AR") ? "AR" : "PC";
+                string currentCondition = isARCondition ? "AR" : "PC";
                 session.AddTrialResult(thisTrial, blockNumber + 1, displayTypeOrder, currentCondition);
-
-                thisTrial.EndTrial(); // This will destroy the sphere
 
                 // If more trials are left in the block, wait for "Next" to proceed
                 if (trialNumber < thisBlock.NumberOfTrialsInBlock - 1)
                 {
                     ShowMessage("Trial complete. Say 'Next' to proceed.");
-                    yield return new WaitUntil(() => !waitingForEndOfTrial);
+                    yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.Space));
                     HideMessage();
                 }
             }
@@ -113,11 +115,25 @@ public class ExperimentController : MonoBehaviour, IMixedRealitySpeechHandler
                 yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.Space));
                 HideMessage();
             }
+
+            // Toggle condition for the next block
+            isARCondition = !isARCondition;
         }
 
         ShowMessage("Experiment Completed. Thank you for participating!");
         Debug.Log("Experiment Completed");
-        yield return null;
+    }
+
+    private void SetCondition(bool isAR)
+    {
+        if (isAR)
+        {
+            cameraSetup.SetARCondition();
+        }
+        else
+        {
+            cameraSetup.SetPCCondition();
+        }
     }
 
     private void ShowMessage(string message)
@@ -137,16 +153,9 @@ public class ExperimentController : MonoBehaviour, IMixedRealitySpeechHandler
         }
     }
 
-    public void EndOfTrial(bool trialResult)
+    public void OnEndTrial(Trial trial)
     {
-        resultOfCurrentTrial = trialResult;
         waitingForEndOfTrial = false;
-    }
-
-    void OnDestroy()
-    {
-        EventManager.OnEndTrial -= EndOfTrial;
-        CoreServices.InputSystem?.UnregisterHandler<IMixedRealitySpeechHandler>(this);
     }
 
     private void SaveResultsToJson()
@@ -166,8 +175,6 @@ public class ExperimentController : MonoBehaviour, IMixedRealitySpeechHandler
 
     public void EndTrialByVoiceCommand()
     {
-        // Set the result of the current trial to true and end the trial
-        resultOfCurrentTrial = true;
         waitingForEndOfTrial = false;
     }
 }

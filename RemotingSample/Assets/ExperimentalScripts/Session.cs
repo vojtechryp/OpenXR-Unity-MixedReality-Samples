@@ -5,18 +5,18 @@ using UnityEngine;
 public class Session
 {
     public string ParticipantId;
-    public int NumberOfBlocksPerSession = 4;
+    public int NumberOfBlocksPerSession = 7;
     public Block[] Blocks;
     public List<Trial> TrialResults = new List<Trial>();
 
-    public Session(string inputParticipantId, CoilTargetPoints targetPoints, CoilTracker tracker)
+    public Session(string inputParticipantId)
     {
         ParticipantId = inputParticipantId;
         Blocks = new Block[NumberOfBlocksPerSession];
 
         for (int i = 0; i < NumberOfBlocksPerSession; i++)
         {
-            Blocks[i] = new Block(targetPoints, tracker);
+            Blocks[i] = new Block(FindObjectOfType<CoilTargetPoints>(), FindObjectOfType<CoilTracker>());
         }
     }
 
@@ -29,23 +29,26 @@ public class Session
     }
 }
 
+
 [System.Serializable]
 public class Block
 {
-    public int NumberOfTrialsInBlock = 5;
+    public int NumberOfTrialsInBlock = 10;
     public Trial[] Trials;
 
     public Block(CoilTargetPoints targetPoints, CoilTracker tracker)
     {
         Trials = new Trial[NumberOfTrialsInBlock];
 
-        List<Vector3> randomizedPoints = CoilTargetPoints.GetRandomizedPoints();
+        List<CoilTargetPoints.PredefinedPointStruct> randomizedPoints = CoilTargetPoints.GetRandomizedPoints();
 
         for (int i = 0; i < NumberOfTrialsInBlock; i++)
         {
-            Vector3 point = randomizedPoints[i];
-            string tag = CoilTargetPoints.GetBrainPositionTag(point);
-            Trials[i] = new Trial(i + 1, point, tracker, targetPoints, tag);
+            var pointStruct = randomizedPoints[Random.Range(0, randomizedPoints.Count)];
+            Trials[i] = new Trial(i + 1, pointStruct.point, pointStruct.tag);
+            randomizedPoints.Remove(pointStruct);
         }
     }
 }
+
+
