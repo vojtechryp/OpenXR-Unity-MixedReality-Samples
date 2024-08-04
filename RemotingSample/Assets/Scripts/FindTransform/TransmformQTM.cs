@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+namespace VRLab.QTMTracking
+{
 public class TransmformQTM : MonoBehaviour
 {
     public bool useInverse = true;
@@ -12,12 +14,6 @@ public class TransmformQTM : MonoBehaviour
     public FindTransform findTransform;
 
     public Matrix4x4 transformMatrix;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
@@ -35,4 +31,5 @@ public class TransmformQTM : MonoBehaviour
         displayTransform.localPosition = newMatrix.GetPosition();
         displayTransform.localRotation = newMatrix.rotation;
     }
+}
 }

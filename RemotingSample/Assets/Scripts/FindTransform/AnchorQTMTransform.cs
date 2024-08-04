@@ -1,15 +1,21 @@
 using QualisysRealTime.Unity;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using Transform3DBestFit;
 using UnityEditor.Rendering;
 using UnityEngine;
+using VRLab.QTMTracking;
 
+namespace VRLab.QTMTracking
+{
 public class AnchorQTMTransform : MonoBehaviour
 {
     [Header("Controls")]
-    [InspectorButton("SaveQTMNames", ButtonWidth = 200)]
-    public bool saveQTMNamesToScriptable = false;
+    // [InspectorButton("SaveQTMNames", ButtonWidth = 200)]
+    // public bool saveQTMNamesToScriptable = false;
+    [InspectorButton("ClearPrefabs", ButtonWidth = 200)]
+    public bool clearChildPrefabs = false;
     public bool hasValidData = false;
     public bool shouldSpawnPrefabs = false;
 
@@ -20,7 +26,8 @@ public class AnchorQTMTransform : MonoBehaviour
     public AnchorTransformScriptable scriptableData = null;
 
     [Header("Lists")]
-    public List<string> anchorQTMNames;
+    // public List<string> anchorQTMNames;
+    public List<UnityTransformMarkers> UnityMarkers;
     public List<Transform> anchorQTMTransforms;
     public Vector3[] vectorOfAnchorPositions;
     public Vector3[] vector3sBackConvert;
@@ -28,30 +35,43 @@ public class AnchorQTMTransform : MonoBehaviour
 
     public void SaveQTMNames()
     {
-        scriptableData.anchorQTMNames = anchorQTMNames;
+    //     scriptableData.anchorQTMNames = anchorQTMNames;
     }
 
     public bool LoadFromScriptable()
     {
         hasValidData = false;
 
-        anchorQTMNames = scriptableData.anchorQTMNames;
+        // anchorQTMNames = scriptableData.anchorQTMNames;
+        UnityMarkers = scriptableData.UnityMarkerNames;
         anchorQTMTransforms.Clear();
 
-        foreach (Transform child in gameObject.transform)
-        {
-            Destroy(child.gameObject);
-        }
+        ClearPrefabs();
 
         if (shouldSpawnPrefabs)
         {
-            foreach (var markerName in anchorQTMNames)
+            // foreach (var markerName in anchorQTMNames.Select((value, i) => new { i, value }))
+            // {
+            //     GameObject newMarker = Instantiate(AnchorPrefab, Vector3.zero, Quaternion.identity);
+            //     newMarker.name = $"QTM Marker: {markerName.value}";
+            //     newMarker.transform.parent = gameObject.transform;
+            //     newMarker.transform.position = scriptableData.vectorOfAnchorPositions[markerName.i];
+            //     RTMarker newRTMarker = newMarker.GetComponent<RTMarker>();
+            //     newRTMarker.MarkerName = markerName.value;
+            //     anchorQTMTransforms.Add(newMarker.transform);
+            // }
+
+            foreach ((int i, UnityTransformMarkers markerEnum) in UnityMarkers.Select((value, i) => (i, value)))
             {
+                string markerQTMName = QTMStaticData.GetQtmMarkerName(markerEnum);
                 GameObject newMarker = Instantiate(AnchorPrefab, Vector3.zero, Quaternion.identity);
-                newMarker.name = $"QTM Marker: {markerName}";
+
+                newMarker.name = $"QTM Marker: {markerQTMName}";
                 newMarker.transform.parent = gameObject.transform;
+                newMarker.transform.position = scriptableData.vectorOfAnchorPositions[i];
+
                 RTMarker newRTMarker = newMarker.GetComponent<RTMarker>();
-                newRTMarker.MarkerName = markerName;
+                newRTMarker.MarkerName = markerQTMName;
                 anchorQTMTransforms.Add(newMarker.transform);
             }
         }
@@ -60,6 +80,12 @@ public class AnchorQTMTransform : MonoBehaviour
         hasValidData = true;
         return hasValidData;
     }
+
+    private void ClearPrefabs()
+    {
+        while ( gameObject.transform.childCount>0) DestroyImmediate(transform.GetChild(0).gameObject);
+    }
+
     public double[,] UpdateArrays()
     {
         vectorOfAnchorPositions = new Vector3[anchorQTMTransforms.Count];
@@ -74,4 +100,5 @@ public class AnchorQTMTransform : MonoBehaviour
         vector3sBackConvert = Transform3D.ConvertArrayToVector3(pointsAsArray);
         return pointsAsArray;
     }
+}
 }

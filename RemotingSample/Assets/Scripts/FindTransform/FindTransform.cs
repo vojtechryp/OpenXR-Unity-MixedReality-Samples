@@ -1,9 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using Transform3DBestFit;
-using Unity.XR.CoreUtils;
 using UnityEngine;
 
+namespace VRLab.QTMTracking
+{
 public class FindTransform : MonoBehaviour
 {
     [InspectorButton("CalculateTransform", ButtonWidth = 200)]
@@ -18,7 +19,15 @@ public class FindTransform : MonoBehaviour
         CalculateTransform();
     }
 
-    private void CalculateTransform()
+    internal void CalculateTransform(AnchorBasedTransform _anchorTransform, AnchorQTMTransform _qtmTransform, AnchorDummyTransform _dummyTransform)
+    {
+        anchorTransform = _anchorTransform;
+        qtmTransform = _qtmTransform;
+        dummyTransform = _dummyTransform;
+        CalculateTransform();
+    }
+
+    internal void CalculateTransform()
     {
         if (!qtmTransform.hasValidData || !dummyTransform.hasValidData || !anchorTransform.hasValidData) return;
 
@@ -52,4 +61,5 @@ public class FindTransform : MonoBehaviour
             dummyTransform.transform.rotation = newMatrix.rotation; 
         }
     }
+}
 }

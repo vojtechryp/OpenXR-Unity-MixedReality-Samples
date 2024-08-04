@@ -4,31 +4,33 @@ using Transform3DBestFit;
 using UnityEngine;
 using UnityEngine.XR.ARFoundation;
 using Microsoft.MixedReality.OpenXR.Sample;
-using AnchorData = Microsoft.MixedReality.OpenXR.Sample.PersistentAnchorData;
-using UnityEngine.XR.OpenXR.Input;
+using AnchorData = VRLab.AnchorStore.PersistantAnchorData;
 using Unity.XR.CoreUtils;
+using VRLab.AnchorStore;
+
+namespace VRLab.QTMTracking
+{
+[RequireComponent(typeof(FindTransform))]
 public class AnchorBasedTransform : MonoBehaviour
 {
     [Header("Controls")]
     //[InspectorButton("SaveAnchorNames", ButtonWidth = 200)]
     //public bool saveAnchorNamesToScriptable = false;
-    [InspectorButton("LoadFromNames", ButtonWidth = 200)]
+    [InspectorButton("LoadAndApply", ButtonWidth = 200)]
+    public bool loadAndApply = false;
+    [InspectorButton("LoadFromScriptable", ButtonWidth = 200)]
     public bool loadFromNamesButton = false;
     [InspectorButton("CreateQTMPrefab", ButtonWidth = 200)]
     public bool createQTMPrefab = false;
     [InspectorButton("CreateDummyPrefab", ButtonWidth = 200)]
     public bool createDummyPrefab = false;
-    //[InspectorButton("UpdateAnchorPositions", ButtonWidth = 200)]
-    //public bool updateAnchorPositions = false;
-    //[InspectorButton("UnpersistAnchors", ButtonWidth = 200)]
-    //public bool unpersistAnchors = false;
 
     public bool hasValidData = false;
     public bool hasValidDummyData = false;
 
     [Header("Dummy Object")]
-    public AnchorDummyTransform dummyObject;
     public AnchorQTMTransform qtmObject;
+    public AnchorDummyTransform dummyObject;
 
     [Header("Data")]
     public AnchorTransformScriptable scriptableData = null;
@@ -38,12 +40,14 @@ public class AnchorBasedTransform : MonoBehaviour
 
     [Header("Lists")]
     public PersistableAnchorVisuals[] persistableAnchorVisuals;
-    public List<string> anchorNames;
+    public List<string> anchorStoredNames;
     public AnchorData[] anchorDataList;
-    public Vector3[] vectorOfAnchorPositions;
-    public Vector3[] vector3sBackConvert;
+
+    internal FindTransform findTransform = null;
+    internal Vector3[] vectorOfAnchorPositions;
+    internal Vector3[] vector3sBackConvert;
     public double[,] pointsAsArray;
-    public int numberOfPoints { get => anchorNames.Count;}
+    internal int numberOfPoints { get => anchorStoredNames.Count;}
 
     private void OnEnable()
     {
@@ -53,30 +57,21 @@ public class AnchorBasedTransform : MonoBehaviour
         }
     }
 
-    public void UnpersistAnchors()
-    {
-        anchorNames = persistentAnchorManager.UpdatePositionsOfAnchors(anchorNames, true);
-    }
-
-    public void UpdateAnchorPositions()
-    {
-        persistentAnchorManager.AnchorStoreClear();
-        persistentAnchorManager.ClearSceneAnchors();
-
-        for (int i = 0; i < anchorDataList.Length; i++)
-        {
-            AnchorData anchorData = anchorDataList[i];
-            anchorData.anchor = persistentAnchorManager.AddAnchorReturn(dummyObject.prefabTransforms[i].GetWorldPose());
-            persistentAnchorManager.ToggleAnchorPersistence(anchorData.anchor);
-            persistableAnchorVisuals[i] = anchorData.visuals;
-            anchorNames[i] = anchorData.visuals.Name;
-        }
-    }
-
-    // Start is called before the first frame update
-    void LoadFromNames()
+    void LoadAndApply()
     {
         LoadFromScriptable();
+        if (!hasValidData) return;
+        CreateQTMPrefab();
+        if (!qtmObject.hasValidData) return;
+        if (dummyObject != null)
+        {
+            CreateDummyPrefab();
+        }
+        if (findTransform == null)
+        {
+            findTransform = GetComponent<FindTransform>();
+        }
+        findTransform.CalculateTransform(this, qtmObject, dummyObject);
     }
 
     public void CreateDummyPrefab()
@@ -92,18 +87,18 @@ public class AnchorBasedTransform : MonoBehaviour
     {
         if (scriptableData != null)
         {
-            anchorNames = scriptableData.anchorNames;
+            anchorStoredNames = scriptableData.anchorStoredNames;
             hasValidData = UpdateFromAnchorNames();
         }
     }
 
     public void SaveAnchorNames()
     {
-        anchorNames.Clear();
+        anchorStoredNames.Clear();
         foreach (var anchorVisual in  persistableAnchorVisuals)
         {
-            anchorNames.Add(anchorVisual.Name);
-            scriptableData.anchorNames = anchorNames;
+            anchorStoredNames.Add(anchorVisual.Name);
+            scriptableData.anchorStoredNames = anchorStoredNames;
         }
     }
 
@@ -124,10 +119,10 @@ public class AnchorBasedTransform : MonoBehaviour
         ClearNonNameLists();
         for (int i = 0; i < numberOfPoints; i++)
         {
-            anchorDataList[i] = persistentAnchorManager.LoadPersistentAnchorByData(new AnchorData(anchorNames[i]));
-            if (!anchorDataList[i].isAnchorLoaded)
+            anchorDataList[i] = persistentAnchorManager.LoadPersistentAnchorByData(new AnchorData(anchorStoredNames[i]));
+            if (!anchorDataList[i].IsAnchorLoaded)
             {
-                Debug.LogWarning($"Anchor with name {anchorNames[i]} not properly loaded");
+                Debug.LogWarning($"Anchor with name {anchorStoredNames[i]} not properly loaded");
                 return false;
             }
             ARAnchor thisAnchor = anchorDataList[i].anchor;
@@ -146,4 +141,5 @@ public class AnchorBasedTransform : MonoBehaviour
         vector3sBackConvert = Transform3D.ConvertArrayToVector3(pointsAsArray);
         return pointsAsArray;
     }
+}
 }

@@ -12,3 +12,94 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c80558d0d8cdeb742b6c71ca6dbf2319, type: 3}
   m_Name: GlobalPersistenceScriptableMain
   m_EditorClassIdentifier: 
+  RebuildDatabaseFromLatest: 0
+  CurrentProjectTags:
+  - anchor
+  RawAnchorNamesInStoreOnLastUpdate:
+  - anchor/2520
+  - anchor/cdd4
+  - anchor/1ef0
+  - anchor/7dd3
+  - anchor/7b80
+  - anchor/a080
+  - anchor/46db
+  - anchor/45e5
+  AnchorTagsInStore:
+  - anchor
+  AvailableAnchorDataForProject: []
+  latestAnchorStorePersistedNames:
+  - anchor/2520
+  - anchor/cdd4
+  - anchor/1ef0
+  - anchor/7dd3
+  - anchor/7b80
+  - anchor/a080
+  - anchor/46db
+  - anchor/45e5
+  RawAnchorNamesRemovedFromStore: []
+  RawAnchorNamesAddedFromStore:
+  - anchor/2520
+  - anchor/cdd4
+  - anchor/1ef0
+  - anchor/7dd3
+  - anchor/7b80
+  - anchor/a080
+  - anchor/46db
+  - anchor/45e5
+  AnchorTagsRemovedFromStore: []
+  AnchorTagsAddedFromStore:
+  - anchor
+  LogString:
+  - '04/08/2024 : anchor/2520 - AddedAnchor'
+  - '04/08/2024 : anchor/cdd4 - AddedAnchor'
+  - '04/08/2024 : anchor/1ef0 - AddedAnchor'
+  - '04/08/2024 : anchor/7dd3 - AddedAnchor'
+  - '04/08/2024 : anchor/7b80 - AddedAnchor'
+  - '04/08/2024 : anchor/a080 - AddedAnchor'
+  - '04/08/2024 : anchor/46db - AddedAnchor'
+  - '04/08/2024 : anchor/45e5 - AddedAnchor'
+  - '04/08/2024 : anchor/2520 - AddedTag'
+  - '04/08/2024 : anchor/cdd4 - AddedTag'
+  - '04/08/2024 : anchor/1ef0 - AddedTag'
+  - '04/08/2024 : anchor/7dd3 - AddedTag'
+  - '04/08/2024 : anchor/7b80 - AddedTag'
+  - '04/08/2024 : anchor/a080 - AddedTag'
+  - '04/08/2024 : anchor/46db - AddedTag'
+  - '04/08/2024 : anchor/45e5 - AddedTag'
+  - '04/08/2024 : Rebuild - Cleared'
+  - '04/08/2024 : anchor/2520 - AddedAnchor'
+  - '04/08/2024 : anchor/cdd4 - AddedAnchor'
+  - '04/08/2024 : anchor/1ef0 - AddedAnchor'
+  - '04/08/2024 : anchor/7dd3 - AddedAnchor'
+  - '04/08/2024 : anchor/7b80 - AddedAnchor'
+  - '04/08/2024 : anchor/a080 - AddedAnchor'
+  - '04/08/2024 : anchor/46db - AddedAnchor'
+  - '04/08/2024 : anchor/45e5 - AddedAnchor'
+  - '04/08/2024 : anchor/2520 - AddedTag'
+  - '04/08/2024 : anchor/cdd4 - AddedTag'
+  - '04/08/2024 : anchor/1ef0 - AddedTag'
+  - '04/08/2024 : anchor/7dd3 - AddedTag'
+  - '04/08/2024 : anchor/7b80 - AddedTag'
+  - '04/08/2024 : anchor/a080 - AddedTag'
+  - '04/08/2024 : anchor/46db - AddedTag'
+  - '04/08/2024 : anchor/45e5 - AddedTag'
+  - '04/08/2024 : Rebuild - Cleared'
+  - '04/08/2024 : anchor/2520 - AddedAnchor'
+  - '04/08/2024 : anchor/cdd4 - AddedAnchor'
+  - '04/08/2024 : anchor/1ef0 - AddedAnchor'
+  - '04/08/2024 : anchor/7dd3 - AddedAnchor'
+  - '04/08/2024 : anchor/7b80 - AddedAnchor'
+  - '04/08/2024 : anchor/a080 - AddedAnchor'
+  - '04/08/2024 : anchor/46db - AddedAnchor'
+  - '04/08/2024 : anchor/45e5 - AddedAnchor'
+  - '04/08/2024 : anchor - AddedTag'
+  - '04/08/2024 : Rebuild - Cleared'
+  - '04/08/2024 : anchor/2520 - AddedAnchor'
+  - '04/08/2024 : anchor/cdd4 - AddedAnchor'
+  - '04/08/2024 : anchor/1ef0 - AddedAnchor'
+  - '04/08/2024 : anchor/7dd3 - AddedAnchor'
+  - '04/08/2024 : anchor/7b80 - AddedAnchor'
+  - '04/08/2024 : anchor/a080 - AddedAnchor'
+  - '04/08/2024 : anchor/46db - AddedAnchor'
+  - '04/08/2024 : anchor/45e5 - AddedAnchor'
+  - '04/08/2024 : anchor - AddedTag'

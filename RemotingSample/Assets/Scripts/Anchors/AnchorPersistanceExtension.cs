@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.XR;
 using UnityEngine.XR.ARFoundation;
 
-namespace Microsoft.MixedReality.OpenXR.Sample
+namespace VRLab.AnchorStore
 {
     public class AnchorPersistanceExtension : AnchorPersistence
     {

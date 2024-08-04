@@ -9,6 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5db5b8f34f287745ac4a4595c5e27b7, type: 3}
-  m_Name: PersistentAnchorScriptable
-  m_EditorClassIdentifier: 
+  m_Script: {fileID: 0}
+  m_Name: QTMStaticDataSettings
+  m_EditorClassIdentifier: Assembly-CSharp:VRLab.QTMTracking:QTMStaticDataSettings
+  QTMStaticDataScriptableToUse: {fileID: 11400000, guid: 5abd243419a8df1478b4b2da7a6f774b, type: 2}
