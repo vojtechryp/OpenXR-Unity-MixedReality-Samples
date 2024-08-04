@@ -16,7 +16,7 @@ public class Session
 
         for (int i = 0; i < NumberOfBlocksPerSession; i++)
         {
-            Blocks[i] = new Block(FindObjectOfType<CoilTargetPoints>(), FindObjectOfType<CoilTracker>());
+            Blocks[i] = new Block();
         }
     }
 
@@ -36,10 +36,9 @@ public class Block
     public int NumberOfTrialsInBlock = 10;
     public Trial[] Trials;
 
-    public Block(CoilTargetPoints targetPoints, CoilTracker tracker)
+    public Block()
     {
         Trials = new Trial[NumberOfTrialsInBlock];
-
         List<CoilTargetPoints.PredefinedPointStruct> randomizedPoints = CoilTargetPoints.GetRandomizedPoints();
 
         for (int i = 0; i < NumberOfTrialsInBlock; i++)
@@ -50,5 +49,4 @@ public class Block
         }
     }
 }
-
 

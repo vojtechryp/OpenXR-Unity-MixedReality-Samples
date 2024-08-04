@@ -16,8 +16,6 @@ public class CoilTargetPoints : MonoBehaviour
     }
 
     public Transform BrainTargetTransform;
-    public Color sphereColor = Color.red;  // Color for the visualization spheres
-    public float sphereScale = 0.0015f;  // Scale for the visualization spheres
 
     public static List<PredefinedPointStruct> predefinedPoints;
 
@@ -49,22 +47,6 @@ public class CoilTargetPoints : MonoBehaviour
             randomizedPoints[randomIndex] = temp;
         }
         return randomizedPoints;
-    }
-
-    public GameObject CreateVisualizationSphere(Vector3 localPosition)
-    {
-        Vector3 worldPosition = BrainTargetTransform.TransformPoint(localPosition); // Ensure it is relative to BrainPosition
-        GameObject sphere = GameObject.CreatePrimitive(PrimitiveType.Sphere);
-        sphere.transform.position = worldPosition;
-        sphere.transform.localScale = new Vector3(sphereScale, sphereScale, sphereScale); // Adjust scale as needed
-
-        // Ensure the sphere is visible by setting its material color
-        Renderer renderer = sphere.GetComponent<Renderer>();
-        renderer.material = new Material(Shader.Find("Standard"));
-        renderer.material.color = sphereColor;
-
-        Debug.Log($"Visualization sphere created at: {worldPosition}");
-        return sphere;
     }
 
     public static string GetBrainPositionTag(Vector3 point)
