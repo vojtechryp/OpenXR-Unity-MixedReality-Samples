@@ -15,8 +15,7 @@ public class ExperimentManager : MonoBehaviour, IMixedRealitySpeechHandler
     private CameraSetup cameraSetup;
     private bool isARCondition;
     private bool waitingForEndOfTrial;
-    public GameObject trialObjectPrefab; // Reference to the prefab
-    public Transform brainTargetTransform; // Reference to the BrainTarget object
+    public GameObject BrainTarget; // Rename to BrainTarget
 
     void Awake()
     {
@@ -47,15 +46,9 @@ public class ExperimentManager : MonoBehaviour, IMixedRealitySpeechHandler
             return;
         }
 
-        if (trialObjectPrefab == null)
+        if (BrainTarget == null)
         {
-            Debug.LogError("TrialObjectPrefab is not assigned in the Inspector");
-            return;
-        }
-
-        if (brainTargetTransform == null)
-        {
-            Debug.LogError("BrainTargetTransform is not assigned in the Inspector");
+            Debug.LogError("BrainTarget is not assigned in the Inspector");
             return;
         }
 

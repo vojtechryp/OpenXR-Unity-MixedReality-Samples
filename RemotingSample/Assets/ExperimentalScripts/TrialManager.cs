@@ -24,8 +24,7 @@ public class TrialManager : MonoBehaviour
     private void StartTrial(Trial trial)
     {
         // Create the trial object when the trial starts
-        Vector3 targetPosition = ExperimentManager.Instance.brainTargetTransform.TransformPoint(trial.TargetPoint);
-        trialObjectInstance = Instantiate(ExperimentManager.Instance.trialObjectPrefab, targetPosition, Quaternion.identity);
+        trialObjectInstance = Instantiate(ExperimentManager.Instance.BrainTarget, coilTargetPoints.BrainTargetTransform.TransformPoint(trial.TargetPoint), Quaternion.identity);
         // Set the target point on the CoilTracker
         coilTracker.SetTargetPoint(trialObjectInstance.transform.position);
     }
