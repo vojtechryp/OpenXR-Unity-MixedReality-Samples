@@ -25,7 +25,7 @@ public class CoilTracker : MonoBehaviour
 
     public Vector3 coilPointForwardVector
     {
-        get => TargetPointOnCoilTip.forward; 
+        get => -TargetPointOnCoilTip.forward; 
     }
 
 

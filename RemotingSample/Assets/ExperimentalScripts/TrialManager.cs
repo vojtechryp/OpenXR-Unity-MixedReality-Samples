@@ -13,6 +13,7 @@ public class TrialManager : MonoBehaviour
     public float timeAtStart = 0;
     public float timeSinceStart = 0;
     public float currentDistanceToTarget;
+    public float currentAngleToTarget;
 
     [Header("Object references")]
     private GameObject brainTargetInstance;
@@ -37,9 +38,18 @@ public class TrialManager : MonoBehaviour
         if (!isTrialRunning) return;
 
         timeSinceStart = Time.time - timeAtStart;
-        currentDistanceToTarget = coilTracker.DistanceToTarget(currentTrial.TargetPosition);
 
-        SetTextDisplays();
+        if (brainTargetInstance != null)
+        {
+            var targetVector = brainTargetInstance.transform.forward;
+            var coilVector = coilTracker.coilPointForwardVector;
+
+            currentDistanceToTarget = coilTracker.DistanceToTarget(currentTrial.TargetPosition);
+            currentAngleToTarget = Mathf.Rad2Deg * Mathf.Acos(Vector3.Dot(targetVector, coilVector));
+
+            SetTextDisplays();
+        }
+
 
         if (Input.GetKeyDown(KeyCode.Keypad1) || Input.GetKeyDown("1"))
         {
@@ -49,11 +59,7 @@ public class TrialManager : MonoBehaviour
 
     private void SetTextDisplays()
     {
-        var targetVector = brainTargetInstance.transform.forward;
-        var coilVector = coilTracker.coilPointForwardVector;
-
-
-        var angle = (Mathf.Rad2Deg*Vector3.Dot(targetVector, coilVector)).ToString("F0");
+        var angle = currentAngleToTarget.ToString("F0");
         var distance = (currentDistanceToTarget * 1000).ToString("F0");
 
         string textToDisplay = $"{distance} mm \t \t {angle} deg";
@@ -64,7 +70,6 @@ public class TrialManager : MonoBehaviour
     private void OnBeginTrial(Trial trial)
     {
         StartTrial(trial);
-        StartCoroutine(TrackTrial(trial));
     }
 
     private void StartTrial(Trial trial)
@@ -76,36 +81,23 @@ public class TrialManager : MonoBehaviour
 
         isTrialRunning = true;
         // Create the trial object when the trial starts
-        //brainTargetInstance = Instantiate(BrainTargetPrefab, coilTargetPoints.BrainTargetTransform.TransformPoint(trial.TargetPoint), Quaternion.identity);
         brainTargetInstance = Instantiate(BrainTargetPrefab, Vector3.zero, Quaternion.identity);
         brainTargetInstance.name = "BRAIN TARGET INSTANCE";
         brainTargetInstance.transform.parent = coilTracker.BrainTargetTransform.transform;
         brainTargetInstance.transform.localPosition = trial.TargetPosition;
         brainTargetInstance.transform.localRotation = Quaternion.Euler(trial.TargetRotation);
-        // Set the target point on the CoilTracker
-        //coilTracker.SetTargetPoint(brainTargetInstance.transform.position);
-    }
-
-    private IEnumerator TrackTrial(Trial trial)
-    {
-        //trial.TrackingStartTime = Time.time;
-        //while (!trial.HasResult)
-        //{
-        //    // Calculate the final distance
-        //    trial.FinalDistance = Vector3.Distance(coilTracker.targetPointOnCoil.position, brainTargetInstance.transform.position);
-        //    yield return null;
-        //}
-        //EndTrial(trial);
-        //EventManager.EndTrial(trial);
-        yield return null;
     }
 
     private void EndTrial()
     {
         HeadsetDistanceDisplay.GetComponent<MeshRenderer>().enabled = false;
+        PCDistanceDisplay.text = "";
 
         currentTrial.Duration = timeSinceStart;
         currentTrial.FinalDistance = currentDistanceToTarget;
+
+
+
         //// Destroy the trial object after the trial ends
         if (brainTargetInstance != null)
         {

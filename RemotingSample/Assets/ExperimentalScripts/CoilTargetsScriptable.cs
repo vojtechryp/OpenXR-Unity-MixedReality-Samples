@@ -9,16 +9,19 @@ namespace Vojta.Experiment
     [CreateAssetMenu(fileName = "CoilTargetsScriptable", menuName = "CoilTargets/CoilTargetsScriptable", order = 0)]
     public class CoilTargetsScriptable : ScriptableObject
     {
-        [InspectorButton("CopyTransformsToPredefinedPoints", ButtonWidth = 300)]
-        public bool copyTransformsToPoints = false;
-        [InspectorButton("ResetToHardCodedValues", ButtonWidth = 300)]
-        public bool resetToHardcodedValues = false;
+        //[InspectorButton("CopyTransformsToPredefinedPoints", ButtonWidth = 300)]
+        //public bool copyTransformsToPoints = false;
+        //[InspectorButton("ResetToHardCodedValues", ButtonWidth = 300)]
+        //public bool resetToHardcodedValues = false;
 
         [SerializeField]
-        public Transform BrainOriginTransform;
+        public List<PredefinedPointStruct> predefinedPoints = new();
 
-        [SerializeField]
-        public List<Transform> ListOfTransforms;
+        //[SerializeField]
+        //public Transform BrainOriginTransform;
+
+        //[SerializeField]
+        //public List<Transform> ListOfTransforms;
 
         [SerializeField]
         public List<string> predefinedPointTags = new List<string>
@@ -35,8 +38,6 @@ namespace Vojta.Experiment
             "Additional 5"
         };
 
-        [SerializeField]
-        public List<PredefinedPointStruct> predefinedPoints = new();
 
         [SerializeField]
         public List<PredefinedPointStruct> predefinedPointsHardCoded = new List<PredefinedPointStruct>
@@ -61,31 +62,31 @@ namespace Vojta.Experiment
             predefinedPoints = new(predefinedPointsHardCoded);
         }
 
-        public void CopyTransformsToPredefinedPoints()
-        {
-            Assert.IsTrue(ListOfTransforms.Count == 10);
+        //public void CopyTransformsToPredefinedPoints()
+        //{
+        //    Assert.IsTrue(ListOfTransforms.Count == 10);
 
 
-            foreach (var transform in ListOfTransforms)
-            {
-                if (transform == null)
-                {
-                    return;
-                }
-            }
+        //    foreach (var transform in ListOfTransforms)
+        //    {
+        //        if (transform == null)
+        //        {
+        //            return;
+        //        }
+        //    }
 
-            predefinedPointsBackup.Add(new(predefinedPoints));
+        //    predefinedPointsBackup.Add(new(predefinedPoints));
 
-            predefinedPoints = new List<PredefinedPointStruct>();
+        //    predefinedPoints = new List<PredefinedPointStruct>();
 
-            for (int i = 0; i < 10; i++)
-            {
-                var transform = ListOfTransforms[i];
-                var tag = predefinedPointTags[i];
-                var localForwardVector = BrainOriginTransform.transform.InverseTransformDirection(transform.forward); 
-                predefinedPoints.Add(new PredefinedPointStruct(transform.localPosition, transform.localEulerAngles, tag));
-            }
-        }
+        //    for (int i = 0; i < 10; i++)
+        //    {
+        //        var transform = ListOfTransforms[i];
+        //        var tag = predefinedPointTags[i];
+        //        var localForwardVector = BrainOriginTransform.transform.InverseTransformDirection(transform.forward); 
+        //        predefinedPoints.Add(new PredefinedPointStruct(transform.localPosition, transform.localEulerAngles, tag));
+        //    }
+        //}
 
         
     }
