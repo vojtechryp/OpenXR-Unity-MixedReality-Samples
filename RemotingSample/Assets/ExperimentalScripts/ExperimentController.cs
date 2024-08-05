@@ -4,19 +4,33 @@ using UnityEngine;
 using TMPro;
 using Microsoft.MixedReality.Toolkit.Input;
 using Microsoft.MixedReality.Toolkit;
+using System;
+
+public enum DisplayTypeOrder
+{
+    ARFirst,
+    PCFirst
+}
 
 public class ExperimentController : MonoBehaviour, IMixedRealitySpeechHandler
 {
+    // Instance?
     public static ExperimentController Instance;
+
+    [Header("Inputs")]
     public string InputParticipantId;
+    public DisplayTypeOrder displayTypeOrder = DisplayTypeOrder.ARFirst;
+    
+    [Header("Inputs")]
     public Session session;
+
+    [Header("Status Booleans")]
     public bool waitingForEndOfTrial;
     public bool resultOfCurrentTrial;
-    private float trialStartTime;
-    public CoilTargetPoints coilTargetPoints;
-    public CoilTracker coilTracker;
-    public TextMeshProUGUI blockMessageText;
-    public string displayTypeOrder = "ARFirst";
+    // private float trialStartTime;
+    // public CoilTargetPoints coilTargetPoints;
+    // public CoilTracker coilTracker;
+    // public TextMeshProUGUI blockMessageText;
 
     void Awake()
     {
@@ -39,25 +53,27 @@ public class ExperimentController : MonoBehaviour, IMixedRealitySpeechHandler
         // Register this script to receive input events
         CoreServices.InputSystem?.RegisterHandler<IMixedRealitySpeechHandler>(this);
 
-        if (coilTargetPoints == null)
-        {
-            Debug.LogError($"COIL TARGET POINTS ARE NULL!!!!!");
-        }
-        if (coilTracker == null)
-        {
-            Debug.LogError($"COIL TRACKER POINTS ARE NULL!!!!!");
-        }
+        // if (coilTargetPoints == null)
+        // {
+        //     Debug.LogError($"COIL TARGET POINTS ARE NULL!!!!!");
+        // }
+        // if (coilTracker == null)
+        // {
+        //     Debug.LogError($"COIL TRACKER POINTS ARE NULL!!!!!");
+        // }
 
-        if (blockMessageText == null)
-        {
-            Debug.LogError("BlockMessageText is not assigned in the Inspector");
-            return;
-        }
+        // if (blockMessageText == null)
+        // {
+        //     Debug.LogError("BlockMessageText is not assigned in the Inspector");
+        //     return;
+        // }
 
-        session = new Session(InputParticipantId, coilTargetPoints, coilTracker);
+        // session = new Session(InputParticipantId, coilTargetPoints, coilTracker);
+        session = Session.GetSessionAsset(InputParticipantId);
         Debug.Log($"New session has been created with Id {session.ParticipantId}");
 
-        blockMessageText.gameObject.SetActive(false);
+        // TODO Move this its own functionality
+        // blockMessageText.gameObject.SetActive(false);
 
         StartCoroutine(ExperimentSequence(session));
     }
@@ -81,20 +97,26 @@ public class ExperimentController : MonoBehaviour, IMixedRealitySpeechHandler
                 Debug.Log($"Running trial {trialNumber + 1}, in block {blockNumber + 1}");
 
                 waitingForEndOfTrial = true;
-                trialStartTime = Time.time;
+
+                // TODO Move this to Trial Manager OnBeginTrial
+                // trialStartTime = Time.time;
                 EventManager.BeginTrial(thisTrial);
 
                 yield return new WaitWhile(() => waitingForEndOfTrial);
 
-                thisTrial.TrialResult = resultOfCurrentTrial;
-                thisTrial.FinalDistance = Vector3.Distance(coilTracker.targetPointOnCoil.position, thisTrial.TargetPoint);
-                thisTrial.Duration = Time.time - trialStartTime;
+                // TODO Do all of this in Trial Manager
+                // thisTrial.IsComplete = resultOfCurrentTrial;
+                // thisTrial.FinalDistance = Vector3.Distance(coilTracker.targetPointOnCoil.position, thisTrial.TargetPoint);
+                // thisTrial.Duration = Time.time - trialStartTime;
 
-                string currentCondition = displayTypeOrder.Contains("AR") ? "AR" : "PC";
-                session.AddTrialResult(thisTrial, blockNumber + 1, displayTypeOrder, currentCondition);
+                // string currentCondition = displayTypeOrder.Contains("AR") ? "AR" : "PC";
+
+                //? Is this needed?
+                // session.AddTrialResult(thisTrial, blockNumber + 1, displayTypeOrder, currentCondition);
 
                 thisTrial.EndTrial(); // This will destroy the sphere
 
+                //? Is this correct? If so, replace the yield statement with a different Event with its own "waitingFor" boolean
                 // If more trials are left in the block, wait for "Next" to proceed
                 if (trialNumber < thisBlock.NumberOfTrialsInBlock - 1)
                 {
@@ -105,7 +127,7 @@ public class ExperimentController : MonoBehaviour, IMixedRealitySpeechHandler
             }
 
             // Save results after each block is completed
-            SaveResultsToJson();
+            session.Save();
 
             if (blockNumber < session.NumberOfBlocksPerSession - 1)
             {
@@ -122,19 +144,23 @@ public class ExperimentController : MonoBehaviour, IMixedRealitySpeechHandler
 
     private void ShowMessage(string message)
     {
-        if (blockMessageText != null)
-        {
-            blockMessageText.text = message;
-            blockMessageText.gameObject.SetActive(true);
-        }
+        throw new NotImplementedException();
+        // TODO Move this to its own script and send as event
+        // if (blockMessageText != null)
+        // {
+        //     blockMessageText.text = message;
+        //     blockMessageText.gameObject.SetActive(true);
+        // }
     }
 
     private void HideMessage()
     {
-        if (blockMessageText != null)
-        {
-            blockMessageText.gameObject.SetActive(false);
-        }
+        throw new NotImplementedException();
+        // TODO Move this to its own script and send as event
+        // if (blockMessageText != null)
+        // {
+        //     blockMessageText.gameObject.SetActive(false);
+        // }
     }
 
     public void EndOfTrial(bool trialResult)

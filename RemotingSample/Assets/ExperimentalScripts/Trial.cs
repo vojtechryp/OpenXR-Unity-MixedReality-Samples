@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 
+#if DONT_USE_THIS
 [System.Serializable]
 public class Trial : IEquatable<Trial>
 {
@@ -59,3 +60,4 @@ public class Trial : IEquatable<Trial>
         return $"{TrialNumber}\t{TargetPoint}\t{FinalDistance}\t{Duration}";
     }
 }
+#endif

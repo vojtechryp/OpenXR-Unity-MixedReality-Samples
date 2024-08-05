@@ -3,39 +3,63 @@
 
 using System;
 using System.Collections.Generic;
+using Microsoft.MixedReality.OpenXR.Sample;
+using UnityEngine;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
+using VRLab.QTMTracking;
 
-//#if USE_ARFOUNDATION_5_OR_NEWER
-//using ARSessionOrigin = Unity.XR.CoreUtils.XROrigin;
-//#else
-//using ARSessionOrigin = UnityEngine.XR.ARFoundation.ARSessionOrigin;
-//#endif
-
-namespace Microsoft.MixedReality.OpenXR.Sample
+namespace VRLab.AnchorStore
 {
     [Serializable]
-    public class PersistentAnchorData
+    public class PersistantAnchorData
     {
-        public TrackableId trackableId = TrackableId.invalidId;
-        public string name = "";
+        // KEY PERSISTANT PARAMETERS SAVED 
+        [Header("Serialized Data")]
+        [SerializeField]
+        [ShowOnly]
+        private string name = "";
+        [SerializeField]
+        [ShowOnly]
+        private string tag = "";
+        [SerializeField]
+        public UnityTransformMarkers AssociatedQTMMarker = 0;
+
+        [Header("Runtime Data")]
         public ARAnchor anchor = null;
-        public bool isAnchorLoaded { get => anchor != null; }
-        public bool isIdValid { get => trackableId != TrackableId.invalidId; }
-        public PersistableAnchorVisuals visuals { get => anchor.GetComponent<PersistableAnchorVisuals>(); }
 
-        public static Dictionary<string, PersistentAnchorData> nameToDataDict = new Dictionary<string, PersistentAnchorData>();
-        public static Dictionary<TrackableId, PersistentAnchorData> idToDataDict = new Dictionary<TrackableId, PersistentAnchorData>();
+        [Header("Display Only Data")]
+        [ShowOnly] internal bool isARAnchorLoaded = false;
+        [ShowOnly] internal bool isPersistant = false;
+        [ShowOnly] internal bool hasAssociatedQTMMarker = false;
 
-        public static Dictionary<TrackableId, PersistentAnchorData> incomingPersistentAnchors = new Dictionary<TrackableId, PersistentAnchorData>();
-        public PersistentAnchorData(TrackableId _trackableId, string _name)
+        // RUNTIME CALCULATED PROPERTIES        
+        public string Name { get => name; }
+        public string Tag { get => tag; }
+        public string StoredName { get => $"{tag}/{name}"; }
+        public TrackableId TrackableId
         {
-            trackableId = _trackableId;
-            name = _name;
+            get => IsAnchorLoaded ? anchor.trackableId : trackableId;
+            set => anchor = PersistantAnchorStore.GetAnchorFromARAnchorManager(trackableId = value);
         }
-        public PersistentAnchorData(string _name)
+        public TrackableId trackableId = TrackableId.invalidId;
+        public bool IsAnchorLoaded { get => anchor != null; }
+        public bool HasValidTrackableId { get => TrackableId != TrackableId.invalidId; }
+        public PersistableAnchorVisuals visuals { get => anchor.GetComponent<PersistableAnchorVisuals>(); }
+        public PersistableAnchorControls controls { get => anchor.GetComponent<PersistableAnchorControls>(); }
+
+        // Constructors
+        public PersistantAnchorData(string _fullName, UnityTransformMarkers _associatedMarker) : this(_fullName.GetTagFromRawName(), _fullName.GetNameFromRawName())
+        {
+            AssociatedQTMMarker = _associatedMarker;
+            hasAssociatedQTMMarker = true;
+        }
+        public PersistantAnchorData(string _fullName) : this(_fullName.GetTagFromRawName(), _fullName.GetNameFromRawName()){}
+        public PersistantAnchorData((string _tag, string _name) fullNameTuple) : this(fullNameTuple._tag, fullNameTuple._name){}
+        public PersistantAnchorData(string _tag, string _name)
         {
             name = _name;
+            tag = _tag;
         }
     }
 }

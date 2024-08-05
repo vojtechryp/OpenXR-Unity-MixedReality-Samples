@@ -12,3 +12,220 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c80558d0d8cdeb742b6c71ca6dbf2319, type: 3}
   m_Name: GlobalPersistenceScriptableMain
   m_EditorClassIdentifier: 
+  RebuildDatabaseFromLatest: 0
+  CurrentProjectTags:
+  - anchor
+  RawAnchorNamesInStoreOnLastUpdate:
+  - anchor/2520
+  - anchor/cdd4
+  - anchor/1ef0
+  - anchor/7dd3
+  - anchor/7b80
+  - anchor/a080
+  - anchor/46db
+  - anchor/45e5
+  AnchorTagsInStore:
+  - anchor
+  AvailableAnchorDataForProject:
+  - name: 2520
+    tag: anchor
+    AssociatedQTMMarker: 0
+    anchor: {fileID: 0}
+  - name: cdd4
+    tag: anchor
+    AssociatedQTMMarker: 0
+    anchor: {fileID: 0}
+  - name: 1ef0
+    tag: anchor
+    AssociatedQTMMarker: 0
+    anchor: {fileID: 0}
+  - name: 7dd3
+    tag: anchor
+    AssociatedQTMMarker: 0
+    anchor: {fileID: 0}
+  - name: 7b80
+    tag: anchor
+    AssociatedQTMMarker: 0
+    anchor: {fileID: 0}
+  - name: a080
+    tag: anchor
+    AssociatedQTMMarker: 0
+    anchor: {fileID: 0}
+  - name: 46db
+    tag: anchor
+    AssociatedQTMMarker: 0
+    anchor: {fileID: 0}
+  - name: 45e5
+    tag: anchor
+    AssociatedQTMMarker: 0
+    anchor: {fileID: 0}
+  latestAnchorStorePersistedNames:
+  - anchor/2520
+  - anchor/cdd4
+  - anchor/1ef0
+  - anchor/7dd3
+  - anchor/7b80
+  - anchor/a080
+  - anchor/46db
+  - anchor/45e5
+  RawAnchorNamesRemovedFromStore: []
+  RawAnchorNamesAddedFromStore: []
+  AnchorTagsRemovedFromStore: []
+  AnchorTagsAddedFromStore:
+  - anchor
+  LogString:
+  - '04/08/2024 : anchor/2520 - AddedAnchor'
+  - '04/08/2024 : anchor/cdd4 - AddedAnchor'
+  - '04/08/2024 : anchor/1ef0 - AddedAnchor'
+  - '04/08/2024 : anchor/7dd3 - AddedAnchor'
+  - '04/08/2024 : anchor/7b80 - AddedAnchor'
+  - '04/08/2024 : anchor/a080 - AddedAnchor'
+  - '04/08/2024 : anchor/46db - AddedAnchor'
+  - '04/08/2024 : anchor/45e5 - AddedAnchor'
+  - '04/08/2024 : anchor/2520 - AddedTag'
+  - '04/08/2024 : anchor/cdd4 - AddedTag'
+  - '04/08/2024 : anchor/1ef0 - AddedTag'
+  - '04/08/2024 : anchor/7dd3 - AddedTag'
+  - '04/08/2024 : anchor/7b80 - AddedTag'
+  - '04/08/2024 : anchor/a080 - AddedTag'
+  - '04/08/2024 : anchor/46db - AddedTag'
+  - '04/08/2024 : anchor/45e5 - AddedTag'
+  - '04/08/2024 : Rebuild - Cleared'
+  - '04/08/2024 : anchor/2520 - AddedAnchor'
+  - '04/08/2024 : anchor/cdd4 - AddedAnchor'
+  - '04/08/2024 : anchor/1ef0 - AddedAnchor'
+  - '04/08/2024 : anchor/7dd3 - AddedAnchor'
+  - '04/08/2024 : anchor/7b80 - AddedAnchor'
+  - '04/08/2024 : anchor/a080 - AddedAnchor'
+  - '04/08/2024 : anchor/46db - AddedAnchor'
+  - '04/08/2024 : anchor/45e5 - AddedAnchor'
+  - '04/08/2024 : anchor/2520 - AddedTag'
+  - '04/08/2024 : anchor/cdd4 - AddedTag'
+  - '04/08/2024 : anchor/1ef0 - AddedTag'
+  - '04/08/2024 : anchor/7dd3 - AddedTag'
+  - '04/08/2024 : anchor/7b80 - AddedTag'
+  - '04/08/2024 : anchor/a080 - AddedTag'
+  - '04/08/2024 : anchor/46db - AddedTag'
+  - '04/08/2024 : anchor/45e5 - AddedTag'
+  - '04/08/2024 : Rebuild - Cleared'
+  - '04/08/2024 : anchor/2520 - AddedAnchor'
+  - '04/08/2024 : anchor/cdd4 - AddedAnchor'
+  - '04/08/2024 : anchor/1ef0 - AddedAnchor'
+  - '04/08/2024 : anchor/7dd3 - AddedAnchor'
+  - '04/08/2024 : anchor/7b80 - AddedAnchor'
+  - '04/08/2024 : anchor/a080 - AddedAnchor'
+  - '04/08/2024 : anchor/46db - AddedAnchor'
+  - '04/08/2024 : anchor/45e5 - AddedAnchor'
+  - '04/08/2024 : anchor - AddedTag'
+  - '04/08/2024 : Rebuild - Cleared'
+  - '04/08/2024 : anchor/2520 - AddedAnchor'
+  - '04/08/2024 : anchor/cdd4 - AddedAnchor'
+  - '04/08/2024 : anchor/1ef0 - AddedAnchor'
+  - '04/08/2024 : anchor/7dd3 - AddedAnchor'
+  - '04/08/2024 : anchor/7b80 - AddedAnchor'
+  - '04/08/2024 : anchor/a080 - AddedAnchor'
+  - '04/08/2024 : anchor/46db - AddedAnchor'
+  - '04/08/2024 : anchor/45e5 - AddedAnchor'
+  - '04/08/2024 : anchor - AddedTag'
+  - '8/5/2024 : anchor - RemovedTag'
+  - '8/5/2024 : Rebuild - Cleared'
+  - '8/5/2024 : anchor/2520 - AddedAnchor'
+  - '8/5/2024 : anchor/cdd4 - AddedAnchor'
+  - '8/5/2024 : anchor/1ef0 - AddedAnchor'
+  - '8/5/2024 : anchor/7dd3 - AddedAnchor'
+  - '8/5/2024 : anchor/7b80 - AddedAnchor'
+  - '8/5/2024 : anchor/a080 - AddedAnchor'
+  - '8/5/2024 : anchor/46db - AddedAnchor'
+  - '8/5/2024 : anchor/45e5 - AddedAnchor'
+  - '8/5/2024 : anchor - AddedTag'
+  - '8/5/2024 : Rebuild - Cleared'
+  - '8/5/2024 : anchor/2520 - AddedAnchor'
+  - '8/5/2024 : anchor/cdd4 - AddedAnchor'
+  - '8/5/2024 : anchor/1ef0 - AddedAnchor'
+  - '8/5/2024 : anchor/7dd3 - AddedAnchor'
+  - '8/5/2024 : anchor/7b80 - AddedAnchor'
+  - '8/5/2024 : anchor/a080 - AddedAnchor'
+  - '8/5/2024 : anchor/46db - AddedAnchor'
+  - '8/5/2024 : anchor/45e5 - AddedAnchor'
+  - '8/5/2024 : anchor - AddedTag'
+  - '8/5/2024 : Rebuild - Cleared'
+  - '8/5/2024 : anchor/2520 - AddedAnchor'
+  - '8/5/2024 : anchor/cdd4 - AddedAnchor'
+  - '8/5/2024 : anchor/1ef0 - AddedAnchor'
+  - '8/5/2024 : anchor/7dd3 - AddedAnchor'
+  - '8/5/2024 : anchor/7b80 - AddedAnchor'
+  - '8/5/2024 : anchor/a080 - AddedAnchor'
+  - '8/5/2024 : anchor/46db - AddedAnchor'
+  - '8/5/2024 : anchor/45e5 - AddedAnchor'
+  - '8/5/2024 : anchor - AddedTag'
+  - '8/5/2024 : Rebuild - Cleared'
+  - '8/5/2024 : anchor/2520 - AddedAnchor'
+  - '8/5/2024 : anchor/cdd4 - AddedAnchor'
+  - '8/5/2024 : anchor/1ef0 - AddedAnchor'
+  - '8/5/2024 : anchor/7dd3 - AddedAnchor'
+  - '8/5/2024 : anchor/7b80 - AddedAnchor'
+  - '8/5/2024 : anchor/a080 - AddedAnchor'
+  - '8/5/2024 : anchor/46db - AddedAnchor'
+  - '8/5/2024 : anchor/45e5 - AddedAnchor'
+  - '8/5/2024 : anchor - AddedTag'
+  - '8/5/2024 : Rebuild - Cleared'
+  - '8/5/2024 : anchor/2520 - AddedAnchor'
+  - '8/5/2024 : anchor/cdd4 - AddedAnchor'
+  - '8/5/2024 : anchor/1ef0 - AddedAnchor'
+  - '8/5/2024 : anchor/7dd3 - AddedAnchor'
+  - '8/5/2024 : anchor/7b80 - AddedAnchor'
+  - '8/5/2024 : anchor/a080 - AddedAnchor'
+  - '8/5/2024 : anchor/46db - AddedAnchor'
+  - '8/5/2024 : anchor/45e5 - AddedAnchor'
+  - '8/5/2024 : anchor - AddedTag'
+  - '8/5/2024 : Rebuild - Cleared'
+  - '8/5/2024 : anchor/2520 - AddedAnchor'
+  - '8/5/2024 : anchor/cdd4 - AddedAnchor'
+  - '8/5/2024 : anchor/1ef0 - AddedAnchor'
+  - '8/5/2024 : anchor/7dd3 - AddedAnchor'
+  - '8/5/2024 : anchor/7b80 - AddedAnchor'
+  - '8/5/2024 : anchor/a080 - AddedAnchor'
+  - '8/5/2024 : anchor/46db - AddedAnchor'
+  - '8/5/2024 : anchor/45e5 - AddedAnchor'
+  - '8/5/2024 : anchor - AddedTag'
+  - '8/5/2024 : anchor - RemovedTag'
+  - '8/5/2024 : Rebuild - Cleared'
+  - '8/5/2024 : anchor/2520 - AddedAnchor'
+  - '8/5/2024 : anchor/cdd4 - AddedAnchor'
+  - '8/5/2024 : anchor/1ef0 - AddedAnchor'
+  - '8/5/2024 : anchor/7dd3 - AddedAnchor'
+  - '8/5/2024 : anchor/7b80 - AddedAnchor'
+  - '8/5/2024 : anchor/a080 - AddedAnchor'
+  - '8/5/2024 : anchor/46db - AddedAnchor'
+  - '8/5/2024 : anchor/45e5 - AddedAnchor'
+  - '8/5/2024 : anchor - AddedTag'
+  - '8/5/2024 : Rebuild - Cleared'
+  - '8/5/2024 : anchor/2520 - AddedAnchor'
+  - '8/5/2024 : anchor/cdd4 - AddedAnchor'
+  - '8/5/2024 : anchor/1ef0 - AddedAnchor'
+  - '8/5/2024 : anchor/7dd3 - AddedAnchor'
+  - '8/5/2024 : anchor/7b80 - AddedAnchor'
+  - '8/5/2024 : anchor/a080 - AddedAnchor'
+  - '8/5/2024 : anchor/46db - AddedAnchor'
+  - '8/5/2024 : anchor/45e5 - AddedAnchor'
+  - '8/5/2024 : anchor - AddedTag'
+  - '8/5/2024 : Rebuild - Cleared'
+  - '8/5/2024 : anchor/2520 - AddedAnchor'
+  - '8/5/2024 : anchor/cdd4 - AddedAnchor'
+  - '8/5/2024 : anchor/1ef0 - AddedAnchor'
+  - '8/5/2024 : anchor/7dd3 - AddedAnchor'
+  - '8/5/2024 : anchor/7b80 - AddedAnchor'
+  - '8/5/2024 : anchor/a080 - AddedAnchor'
+  - '8/5/2024 : anchor/46db - AddedAnchor'
+  - '8/5/2024 : anchor/45e5 - AddedAnchor'
+  - '8/5/2024 : anchor - AddedTag'
+  - '8/5/2024 : Rebuild - Cleared'
+  - '8/5/2024 : anchor/2520 - AddedAnchor'
+  - '8/5/2024 : anchor/cdd4 - AddedAnchor'
+  - '8/5/2024 : anchor/1ef0 - AddedAnchor'
+  - '8/5/2024 : anchor/7dd3 - AddedAnchor'
+  - '8/5/2024 : anchor/7b80 - AddedAnchor'
+  - '8/5/2024 : anchor/a080 - AddedAnchor'
+  - '8/5/2024 : anchor/46db - AddedAnchor'
+  - '8/5/2024 : anchor/45e5 - AddedAnchor'
+  - '8/5/2024 : anchor - AddedTag'

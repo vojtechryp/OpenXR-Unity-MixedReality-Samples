@@ -1,16 +1,19 @@
 ﻿// Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
+using Microsoft.MixedReality.OpenXR;
 using Microsoft.MixedReality.OpenXR.ARFoundation;
+using Microsoft.MixedReality.OpenXR.Sample;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
 using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.XR;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
+using VRLab.QTMTracking;
+
 
 //#if USE_ARFOUNDATION_5_OR_NEWER
 using ARSessionOrigin = Unity.XR.CoreUtils.XROrigin;
@@ -18,7 +21,7 @@ using ARSessionOrigin = Unity.XR.CoreUtils.XROrigin;
 //using ARSessionOrigin = UnityEngine.XR.ARFoundation.ARSessionOrigin;
 //#endif
 
-namespace Microsoft.MixedReality.OpenXR.Sample
+namespace VRLab.AnchorStore
 {
 
     /// <summary> 
@@ -73,31 +76,36 @@ namespace Microsoft.MixedReality.OpenXR.Sample
                     // the anchor will use once it is loaded. To later recognize and recall the names of these anchors after
                     // they have loaded, this dictionary stores the TrackableIds.
                     TrackableId trackableId = m_anchorStore.LoadAnchor(name);
-                    PersistentAnchorData.incomingPersistentAnchors.Add(trackableId, new PersistentAnchorData(trackableId, name));
+                    PersistantAnchorStore.incomingPersistentAnchors.Add(trackableId, new PersistantAnchorData(name));
                 }
             }
         }
 
-        public PersistentAnchorData LoadPersistentAnchorByData(PersistentAnchorData anchorData)
+        public PersistantAnchorData LoadPersistentAnchorByData(PersistantAnchorData anchorData)
         {
-            if (PersistentAnchorData.nameToDataDict.TryGetValue(anchorData.name, out anchorData))
+            UnityTransformMarkers overrideUnityMarker = anchorData.hasAssociatedQTMMarker ? anchorData.AssociatedQTMMarker : UnityTransformMarkers.Unassigned;
+            if (PersistantAnchorStore.nameToDataDict.TryGetValue(anchorData.StoredName, out anchorData))
             {
-                Debug.Log($"Found existing anchor named {anchorData.name}");
-                return anchorData;
+                anchorData.AssociatedQTMMarker = overrideUnityMarker;
+                Debug.Log($"Found existing anchor named {anchorData.StoredName}");
+            } 
+            else
+            {
+                if (hasValidStore)
+                {
+                    if (m_anchorStore.PersistedAnchorNames.Contains(anchorData.StoredName))
+                    {
+                        anchorData.AssociatedQTMMarker = overrideUnityMarker;
+                        anchorData.trackableId = m_anchorStore.LoadAnchor(anchorData.StoredName);
+                        PersistantAnchorStore.incomingPersistentAnchors.Add(anchorData.trackableId, anchorData);
+                    }
+                    else
+                    {
+                        Debug.LogWarning($"Persistent anchor named {anchorData.StoredName} not found in store");
+                    }
+                }
             }
 
-            if (hasValidStore)
-            {
-                if (m_anchorStore.PersistedAnchorNames.Contains(anchorData.name))
-                {
-                    anchorData.trackableId = m_anchorStore.LoadAnchor(anchorData.name);
-                    PersistentAnchorData.incomingPersistentAnchors.Add(anchorData.trackableId, anchorData);
-                }
-                else
-                {
-                    Debug.LogWarning($"Persistent anchor named {anchorData.name} not found in store");
-                }
-            }
             return anchorData;
         }
 
@@ -108,7 +116,7 @@ namespace Microsoft.MixedReality.OpenXR.Sample
                 m_arAnchorManager.anchorsChanged -= AnchorsChanged;
                 //m_anchorStore = null;
                 //m_incomingPersistedAnchors.Clear();
-                PersistentAnchorData.incomingPersistentAnchors.Clear();
+                PersistantAnchorStore.incomingPersistentAnchors.Clear();
             }
         }
 
@@ -146,15 +154,16 @@ namespace Microsoft.MixedReality.OpenXR.Sample
             //    m_incomingPersistedAnchors.Remove(anchor.trackableId);
             //}
 
-            if (PersistentAnchorData.incomingPersistentAnchors.TryGetValue(anchor.trackableId, out PersistentAnchorData anchorData))
+            if (PersistantAnchorStore.incomingPersistentAnchors.TryGetValue(anchor.trackableId, out PersistantAnchorData anchorData))
             {
-                AddPersistantAnchor(anchor, anchorData.name);
+                AddPersistantAnchor(anchor, anchorData.StoredName);
                 anchorData.anchor = anchor;
+                anchorData.trackableId = anchor.trackableId;
 
-                PersistentAnchorData.idToDataDict.Add(anchorData.trackableId, anchorData);
-                PersistentAnchorData.nameToDataDict.Add(anchorData.name, anchorData);
+                PersistantAnchorStore.idToDataDict.Add(anchorData.trackableId, anchorData);
+                PersistantAnchorStore.nameToDataDict.Add(anchorData.StoredName, anchorData);
 
-                PersistentAnchorData.incomingPersistentAnchors.Remove(anchor.trackableId);
+                PersistantAnchorStore.incomingPersistentAnchors.Remove(anchor.trackableId);
             }
 
             void AddPersistantAnchor(ARAnchor anchor, string name)
@@ -333,14 +342,14 @@ namespace Microsoft.MixedReality.OpenXR.Sample
 
         public List<string> UpdatePositionsOfAnchors(List<string> anchorNames, bool newPersist)
         {
-            PersistentAnchorData foundAnchor = null;
+            PersistantAnchorData foundAnchor = null;
             List<string> newAnchorNames = new List<string>();
 
             if (!newPersist)
             {
                 foreach (string name in anchorNames)
                 {
-                    if (PersistentAnchorData.nameToDataDict.TryGetValue(name, out foundAnchor))
+                    if (PersistantAnchorStore.nameToDataDict.TryGetValue(name, out foundAnchor))
                     {
                         ToggleAnchorPersistenceCustom(foundAnchor, false);
                         newAnchorNames.Add(name);
@@ -351,11 +360,11 @@ namespace Microsoft.MixedReality.OpenXR.Sample
             {
                 foreach (string name in anchorNames)
                 {
-                    if (PersistentAnchorData.nameToDataDict.TryGetValue(name, out foundAnchor))
+                    if (PersistantAnchorStore.nameToDataDict.TryGetValue(name, out foundAnchor))
                     {
                         newAnchorNames.Add(ToggleAnchorPersistenceCustom(foundAnchor, true));
-                        PersistentAnchorData.nameToDataDict.Remove(name);
-                        PersistentAnchorData.nameToDataDict.Add(name, foundAnchor);
+                        PersistantAnchorStore.nameToDataDict.Remove(name);
+                        PersistantAnchorStore.nameToDataDict.Add(name, foundAnchor);
                     }
                 }
             }
@@ -363,7 +372,7 @@ namespace Microsoft.MixedReality.OpenXR.Sample
             return newAnchorNames;
         }
 
-        public string ToggleAnchorPersistenceCustom(PersistentAnchorData anchorData, bool newPersist)
+        public string ToggleAnchorPersistenceCustom(PersistantAnchorData anchorData, bool newPersist)
         {
             if (m_anchorStore == null)
             {
@@ -403,8 +412,8 @@ namespace Microsoft.MixedReality.OpenXR.Sample
             {
                 ChangeAnchorVisuals(anchor, "", false);
             }
-            PersistentAnchorData.idToDataDict.Clear();
-            PersistentAnchorData.nameToDataDict.Clear();
+            PersistantAnchorStore.idToDataDict.Clear();
+            PersistantAnchorStore.nameToDataDict.Clear();
         }
 
         public void ClearSceneAnchors()
