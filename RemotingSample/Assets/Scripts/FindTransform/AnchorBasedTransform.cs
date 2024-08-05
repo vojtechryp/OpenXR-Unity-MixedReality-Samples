@@ -59,29 +59,30 @@ namespace VRLab.QTMTracking
 
 		IEnumerator LoadCoroutine()
 		{
+			float waitTime = 0.2f;
 			LoadFromScriptable();
 			if (!hasValidData) yield break;
 
-            yield return new WaitForSeconds(1.0f);
+            yield return new WaitForSeconds(waitTime);
 
 			CreateQTMPrefab();
 			if (!qtmObject.hasValidData) yield break;
 
-            yield return new WaitForSeconds(1.0f);
+            yield return new WaitForSeconds(waitTime);
 
             if (dummyObject != null)
 			{
 				CreateDummyPrefab();
 			}
 
-			yield return new WaitForSeconds(1.0f);
+			yield return new WaitForSeconds(waitTime);
 
 			if (findTransform == null)
 			{
 				findTransform = GetComponent<FindTransform>();
 			}
 
-			yield return new WaitForSeconds(1.0f);
+			yield return new WaitForSeconds(waitTime);
 
 			findTransform.CalculateTransform(this, qtmObject, dummyObject);
 		}

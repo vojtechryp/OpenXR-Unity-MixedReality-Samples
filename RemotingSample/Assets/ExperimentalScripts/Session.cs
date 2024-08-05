@@ -17,8 +17,8 @@ public class Session : ScriptableObject
     public List<Trial> TrialResults = new List<Trial>();
 
     public string FileName { get { return getFileName(ParticipantId); } }
-    private const string relativeAssetPath = "/Sessions/";
-    private const string relativeJsonPath = "/Sessions/Json/";
+    private const string relativeAssetPath = "/Results/Session/";
+    private const string relativeJsonPath = "/Results/Json/";
 
     public Session(string participantId)
     {
