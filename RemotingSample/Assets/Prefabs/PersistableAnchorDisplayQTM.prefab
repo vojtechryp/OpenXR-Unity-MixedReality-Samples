@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1659430669}
   - component: {fileID: 1659430671}
   - component: {fileID: 1659430670}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Anchor Info Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25,13 +25,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1659430668}
-  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.05, y: 0.05, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3993819835255143991}
+  m_RootOrder: -2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &1659430671
 MeshRenderer:
@@ -107,7 +107,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3993819835255143991}
   - component: {fileID: -2876587582556121875}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PersistableAnchorDisplayQTM
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -121,7 +121,6 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 404219598984025740}
-  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -130,6 +129,7 @@ Transform:
   - {fileID: 1659430669}
   - {fileID: 858000848500418533}
   m_Father: {fileID: 0}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &-2876587582556121875
 MonoBehaviour:
@@ -154,7 +154,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 858000848500418533}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CAMERAOFFSET
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -168,7 +168,6 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2475253663114219174}
-  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -176,6 +175,7 @@ Transform:
   m_Children:
   - {fileID: 5390404015297066015}
   m_Father: {fileID: 3993819835255143991}
+  m_RootOrder: -2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &3983472383369836244
 PrefabInstance:
@@ -185,10 +185,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 858000848500418533}
     m_Modifications:
+    - target: {fileID: 3164732709333103709, guid: ad39e1c21a159da498994425cce2d3e2, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4468200754695870769, guid: ad39e1c21a159da498994425cce2d3e2, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4884658541529960007, guid: ad39e1c21a159da498994425cce2d3e2, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 5aea40536804884409c30dd3370e1b9f, type: 2}
+    - target: {fileID: 5112850280244293995, guid: ad39e1c21a159da498994425cce2d3e2, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6028685704653895826, guid: ad39e1c21a159da498994425cce2d3e2, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8449468278048138753, guid: ad39e1c21a159da498994425cce2d3e2, type: 3}
       propertyPath: m_Name
       value: AxesCustom

@@ -1,0 +1,101 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4993e6ac009fb8f46a5d496b591bda96, type: 3}
+  m_Name: CoilTargetsScriptableMain
+  m_EditorClassIdentifier: 
+  copyTransformsToPoints: 0
+  resetToHardcodedValues: 0
+  BrainOriginTransform: {fileID: 0}
+  ListOfTransforms:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  predefinedPoints:
+  - TargetPosition: {x: -0.0064, y: 0.0574, z: -0.0423}
+    TargetRotation: {x: 0, y: 0, z: 1}
+    Tag: Frontal
+  - TargetPosition: {x: 0.0035, y: 0.0366, z: -0.20069}
+    TargetRotation: {x: 0, y: 0, z: 1}
+    Tag: Occipital
+  - TargetPosition: {x: 0.05314, y: 0.07571, z: -0.12568}
+    TargetRotation: {x: 0, y: 0, z: 1}
+    Tag: Parietal
+  - TargetPosition: {x: 0.06784, y: 0.0573, z: -0.1156}
+    TargetRotation: {x: 0, y: 0, z: 1}
+    Tag: Left Temporal
+  - TargetPosition: {x: -0.0438, y: 0.0573, z: -0.1155}
+    TargetRotation: {x: 0, y: 0, z: 1}
+    Tag: Right Temporal
+  - TargetPosition: {x: 0.03, y: 0.065, z: -0.15}
+    TargetRotation: {x: 0, y: 0, z: 1}
+    Tag: Additional 1
+  - TargetPosition: {x: -0.03, y: 0.065, z: -0.15}
+    TargetRotation: {x: 0, y: 0, z: 1}
+    Tag: Additional 2
+  - TargetPosition: {x: 0.05, y: 0.07, z: -0.12}
+    TargetRotation: {x: 0, y: 0, z: 1}
+    Tag: Additional 3
+  - TargetPosition: {x: -0.05, y: 0.07, z: -0.12}
+    TargetRotation: {x: 0, y: 0, z: 1}
+    Tag: Additional 4
+  - TargetPosition: {x: 0, y: 0.06, z: -0.18}
+    TargetRotation: {x: 0, y: 0, z: 1}
+    Tag: Additional 5
+  predefinedPointsHardCoded:
+  - TargetPosition: {x: -0.0064, y: 0.0574, z: -0.0423}
+    TargetRotation: {x: 0, y: 0, z: 1}
+    Tag: Frontal
+  - TargetPosition: {x: 0.0035, y: 0.0366, z: -0.20069}
+    TargetRotation: {x: 0, y: 0, z: 1}
+    Tag: Occipital
+  - TargetPosition: {x: 0.05314, y: 0.07571, z: -0.12568}
+    TargetRotation: {x: 0, y: 0, z: 1}
+    Tag: Parietal
+  - TargetPosition: {x: 0.06784, y: 0.0573, z: -0.1156}
+    TargetRotation: {x: 0, y: 0, z: 1}
+    Tag: Left Temporal
+  - TargetPosition: {x: -0.0438, y: 0.0573, z: -0.1155}
+    TargetRotation: {x: 0, y: 0, z: 1}
+    Tag: Right Temporal
+  - TargetPosition: {x: 0.03, y: 0.065, z: -0.15}
+    TargetRotation: {x: 0, y: 0, z: 1}
+    Tag: Additional 1
+  - TargetPosition: {x: -0.03, y: 0.065, z: -0.15}
+    TargetRotation: {x: 0, y: 0, z: 1}
+    Tag: Additional 2
+  - TargetPosition: {x: 0.05, y: 0.07, z: -0.12}
+    TargetRotation: {x: 0, y: 0, z: 1}
+    Tag: Additional 3
+  - TargetPosition: {x: -0.05, y: 0.07, z: -0.12}
+    TargetRotation: {x: 0, y: 0, z: 1}
+    Tag: Additional 4
+  - TargetPosition: {x: 0, y: 0.06, z: -0.18}
+    TargetRotation: {x: 0, y: 0, z: 1}
+    Tag: Additional 5
+  predefinedPointTags:
+  - Frontal
+  - Occipital
+  - Parietal
+  - Left Temporal
+  - Right Temporal
+  - Additional 1
+  - Additional 2
+  - Additional 3
+  - Additional 4
+  - Additional 5

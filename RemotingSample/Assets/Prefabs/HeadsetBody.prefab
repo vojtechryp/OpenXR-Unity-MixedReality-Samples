@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3868055656234816393}
   - component: {fileID: 8619736235556889360}
   - component: {fileID: 790667691934268484}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: HeadsetFront
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,7 +116,7 @@ GameObject:
   - component: {fileID: 6622417880275928735}
   - component: {fileID: 4805271448016741662}
   - component: {fileID: 162501580045517713}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: HeadsetBody
   m_TagString: Untagged
   m_Icon: {fileID: 0}

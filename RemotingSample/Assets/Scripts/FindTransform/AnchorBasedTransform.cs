@@ -158,6 +158,8 @@ namespace VRLab.QTMTracking
 
 			private void Update()
 			{
+				if (!hasValidData) return;
+
 				for (int i = 0; i < numberOfPoints; i++)
 				{
 					vectorOfAnchorPositions[i] = persistableAnchorVisuals[i].transform.position;

@@ -119,7 +119,7 @@ GameObject:
   - component: {fileID: 5417526485872068877}
   - component: {fileID: 8370794973261439079}
   - component: {fileID: 610102309826786486}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cylinder (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -365,7 +365,7 @@ GameObject:
   - component: {fileID: 8549892744816352606}
   - component: {fileID: 4417034924138119611}
   - component: {fileID: 5891525458519441909}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -470,7 +470,7 @@ GameObject:
   - component: {fileID: 4968533186081003473}
   - component: {fileID: 7989776157142376379}
   - component: {fileID: 6300369260515042916}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cylinder (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -574,7 +574,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8388284628794964174}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CoilModelWithPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}

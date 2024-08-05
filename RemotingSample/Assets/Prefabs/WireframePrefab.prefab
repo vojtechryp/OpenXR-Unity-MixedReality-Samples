@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4911377697761844659}
   - component: {fileID: 4911377697761844668}
   - component: {fileID: 4911377697761844657}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: WireframePrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}

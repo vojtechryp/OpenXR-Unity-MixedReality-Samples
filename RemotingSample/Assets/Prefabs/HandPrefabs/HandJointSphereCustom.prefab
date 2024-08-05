@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8938402549820326279}
-  m_Layer: 2
+  m_Layer: 10
   m_Name: CAMERAOFFSET
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41,7 +41,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4847687404185291324}
-  m_Layer: 2
+  m_Layer: 10
   m_Name: HandJointSphereCustom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -75,7 +75,7 @@ GameObject:
   - component: {fileID: 7194795194571053793}
   - component: {fileID: 8168692732536712629}
   - component: {fileID: 1276822172742557828}
-  m_Layer: 2
+  m_Layer: 10
   m_Name: HandJointSphereCustom
   m_TagString: Untagged
   m_Icon: {fileID: 0}

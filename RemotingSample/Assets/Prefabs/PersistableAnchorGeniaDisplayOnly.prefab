@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1659430669}
   - component: {fileID: 1659430671}
   - component: {fileID: 1659430670}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Anchor Info Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -106,7 +106,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3993819835255143991}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PersistableAnchorGeniaDisplayOnly
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -139,7 +139,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 858000848500418533}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CAMERAOFFSET
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -173,7 +173,7 @@ PrefabInstance:
     - target: {fileID: 4884658541529960007, guid: ad39e1c21a159da498994425cce2d3e2, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: f0443196a6eeb6948864eed966665573, type: 2}
+      objectReference: {fileID: 2100000, guid: 5aea40536804884409c30dd3370e1b9f, type: 2}
     - target: {fileID: 8449468278048138753, guid: ad39e1c21a159da498994425cce2d3e2, type: 3}
       propertyPath: m_Name
       value: AxesCustom

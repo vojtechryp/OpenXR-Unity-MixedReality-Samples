@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1659430669}
   - component: {fileID: 1659430671}
   - component: {fileID: 1659430670}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Anchor Info Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -106,7 +106,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3993819835255143991}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PersistableAnchorGeniaBigDisplay
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -139,7 +139,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 858000848500418533}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CAMERAOFFSET
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1659430669}
   - component: {fileID: 1659430671}
   - component: {fileID: 1659430670}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Anchor Info Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -108,7 +108,7 @@ GameObject:
   - component: {fileID: 3993819835255143991}
   - component: {fileID: 6398835091579817977}
   - component: {fileID: 9111855319642566706}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PersistableAnchorGenia
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -130,7 +130,7 @@ Transform:
   - {fileID: 1659430669}
   - {fileID: 858000848500418533}
   m_Father: {fileID: 0}
-  m_RootOrder: -2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &6398835091579817977
 MonoBehaviour:
@@ -171,7 +171,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 858000848500418533}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CAMERAOFFSET
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -206,14 +206,30 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 05b7dd093bfe6cd49954fc9dc5fd7e73, type: 2}
+    - target: {fileID: 3164732709333103709, guid: ad39e1c21a159da498994425cce2d3e2, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4468200754695870769, guid: ad39e1c21a159da498994425cce2d3e2, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4884658541529960007, guid: ad39e1c21a159da498994425cce2d3e2, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 5aea40536804884409c30dd3370e1b9f, type: 2}
+    - target: {fileID: 5112850280244293995, guid: ad39e1c21a159da498994425cce2d3e2, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5418814877057241329, guid: ad39e1c21a159da498994425cce2d3e2, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: a9f73799c8ca4b04299cd0fc1a350cfc, type: 2}
+    - target: {fileID: 6028685704653895826, guid: ad39e1c21a159da498994425cce2d3e2, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8449468278048138753, guid: ad39e1c21a159da498994425cce2d3e2, type: 3}
       propertyPath: m_Name
       value: AxesCustom

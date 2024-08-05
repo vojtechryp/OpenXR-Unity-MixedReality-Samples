@@ -23,7 +23,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 416507028934866750}
-  m_LocalRotation: {x: -0, y: -0, z: 2.8421706e-14, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -45,7 +45,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1976009479706364822}
   - component: {fileID: 7860699165612226416}
-  - component: {fileID: 809917055373711518}
   m_Layer: 0
   m_Name: Camera Back
   m_TagString: Untagged
@@ -109,8 +108,8 @@ Camera:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingPath: -1
-  m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 2
+  m_TargetTexture: {fileID: 8400000, guid: b3038289ff9b6de48918e2d25753de90, type: 2}
+  m_TargetDisplay: 1
   m_TargetEye: 0
   m_HDR: 1
   m_AllowMSAA: 1
@@ -119,14 +118,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!81 &809917055373711518
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1392197499019945860}
-  m_Enabled: 1
 --- !u!1 &2507807397707461158
 GameObject:
   m_ObjectHideFlags: 0
@@ -137,7 +128,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2746831950503940312}
   - component: {fileID: 7622453382291660187}
-  - component: {fileID: 2797773207901912701}
   m_Layer: 0
   m_Name: Camera Front
   m_TagString: Untagged
@@ -201,7 +191,7 @@ Camera:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingPath: -1
-  m_TargetTexture: {fileID: 0}
+  m_TargetTexture: {fileID: 8400000, guid: 8b66fd9c0e9a14b49bacd5a765d79282, type: 2}
   m_TargetDisplay: 1
   m_TargetEye: 0
   m_HDR: 1
@@ -211,14 +201,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!81 &2797773207901912701
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2507807397707461158}
-  m_Enabled: 1
 --- !u!1 &5719129495565840368
 GameObject:
   m_ObjectHideFlags: 0
@@ -229,7 +211,6 @@ GameObject:
   m_Component:
   - component: {fileID: 594230336202066593}
   - component: {fileID: 5930762416827655251}
-  - component: {fileID: 1474167923406628775}
   m_Layer: 0
   m_Name: Camera Left
   m_TagString: Untagged
@@ -293,8 +274,8 @@ Camera:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingPath: -1
-  m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 4
+  m_TargetTexture: {fileID: 8400000, guid: a5d9c083c266de84d9fa330ceb0c5959, type: 2}
+  m_TargetDisplay: 1
   m_TargetEye: 0
   m_HDR: 1
   m_AllowMSAA: 1
@@ -303,14 +284,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!81 &1474167923406628775
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5719129495565840368}
-  m_Enabled: 1
 --- !u!1 &8050224651231376800
 GameObject:
   m_ObjectHideFlags: 0
@@ -321,7 +294,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4155122048688839746}
   - component: {fileID: 3004213275430045385}
-  - component: {fileID: 1954165999683380710}
   m_Layer: 0
   m_Name: Camera Right
   m_TagString: Untagged
@@ -385,8 +357,8 @@ Camera:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingPath: -1
-  m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 3
+  m_TargetTexture: {fileID: 8400000, guid: 414bf79373d2ca04ea74ca481c2d911f, type: 2}
+  m_TargetDisplay: 1
   m_TargetEye: 0
   m_HDR: 1
   m_AllowMSAA: 1
@@ -395,11 +367,3 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!81 &1954165999683380710
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8050224651231376800}
-  m_Enabled: 1
