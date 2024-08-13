@@ -26,16 +26,16 @@ namespace Vojta.Experiment
         [SerializeField]
         public List<string> predefinedPointTags = new List<string>
         {
-            "Frontal",
-            "Occipital",
-            "Parietal",
-            "Left Temporal",
-            "Right Temporal",
-            "Additional 1",
-            "Additional 2",
-            "Additional 3",
-            "Additional 4",
-            "Additional 5"
+            "LDLPFC",
+            "RDLPFC",
+            "OccipitalRight",
+            "OccipitalLeft",
+            "TemporalRight",
+            "TemporalLeft",
+            "ParietalRight",
+            "ParietalLeft",
+            "PMRight",
+            "PMLeft"
         };
 
 
@@ -86,8 +86,8 @@ namespace Vojta.Experiment
         //        var localForwardVector = BrainOriginTransform.transform.InverseTransformDirection(transform.forward); 
         //        predefinedPoints.Add(new PredefinedPointStruct(transform.localPosition, transform.localEulerAngles, tag));
         //    }
-        //}
+    //    //}
 
-        
+    //    GenericPropertyJSON:{"name":"predefinedPoints","type":-1,"arraySize":10,"arrayType":"PredefinedPointStruct","children":[{"name":"Array","type":-1,"arraySize":10,"arrayType":"PredefinedPointStruct","children":[{"name":"size","type":12,"val":10},{"name":"data","type":-1,"children":[{"name":"TargetPosition","type":9,"children":[{"name":"x","type":2,"val":-0.02282},{ "name":"y","type":2,"val":0.06766},{ "name":"z","type":2,"val":-0.05068}]},{ "name":"TargetRotation","type":9,"children":[{ "name":"x","type":2,"val":320.964233},{ "name":"y","type":2,"val":313.0073},{ "name":"z","type":2,"val":75.5605}]},{ "name":"Tag","type":3,"val":"LDLPFC"}]},{ "name":"data","type":-1,"children":[{ "name":"TargetPosition","type":9,"children":[{ "name":"x","type":2,"val":0.02022},{ "name":"y","type":2,"val":0.06739},{ "name":"z","type":2,"val":-0.05073}]},{ "name":"TargetRotation","type":9,"children":[{ "name":"x","type":2,"val":324.683746},{ "name":"y","type":2,"val":46.8649521},{ "name":"z","type":2,"val":139.5831}]},{ "name":"Tag","type":3,"val":"RDLPFC"}]},{ "name":"data","type":-1,"children":[{ "name":"TargetPosition","type":9,"children":[{ "name":"x","type":2,"val":0.03186},{ "name":"y","type":2,"val":0.00747},{ "name":"z","type":2,"val":-0.20007}]},{ "name":"TargetRotation","type":9,"children":[{ "name":"x","type":2,"val":354.061859},{ "name":"y","type":2,"val":129.856262},{ "name":"z","type":2,"val":115.192307}]},{ "name":"Tag","type":3,"val":"OccipitalRight"}]},{ "name":"data","type":-1,"children":[{ "name":"TargetPosition","type":9,"children":[{ "name":"x","type":2,"val":-0.0334},{ "name":"y","type":2,"val":0.0078},{ "name":"z","type":2,"val":-0.2}]},{ "name":"TargetRotation","type":9,"children":[{ "name":"x","type":2,"val":334.685333},{ "name":"y","type":2,"val":195.089645},{ "name":"z","type":2,"val":95.35429}]},{ "name":"Tag","type":3,"val":"OccipitalLeft"}]},{ "name":"data","type":-1,"children":[{ "name":"TargetPosition","type":9,"children":[{ "name":"x","type":2,"val":0.0577},{ "name":"y","type":2,"val":0.0379},{ "name":"z","type":2,"val":-0.1044}]},{ "name":"TargetRotation","type":9,"children":[{ "name":"x","type":2,"val":354.167633},{ "name":"y","type":2,"val":88.99608},{ "name":"z","type":2,"val":117.314171}]},{ "name":"Tag","type":3,"val":"TemporalRight"}]},{ "name":"data","type":-1,"children":[{ "name":"TargetPosition","type":9,"children":[{ "name":"x","type":2,"val":-0.0563},{ "name":"y","type":2,"val":0.0378},{ "name":"z","type":2,"val":-0.1044}]},{ "name":"TargetRotation","type":9,"children":[{ "name":"x","type":2,"val":334.685333},{ "name":"y","type":2,"val":282.929749},{ "name":"z","type":2,"val":95.35427}]},{ "name":"Tag","type":3,"val":"TemporalLeft"}]},{ "name":"data","type":-1,"children":[{ "name":"TargetPosition","type":9,"children":[{ "name":"x","type":2,"val":0.0338},{ "name":"y","type":2,"val":0.0808},{ "name":"z","type":2,"val":-0.1081}]},{ "name":"TargetRotation","type":9,"children":[{ "name":"x","type":2,"val":299.76944},{ "name":"y","type":2,"val":64.27186},{ "name":"z","type":2,"val":32.098896}]},{ "name":"Tag","type":3,"val":"ParietalRight"}]},{ "name":"data","type":-1,"children":[{ "name":"TargetPosition","type":9,"children":[{ "name":"x","type":2,"val":-0.0296},{ "name":"y","type":2,"val":0.0786},{ "name":"z","type":2,"val":-0.1093}]},{ "name":"TargetRotation","type":9,"children":[{ "name":"x","type":2,"val":308.1559},{ "name":"y","type":2,"val":303.439026},{ "name":"z","type":2,"val":137.750015}]},{ "name":"Tag","type":3,"val":"ParietalLeft"}]},{ "name":"data","type":-1,"children":[{ "name":"TargetPosition","type":9,"children":[{ "name":"x","type":2,"val":0.0063},{ "name":"y","type":2,"val":0.0871},{ "name":"z","type":2,"val":-0.0713}]},{ "name":"TargetRotation","type":9,"children":[{ "name":"x","type":2,"val":295.94458},{ "name":"y","type":2,"val":9.21499},{ "name":"z","type":2,"val":79.9056244}]},{ "name":"Tag","type":3,"val":"PMRight"}]},{ "name":"data","type":-1,"children":[{ "name":"TargetPosition","type":9,"children":[{ "name":"x","type":2,"val":-0.0063},{ "name":"y","type":2,"val":0.0871},{ "name":"z","type":2,"val":-0.0713}]},{ "name":"TargetRotation","type":9,"children":[{ "name":"x","type":2,"val":295.94458},{ "name":"y","type":2,"val":9.21499},{ "name":"z","type":2,"val":79.9056244}]},{ "name":"Tag","type":3,"val":"PMLeft"}]}]}]} 
     }
 }

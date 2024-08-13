@@ -25,14 +25,17 @@ Material:
   m_Parent: {fileID: 2100000, guid: ce757d612f6b9b54ca2ba464f97e9d53, type: 2}
   m_ModifiedSerializedProperties: 2
   m_ValidKeywords:
+  - _ALPHABLEND_ON
   - _DIRECTIONAL_LIGHT
+  - _DISABLE_ALBEDO_MAP
   - _HOVER_LIGHT
   m_InvalidKeywords: []
   m_LightmapFlags: 1
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
-  stringTagMap: {}
+  stringTagMap:
+    RenderType: Fade
   disabledShaderPasses: []
   m_LockedProperties: 
   m_SavedProperties:

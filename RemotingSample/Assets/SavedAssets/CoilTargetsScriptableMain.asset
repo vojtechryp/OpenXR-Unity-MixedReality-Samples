@@ -12,82 +12,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4993e6ac009fb8f46a5d496b591bda96, type: 3}
   m_Name: CoilTargetsScriptableMain
   m_EditorClassIdentifier: 
-  copyTransformsToPoints: 0
-  resetToHardcodedValues: 0
-  BrainOriginTransform: {fileID: 0}
-  ListOfTransforms:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   predefinedPoints:
-  - TargetPosition: {x: -0.0064, y: 0.0574, z: -0.0423}
-    TargetRotation: {x: 0, y: 0, z: 1}
-    Tag: Frontal
-  - TargetPosition: {x: 0.0035, y: 0.0366, z: -0.20069}
-    TargetRotation: {x: 0, y: 0, z: 1}
-    Tag: Occipital
-  - TargetPosition: {x: 0.05314, y: 0.07571, z: -0.12568}
-    TargetRotation: {x: 0, y: 0, z: 1}
-    Tag: Parietal
-  - TargetPosition: {x: 0.06784, y: 0.0573, z: -0.1156}
-    TargetRotation: {x: 0, y: 0, z: 1}
-    Tag: Left Temporal
-  - TargetPosition: {x: -0.0438, y: 0.0573, z: -0.1155}
-    TargetRotation: {x: 0, y: 0, z: 1}
-    Tag: Right Temporal
-  - TargetPosition: {x: 0.03, y: 0.065, z: -0.15}
-    TargetRotation: {x: 0, y: 0, z: 1}
-    Tag: Additional 1
-  - TargetPosition: {x: -0.03, y: 0.065, z: -0.15}
-    TargetRotation: {x: 0, y: 0, z: 1}
-    Tag: Additional 2
-  - TargetPosition: {x: 0.05, y: 0.07, z: -0.12}
-    TargetRotation: {x: 0, y: 0, z: 1}
-    Tag: Additional 3
-  - TargetPosition: {x: -0.05, y: 0.07, z: -0.12}
-    TargetRotation: {x: 0, y: 0, z: 1}
-    Tag: Additional 4
-  - TargetPosition: {x: 0, y: 0.06, z: -0.18}
-    TargetRotation: {x: 0, y: 0, z: 1}
-    Tag: Additional 5
-  predefinedPointsHardCoded:
-  - TargetPosition: {x: -0.0064, y: 0.0574, z: -0.0423}
-    TargetRotation: {x: 0, y: 0, z: 1}
-    Tag: Frontal
-  - TargetPosition: {x: 0.0035, y: 0.0366, z: -0.20069}
-    TargetRotation: {x: 0, y: 0, z: 1}
-    Tag: Occipital
-  - TargetPosition: {x: 0.05314, y: 0.07571, z: -0.12568}
-    TargetRotation: {x: 0, y: 0, z: 1}
-    Tag: Parietal
-  - TargetPosition: {x: 0.06784, y: 0.0573, z: -0.1156}
-    TargetRotation: {x: 0, y: 0, z: 1}
-    Tag: Left Temporal
-  - TargetPosition: {x: -0.0438, y: 0.0573, z: -0.1155}
-    TargetRotation: {x: 0, y: 0, z: 1}
-    Tag: Right Temporal
-  - TargetPosition: {x: 0.03, y: 0.065, z: -0.15}
-    TargetRotation: {x: 0, y: 0, z: 1}
-    Tag: Additional 1
-  - TargetPosition: {x: -0.03, y: 0.065, z: -0.15}
-    TargetRotation: {x: 0, y: 0, z: 1}
-    Tag: Additional 2
-  - TargetPosition: {x: 0.05, y: 0.07, z: -0.12}
-    TargetRotation: {x: 0, y: 0, z: 1}
-    Tag: Additional 3
-  - TargetPosition: {x: -0.05, y: 0.07, z: -0.12}
-    TargetRotation: {x: 0, y: 0, z: 1}
-    Tag: Additional 4
-  - TargetPosition: {x: 0, y: 0.06, z: -0.18}
-    TargetRotation: {x: 0, y: 0, z: 1}
-    Tag: Additional 5
+  - TargetPosition: {x: -0.0463, y: 0.0529, z: -0.0503}
+    TargetRotation: {x: 340.49564, y: 288.35675, z: 7.1336603}
+    Tag: LDLPFC
+  - TargetPosition: {x: 0.0279, y: 0.0607, z: -0.0641}
+    TargetRotation: {x: 340.49564, y: 54.087048, z: 7.133673}
+    Tag: RDLPFC
+  - TargetPosition: {x: 0.0487, y: 0.0063, z: -0.1765}
+    TargetRotation: {x: 353.30817, y: 141.62529, z: 0.6462261}
+    Tag: OccipitalRight
+  - TargetPosition: {x: -0.0163, y: 0.0044, z: -0.1999}
+    TargetRotation: {x: 349.36823, y: 194.65883, z: 355.02036}
+    Tag: OccipitalLeft
+  - TargetPosition: {x: 0.0577, y: 0.0379, z: -0.1044}
+    TargetRotation: {x: 352.18372, y: 75.59543, z: 12.217402}
+    Tag: TemporalRight
+  - TargetPosition: {x: -0.05869, y: 0.03732, z: -0.10423}
+    TargetRotation: {x: 3.046899, y: 262.82904, z: 352.32013}
+    Tag: TemporalLeft
+  - TargetPosition: {x: 0.0433, y: 0.0645, z: -0.1578}
+    TargetRotation: {x: 334.02783, y: 102.07349, z: 6.6678166}
+    Tag: ParietalRight
+  - TargetPosition: {x: -0.0433, y: 0.0645, z: -0.1578}
+    TargetRotation: {x: 320.10272, y: 242.31532, z: 6.9811783}
+    Tag: ParietalLeft
+  - TargetPosition: {x: 0.0095, y: 0.0927, z: -0.1103}
+    TargetRotation: {x: 283.73166, y: 29.975878, z: 214.98206}
+    Tag: PMRight
+  - TargetPosition: {x: -0.022, y: 0.0915, z: -0.1165}
+    TargetRotation: {x: 286.30548, y: 272.18982, z: 331.00534}
+    Tag: PMLeft
   predefinedPointTags:
   - Frontal
   - Occipital
@@ -99,3 +54,34 @@ MonoBehaviour:
   - Additional 3
   - Additional 4
   - Additional 5
+  predefinedPointsHardCoded:
+  - TargetPosition: {x: 0.0353, y: 0.0361, z: -0.0534}
+    TargetRotation: {x: 342.6963, y: 63.99975, z: 10.160937}
+    Tag: LDLPFC
+  - TargetPosition: {x: -0.0538, y: 0.0295, z: -0.0571}
+    TargetRotation: {x: 18.646059, y: 296.98935, z: 7.330468}
+    Tag: LDLPFC
+  - TargetPosition: {x: 0.0417, y: 0.042, z: -0.1767}
+    TargetRotation: {x: 339.3936, y: 133.01936, z: 329.754}
+    Tag: Occipital
+  - TargetPosition: {x: 0.0035, y: 0.0366, z: -0.20069}
+    TargetRotation: {x: 309.60876, y: 192.8792, z: 288.2955}
+    Tag: OccipitalRight
+  - TargetPosition: {x: 0.0602, y: 0.0475, z: -0.1303}
+    TargetRotation: {x: 340.55304, y: 81.17522, z: 327.7298}
+    Tag: Right Temporal
+  - TargetPosition: {x: -0.0575, y: 0.0488, z: -0.1267}
+    TargetRotation: {x: 335.4749, y: 264.51843, z: 226.04657}
+    Tag: Right Temporal
+  - TargetPosition: {x: -0.03, y: 0.065, z: -0.15}
+    TargetRotation: {x: 0, y: 0, z: 1}
+    Tag: ParietalLeft
+  - TargetPosition: {x: 0.05, y: 0.07, z: -0.12}
+    TargetRotation: {x: 0, y: 0, z: 1}
+    Tag: ParietalLeft
+  - TargetPosition: {x: -0.05, y: 0.07, z: -0.12}
+    TargetRotation: {x: 0, y: 0, z: 1}
+    Tag: PMRight
+  - TargetPosition: {x: 0, y: 0.06, z: -0.18}
+    TargetRotation: {x: 0, y: 0, z: 1}
+    Tag: PMLeft

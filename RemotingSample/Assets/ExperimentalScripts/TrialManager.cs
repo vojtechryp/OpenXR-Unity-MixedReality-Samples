@@ -24,6 +24,7 @@ public class TrialManager : MonoBehaviour
     [Header("Text Displays")]
     public TextMesh HeadsetDistanceDisplay;
     public TMP_Text PCDistanceDisplay;
+    public Session session; // Reference to the session object
 
     void Awake()
     {
@@ -31,6 +32,7 @@ public class TrialManager : MonoBehaviour
         coilTargetPoints = FindObjectOfType<CoilTargetPoints>();
 
         EventManager.OnBeginTrial += OnBeginTrial;
+        VoiceCommandManager.OnNextCommand += EndTrial;
     }
 
     private void Update()
@@ -48,13 +50,17 @@ public class TrialManager : MonoBehaviour
             currentAngleToTarget = Mathf.Rad2Deg * Mathf.Acos(Vector3.Dot(targetVector, coilVector));
 
             SetTextDisplays();
+            UpdateDistanceTextColor(currentDistanceToTarget); // Update the color of the text based on the distance
         }
 
-
-        if (Input.GetKeyDown(KeyCode.Keypad1) || Input.GetKeyDown("1"))
+        if (Input.GetKeyDown(KeyCode.Keypad1) || Input.GetKeyDown("2"))
         {
             EndTrial();
         }
+
+        // Make the HeadsetDistanceDisplay always face the camera
+        HeadsetDistanceDisplay.transform.rotation = Quaternion.LookRotation(HeadsetDistanceDisplay.transform.position - Camera.main.transform.position);
+
     }
 
     private void SetTextDisplays()
@@ -80,15 +86,22 @@ public class TrialManager : MonoBehaviour
         timeAtStart = Time.time;
 
         isTrialRunning = true;
+        // Ensure previous target instance is destroyed before creating a new one
+        if (brainTargetInstance != null)
+        {
+            Destroy(brainTargetInstance);
+        }
+
         // Create the trial object when the trial starts
         brainTargetInstance = Instantiate(BrainTargetPrefab, Vector3.zero, Quaternion.identity);
         brainTargetInstance.name = "BRAIN TARGET INSTANCE";
         brainTargetInstance.transform.parent = coilTracker.BrainTargetTransform.transform;
         brainTargetInstance.transform.localPosition = trial.TargetPosition;
         brainTargetInstance.transform.localRotation = Quaternion.Euler(trial.TargetRotation);
+
     }
 
-    private void EndTrial()
+    public void EndTrial()
     {
         HeadsetDistanceDisplay.GetComponent<MeshRenderer>().enabled = false;
         PCDistanceDisplay.text = "";
@@ -96,20 +109,57 @@ public class TrialManager : MonoBehaviour
         currentTrial.Duration = timeSinceStart;
         currentTrial.FinalDistance = currentDistanceToTarget;
 
+        // Record final positions and rotations
+        currentTrial.FinalCoilPosition = coilTracker.TargetPointOnCoilTip.position;
+        currentTrial.FinalCoilRotation = coilTracker.TargetPointOnCoilTip.rotation.eulerAngles;
+        currentTrial.FinalBrainTargetPosition = brainTargetInstance.transform.position;
+        currentTrial.FinalBrainTargetRotation = brainTargetInstance.transform.rotation.eulerAngles;
+        currentTrial.FinalAngleDiscrepancy = currentAngleToTarget;
 
-
-        //// Destroy the trial object after the trial ends
+        // Destroy the trial object after the trial ends
         if (brainTargetInstance != null)
         {
             Destroy(brainTargetInstance);
+            brainTargetInstance = null;  // Ensure reference is cleared
         }
 
         currentTrial.HasResult = true;
+        isTrialRunning = false;  // Ensure trial running state is updated
         EventManager.EndTrial(currentTrial);
+
+        // Save the session data after each trial
+        SaveSessionData();
+    }
+
+    private void UpdateDistanceTextColor(float distance)
+    {
+        if (distance < 3.99f / 1000.0f) // 5 mm converted to meters
+        {
+            HeadsetDistanceDisplay.color = Color.green;
+            PCDistanceDisplay.color = Color.green;
+        }
+        else
+        {
+            HeadsetDistanceDisplay.color = Color.red; // Default color, change as needed
+            PCDistanceDisplay.color = Color.red; // Default color, change as needed
+        }
+    }
+
+    private void SaveSessionData()
+    {
+        if (session != null)
+        {
+            session.Save();
+        }
+        else
+        {
+            Debug.LogWarning("Session reference is null. Unable to save session data.");
+        }
     }
 
     void OnDestroy()
     {
         EventManager.OnBeginTrial -= OnBeginTrial;
+        VoiceCommandManager.OnNextCommand -= EndTrial;
     }
 }

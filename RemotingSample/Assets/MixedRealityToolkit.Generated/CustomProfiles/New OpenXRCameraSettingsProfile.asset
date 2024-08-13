@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: New OpenXRCameraSettingsProfile
   m_EditorClassIdentifier: 
   isCustomProfile: 1
-  reprojectionMethod: 3
+  reprojectionMethod: -1

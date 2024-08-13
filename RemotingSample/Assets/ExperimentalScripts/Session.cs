@@ -5,6 +5,7 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.Assertions;
 using Random = UnityEngine.Random;
+
 public enum FirstCondition
 {
     ARFirst,
@@ -28,7 +29,7 @@ namespace Vojta.Experiment
         [SerializeField]
         public FirstCondition FirstCondition;
         [SerializeField]
-        public int NumberOfBlocksPerSession = 7;
+        public int NumberOfBlocksPerSession = 4;
         [SerializeField]
         public Block[] ARBlocks;
         [SerializeField]
@@ -38,8 +39,6 @@ namespace Vojta.Experiment
         public string FileName { get { return getFileName(ParticipantId); } }
         private const string relativeAssetPath = "Assets/Results/Session/";
         private const string relativeJsonPath = "Assets/Results/Json/";
-
-
 
         public static string getFileName(string participantId)
         {
@@ -77,7 +76,7 @@ namespace Vojta.Experiment
 
         public void LoadFromJson()
         {
-            string fullJsonFilenameAndPath = $"{relativeJsonPath}/JSON/{FileName}.json";
+            string fullJsonFilenameAndPath = $"{relativeJsonPath}/{FileName}.json";
             if (File.Exists(fullJsonFilenameAndPath))
             {
                 string jsonString = File.ReadAllText(fullJsonFilenameAndPath);
@@ -106,7 +105,6 @@ namespace Vojta.Experiment
         }
     }
 
-
     [System.Serializable]
     public class Block
     {
@@ -122,7 +120,8 @@ namespace Vojta.Experiment
         {
             get
             {
-                foreach (Trial trial in Trials) {
+                foreach (Trial trial in Trials)
+                {
                     if (!trial.HasResult) return false;
                 }
                 return true;
@@ -148,51 +147,54 @@ namespace Vojta.Experiment
     }
 
     [Serializable]
-    public class Trial : IEquatable<Trial>
+public class Trial : IEquatable<Trial>
+{
+    [Header("Basic Info")]
+    public int TrialNumber;
+    public int BlockNumber;
+
+    [Header("Conditions")]
+    public Vector3 TargetPosition;
+    public Vector3 TargetRotation;
+    public string BrainPositionTag; // Make sure this is public
+    public FirstCondition FirstCondition;
+    public DisplayCondition CurrentCondition;
+
+    [Header("Results")]
+    public float FinalDistance = 0.0f;
+    public float Duration = 0.0f;
+    public Vector3 FinalCoilPosition;
+    public Vector3 FinalCoilRotation;
+    public Vector3 FinalBrainTargetPosition;
+    public Vector3 FinalBrainTargetRotation;
+    public float FinalAngleDiscrepancy;
+    public bool HasResult = false;
+
+    public Trial(int trialNumber, int blockNumber, Vector3 targetPosition, Vector3 targetRotation, string brainPositionTag, FirstCondition firstCondition, DisplayCondition currentCondition)
     {
-        [Header("Basic Info")]
-        public int TrialNumber;
-        public int BlockNumber;
+        TrialNumber = trialNumber;
+        TargetPosition = targetPosition;
+        TargetRotation = targetRotation;
+        BrainPositionTag = brainPositionTag; // Initialize the BrainPositionTag
 
-        [Header("Conditions")]
-        public Vector3 TargetPosition;
-        public Vector3 TargetRotation;
-        private string BrainPositionTag;
-        public FirstCondition FirstCondition;
-        public DisplayCondition CurrentCondition;
-
-        [Header("Results")]
-        public float FinalDistance = 0.0f;
-        public float Duration = 0.0f;
-        public Vector3 FinalCoilPosition;
-        public Vector3 FinalCoilRotation;
-        public bool HasResult = false;
-
-        public Trial(int trialNumber, int blockNumber, Vector3 targetPosition, Vector3 targetRotation, string brainPositionTag, FirstCondition firstCondition, DisplayCondition currentCondition)
-        {
-            TrialNumber = trialNumber;
-            TargetPosition = targetPosition;
-            TargetRotation = targetRotation;
-
-            BlockNumber = blockNumber;
-            BrainPositionTag = brainPositionTag;
-            FirstCondition = firstCondition;
-            CurrentCondition = currentCondition;
-        }
-
-        public bool Equals(Trial otherTrial)
-        {
-            return TrialNumber == otherTrial.TrialNumber;
-        }
-
-        public override int GetHashCode()
-        {
-            return TrialNumber.GetHashCode();
-        }
-
-        public override string ToString()
-        {
-            return $"{TrialNumber}\t{TargetPosition}\t{FinalDistance}\t{Duration}";
-        }
+        BlockNumber = blockNumber;
+        FirstCondition = firstCondition;
+        CurrentCondition = currentCondition;
     }
+
+    public bool Equals(Trial otherTrial)
+    {
+        return TrialNumber == otherTrial.TrialNumber;
+    }
+
+    public override int GetHashCode()
+    {
+        return TrialNumber.GetHashCode();
+    }
+
+    public override string ToString()
+    {
+        return $"{TrialNumber}\t{TargetPosition}\t{FinalDistance}\t{Duration}";
+    }
+}
 }

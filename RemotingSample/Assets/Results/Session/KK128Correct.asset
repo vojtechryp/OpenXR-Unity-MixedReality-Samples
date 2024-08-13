@@ -1,0 +1,1260 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f931c4e5e44b35441833a93ca49bbe01, type: 3}
+  m_Name: KK128Correct
+  m_EditorClassIdentifier: 
+  ParticipantId: KK128Correct
+  FirstCondition: 1
+  NumberOfBlocksPerSession: 4
+  ARBlocks:
+  - NumberOfTrialsInBlock: 10
+    BlockNumber: 0
+    Trials:
+    - TrialNumber: 0
+      BlockNumber: 0
+      TargetPosition: {x: -0.0323, y: 0.0561, z: -0.0653}
+      TargetRotation: {x: 325.45203, y: 295.50388, z: 4.0312953}
+      BrainPositionTag: LDLPFC
+      FirstCondition: 1
+      CurrentCondition: 0
+      FinalDistance: 0.0031942297
+      Duration: 8.497559
+      FinalCoilPosition: {x: 0.37154284, y: -0.22973545, z: -0.9449087}
+      FinalCoilRotation: {x: 41.090626, y: 285.7179, z: 13.473684}
+      FinalBrainTargetPosition: {x: 0.36925963, y: -0.23043776, z: -0.9427881}
+      FinalBrainTargetRotation: {x: 324.85754, y: 95.81605, z: 10.586173}
+      FinalAngleDiscrepancy: 9.790689
+      HasResult: 1
+    - TrialNumber: 1
+      BlockNumber: 0
+      TargetPosition: {x: 0.058, y: 0.0179, z: -0.1889}
+      TargetRotation: {x: 354.32697, y: 127.39899, z: 2.2678285}
+      BrainPositionTag: OccipitalRight
+      FirstCondition: 1
+      CurrentCondition: 0
+      FinalDistance: 0.00242716
+      Duration: 15.852127
+      FinalCoilPosition: {x: 0.24662162, y: -0.27603403, z: -0.8524171}
+      FinalCoilRotation: {x: 12.518189, y: 119.25241, z: 6.002934}
+      FinalBrainTargetPosition: {x: 0.24851486, y: -0.27754417, z: -0.85257894}
+      FinalBrainTargetRotation: {x: 356.23752, y: 291.88992, z: 357.1786}
+      FinalAngleDiscrepancy: 11.387229
+      HasResult: 1
+    - TrialNumber: 2
+      BlockNumber: 0
+      TargetPosition: {x: -0.0422, y: 0.0612, z: -0.1124}
+      TargetRotation: {x: 339.61172, y: 266.10834, z: 351.8151}
+      BrainPositionTag: TemporalLeft
+      FirstCondition: 1
+      CurrentCondition: 0
+      FinalDistance: 0.011960696
+      Duration: 14.428833
+      FinalCoilPosition: {x: -0.11630057, y: -0.22428407, z: 0.773396}
+      FinalCoilRotation: {x: 20.846134, y: 348.46713, z: 350.92673}
+      FinalBrainTargetPosition: {x: -0.11877096, y: -0.22833188, z: 0.7843765}
+      FinalBrainTargetRotation: {x: 341.78467, y: 161.27084, z: 358.79303}
+      FinalAngleDiscrepancy: 7.273244
+      HasResult: 1
+    - TrialNumber: 3
+      BlockNumber: 0
+      TargetPosition: {x: 0.0271, y: 0.0848, z: -0.1029}
+      TargetRotation: {x: 304.06216, y: 52.458256, z: 194.06255}
+      BrainPositionTag: PMRight
+      FirstCondition: 1
+      CurrentCondition: 0
+      FinalDistance: 0.003972447
+      Duration: 9.373314
+      FinalCoilPosition: {x: -0.1410349, y: -0.20604694, z: 0.84796774}
+      FinalCoilRotation: {x: 57.438, y: 176.17834, z: 23.317919}
+      FinalBrainTargetPosition: {x: -0.14049421, y: -0.20212275, z: 0.8482657}
+      FinalBrainTargetRotation: {x: 298.927, y: 316.96307, z: 185.53877}
+      FinalAngleDiscrepancy: 20.056372
+      HasResult: 1
+    - TrialNumber: 4
+      BlockNumber: 0
+      TargetPosition: {x: 0.0637, y: 0.0387, z: -0.1028}
+      TargetRotation: {x: 352.18372, y: 75.59542, z: 12.217402}
+      BrainPositionTag: TemporalRight
+      FirstCondition: 1
+      CurrentCondition: 0
+      FinalDistance: 0.0046489118
+      Duration: 6.2442665
+      FinalCoilPosition: {x: -0.1581297, y: -0.24812308, z: 0.8835175}
+      FinalCoilRotation: {x: 19.487286, y: 160.83884, z: 356.18954}
+      FinalBrainTargetPosition: {x: -0.1537846, y: -0.24651906, z: 0.88391703}
+      FinalBrainTargetRotation: {x: 348.85388, y: 333.93588, z: 6.265693}
+      FinalAngleDiscrepancy: 10.6677475
+      HasResult: 1
+    - TrialNumber: 5
+      BlockNumber: 0
+      TargetPosition: {x: -0.0437, y: 0.0535, z: -0.1748}
+      TargetRotation: {x: 320.10272, y: 242.31534, z: 6.981181}
+      BrainPositionTag: ParietalLeft
+      FirstCondition: 1
+      CurrentCondition: 0
+      FinalDistance: 0.0010451255
+      Duration: 11.0736885
+      FinalCoilPosition: {x: -0.058571257, y: -0.24261273, z: 0.7945204}
+      FinalCoilRotation: {x: 22.895735, y: 313.84753, z: 29.64117}
+      FinalBrainTargetPosition: {x: -0.059251174, y: -0.24329403, z: 0.7949276}
+      FinalBrainTargetRotation: {x: 324.93872, y: 135.99028, z: 12.81629}
+      FinalAngleDiscrepancy: 12.308023
+      HasResult: 1
+    - TrialNumber: 6
+      BlockNumber: 0
+      TargetPosition: {x: -0.019, y: 0.0064, z: -0.2103}
+      TargetRotation: {x: 349.36823, y: 194.65883, z: 355.02036}
+      BrainPositionTag: OccipitalLeft
+      FirstCondition: 1
+      CurrentCondition: 0
+      FinalDistance: 0.0017149987
+      Duration: 7.221878
+      FinalCoilPosition: {x: -0.034272783, y: -0.2922443, z: 0.8263814}
+      FinalCoilRotation: {x: 0.542361, y: 280.80252, z: 2.6828673}
+      FinalBrainTargetPosition: {x: -0.035519958, y: -0.29339477, z: 0.8261322}
+      FinalBrainTargetRotation: {x: 356.1083, y: 91.970085, z: 354.6575}
+      FinalAngleDiscrepancy: 9.438776
+      HasResult: 1
+    - TrialNumber: 7
+      BlockNumber: 0
+      TargetPosition: {x: 0.028, y: 0.0607, z: -0.0641}
+      TargetRotation: {x: 340.49564, y: 54.087048, z: 7.1336727}
+      BrainPositionTag: RDLPFC
+      FirstCondition: 1
+      CurrentCondition: 0
+      FinalDistance: 0.003735138
+      Duration: 14.627045
+      FinalCoilPosition: {x: -0.18288279, y: -0.21836638, z: 0.8415512}
+      FinalCoilRotation: {x: 40.418064, y: 121.750694, z: 359.3731}
+      FinalBrainTargetPosition: {x: -0.18086964, y: -0.22137034, z: 0.8406159}
+      FinalBrainTargetRotation: {x: 335.2364, y: 313.1374, z: 2.4687765}
+      FinalAngleDiscrepancy: 18.322939
+      HasResult: 1
+    - TrialNumber: 8
+      BlockNumber: 0
+      TargetPosition: {x: 0.0553, y: 0.0704, z: -0.1603}
+      TargetRotation: {x: 334.02783, y: 102.073494, z: 6.6678166}
+      BrainPositionTag: ParietalRight
+      FirstCondition: 1
+      CurrentCondition: 0
+      FinalDistance: 0.009094042
+      Duration: 10.829124
+      FinalCoilPosition: {x: -0.09556929, y: -0.22474769, z: 0.88059855}
+      FinalCoilRotation: {x: 38.62492, y: 183.71185, z: 12.292823}
+      FinalBrainTargetPosition: {x: -0.09237802, y: -0.22203667, z: 0.88867116}
+      FinalBrainTargetRotation: {x: 333.90683, y: 2.7550085, z: 359.14246}
+      FinalAngleDiscrepancy: 12.557508
+      HasResult: 1
+    - TrialNumber: 9
+      BlockNumber: 0
+      TargetPosition: {x: -0.0197, y: 0.0834, z: -0.1166}
+      TargetRotation: {x: 286.30545, y: 272.18982, z: 331.00534}
+      BrainPositionTag: PMLeft
+      FirstCondition: 1
+      CurrentCondition: 0
+      FinalDistance: 0.0021277503
+      Duration: 12.590507
+      FinalCoilPosition: {x: -0.14501716, y: 0.2980727, z: 0.6060452}
+      FinalCoilRotation: {x: 65.40163, y: 161.95078, z: 68.69693}
+      FinalBrainTargetPosition: {x: -0.14601533, y: 0.29625615, z: 0.6055643}
+      FinalBrainTargetRotation: {x: 289.00452, y: 342.32135, z: 351.79523}
+      FinalAngleDiscrepancy: 5.5954156
+      HasResult: 1
+    FirstCondition: 1
+    CurrentCondition: 0
+  - NumberOfTrialsInBlock: 10
+    BlockNumber: 1
+    Trials:
+    - TrialNumber: 0
+      BlockNumber: 1
+      TargetPosition: {x: -0.0323, y: 0.0561, z: -0.0653}
+      TargetRotation: {x: 325.45203, y: 295.50388, z: 4.0312953}
+      BrainPositionTag: LDLPFC
+      FirstCondition: 1
+      CurrentCondition: 0
+      FinalDistance: 0.008890156
+      Duration: 11.745644
+      FinalCoilPosition: {x: -0.089987405, y: 0.2794544, z: 0.6244202}
+      FinalCoilRotation: {x: 40.20639, y: 205.2261, z: 28.687256}
+      FinalBrainTargetPosition: {x: -0.09211467, y: 0.27479672, z: 0.6171528}
+      FinalBrainTargetRotation: {x: 324.4817, y: 20.560322, z: 12.292598}
+      FinalAngleDiscrepancy: 5.9600625
+      HasResult: 1
+    - TrialNumber: 1
+      BlockNumber: 1
+      TargetPosition: {x: 0.0637, y: 0.0387, z: -0.1028}
+      TargetRotation: {x: 352.18372, y: 75.59542, z: 12.217402}
+      BrainPositionTag: TemporalRight
+      FirstCondition: 1
+      CurrentCondition: 0
+      FinalDistance: 0.00078810466
+      Duration: 7.1117325
+      FinalCoilPosition: {x: -0.1274618, y: 0.2555493, z: 0.5210415}
+      FinalCoilRotation: {x: 18.915178, y: 344.59775, z: 342.13354}
+      FinalBrainTargetPosition: {x: -0.12697347, y: 0.25610915, z: 0.5207785}
+      FinalBrainTargetRotation: {x: 348.8964, y: 166.42204, z: 6.2106905}
+      FinalAngleDiscrepancy: 8.007365
+      HasResult: 1
+    - TrialNumber: 2
+      BlockNumber: 1
+      TargetPosition: {x: 0.0271, y: 0.0848, z: -0.1029}
+      TargetRotation: {x: 304.06216, y: 52.458256, z: 194.06255}
+      BrainPositionTag: PMRight
+      FirstCondition: 1
+      CurrentCondition: 0
+      FinalDistance: 0.004035892
+      Duration: 11.589283
+      FinalCoilPosition: {x: -0.1316736, y: 0.30005598, z: 0.5630891}
+      FinalCoilRotation: {x: 57.493637, y: 354.41394, z: 8.682115}
+      FinalBrainTargetPosition: {x: -0.13260114, y: 0.30080265, z: 0.55923283}
+      FinalBrainTargetRotation: {x: 298.87994, y: 149.53558, z: 185.66962}
+      FinalAngleDiscrepancy: 13.11604
+      HasResult: 1
+    - TrialNumber: 3
+      BlockNumber: 1
+      TargetPosition: {x: 0.058, y: 0.0179, z: -0.1889}
+      TargetRotation: {x: 354.32697, y: 127.39899, z: 2.2678285}
+      BrainPositionTag: OccipitalRight
+      FirstCondition: 1
+      CurrentCondition: 0
+      FinalDistance: 0.0031145576
+      Duration: 6.631302
+      FinalCoilPosition: {x: -0.20806785, y: 0.22545283, z: 0.52660877}
+      FinalCoilRotation: {x: 3.5047293, y: 43.459198, z: 349.6132}
+      FinalBrainTargetPosition: {x: -0.21089137, y: 0.22495781, z: 0.52539086}
+      FinalBrainTargetRotation: {x: 357.01788, y: 217.65355, z: 355.8904}
+      FinalAngleDiscrepancy: 5.8197546
+      HasResult: 1
+    - TrialNumber: 4
+      BlockNumber: 1
+      TargetPosition: {x: -0.019, y: 0.0064, z: -0.2103}
+      TargetRotation: {x: 349.36823, y: 194.65883, z: 355.02036}
+      BrainPositionTag: OccipitalLeft
+      FirstCondition: 1
+      CurrentCondition: 0
+      FinalDistance: 0.0030857713
+      Duration: 5.228981
+      FinalCoilPosition: {x: -0.2294363, y: 0.20995274, z: 0.6065271}
+      FinalCoilRotation: {x: 1.3887032, y: 104.950874, z: 0.55025184}
+      FinalBrainTargetPosition: {x: -0.22971718, y: 0.20943035, z: 0.6034989}
+      FinalBrainTargetRotation: {x: 356.05997, y: 284.51816, z: 354.49484}
+      FinalAngleDiscrepancy: 2.5873234
+      HasResult: 1
+    - TrialNumber: 5
+      BlockNumber: 1
+      TargetPosition: {x: -0.0422, y: 0.0612, z: -0.1124}
+      TargetRotation: {x: 339.61172, y: 266.10834, z: 351.8151}
+      BrainPositionTag: TemporalLeft
+      FirstCondition: 1
+      CurrentCondition: 0
+      FinalDistance: 0.012128566
+      Duration: 45.634415
+      FinalCoilPosition: {x: -0.14233801, y: 0.277122, z: 0.6392175}
+      FinalCoilRotation: {x: 19.157234, y: 181.24779, z: 30.45371}
+      FinalBrainTargetPosition: {x: -0.13838917, y: 0.27408907, z: 0.62815815}
+      FinalBrainTargetRotation: {x: 342.06656, y: 353.94797, z: 358.43097}
+      FinalAngleDiscrepancy: 7.0275254
+      HasResult: 1
+    - TrialNumber: 6
+      BlockNumber: 1
+      TargetPosition: {x: 0.028, y: 0.0607, z: -0.0641}
+      TargetRotation: {x: 340.49564, y: 54.087048, z: 7.1336727}
+      BrainPositionTag: RDLPFC
+      FirstCondition: 1
+      CurrentCondition: 0
+      FinalDistance: 0.00786647
+      Duration: 10.072329
+      FinalCoilPosition: {x: 0.007218661, y: 0.028947555, z: 0.45536602}
+      FinalCoilRotation: {x: 28.917156, y: 322.8553, z: 351.8742}
+      FinalBrainTargetPosition: {x: 0.0044286624, y: 0.02601226, z: 0.46211}
+      FinalBrainTargetRotation: {x: 335.38074, y: 144.44417, z: 2.6797655}
+      FinalAngleDiscrepancy: 4.5256276
+      HasResult: 1
+    - TrialNumber: 7
+      BlockNumber: 1
+      TargetPosition: {x: -0.0437, y: 0.0535, z: -0.1748}
+      TargetRotation: {x: 320.10272, y: 242.31534, z: 6.981181}
+      BrainPositionTag: ParietalLeft
+      FirstCondition: 1
+      CurrentCondition: 0
+      FinalDistance: 0.0038576524
+      Duration: 11.172485
+      FinalCoilPosition: {x: -0.10213968, y: 0.004192954, z: 0.5292053}
+      FinalCoilRotation: {x: 27.47466, y: 144.5836, z: 11.61665}
+      FinalBrainTargetPosition: {x: -0.10515859, y: 0.0045509525, z: 0.5315801}
+      FinalBrainTargetRotation: {x: 324.8179, y: 327.65503, z: 12.609759}
+      FinalAngleDiscrepancy: 8.140274
+      HasResult: 1
+    - TrialNumber: 8
+      BlockNumber: 1
+      TargetPosition: {x: 0.0553, y: 0.0704, z: -0.1603}
+      TargetRotation: {x: 334.02783, y: 102.073494, z: 6.6678166}
+      BrainPositionTag: ParietalRight
+      FirstCondition: 1
+      CurrentCondition: 0
+      FinalDistance: 0.0024799341
+      Duration: 9.178608
+      FinalCoilPosition: {x: -0.09198176, y: 0.026342146, z: 0.43446603}
+      FinalCoilRotation: {x: 19.135103, y: 23.259686, z: 357.40964}
+      FinalBrainTargetPosition: {x: -0.09145858, y: 0.025565872, z: 0.4321696}
+      FinalBrainTargetRotation: {x: 333.85352, y: 193.82655, z: 359.32343}
+      FinalAngleDiscrepancy: 11.170803
+      HasResult: 1
+    - TrialNumber: 9
+      BlockNumber: 1
+      TargetPosition: {x: -0.0197, y: 0.0834, z: -0.1166}
+      TargetRotation: {x: 286.30545, y: 272.18982, z: 331.00534}
+      BrainPositionTag: PMLeft
+      FirstCondition: 1
+      CurrentCondition: 0
+      FinalDistance: 0.00463101
+      Duration: 7.2127075
+      FinalCoilPosition: {x: -0.045532048, y: 0.042435583, z: 0.50994825}
+      FinalCoilRotation: {x: 61.287575, y: 163.38159, z: 51.616707}
+      FinalBrainTargetPosition: {x: -0.050034337, y: 0.041351236, z: 0.50994575}
+      FinalBrainTargetRotation: {x: 289.0266, y: 342.23285, z: 350.59253}
+      FinalAngleDiscrepancy: 9.696473
+      HasResult: 1
+    FirstCondition: 1
+    CurrentCondition: 0
+  - NumberOfTrialsInBlock: 10
+    BlockNumber: 2
+    Trials:
+    - TrialNumber: 0
+      BlockNumber: 2
+      TargetPosition: {x: -0.0323, y: 0.0561, z: -0.0653}
+      TargetRotation: {x: 325.45203, y: 295.50388, z: 4.0312953}
+      BrainPositionTag: LDLPFC
+      FirstCondition: 1
+      CurrentCondition: 0
+      FinalDistance: 0.004571425
+      Duration: 26.605118
+      FinalCoilPosition: {x: 0.0017342395, y: 0.022320163, z: 0.5252072}
+      FinalCoilRotation: {x: 50.541042, y: 195.36136, z: 23.584026}
+      FinalBrainTargetPosition: {x: 0.002455838, y: 0.01960688, z: 0.52159953}
+      FinalBrainTargetRotation: {x: 324.537, y: 19.460588, z: 12.002005}
+      FinalAngleDiscrepancy: 15.366978
+      HasResult: 1
+    - TrialNumber: 1
+      BlockNumber: 2
+      TargetPosition: {x: -0.019, y: 0.0064, z: -0.2103}
+      TargetRotation: {x: 349.36823, y: 194.65883, z: 355.02036}
+      BrainPositionTag: OccipitalLeft
+      FirstCondition: 1
+      CurrentCondition: 0
+      FinalDistance: 0.0032047913
+      Duration: 6.676178
+      FinalCoilPosition: {x: -0.13612114, y: -0.044193767, z: 0.50155294}
+      FinalCoilRotation: {x: 356.29, y: 113.338844, z: 0.5311617}
+      FinalBrainTargetPosition: {x: -0.13596433, y: -0.04574542, z: 0.5043527}
+      FinalBrainTargetRotation: {x: 355.99765, y: 283.22235, z: 354.69656}
+      FinalAngleDiscrepancy: 12.7148695
+      HasResult: 1
+    - TrialNumber: 2
+      BlockNumber: 2
+      TargetPosition: {x: 0.058, y: 0.0179, z: -0.1889}
+      TargetRotation: {x: 354.32697, y: 127.39899, z: 2.2678285}
+      BrainPositionTag: OccipitalRight
+      FirstCondition: 1
+      CurrentCondition: 0
+      FinalDistance: 0.002278662
+      Duration: 5.4036484
+      FinalCoilPosition: {x: -0.114534035, y: -0.028878536, z: 0.4253501}
+      FinalCoilRotation: {x: 0.9782228, y: 42.046234, z: 353.14407}
+      FinalBrainTargetPosition: {x: -0.11426923, y: -0.029457644, z: 0.42753798}
+      FinalBrainTargetRotation: {x: 356.84555, y: 216.4143, z: 356.11166}
+      FinalAngleDiscrepancy: 6.0340343
+      HasResult: 1
+    - TrialNumber: 3
+      BlockNumber: 2
+      TargetPosition: {x: 0.0553, y: 0.0704, z: -0.1603}
+      TargetRotation: {x: 334.02783, y: 102.073494, z: 6.6678166}
+      BrainPositionTag: ParietalRight
+      FirstCondition: 1
+      CurrentCondition: 0
+      FinalDistance: 0.0025655646
+      Duration: 7.4309235
+      FinalCoilPosition: {x: -0.09159635, y: 0.027778795, z: 0.43089914}
+      FinalCoilRotation: {x: 21.976864, y: 31.100395, z: 353.14548}
+      FinalBrainTargetPosition: {x: -0.091575034, y: 0.02585221, z: 0.43259323}
+      FinalBrainTargetRotation: {x: 333.79877, y: 193.84319, z: 359.33136}
+      FinalAngleDiscrepancy: 16.295652
+      HasResult: 1
+    - TrialNumber: 4
+      BlockNumber: 2
+      TargetPosition: {x: -0.0422, y: 0.0612, z: -0.1124}
+      TargetRotation: {x: 339.61172, y: 266.10834, z: 351.8151}
+      BrainPositionTag: TemporalLeft
+      FirstCondition: 1
+      CurrentCondition: 0
+      FinalDistance: 0.011476967
+      Duration: 11.6805725
+      FinalCoilPosition: {x: -0.04871493, y: 0.021912258, z: 0.540685}
+      FinalCoilRotation: {x: 23.00628, y: 182.41766, z: 14.091354}
+      FinalBrainTargetPosition: {x: -0.045388073, y: 0.018948277, z: 0.5301083}
+      FinalBrainTargetRotation: {x: 341.77435, y: 352.6348, z: 358.53024}
+      FinalAngleDiscrepancy: 10.324625
+      HasResult: 1
+    - TrialNumber: 5
+      BlockNumber: 2
+      TargetPosition: {x: 0.0271, y: 0.0848, z: -0.1029}
+      TargetRotation: {x: 304.06216, y: 52.458256, z: 194.06255}
+      BrainPositionTag: PMRight
+      FirstCondition: 1
+      CurrentCondition: 0
+      FinalDistance: 0.0012417284
+      Duration: 12.286499
+      FinalCoilPosition: {x: -0.035618972, y: 0.045631766, z: 0.46292204}
+      FinalCoilRotation: {x: 58.910477, y: 336.871, z: 359.1344}
+      FinalBrainTargetPosition: {x: -0.03676574, y: 0.045592904, z: 0.4624474}
+      FinalBrainTargetRotation: {x: 299.05066, y: 148.07605, z: 185.91747}
+      FinalAngleDiscrepancy: 4.8505034
+      HasResult: 1
+    - TrialNumber: 6
+      BlockNumber: 2
+      TargetPosition: {x: 0.0637, y: 0.0387, z: -0.1028}
+      TargetRotation: {x: 352.18372, y: 75.59542, z: 12.217402}
+      BrainPositionTag: TemporalRight
+      FirstCondition: 1
+      CurrentCondition: 0
+      FinalDistance: 0.0030015328
+      Duration: 9.58757
+      FinalCoilPosition: {x: -0.029364482, y: 0.0029440876, z: 0.4228982}
+      FinalCoilRotation: {x: 12.091603, y: 350.312, z: 353.87442}
+      FinalBrainTargetPosition: {x: -0.030681051, y: 0.00084553286, z: 0.42459288}
+      FinalBrainTargetRotation: {x: 348.96722, y: 165.18716, z: 6.4104548}
+      FinalAngleDiscrepancy: 5.1309133
+      HasResult: 1
+    - TrialNumber: 7
+      BlockNumber: 2
+      TargetPosition: {x: -0.0437, y: 0.0535, z: -0.1748}
+      TargetRotation: {x: 320.10272, y: 242.31534, z: 6.981181}
+      BrainPositionTag: ParietalLeft
+      FirstCondition: 1
+      CurrentCondition: 0
+      FinalDistance: 0.00017567063
+      Duration: 10.042587
+      FinalCoilPosition: {x: -0.105802424, y: 0.0044752676, z: 0.53063107}
+      FinalCoilRotation: {x: 26.88959, y: 133.44196, z: 15.106434}
+      FinalBrainTargetPosition: {x: -0.1058348, y: 0.0045011397, z: 0.5308018}
+      FinalBrainTargetRotation: {x: 324.845, y: 327.4121, z: 12.615197}
+      FinalAngleDiscrepancy: 14.523607
+      HasResult: 1
+    - TrialNumber: 8
+      BlockNumber: 2
+      TargetPosition: {x: 0.028, y: 0.0607, z: -0.0641}
+      TargetRotation: {x: 340.49564, y: 54.087048, z: 7.1336727}
+      BrainPositionTag: RDLPFC
+      FirstCondition: 1
+      CurrentCondition: 0
+      FinalDistance: 0.0038248366
+      Duration: 18.271957
+      FinalCoilPosition: {x: 0.0062461644, y: 0.027375506, z: 0.45939195}
+      FinalCoilRotation: {x: 44.46791, y: 319.33984, z: 350.49988}
+      FinalBrainTargetPosition: {x: 0.0043644905, y: 0.0262355, z: 0.4625207}
+      FinalBrainTargetRotation: {x: 335.295, y: 144.3664, z: 2.6794221}
+      FinalAngleDiscrepancy: 20.181133
+      HasResult: 1
+    - TrialNumber: 9
+      BlockNumber: 2
+      TargetPosition: {x: -0.0197, y: 0.0834, z: -0.1166}
+      TargetRotation: {x: 286.30545, y: 272.18982, z: 331.00534}
+      BrainPositionTag: PMLeft
+      FirstCondition: 1
+      CurrentCondition: 0
+      FinalDistance: 0.0052492116
+      Duration: 13.303757
+      FinalCoilPosition: {x: -0.052219965, y: 0.04476843, z: 0.5131896}
+      FinalCoilRotation: {x: 62.824875, y: 163.76888, z: 54.803024}
+      FinalBrainTargetPosition: {x: -0.050121702, y: 0.041393403, z: 0.50976026}
+      FinalBrainTargetRotation: {x: 289.0255, y: 342.24393, z: 350.57367}
+      FinalAngleDiscrepancy: 8.170872
+      HasResult: 1
+    FirstCondition: 1
+    CurrentCondition: 0
+  - NumberOfTrialsInBlock: 10
+    BlockNumber: 3
+    Trials:
+    - TrialNumber: 0
+      BlockNumber: 3
+      TargetPosition: {x: 0.0271, y: 0.0848, z: -0.1029}
+      TargetRotation: {x: 304.06216, y: 52.458256, z: 194.06255}
+      BrainPositionTag: PMRight
+      FirstCondition: 1
+      CurrentCondition: 0
+      FinalDistance: 0.007715168
+      Duration: 8.643127
+      FinalCoilPosition: {x: -0.03832066, y: 0.04949349, z: 0.4560329}
+      FinalCoilRotation: {x: 63.125687, y: 336.51538, z: 358.2746}
+      FinalBrainTargetPosition: {x: -0.03673631, y: 0.0455998, z: 0.4625023}
+      FinalBrainTargetRotation: {x: 299.0383, y: 148.05215, z: 185.94356}
+      FinalAngleDiscrepancy: 4.5142736
+      HasResult: 1
+    - TrialNumber: 1
+      BlockNumber: 3
+      TargetPosition: {x: 0.0553, y: 0.0704, z: -0.1603}
+      TargetRotation: {x: 334.02783, y: 102.073494, z: 6.6678166}
+      BrainPositionTag: ParietalRight
+      FirstCondition: 1
+      CurrentCondition: 0
+      FinalDistance: 0.010490869
+      Duration: 8.452545
+      FinalCoilPosition: {x: -0.08519127, y: 0.02605338, z: 0.44158456}
+      FinalCoilRotation: {x: 19.253016, y: 26.933968, z: 16.310993}
+      FinalBrainTargetPosition: {x: -0.09101824, y: 0.026072128, z: 0.43286073}
+      FinalBrainTargetRotation: {x: 333.6887, y: 193.71065, z: 359.20032}
+      FinalAngleDiscrepancy: 14.073724
+      HasResult: 1
+    - TrialNumber: 2
+      BlockNumber: 3
+      TargetPosition: {x: -0.0437, y: 0.0535, z: -0.1748}
+      TargetRotation: {x: 320.10272, y: 242.31534, z: 6.981181}
+      BrainPositionTag: ParietalLeft
+      FirstCondition: 1
+      CurrentCondition: 0
+      FinalDistance: 0.0020756228
+      Duration: 9.85025
+      FinalCoilPosition: {x: -0.10771754, y: 0.0042626522, z: 0.53143215}
+      FinalCoilRotation: {x: 29.138302, y: 148.82613, z: 17.21507}
+      FinalBrainTargetPosition: {x: -0.10570787, y: 0.0044749305, z: 0.5309586}
+      FinalBrainTargetRotation: {x: 324.79913, y: 327.53506, z: 12.717209}
+      FinalAngleDiscrepancy: 6.159948
+      HasResult: 1
+    - TrialNumber: 3
+      BlockNumber: 3
+      TargetPosition: {x: -0.019, y: 0.0064, z: -0.2103}
+      TargetRotation: {x: 349.36823, y: 194.65883, z: 355.02036}
+      BrainPositionTag: OccipitalLeft
+      FirstCondition: 1
+      CurrentCondition: 0
+      FinalDistance: 0.0032770121
+      Duration: 12.6719055
+      FinalCoilPosition: {x: -0.13829516, y: -0.044123482, z: 0.504157}
+      FinalCoilRotation: {x: 9.268462, y: 102.74985, z: 7.5326033}
+      FinalBrainTargetPosition: {x: -0.13539612, y: -0.045476772, z: 0.504866}
+      FinalBrainTargetRotation: {x: 355.91275, y: 283.2456, z: 354.5787}
+      FinalAngleDiscrepancy: 5.2043943
+      HasResult: 1
+    - TrialNumber: 4
+      BlockNumber: 3
+      TargetPosition: {x: 0.028, y: 0.0607, z: -0.0641}
+      TargetRotation: {x: 340.49564, y: 54.087048, z: 7.1336727}
+      BrainPositionTag: RDLPFC
+      FirstCondition: 1
+      CurrentCondition: 0
+      FinalDistance: 0.0032691897
+      Duration: 26.973816
+      FinalCoilPosition: {x: 0.0063130464, y: 0.027706143, z: 0.4601915}
+      FinalCoilRotation: {x: 49.749603, y: 323.58508, z: 0.4196763}
+      FinalBrainTargetPosition: {x: 0.0045589656, y: 0.026162688, z: 0.4624781}
+      FinalBrainTargetRotation: {x: 335.2923, y: 144.34491, z: 2.6827958}
+      FinalAngleDiscrepancy: 25.048832
+      HasResult: 1
+    - TrialNumber: 5
+      BlockNumber: 3
+      TargetPosition: {x: 0.0637, y: 0.0387, z: -0.1028}
+      TargetRotation: {x: 352.18372, y: 75.59542, z: 12.217402}
+      BrainPositionTag: TemporalRight
+      FirstCondition: 1
+      CurrentCondition: 0
+      FinalDistance: 0.0021593818
+      Duration: 13.616425
+      FinalCoilPosition: {x: -0.028596502, y: 0.001447469, z: 0.4246155}
+      FinalCoilRotation: {x: 12.892781, y: 341.48404, z: 2.214031}
+      FinalBrainTargetPosition: {x: -0.030664772, y: 0.0010153297, z: 0.42506108}
+      FinalBrainTargetRotation: {x: 348.8838, y: 165.23627, z: 6.4794016}
+      FinalAngleDiscrepancy: 4.0769825
+      HasResult: 1
+    - TrialNumber: 6
+      BlockNumber: 3
+      TargetPosition: {x: -0.0422, y: 0.0612, z: -0.1124}
+      TargetRotation: {x: 339.61172, y: 266.10834, z: 351.8151}
+      BrainPositionTag: TemporalLeft
+      FirstCondition: 1
+      CurrentCondition: 0
+      FinalDistance: 0.10807155
+      Duration: 25.483368
+      FinalCoilPosition: {x: -0.10505447, y: -0.03046618, z: 0.60561526}
+      FinalCoilRotation: {x: 16.572079, y: 136.45686, z: 356.8158}
+      FinalBrainTargetPosition: {x: -0.044901885, y: 0.018964617, z: 0.53066385}
+      FinalBrainTargetRotation: {x: 341.86914, y: 352.59265, z: 358.44785}
+      FinalAngleDiscrepancy: 34.472492
+      HasResult: 1
+    - TrialNumber: 7
+      BlockNumber: 3
+      TargetPosition: {x: -0.0323, y: 0.0561, z: -0.0653}
+      TargetRotation: {x: 325.45203, y: 295.50388, z: 4.0312953}
+      BrainPositionTag: LDLPFC
+      FirstCondition: 1
+      CurrentCondition: 0
+      FinalDistance: 0.0037312738
+      Duration: 21.382507
+      FinalCoilPosition: {x: 0.0029110424, y: 0.020979026, z: 0.5248674}
+      FinalCoilRotation: {x: 45.853413, y: 202.40329, z: 27.810488}
+      FinalBrainTargetPosition: {x: 0.002389975, y: 0.019646255, z: 0.52142143}
+      FinalBrainTargetRotation: {x: 324.5075, y: 19.468275, z: 12.015223}
+      FinalAngleDiscrepancy: 10.595241
+      HasResult: 1
+    - TrialNumber: 8
+      BlockNumber: 3
+      TargetPosition: {x: 0.058, y: 0.0179, z: -0.1889}
+      TargetRotation: {x: 354.32697, y: 127.39899, z: 2.2678285}
+      BrainPositionTag: OccipitalRight
+      FirstCondition: 1
+      CurrentCondition: 0
+      FinalDistance: 0.0032313357
+      Duration: 9.196838
+      FinalCoilPosition: {x: -0.112751566, y: -0.028498672, z: 0.42457968}
+      FinalCoilRotation: {x: 0.9135599, y: 46.025204, z: 352.15216}
+      FinalBrainTargetPosition: {x: -0.114125334, y: -0.029439274, z: 0.42734906}
+      FinalBrainTargetRotation: {x: 356.857, y: 216.42058, z: 356.10202}
+      FinalAngleDiscrepancy: 9.85357
+      HasResult: 1
+    - TrialNumber: 9
+      BlockNumber: 3
+      TargetPosition: {x: -0.0197, y: 0.0834, z: -0.1166}
+      TargetRotation: {x: 286.30545, y: 272.18982, z: 331.00534}
+      BrainPositionTag: PMLeft
+      FirstCondition: 1
+      CurrentCondition: 0
+      FinalDistance: 0.0020780838
+      Duration: 8.324707
+      FinalCoilPosition: {x: -0.05488941, y: 0.040900555, z: 0.5020101}
+      FinalCoilRotation: {x: 60.79871, y: 160.40599, z: 50.360752}
+      FinalBrainTargetPosition: {x: -0.053135373, y: 0.04161115, z: 0.5028684}
+      FinalBrainTargetRotation: {x: 288.12204, y: 339.57425, z: 353.0617}
+      FinalAngleDiscrepancy: 11.08397
+      HasResult: 1
+    FirstCondition: 1
+    CurrentCondition: 0
+  PCBlocks:
+  - NumberOfTrialsInBlock: 10
+    BlockNumber: 0
+    Trials:
+    - TrialNumber: 0
+      BlockNumber: 0
+      TargetPosition: {x: 0.0553, y: 0.0704, z: -0.1603}
+      TargetRotation: {x: 334.02783, y: 102.073494, z: 6.6678166}
+      BrainPositionTag: ParietalRight
+      FirstCondition: 1
+      CurrentCondition: 1
+      FinalDistance: 0.005433342
+      Duration: 47.9181
+      FinalCoilPosition: {x: -0.41436654, y: 0.26552123, z: -1.9690607}
+      FinalCoilRotation: {x: 34.174587, y: 87.96005, z: 25.929688}
+      FinalBrainTargetPosition: {x: -0.4193112, y: 0.26777327, z: -1.9690701}
+      FinalBrainTargetRotation: {x: 334.22287, y: 272.307, z: 357.43457}
+      FinalAngleDiscrepancy: 9.200156
+      HasResult: 1
+    - TrialNumber: 1
+      BlockNumber: 0
+      TargetPosition: {x: 0.058, y: 0.0179, z: -0.1889}
+      TargetRotation: {x: 354.32697, y: 127.39899, z: 2.2678285}
+      BrainPositionTag: OccipitalRight
+      FirstCondition: 1
+      CurrentCondition: 1
+      FinalDistance: 0.0035502934
+      Duration: 15.200195
+      FinalCoilPosition: {x: -0.42816734, y: 0.20815675, z: -1.9463744}
+      FinalCoilRotation: {x: 357.96066, y: 122.61281, z: 328.78888}
+      FinalBrainTargetPosition: {x: -0.42913678, y: 0.21038745, z: -1.9489607}
+      FinalBrainTargetRotation: {x: 358.07278, y: 294.25098, z: 354.72766}
+      FinalAngleDiscrepancy: 9.253383
+      HasResult: 1
+    - TrialNumber: 2
+      BlockNumber: 0
+      TargetPosition: {x: 0.0271, y: 0.0848, z: -0.1029}
+      TargetRotation: {x: 304.06216, y: 52.458256, z: 194.06255}
+      BrainPositionTag: PMRight
+      FirstCondition: 1
+      CurrentCondition: 1
+      FinalDistance: 0.003616014
+      Duration: 14.282166
+      FinalCoilPosition: {x: -0.37778038, y: 0.28613776, z: -2.017843}
+      FinalCoilRotation: {x: 60.393143, y: 54.139114, z: 14.856343}
+      FinalBrainTargetPosition: {x: -0.3784685, y: 0.2887687, z: -2.0154598}
+      FinalBrainTargetRotation: {x: 298.19745, y: 228.61778, z: 182.76648}
+      FinalAngleDiscrepancy: 3.0163608
+      HasResult: 1
+    - TrialNumber: 3
+      BlockNumber: 0
+      TargetPosition: {x: 0.0637, y: 0.0387, z: -0.1028}
+      TargetRotation: {x: 352.18372, y: 75.59542, z: 12.217402}
+      BrainPositionTag: TemporalRight
+      FirstCondition: 1
+      CurrentCondition: 1
+      FinalDistance: 0.0052715396
+      Duration: 7.5115356
+      FinalCoilPosition: {x: -0.41325656, y: 0.24196194, z: -2.0355127}
+      FinalCoilRotation: {x: 19.585787, y: 63.176773, z: 2.3558602}
+      FinalBrainTargetPosition: {x: -0.41387966, y: 0.24417765, z: -2.03077}
+      FinalBrainTargetRotation: {x: 348.59137, y: 243.32022, z: 4.7025948}
+      FinalAngleDiscrepancy: 8.178173
+      HasResult: 1
+    - TrialNumber: 4
+      BlockNumber: 0
+      TargetPosition: {x: -0.019, y: 0.0064, z: -0.2103}
+      TargetRotation: {x: 349.36823, y: 194.65883, z: 355.02036}
+      BrainPositionTag: OccipitalLeft
+      FirstCondition: 1
+      CurrentCondition: 1
+      FinalDistance: 0.005802205
+      Duration: 55.75058
+      FinalCoilPosition: {x: -0.36231604, y: 0.1939697, z: -1.9155864}
+      FinalCoilRotation: {x: 358.8967, y: 188.60184, z: 13.899813}
+      FinalBrainTargetPosition: {x: -0.3572065, y: 0.19479041, z: -1.9129624}
+      FinalBrainTargetRotation: {x: 357.51956, y: 1.0665668, z: 355.0431}
+      FinalAngleDiscrepancy: 8.342379
+      HasResult: 1
+    - TrialNumber: 5
+      BlockNumber: 0
+      TargetPosition: {x: -0.0437, y: 0.0535, z: -0.1748}
+      TargetRotation: {x: 320.10272, y: 242.31534, z: 6.981181}
+      BrainPositionTag: ParietalLeft
+      FirstCondition: 1
+      CurrentCondition: 1
+      FinalDistance: 0.0051986687
+      Duration: 59.97368
+      FinalCoilPosition: {x: -0.32676858, y: 0.24558207, z: -1.9391563}
+      FinalCoilRotation: {x: 14.228052, y: 217.52109, z: 335.63663}
+      FinalBrainTargetPosition: {x: -0.32804647, y: 0.24532816, z: -1.9341235}
+      FinalBrainTargetRotation: {x: 325.53326, y: 43.97695, z: 15.309746}
+      FinalAngleDiscrepancy: 21.062002
+      HasResult: 1
+    - TrialNumber: 6
+      BlockNumber: 0
+      TargetPosition: {x: -0.0323, y: 0.0561, z: -0.0653}
+      TargetRotation: {x: 325.45203, y: 295.50388, z: 4.0312953}
+      BrainPositionTag: LDLPFC
+      FirstCondition: 1
+      CurrentCondition: 1
+      FinalDistance: 0.0008651753
+      Duration: 69.64731
+      FinalCoilPosition: {x: -0.31216565, y: 0.26453662, z: -2.0426295}
+      FinalCoilRotation: {x: 44.592052, y: 291.397, z: 350.94028}
+      FinalBrainTargetPosition: {x: -0.31207523, y: 0.26416397, z: -2.041854}
+      FinalBrainTargetRotation: {x: 324.00238, y: 96.07664, z: 13.952953}
+      FinalAngleDiscrepancy: 14.465754
+      HasResult: 1
+    - TrialNumber: 7
+      BlockNumber: 0
+      TargetPosition: {x: 0.028, y: 0.0607, z: -0.0641}
+      TargetRotation: {x: 340.49564, y: 54.087048, z: 7.1336727}
+      BrainPositionTag: RDLPFC
+      FirstCondition: 1
+      CurrentCondition: 1
+      FinalDistance: 0.0034059738
+      Duration: 15.075928
+      FinalCoilPosition: {x: -0.37101784, y: 0.2695431, z: -2.0614507}
+      FinalCoilRotation: {x: 51.55455, y: 44.966656, z: 31.388988}
+      FinalBrainTargetPosition: {x: -0.3701753, y: 0.2698214, z: -2.0581622}
+      FinalBrainTargetRotation: {x: 334.6829, y: 222.77213, z: 1.345348}
+      FinalAngleDiscrepancy: 26.290768
+      HasResult: 1
+    - TrialNumber: 8
+      BlockNumber: 0
+      TargetPosition: {x: -0.0422, y: 0.0612, z: -0.1124}
+      TargetRotation: {x: 339.61172, y: 266.10834, z: 351.8151}
+      BrainPositionTag: TemporalLeft
+      FirstCondition: 1
+      CurrentCondition: 1
+      FinalDistance: 0.004181231
+      Duration: 36.9841
+      FinalCoilPosition: {x: -0.31224465, y: 0.26581132, z: -1.9942645}
+      FinalCoilRotation: {x: 53.130074, y: 254.93286, z: 350.12683}
+      FinalBrainTargetPosition: {x: -0.314266, y: 0.2622679, z: -1.9933474}
+      FinalBrainTargetRotation: {x: 341.98474, y: 69.677025, z: 0.23118202}
+      FinalAngleDiscrepancy: 35.353027
+      HasResult: 1
+    - TrialNumber: 9
+      BlockNumber: 0
+      TargetPosition: {x: -0.0197, y: 0.0834, z: -0.1166}
+      TargetRotation: {x: 286.30545, y: 272.18982, z: 331.00534}
+      BrainPositionTag: PMLeft
+      FirstCondition: 1
+      CurrentCondition: 1
+      FinalDistance: 0.0032425416
+      Duration: 14.880737
+      FinalCoilPosition: {x: -0.33461404, y: 0.28394884, z: -1.9935956}
+      FinalCoilRotation: {x: 55.90516, y: 259.97433, z: 309.0571}
+      FinalBrainTargetPosition: {x: -0.33696017, y: 0.28441423, z: -1.9914062}
+      FinalBrainTargetRotation: {x: 289.4724, y: 54.46415, z: 356.18674}
+      FinalAngleDiscrepancy: 18.305962
+      HasResult: 1
+    FirstCondition: 1
+    CurrentCondition: 1
+  - NumberOfTrialsInBlock: 10
+    BlockNumber: 1
+    Trials:
+    - TrialNumber: 0
+      BlockNumber: 1
+      TargetPosition: {x: -0.019, y: 0.0064, z: -0.2103}
+      TargetRotation: {x: 349.36823, y: 194.65883, z: 355.02036}
+      BrainPositionTag: OccipitalLeft
+      FirstCondition: 1
+      CurrentCondition: 1
+      FinalDistance: 0.004359562
+      Duration: 28.940735
+      FinalCoilPosition: {x: -0.36180568, y: 0.1962444, z: -1.9157163}
+      FinalCoilRotation: {x: 3.1063292, y: 170.25063, z: 25.89063}
+      FinalBrainTargetPosition: {x: -0.35822776, y: 0.19480464, z: -1.9136837}
+      FinalBrainTargetRotation: {x: 357.26413, y: 1.0259652, z: 355.27045}
+      FinalAngleDiscrepancy: 10.767627
+      HasResult: 1
+    - TrialNumber: 1
+      BlockNumber: 1
+      TargetPosition: {x: 0.0553, y: 0.0704, z: -0.1603}
+      TargetRotation: {x: 334.02783, y: 102.073494, z: 6.6678166}
+      BrainPositionTag: ParietalRight
+      FirstCondition: 1
+      CurrentCondition: 1
+      FinalDistance: 0.001766866
+      Duration: 43.992615
+      FinalCoilPosition: {x: -0.419527, y: 0.2685315, z: -1.9694425}
+      FinalCoilRotation: {x: 30.762627, y: 94.60044, z: 56.402008}
+      FinalBrainTargetPosition: {x: -0.419162, y: 0.26742542, z: -1.9707711}
+      FinalBrainTargetRotation: {x: 334.20508, y: 272.31342, z: 357.9083}
+      FinalAngleDiscrepancy: 5.359902
+      HasResult: 1
+    - TrialNumber: 2
+      BlockNumber: 1
+      TargetPosition: {x: 0.058, y: 0.0179, z: -0.1889}
+      TargetRotation: {x: 354.32697, y: 127.39899, z: 2.2678285}
+      BrainPositionTag: OccipitalRight
+      FirstCondition: 1
+      CurrentCondition: 1
+      FinalDistance: 0.0022101689
+      Duration: 26.596497
+      FinalCoilPosition: {x: -0.428028, y: 0.21068935, z: -1.9529136}
+      FinalCoilRotation: {x: 359.87964, y: 118.72828, z: 351.92325}
+      FinalBrainTargetPosition: {x: -0.4284592, y: 0.21142164, z: -1.9508734}
+      FinalBrainTargetRotation: {x: 357.6412, y: 294.23358, z: 355.08328}
+      FinalAngleDiscrepancy: 5.1320205
+      HasResult: 1
+    - TrialNumber: 3
+      BlockNumber: 1
+      TargetPosition: {x: 0.0637, y: 0.0387, z: -0.1028}
+      TargetRotation: {x: 352.18372, y: 75.59542, z: 12.217402}
+      BrainPositionTag: TemporalRight
+      FirstCondition: 1
+      CurrentCondition: 1
+      FinalDistance: 0.0052854884
+      Duration: 19.17981
+      FinalCoilPosition: {x: -0.41215685, y: 0.2437668, z: -2.0372696}
+      FinalCoilRotation: {x: 16.799156, y: 64.02729, z: 346.53708}
+      FinalBrainTargetPosition: {x: -0.413803, y: 0.2439035, z: -2.032249}
+      FinalBrainTargetRotation: {x: 348.6606, y: 243.22647, z: 5.048123}
+      FinalAngleDiscrepancy: 5.514555
+      HasResult: 1
+    - TrialNumber: 4
+      BlockNumber: 1
+      TargetPosition: {x: -0.0422, y: 0.0612, z: -0.1124}
+      TargetRotation: {x: 339.61172, y: 266.10834, z: 351.8151}
+      BrainPositionTag: TemporalLeft
+      FirstCondition: 1
+      CurrentCondition: 1
+      FinalDistance: 0.012814517
+      Duration: 109.10358
+      FinalCoilPosition: {x: -0.30460793, y: 0.2688918, z: -1.9966966}
+      FinalCoilRotation: {x: 33.585186, y: 238.32407, z: 353.00812}
+      FinalBrainTargetPosition: {x: -0.31514, y: 0.26222262, z: -1.9937286}
+      FinalBrainTargetRotation: {x: 341.7967, y: 69.92592, z: 0.512951}
+      FinalAngleDiscrepancy: 18.556389
+      HasResult: 1
+    - TrialNumber: 5
+      BlockNumber: 1
+      TargetPosition: {x: -0.0323, y: 0.0561, z: -0.0653}
+      TargetRotation: {x: 325.45203, y: 295.50388, z: 4.0312953}
+      BrainPositionTag: LDLPFC
+      FirstCondition: 1
+      CurrentCondition: 1
+      FinalDistance: 0.003341553
+      Duration: 8.695557
+      FinalCoilPosition: {x: -0.31101003, y: 0.2664361, z: -2.0426934}
+      FinalCoilRotation: {x: 37.34003, y: 300.68152, z: 4.2978992}
+      FinalBrainTargetPosition: {x: -0.3127123, y: 0.2639636, z: -2.0412254}
+      FinalBrainTargetRotation: {x: 323.83145, y: 96.02132, z: 14.136142}
+      FinalAngleDiscrepancy: 19.736609
+      HasResult: 1
+    - TrialNumber: 6
+      BlockNumber: 1
+      TargetPosition: {x: 0.0271, y: 0.0848, z: -0.1029}
+      TargetRotation: {x: 304.06216, y: 52.458256, z: 194.06255}
+      BrainPositionTag: PMRight
+      FirstCondition: 1
+      CurrentCondition: 1
+      FinalDistance: 0.0023974192
+      Duration: 15.375488
+      FinalCoilPosition: {x: -0.37749824, y: 0.28617522, z: -2.0169363}
+      FinalCoilRotation: {x: 62.763012, y: 48.86869, z: 40.14163}
+      FinalBrainTargetPosition: {x: -0.3786627, y: 0.28825748, z: -2.0167}
+      FinalBrainTargetRotation: {x: 298.43173, y: 228.28192, z: 183.29857}
+      FinalAngleDiscrepancy: 1.2250919
+      HasResult: 1
+    - TrialNumber: 7
+      BlockNumber: 1
+      TargetPosition: {x: -0.0437, y: 0.0535, z: -0.1748}
+      TargetRotation: {x: 320.10272, y: 242.31534, z: 6.981181}
+      BrainPositionTag: ParietalLeft
+      FirstCondition: 1
+      CurrentCondition: 1
+      FinalDistance: 0.01331328
+      Duration: 37.25659
+      FinalCoilPosition: {x: -0.33622745, y: 0.25130033, z: -1.9416045}
+      FinalCoilRotation: {x: 27.303156, y: 216.55621, z: 10.033692}
+      FinalBrainTargetPosition: {x: -0.3262228, y: 0.24548246, z: -1.935024}
+      FinalBrainTargetRotation: {x: 325.61877, y: 44.157322, z: 14.686406}
+      FinalAngleDiscrepancy: 9.620793
+      HasResult: 1
+    - TrialNumber: 8
+      BlockNumber: 1
+      TargetPosition: {x: 0.028, y: 0.0607, z: -0.0641}
+      TargetRotation: {x: 340.49564, y: 54.087048, z: 7.1336727}
+      BrainPositionTag: RDLPFC
+      FirstCondition: 1
+      CurrentCondition: 1
+      FinalDistance: 0.002304552
+      Duration: 19.181213
+      FinalCoilPosition: {x: -0.37064663, y: 0.27134296, z: -2.059887}
+      FinalCoilRotation: {x: 48.17558, y: 41.714863, z: 26.755205}
+      FinalBrainTargetPosition: {x: -0.37022665, y: 0.26983768, z: -2.0581932}
+      FinalBrainTargetRotation: {x: 334.6915, y: 222.76788, z: 1.3540595}
+      FinalAngleDiscrepancy: 22.882076
+      HasResult: 1
+    - TrialNumber: 9
+      BlockNumber: 1
+      TargetPosition: {x: -0.0197, y: 0.0834, z: -0.1166}
+      TargetRotation: {x: 286.30545, y: 272.18982, z: 331.00534}
+      BrainPositionTag: PMLeft
+      FirstCondition: 1
+      CurrentCondition: 1
+      FinalDistance: 0.004351899
+      Duration: 10.383789
+      FinalCoilPosition: {x: -0.3331685, y: 0.2818389, z: -1.9927747}
+      FinalCoilRotation: {x: 62.847958, y: 270.02057, z: 9.426127}
+      FinalBrainTargetPosition: {x: -0.3367721, y: 0.28416216, z: -1.9920295}
+      FinalBrainTargetRotation: {x: 289.44147, y: 54.68367, z: 356.03857}
+      FinalAngleDiscrepancy: 15.640073
+      HasResult: 1
+    FirstCondition: 1
+    CurrentCondition: 1
+  - NumberOfTrialsInBlock: 10
+    BlockNumber: 2
+    Trials:
+    - TrialNumber: 0
+      BlockNumber: 2
+      TargetPosition: {x: -0.0422, y: 0.0612, z: -0.1124}
+      TargetRotation: {x: 339.61172, y: 266.10834, z: 351.8151}
+      BrainPositionTag: TemporalLeft
+      FirstCondition: 1
+      CurrentCondition: 1
+      FinalDistance: 0.0034852677
+      Duration: 26.96405
+      FinalCoilPosition: {x: -0.31158572, y: 0.2640426, z: -1.9914794}
+      FinalCoilRotation: {x: 51.140358, y: 256.10452, z: 358.77502}
+      FinalBrainTargetPosition: {x: -0.3141773, y: 0.2623416, z: -1.9930723}
+      FinalBrainTargetRotation: {x: 342.04367, y: 69.6173, z: 0.17214668}
+      FinalAngleDiscrepancy: 33.58195
+      HasResult: 1
+    - TrialNumber: 1
+      BlockNumber: 2
+      TargetPosition: {x: -0.019, y: 0.0064, z: -0.2103}
+      TargetRotation: {x: 349.36823, y: 194.65883, z: 355.02036}
+      BrainPositionTag: OccipitalLeft
+      FirstCondition: 1
+      CurrentCondition: 1
+      FinalDistance: 0.0033388787
+      Duration: 32.254517
+      FinalCoilPosition: {x: -0.36002862, y: 0.19664928, z: -1.913445}
+      FinalCoilRotation: {x: 359.61978, y: 183.74223, z: 13.148103}
+      FinalBrainTargetPosition: {x: -0.35740978, y: 0.19464721, z: -1.9129145}
+      FinalBrainTargetRotation: {x: 357.55356, y: 1.0550797, z: 355.09247}
+      FinalAngleDiscrepancy: 3.8995304
+      HasResult: 1
+    - TrialNumber: 2
+      BlockNumber: 2
+      TargetPosition: {x: 0.058, y: 0.0179, z: -0.1889}
+      TargetRotation: {x: 354.32697, y: 127.39899, z: 2.2678285}
+      BrainPositionTag: OccipitalRight
+      FirstCondition: 1
+      CurrentCondition: 1
+      FinalDistance: 0.0035406428
+      Duration: 21.59021
+      FinalCoilPosition: {x: -0.42892015, y: 0.21498953, z: -1.9506499}
+      FinalCoilRotation: {x: 7.1273346, y: 105.258484, z: 36.50747}
+      FinalBrainTargetPosition: {x: -0.42828518, y: 0.2115208, z: -1.950332}
+      FinalBrainTargetRotation: {x: 357.72205, y: 294.4917, z: 355.11752}
+      FinalAngleDiscrepancy: 10.399168
+      HasResult: 1
+    - TrialNumber: 3
+      BlockNumber: 2
+      TargetPosition: {x: 0.0553, y: 0.0704, z: -0.1603}
+      TargetRotation: {x: 334.02783, y: 102.073494, z: 6.6678166}
+      BrainPositionTag: ParietalRight
+      FirstCondition: 1
+      CurrentCondition: 1
+      FinalDistance: 0.0043513137
+      Duration: 37.335815
+      FinalCoilPosition: {x: -0.4195675, y: 0.26606792, z: -1.973052}
+      FinalCoilRotation: {x: 34.318497, y: 76.59073, z: 24.780228}
+      FinalBrainTargetPosition: {x: -0.4192627, y: 0.26733783, z: -1.9689013}
+      FinalBrainTargetRotation: {x: 334.2735, y: 272.51617, z: 357.4807}
+      FinalAngleDiscrepancy: 16.215033
+      HasResult: 1
+    - TrialNumber: 4
+      BlockNumber: 2
+      TargetPosition: {x: 0.0637, y: 0.0387, z: -0.1028}
+      TargetRotation: {x: 352.18372, y: 75.59542, z: 12.217402}
+      BrainPositionTag: TemporalRight
+      FirstCondition: 1
+      CurrentCondition: 1
+      FinalDistance: 0.002069097
+      Duration: 15.173523
+      FinalCoilPosition: {x: -0.41304943, y: 0.24598318, z: -2.03033}
+      FinalCoilRotation: {x: 27.92645, y: 69.196045, z: 6.382158}
+      FinalBrainTargetPosition: {x: -0.41398942, y: 0.24421711, z: -2.0308578}
+      FinalBrainTargetRotation: {x: 348.55334, y: 243.26662, z: 4.7037654}
+      FinalAngleDiscrepancy: 17.39107
+      HasResult: 1
+    - TrialNumber: 5
+      BlockNumber: 2
+      TargetPosition: {x: 0.0271, y: 0.0848, z: -0.1029}
+      TargetRotation: {x: 304.06216, y: 52.458256, z: 194.06255}
+      BrainPositionTag: PMRight
+      FirstCondition: 1
+      CurrentCondition: 1
+      FinalDistance: 0.004809654
+      Duration: 17.075989
+      FinalCoilPosition: {x: -0.37927395, y: 0.28784502, z: -2.0220509}
+      FinalCoilRotation: {x: 54.518097, y: 78.14593, z: 28.090948}
+      FinalBrainTargetPosition: {x: -0.37826386, y: 0.28855553, z: -2.0174024}
+      FinalBrainTargetRotation: {x: 298.39798, y: 227.97937, z: 183.43341}
+      FinalAngleDiscrepancy: 17.257748
+      HasResult: 1
+    - TrialNumber: 6
+      BlockNumber: 2
+      TargetPosition: {x: -0.0323, y: 0.0561, z: -0.0653}
+      TargetRotation: {x: 325.45203, y: 295.50388, z: 4.0312953}
+      BrainPositionTag: LDLPFC
+      FirstCondition: 1
+      CurrentCondition: 1
+      FinalDistance: 0.0037017774
+      Duration: 27.371826
+      FinalCoilPosition: {x: -0.30937225, y: 0.26570505, z: -2.0432131}
+      FinalCoilRotation: {x: 51.731903, y: 312.82053, z: 349.53244}
+      FinalBrainTargetPosition: {x: -0.31229287, y: 0.26407427, z: -2.0416276}
+      FinalBrainTargetRotation: {x: 323.94836, y: 96.051605, z: 14.030864}
+      FinalAngleDiscrepancy: 30.325872
+      HasResult: 1
+    - TrialNumber: 7
+      BlockNumber: 2
+      TargetPosition: {x: 0.028, y: 0.0607, z: -0.0641}
+      TargetRotation: {x: 340.49564, y: 54.087048, z: 7.1336727}
+      BrainPositionTag: RDLPFC
+      FirstCondition: 1
+      CurrentCondition: 1
+      FinalDistance: 0.00443244
+      Duration: 31.553345
+      FinalCoilPosition: {x: -0.3744466, y: 0.27122757, z: -2.057941}
+      FinalCoilRotation: {x: 53.39224, y: 46.50631, z: 4.94059}
+      FinalBrainTargetPosition: {x: -0.37037796, y: 0.27030838, z: -2.0564418}
+      FinalBrainTargetRotation: {x: 334.43982, y: 222.90852, z: 1.0414457}
+      FinalAngleDiscrepancy: 27.961878
+      HasResult: 1
+    - TrialNumber: 8
+      BlockNumber: 2
+      TargetPosition: {x: -0.0437, y: 0.0535, z: -0.1748}
+      TargetRotation: {x: 320.10272, y: 242.31534, z: 6.981181}
+      BrainPositionTag: ParietalLeft
+      FirstCondition: 1
+      CurrentCondition: 1
+      FinalDistance: 0.006031754
+      Duration: 26.860596
+      FinalCoilPosition: {x: -0.33473217, y: 0.24739261, z: -1.9372052}
+      FinalCoilRotation: {x: 20.652431, y: 219.24268, z: 338.73538}
+      FinalBrainTargetPosition: {x: -0.33616173, y: 0.24615012, z: -1.9314785}
+      FinalBrainTargetRotation: {x: 324.86038, y: 42.684334, z: 16.835258}
+      FinalAngleDiscrepancy: 14.799944
+      HasResult: 1
+    - TrialNumber: 9
+      BlockNumber: 2
+      TargetPosition: {x: -0.0197, y: 0.0834, z: -0.1166}
+      TargetRotation: {x: 286.30545, y: 272.18982, z: 331.00534}
+      BrainPositionTag: PMLeft
+      FirstCondition: 1
+      CurrentCondition: 1
+      FinalDistance: 0.003132783
+      Duration: 33.162964
+      FinalCoilPosition: {x: -0.33832395, y: 0.2850927, z: -1.9946125}
+      FinalCoilRotation: {x: 67.964584, y: 245.25034, z: 357.6281}
+      FinalBrainTargetPosition: {x: -0.33660737, y: 0.28419626, z: -1.9921498}
+      FinalBrainTargetRotation: {x: 289.47275, y: 54.822365, z: 355.8608}
+      FinalAngleDiscrepancy: 4.4875097
+      HasResult: 1
+    FirstCondition: 1
+    CurrentCondition: 1
+  - NumberOfTrialsInBlock: 10
+    BlockNumber: 3
+    Trials:
+    - TrialNumber: 0
+      BlockNumber: 3
+      TargetPosition: {x: -0.019, y: 0.0064, z: -0.2103}
+      TargetRotation: {x: 349.36823, y: 194.65883, z: 355.02036}
+      BrainPositionTag: OccipitalLeft
+      FirstCondition: 1
+      CurrentCondition: 1
+      FinalDistance: 0.006070727
+      Duration: 92.447754
+      FinalCoilPosition: {x: -0.35677725, y: 0.19496518, z: -1.9069722}
+      FinalCoilRotation: {x: 347.92035, y: 171.48631, z: 59.47969}
+      FinalBrainTargetPosition: {x: -0.3590049, y: 0.19410682, z: -1.9125538}
+      FinalBrainTargetRotation: {x: 357.70554, y: 0.9514349, z: 355.40207}
+      FinalAngleDiscrepancy: 17.17769
+      HasResult: 1
+    - TrialNumber: 1
+      BlockNumber: 3
+      TargetPosition: {x: -0.0422, y: 0.0612, z: -0.1124}
+      TargetRotation: {x: 339.61172, y: 266.10834, z: 351.8151}
+      BrainPositionTag: TemporalLeft
+      FirstCondition: 1
+      CurrentCondition: 1
+      FinalDistance: 0.015092832
+      Duration: 47.859253
+      FinalCoilPosition: {x: -0.3030724, y: 0.27088308, z: -1.9967984}
+      FinalCoilRotation: {x: 23.531805, y: 251.81694, z: 357.13568}
+      FinalBrainTargetPosition: {x: -0.31505734, y: 0.2622715, z: -1.9936368}
+      FinalBrainTargetRotation: {x: 341.8639, y: 69.90442, z: 0.4123696}
+      FinalAngleDiscrepancy: 5.683617
+      HasResult: 1
+    - TrialNumber: 2
+      BlockNumber: 3
+      TargetPosition: {x: 0.0553, y: 0.0704, z: -0.1603}
+      TargetRotation: {x: 334.02783, y: 102.073494, z: 6.6678166}
+      BrainPositionTag: ParietalRight
+      FirstCondition: 1
+      CurrentCondition: 1
+      FinalDistance: 0.020711496
+      Duration: 126.888916
+      FinalCoilPosition: {x: -0.40878603, y: 0.25295076, z: -1.9575232}
+      FinalCoilRotation: {x: 21.799467, y: 104.26957, z: 21.44101}
+      FinalBrainTargetPosition: {x: -0.4202271, y: 0.26651576, z: -1.9682031}
+      FinalBrainTargetRotation: {x: 334.42462, y: 272.4627, z: 357.37152}
+      FinalAngleDiscrepancy: 11.446647
+      HasResult: 1
+    - TrialNumber: 3
+      BlockNumber: 3
+      TargetPosition: {x: 0.0271, y: 0.0848, z: -0.1029}
+      TargetRotation: {x: 304.06216, y: 52.458256, z: 194.06255}
+      BrainPositionTag: PMRight
+      FirstCondition: 1
+      CurrentCondition: 1
+      FinalDistance: 0.005176481
+      Duration: 41.549805
+      FinalCoilPosition: {x: -0.37537116, y: 0.28491747, z: -2.0195403}
+      FinalCoilRotation: {x: 66.03236, y: 57.069527, z: 60.158825}
+      FinalBrainTargetPosition: {x: -0.37828484, y: 0.28856447, z: -2.017303}
+      FinalBrainTargetRotation: {x: 298.3894, y: 227.95615, z: 183.44174}
+      FinalAngleDiscrepancy: 5.964928
+      HasResult: 1
+    - TrialNumber: 4
+      BlockNumber: 3
+      TargetPosition: {x: -0.0437, y: 0.0535, z: -0.1748}
+      TargetRotation: {x: 320.10272, y: 242.31534, z: 6.981181}
+      BrainPositionTag: ParietalLeft
+      FirstCondition: 1
+      CurrentCondition: 1
+      FinalDistance: 0.0040774257
+      Duration: 47.934326
+      FinalCoilPosition: {x: -0.32818058, y: 0.24351867, z: -1.9375489}
+      FinalCoilRotation: {x: 6.2576075, y: 218.76201, z: 2.0708842}
+      FinalBrainTargetPosition: {x: -0.32557893, y: 0.24569747, z: -1.9352884}
+      FinalBrainTargetRotation: {x: 325.54358, y: 44.507477, z: 14.633491}
+      FinalAngleDiscrepancy: 28.69406
+      HasResult: 1
+    - TrialNumber: 5
+      BlockNumber: 3
+      TargetPosition: {x: -0.0323, y: 0.0561, z: -0.0653}
+      TargetRotation: {x: 325.45203, y: 295.50388, z: 4.0312953}
+      BrainPositionTag: LDLPFC
+      FirstCondition: 1
+      CurrentCondition: 1
+      FinalDistance: 0.003402124
+      Duration: 10.475098
+      FinalCoilPosition: {x: -0.3086921, y: 0.26343417, z: -2.0428164}
+      FinalCoilRotation: {x: 54.836426, y: 309.21692, z: 8.957903}
+      FinalBrainTargetPosition: {x: -0.311902, y: 0.26395172, z: -2.0418148}
+      FinalBrainTargetRotation: {x: 324.06155, y: 96.17587, z: 14.004515}
+      FinalAngleDiscrepancy: 29.461199
+      HasResult: 1
+    - TrialNumber: 6
+      BlockNumber: 3
+      TargetPosition: {x: 0.028, y: 0.0607, z: -0.0641}
+      TargetRotation: {x: 340.49564, y: 54.087048, z: 7.1336727}
+      BrainPositionTag: RDLPFC
+      FirstCondition: 1
+      CurrentCondition: 1
+      FinalDistance: 0.0032632526
+      Duration: 23.751465
+      FinalCoilPosition: {x: -0.37207267, y: 0.26873475, z: -2.0603998}
+      FinalCoilRotation: {x: 51.95313, y: 30.0718, z: 25.267605}
+      FinalBrainTargetPosition: {x: -0.3700496, y: 0.26987624, z: -2.0581079}
+      FinalBrainTargetRotation: {x: 334.6722, y: 222.74413, z: 1.3517551}
+      FinalAngleDiscrepancy: 28.310974
+      HasResult: 1
+    - TrialNumber: 7
+      BlockNumber: 3
+      TargetPosition: {x: 0.0637, y: 0.0387, z: -0.1028}
+      TargetRotation: {x: 352.18372, y: 75.59542, z: 12.217402}
+      BrainPositionTag: TemporalRight
+      FirstCondition: 1
+      CurrentCondition: 1
+      FinalDistance: 0.0052940017
+      Duration: 13.3741455
+      FinalCoilPosition: {x: -0.4118211, y: 0.24479732, z: -2.0368347}
+      FinalCoilRotation: {x: 19.796421, y: 70.02719, z: 6.162552}
+      FinalBrainTargetPosition: {x: -0.41400972, y: 0.24387509, z: -2.0321033}
+      FinalBrainTargetRotation: {x: 348.68124, y: 243.27179, z: 5.0444884}
+      FinalAngleDiscrepancy: 10.682846
+      HasResult: 1
+    - TrialNumber: 8
+      BlockNumber: 3
+      TargetPosition: {x: 0.058, y: 0.0179, z: -0.1889}
+      TargetRotation: {x: 354.32697, y: 127.39899, z: 2.2678285}
+      BrainPositionTag: OccipitalRight
+      FirstCondition: 1
+      CurrentCondition: 1
+      FinalDistance: 0.002855178
+      Duration: 32.35132
+      FinalCoilPosition: {x: -0.42795846, y: 0.2081828, z: -1.9497813}
+      FinalCoilRotation: {x: 336.92834, y: 132.92418, z: 45.44077}
+      FinalBrainTargetPosition: {x: -0.4292729, y: 0.2104858, z: -1.9487227}
+      FinalBrainTargetRotation: {x: 358.051, y: 294.2981, z: 354.75412}
+      FinalAngleDiscrepancy: 30.907722
+      HasResult: 1
+    - TrialNumber: 9
+      BlockNumber: 3
+      TargetPosition: {x: -0.0197, y: 0.0834, z: -0.1166}
+      TargetRotation: {x: 286.30545, y: 272.18982, z: 331.00534}
+      BrainPositionTag: PMLeft
+      FirstCondition: 1
+      CurrentCondition: 1
+      FinalDistance: 0.005556205
+      Duration: 19.87024
+      FinalCoilPosition: {x: -0.3345227, y: 0.2856538, z: -1.9954534}
+      FinalCoilRotation: {x: 52.629013, y: 260.3331, z: 3.6601968}
+      FinalBrainTargetPosition: {x: -0.33792222, y: 0.2843138, z: -1.9912677}
+      FinalBrainTargetRotation: {x: 289.34796, y: 54.16288, z: 356.7652}
+      FinalAngleDiscrepancy: 21.51556
+      HasResult: 1
+    FirstCondition: 1
+    CurrentCondition: 1
+  TrialResults: []
